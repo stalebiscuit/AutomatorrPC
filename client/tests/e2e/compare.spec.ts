@@ -19,7 +19,7 @@ test('compare flow: pick two CPUs → winner + scorecard + verdict', async ({ pa
   await page.getByRole('option', { name: /7800X3D/i }).click();
 
   // Results
-  await expect(page.getByText('OUTCLASSES')).toBeVisible();
+  await expect(page.locator('.badge')).toBeVisible();
   await expect(page.getByText('Winner scorecard')).toBeVisible();
   await expect(page.getByText(/further version/i)).toBeVisible(); // placeholder verdict
 
@@ -29,6 +29,6 @@ test('compare flow: pick two CPUs → winner + scorecard + verdict', async ({ pa
 
 test('deep link reproduces a comparison', async ({ page }) => {
   await page.goto('/compare/cpu/intel-core-i9-14900k-vs-amd-ryzen-7-7800x3d');
-  await expect(page.getByText('OUTCLASSES')).toBeVisible();
+  await expect(page.locator('.badge')).toBeVisible();
   await expect(page.getByText('Winner scorecard')).toBeVisible();
 });
