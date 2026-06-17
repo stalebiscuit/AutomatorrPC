@@ -1,5 +1,9 @@
 import { Router } from 'express';
 import { healthRouter } from './health.js';
+import { categoriesRouter } from './categories.js';
+import { componentsRouter } from './components.js';
+import { compareRouter } from './compare.js';
+import { verdictRouter } from './verdict.js';
 
 /**
  * Aggregate API router mounted at /api. Each phase adds its routers here:
@@ -10,5 +14,9 @@ import { healthRouter } from './health.js';
 export function createApiRouter(): Router {
   const api = Router();
   api.use(healthRouter);
+  api.use(categoriesRouter);
+  api.use(componentsRouter);
+  api.use(compareRouter);
+  api.use(verdictRouter);
   return api;
 }
