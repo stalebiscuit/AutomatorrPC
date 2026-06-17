@@ -9,6 +9,7 @@ import {
   TrendRollupModel,
 } from './models/index.js';
 import { logger } from './lib/logger.js';
+import { startPriceScheduler } from './services/pricing/scheduler.js';
 
 async function main(): Promise<void> {
   const cfg = loadConfig();
@@ -28,6 +29,9 @@ async function main(): Promise<void> {
   app.listen(cfg.PORT, () => {
     logger.info(`Automatorr API listening on http://localhost:${cfg.PORT} (env: ${cfg.NODE_ENV})`);
   });
+
+  // Background jobs (fail soft, never inline on a request).
+  startPriceScheduler();
 }
 
 main().catch((err) => {
