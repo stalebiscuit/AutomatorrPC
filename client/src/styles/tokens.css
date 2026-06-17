@@ -1,0 +1,88 @@
+/* Automatorr brand tokens — locked "v5" (spec §4, verified against the Brand Quick Guide). */
+:root {
+  /* Colour */
+  --royal: #2200a5; /* feature / winner surface accent */
+  --lime: #c2e830; /* keylines, winner signal, accents */
+  --lilac: #c783ff; /* secondary accent, source indices */
+  --bg: #07040f; /* near-black base */
+  --bg-2: #0c0820;
+  --surface: #100b26; /* cards / panels */
+  --line: rgba(199, 131, 255, 0.14); /* hairlines */
+  --line-2: rgba(255, 255, 255, 0.1);
+  --text: #ffffff;
+  --muted: #a59fd0;
+  --muted-2: #7b76ab;
+
+  /* Radii / layout */
+  --r-lg: 20px;
+  --r-md: 14px;
+  --r-sm: 8px;
+  --maxw: 1080px;
+
+  /* Type families */
+  --font-display: 'Kanit', sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+}
+body {
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100dvh;
+  background-image:
+    radial-gradient(820px 460px at 90% -8%, rgba(199, 131, 255, 0.16), transparent 60%),
+    radial-gradient(720px 440px at 6% 0%, rgba(194, 232, 48, 0.1), transparent 60%),
+    linear-gradient(180deg, var(--bg-2), var(--bg) 52%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Faint automation grid with soft corner mask (mockup body::before). */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image:
+    linear-gradient(rgba(199, 131, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(199, 131, 255, 0.045) 1px, transparent 1px);
+  background-size: 48px 48px;
+  -webkit-mask-image: radial-gradient(120% 75% at 50% 0%, #000 28%, transparent 76%);
+  mask-image: radial-gradient(120% 75% at 50% 0%, #000 28%, transparent 76%);
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--lime);
+  outline-offset: 2px;
+}
+
+button {
+  font-family: var(--font-body);
+}
+
+.tabnum {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
