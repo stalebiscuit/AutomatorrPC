@@ -1,0 +1,157 @@
+{
+  "category": "gpu",
+  "components": [
+    {
+      "brand": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 5090",
+      "slug": "nvidia-geforce-rtx-5090",
+      "imageUrl": null,
+      "csv": { "type": "GPU", "model": "RTX 5090" },
+      "fallbackUbRaw": 183,
+      "specs": {
+        "vram": 32,
+        "vramType": "GDDR7",
+        "boostClock": 2407,
+        "cudaOrStream": 21760,
+        "tbp": 575,
+        "busWidth": 512,
+        "length": 304
+      },
+      "specSourceUrl": "https://www.nvidia.com/en-au/geforce/graphics-cards/50-series/rtx-5090/",
+      "unknownFields": []
+    },
+    {
+      "brand": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 4090",
+      "slug": "nvidia-geforce-rtx-4090",
+      "imageUrl": null,
+      "csv": { "type": "GPU", "model": "RTX 4090" },
+      "fallbackUbRaw": 155,
+      "specs": {
+        "vram": 24,
+        "vramType": "GDDR6X",
+        "boostClock": 2520,
+        "cudaOrStream": 16384,
+        "tbp": 450,
+        "busWidth": 384,
+        "length": 304
+      },
+      "specSourceUrl": "https://www.nvidia.com/en-au/geforce/graphics-cards/40-series/rtx-4090/",
+      "unknownFields": []
+    },
+    {
+      "brand": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 4080 SUPER",
+      "slug": "nvidia-geforce-rtx-4080-super",
+      "imageUrl": null,
+      "csv": { "type": "GPU", "model": "RTX 4080-S (Super)" },
+      "fallbackUbRaw": 126,
+      "specs": {
+        "vram": 16,
+        "vramType": "GDDR6X",
+        "boostClock": 2550,
+        "cudaOrStream": 10240,
+        "tbp": 320,
+        "busWidth": 256,
+        "length": 310
+      },
+      "specSourceUrl": "https://www.nvidia.com/en-au/geforce/graphics-cards/40-series/rtx-4080-family/",
+      "unknownFields": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Radeon RX 7900 XTX",
+      "slug": "amd-radeon-rx-7900-xtx",
+      "imageUrl": null,
+      "csv": { "type": "GPU", "model": "RX 7900-XTX" },
+      "fallbackUbRaw": 108,
+      "specs": {
+        "vram": 24,
+        "vramType": "GDDR6",
+        "boostClock": 2500,
+        "cudaOrStream": 6144,
+        "tbp": 355,
+        "busWidth": 384,
+        "length": 287
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/graphics/amd-radeon-rx-7900-xtx.html",
+      "unknownFields": []
+    },
+    {
+      "brand": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 4070",
+      "slug": "nvidia-geforce-rtx-4070",
+      "imageUrl": null,
+      "csv": { "type": "GPU", "model": "RTX 4070" },
+      "fallbackUbRaw": 80,
+      "specs": {
+        "vram": 12,
+        "vramType": "GDDR6X",
+        "boostClock": 2475,
+        "cudaOrStream": 5888,
+        "tbp": 200,
+        "busWidth": 192,
+        "length": 244
+      },
+      "specSourceUrl": "https://www.nvidia.com/en-au/geforce/graphics-cards/40-series/rtx-4070-family/",
+      "unknownFields": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Radeon RX 7800 XT",
+      "slug": "amd-radeon-rx-7800-xt",
+      "imageUrl": null,
+      "csv": { "type": "GPU", "model": "RX 7800-XT" },
+      "fallbackUbRaw": 75.6,
+      "specs": {
+        "vram": 16,
+        "vramType": "GDDR6",
+        "boostClock": 2430,
+        "cudaOrStream": 3840,
+        "tbp": 263,
+        "busWidth": 256,
+        "length": 267
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/graphics/amd-radeon-rx-7800-xt.html",
+      "unknownFields": []
+    },
+    {
+      "brand": "NVIDIA",
+      "name": "NVIDIA GeForce RTX 4060",
+      "slug": "nvidia-geforce-rtx-4060",
+      "imageUrl": null,
+      "csv": { "type": "GPU", "model": "RTX 4060" },
+      "fallbackUbRaw": 50.9,
+      "specs": {
+        "vram": 8,
+        "vramType": "GDDR6",
+        "boostClock": 2460,
+        "cudaOrStream": 3072,
+        "tbp": 115,
+        "busWidth": 128,
+        "length": 200
+      },
+      "specSourceUrl": "https://www.nvidia.com/en-au/geforce/graphics-cards/40-series/rtx-4060-4060ti/",
+      "unknownFields": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Radeon RX 7600",
+      "slug": "amd-radeon-rx-7600",
+      "imageUrl": null,
+      "csv": { "type": "GPU", "model": "RX 7600" },
+      "fallbackUbRaw": 46.2,
+      "specs": {
+        "vram": 8,
+        "vramType": "GDDR6",
+        "boostClock": 2655,
+        "cudaOrStream": 2048,
+        "tbp": 165,
+        "busWidth": 128,
+        "length": 204
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/graphics/amd-radeon-rx-7600.html",
+      "unknownFields": []
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "category": "ram",
+  "components": [
+    {
+      "brand": "G.SKILL",
+      "name": "G.Skill Trident Z5 RGB DDR5-6000 CL30 64GB (2×32GB)",
+      "slug": "gskill-trident-z5-rgb-ddr5-6000-cl30-64gb",
+      "imageUrl": null,
+      "csv": { "type": "RAM", "model": "TZ/RJ/FX DDR5 6000 C30 2x32GB" },
+      "fallbackUbRaw": 243,
+      "specs": {
+        "capacity": 64,
+        "speedMTs": 6000,
+        "casLatency": 30,
+        "kitConfig": "2 × 32 GB",
+        "voltage": 1.4,
+        "type": "DDR5"
+      },
+      "specSourceUrl": "https://www.gskill.com/product/165/390/1562834472/F5-6000J3040G32GX2-TZ5RS",
+      "unknownFields": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance RGB DDR5-6000 CL30 32GB (2×16GB)",
+      "slug": "corsair-vengeance-rgb-ddr5-6000-cl30-32gb",
+      "imageUrl": null,
+      "csv": { "type": "RAM", "model": "Vengeance RGB DDR5 6000 C30 2x16GB" },
+      "fallbackUbRaw": 229,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 6000,
+        "casLatency": 30,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.4,
+        "type": "DDR5"
+      },
+      "specSourceUrl": "https://www.corsair.com/us/en/p/memory/cmh32gx5m2b6000c30/vengeance-rgb-32gb-2x16gb-ddr5-dram-6000mhz-c30-memory-kit-black-cmh32gx5m2b6000c30",
+      "unknownFields": []
+    },
+    {
+      "brand": "G.SKILL",
+      "name": "G.Skill Trident Z5 RGB DDR5-6000 CL30 32GB (2×16GB)",
+      "slug": "gskill-trident-z5-rgb-ddr5-6000-cl30-32gb",
+      "imageUrl": null,
+      "csv": { "type": "RAM", "model": "TZ/RJ/FX DDR5 6000 C30 2x16GB" },
+      "fallbackUbRaw": 225,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 6000,
+        "casLatency": 30,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR5"
+      },
+      "specSourceUrl": "https://www.gskill.com/product/165/390/1562834304/F5-6000J3038F16GX2-TZ5RS",
+      "unknownFields": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance DDR5-6000 CL36 32GB (2×16GB)",
+      "slug": "corsair-vengeance-ddr5-6000-cl36-32gb",
+      "imageUrl": null,
+      "csv": { "type": "RAM", "model": "Vengeance DDR5 6000 C36 2x16GB" },
+      "fallbackUbRaw": 172,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 6000,
+        "casLatency": 36,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR5"
+      },
+      "specSourceUrl": "https://www.corsair.com/us/en/p/memory/cmk32gx5m2d6000c36/vengeance-32gb-2x16gb-ddr5-dram-6000mhz-c36-memory-kit-black-cmk32gx5m2d6000c36",
+      "unknownFields": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston Fury Beast DDR5-5600 CL40 32GB (2×16GB)",
+      "slug": "kingston-fury-beast-ddr5-5600-cl40-32gb",
+      "imageUrl": null,
+      "csv": { "type": "RAM", "model": "Fury DDR5 5600 C40 2x16GB" },
+      "fallbackUbRaw": 161,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 5600,
+        "casLatency": 40,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.25,
+        "type": "DDR5"
+      },
+      "specSourceUrl": "https://www.kingston.com/en/memory/gaming/kingston-fury-beast-ddr5-memory",
+      "unknownFields": []
+    },
+    {
+      "brand": "G.SKILL",
+      "name": "G.Skill Trident Z DDR4-3200 CL14 64GB (4×16GB)",
+      "slug": "gskill-trident-z-ddr4-3200-cl14-64gb",
+      "imageUrl": null,
+      "csv": { "type": "RAM", "model": "Trident Z DDR4 3200 C14 4x16GB" },
+      "fallbackUbRaw": 116,
+      "specs": {
+        "capacity": 64,
+        "speedMTs": 3200,
+        "casLatency": 14,
+        "kitConfig": "4 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4"
+      },
+      "specSourceUrl": "https://www.gskill.com/product/165/170/1535961376/F4-3200C14Q-64GTZ",
+      "unknownFields": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance LPX DDR4-3200 CL16 32GB (2×16GB)",
+      "slug": "corsair-vengeance-lpx-ddr4-3200-cl16-32gb",
+      "imageUrl": null,
+      "csv": { "type": "RAM", "model": "Vengeance LPX DDR4 3200 C16 2x16GB" },
+      "fallbackUbRaw": 87.5,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4"
+      },
+      "specSourceUrl": "https://www.corsair.com/us/en/p/memory/cmk32gx4m2e3200c16/vengeance-lpx-32gb-2x16gb-ddr4-dram-3200mhz-c16-memory-kit-black-cmk32gx4m2e3200c16",
+      "unknownFields": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance LPX DDR4-3200 CL16 16GB (2×8GB)",
+      "slug": "corsair-vengeance-lpx-ddr4-3200-cl16-16gb",
+      "imageUrl": null,
+      "csv": { "type": "RAM", "model": "Vengeance LPX DDR4 3200 C16 2x8GB" },
+      "fallbackUbRaw": 85.1,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4"
+      },
+      "specSourceUrl": "https://www.corsair.com/us/en/p/memory/cmk16gx4m2b3200c16/vengeance-lpx-16gb-2x8gb-ddr4-dram-3200mhz-c16-memory-kit-black-cmk16gx4m2b3200c16",
+      "unknownFields": []
+    }
+  ]
+}
