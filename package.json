@@ -31,27 +31,13 @@
   "engines": {
     "node": ">=20"
   },
-  "dependencies": {
-    "axios": "^1.18.0",
-    "cors": "^2.8.6",
-    "dotenv": "^17.4.2",
-    "express": "^5.2.1",
-    "lucide-react": "^1.20.0",
-    "mongoose": "^9.7.0",
-    "multer": "^2.2.0",
-    "nodemon": "^3.1.14",
-    "react-router-dom": "^7.18.0"
-  },
-  "main": "eslint.config.js",
+  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stalebiscuit/AutomatorrPC.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "homepage": "https://github.com/stalebiscuit/AutomatorrPC#readme",
   "bugs": {
     "url": "https://github.com/stalebiscuit/AutomatorrPC/issues"
-  },
-  "homepage": "https://github.com/stalebiscuit/AutomatorrPC#readme"
+  }
 }
