@@ -10,6 +10,7 @@ import {
 } from './models/index.js';
 import { logger } from './lib/logger.js';
 import { startPriceScheduler } from './services/pricing/scheduler.js';
+import { startRollupScheduler } from './services/rollupScheduler.js';
 
 async function main(): Promise<void> {
   const cfg = loadConfig();
@@ -32,6 +33,7 @@ async function main(): Promise<void> {
 
   // Background jobs (fail soft, never inline on a request).
   startPriceScheduler();
+  startRollupScheduler();
 }
 
 main().catch((err) => {
