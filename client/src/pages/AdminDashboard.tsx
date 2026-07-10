@@ -84,7 +84,7 @@ export function AdminDashboard() {
             </div>
           </div>
 
-          <div className="panel-grid">
+          <div className="panel-grid panel-grid--wide-chart">
             <div className="panel">
               <h2>Search volume</h2>
               <TrendChart data={a.searchVolume} />

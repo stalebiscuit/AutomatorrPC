@@ -107,9 +107,8 @@ export function ComparePage() {
         <EmptyState hasOne={!!slugA || !!slugB} />
       )}
 
-      <div className="foot">
-        <span>V5 // VERDICT SCORECARD · BRANDED COMPONENT RENDER</span>
-        <span>NEAR-BLACK BASE · LIME KEYLINES · KANIT + INTER · MONO INDICES</span>
+      <div className="foot foot-clean">
+        <span>© 2026 Automatorr</span>
       </div>
     </div>
   );

@@ -4,6 +4,7 @@ import { createApp } from './app.js';
 import { loadConfig } from './config.js';
 import { ComponentModel } from './models/index.js';
 import { seedDatabase } from './seed/seed.js';
+import { seedDemoEvents } from './seed/demoEvents.js';
 import { logger } from './lib/logger.js';
 
 /**
@@ -26,6 +27,7 @@ async function main(): Promise<void> {
   await connectDb({ uri: mongod.getUri() });
   await ComponentModel.init();
   await seedDatabase();
+  await seedDemoEvents();
 
   const app = createApp();
   app.listen(cfg.PORT, () => {

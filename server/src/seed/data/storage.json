@@ -5,8 +5,11 @@
       "brand": "WD",
       "name": "WD Black SN8100 4TB",
       "slug": "wd-black-sn8100-4tb",
-      "imageUrl": null,
-      "csv": { "type": "SSD", "model": "Black SN8100 M.2 4TB" },
+      "imageUrl": "/images/storage/m2.svg",
+      "csv": {
+        "type": "SSD",
+        "model": "Black SN8100 M.2 4TB"
+      },
       "fallbackUbRaw": 716,
       "specs": {
         "subtype": "ssd",
@@ -21,14 +24,36 @@
         "nandType": "BiCS8 TLC"
       },
       "specSourceUrl": "https://www.westerndigital.com/products/internal-drives/wd-black-sn8100-nvme-ssd",
-      "unknownFields": ["dram"]
+      "unknownFields": [
+        "dram"
+      ],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 672,
+          "url": "https://www.amazon.com.au/s?k=WD%20Black%20SN8100%204TB"
+        },
+        {
+          "store": "Mwave",
+          "price": 688,
+          "url": "https://www.mwave.com.au/searchresult?w=WD%20Black%20SN8100%204TB"
+        },
+        {
+          "store": "Scorptec",
+          "price": 649,
+          "url": "https://www.scorptec.com.au/search/go?w=WD%20Black%20SN8100%204TB"
+        }
+      ]
     },
     {
       "brand": "WD",
       "name": "WD Black SN850X 2TB",
       "slug": "wd-black-sn850x-2tb",
-      "imageUrl": null,
-      "csv": { "type": "SSD", "model": "Black SN850X M.2 2TB" },
+      "imageUrl": "/images/storage/m2.svg",
+      "csv": {
+        "type": "SSD",
+        "model": "Black SN850X M.2 2TB"
+      },
       "fallbackUbRaw": 456,
       "specs": {
         "subtype": "ssd",
@@ -43,14 +68,34 @@
         "nandType": "BiCS5 TLC"
       },
       "specSourceUrl": "https://www.westerndigital.com/products/internal-drives/wd-black-sn850x-nvme-ssd",
-      "unknownFields": []
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 317,
+          "url": "https://www.amazon.com.au/s?k=WD%20Black%20SN850X%202TB"
+        },
+        {
+          "store": "Mwave",
+          "price": 299,
+          "url": "https://www.mwave.com.au/searchresult?w=WD%20Black%20SN850X%202TB"
+        },
+        {
+          "store": "Scorptec",
+          "price": 309,
+          "url": "https://www.scorptec.com.au/search/go?w=WD%20Black%20SN850X%202TB"
+        }
+      ]
     },
     {
       "brand": "Samsung",
       "name": "Samsung 990 Pro 2TB",
       "slug": "samsung-990-pro-2tb",
-      "imageUrl": null,
-      "csv": { "type": "SSD", "model": "990 Pro M.2 2TB" },
+      "imageUrl": "/images/storage/m2.svg",
+      "csv": {
+        "type": "SSD",
+        "model": "990 Pro M.2 2TB"
+      },
       "fallbackUbRaw": 406,
       "specs": {
         "subtype": "ssd",
@@ -65,14 +110,34 @@
         "nandType": "Samsung V-NAND TLC"
       },
       "specSourceUrl": "https://www.samsung.com/au/memory-storage/nvme-ssd/990-pro-2tb-nvme-pcie-gen-4-mz-v9p2t0bw/",
-      "unknownFields": []
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 289,
+          "url": "https://www.amazon.com.au/s?k=Samsung%20990%20Pro%202TB"
+        },
+        {
+          "store": "Mwave",
+          "price": 299,
+          "url": "https://www.mwave.com.au/searchresult?w=Samsung%20990%20Pro%202TB"
+        },
+        {
+          "store": "Scorptec",
+          "price": 306,
+          "url": "https://www.scorptec.com.au/search/go?w=Samsung%20990%20Pro%202TB"
+        }
+      ]
     },
     {
       "brand": "Samsung",
       "name": "Samsung 980 Pro 1TB",
       "slug": "samsung-980-pro-1tb",
-      "imageUrl": null,
-      "csv": { "type": "SSD", "model": "980 Pro NVMe PCIe M.2 1TB" },
+      "imageUrl": "/images/storage/m2.svg",
+      "csv": {
+        "type": "SSD",
+        "model": "980 Pro NVMe PCIe M.2 1TB"
+      },
       "fallbackUbRaw": 345,
       "specs": {
         "subtype": "ssd",
@@ -87,14 +152,34 @@
         "nandType": "Samsung V-NAND TLC"
       },
       "specSourceUrl": "https://www.samsung.com/au/memory-storage/nvme-ssd/980-pro-1tb-nvme-pcie-gen-4-mz-v8p1t0bw/",
-      "unknownFields": []
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 154,
+          "url": "https://www.amazon.com.au/s?k=Samsung%20980%20Pro%201TB"
+        },
+        {
+          "store": "Mwave",
+          "price": 158,
+          "url": "https://www.mwave.com.au/searchresult?w=Samsung%20980%20Pro%201TB"
+        },
+        {
+          "store": "Scorptec",
+          "price": 149,
+          "url": "https://www.scorptec.com.au/search/go?w=Samsung%20980%20Pro%201TB"
+        }
+      ]
     },
     {
       "brand": "Samsung",
       "name": "Samsung 870 EVO 1TB",
       "slug": "samsung-870-evo-1tb",
-      "imageUrl": null,
-      "csv": { "type": "SSD", "model": "870 EVO 1TB" },
+      "imageUrl": "/images/storage/ssd25.svg",
+      "csv": {
+        "type": "SSD",
+        "model": "870 EVO 1TB"
+      },
       "fallbackUbRaw": 110,
       "specs": {
         "subtype": "ssd",
@@ -109,14 +194,34 @@
         "nandType": "Samsung V-NAND TLC"
       },
       "specSourceUrl": "https://www.samsung.com/au/memory-storage/sata-ssd/870-evo-1tb-sata-3-2-5-inch-mz-77e1t0bw/",
-      "unknownFields": []
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 137,
+          "url": "https://www.amazon.com.au/s?k=Samsung%20870%20EVO%201TB"
+        },
+        {
+          "store": "Mwave",
+          "price": 129,
+          "url": "https://www.mwave.com.au/searchresult?w=Samsung%20870%20EVO%201TB"
+        },
+        {
+          "store": "Scorptec",
+          "price": 134,
+          "url": "https://www.scorptec.com.au/search/go?w=Samsung%20870%20EVO%201TB"
+        }
+      ]
     },
     {
       "brand": "Crucial",
       "name": "Crucial MX500 1TB",
       "slug": "crucial-mx500-1tb",
-      "imageUrl": null,
-      "csv": { "type": "SSD", "model": "MX500 1TB" },
+      "imageUrl": "/images/storage/ssd25.svg",
+      "csv": {
+        "type": "SSD",
+        "model": "MX500 1TB"
+      },
       "fallbackUbRaw": 102,
       "specs": {
         "subtype": "ssd",
@@ -131,14 +236,34 @@
         "nandType": "Micron 3D TLC"
       },
       "specSourceUrl": "https://www.crucial.com/ssd/mx500/ct1000mx500ssd1",
-      "unknownFields": []
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 109,
+          "url": "https://www.amazon.com.au/s?k=Crucial%20MX500%201TB"
+        },
+        {
+          "store": "Mwave",
+          "price": 113,
+          "url": "https://www.mwave.com.au/searchresult?w=Crucial%20MX500%201TB"
+        },
+        {
+          "store": "Scorptec",
+          "price": 116,
+          "url": "https://www.scorptec.com.au/search/go?w=Crucial%20MX500%201TB"
+        }
+      ]
     },
     {
       "brand": "Seagate",
       "name": "Seagate IronWolf 8TB",
       "slug": "seagate-ironwolf-8tb",
-      "imageUrl": null,
-      "csv": { "type": "HDD", "model": "IronWolf 8TB (2016)" },
+      "imageUrl": "/images/storage/hdd.svg",
+      "csv": {
+        "type": "HDD",
+        "model": "IronWolf 8TB (2016)"
+      },
       "fallbackUbRaw": 64.9,
       "specs": {
         "subtype": "hdd",
@@ -151,14 +276,34 @@
         "cacheMB": 256
       },
       "specSourceUrl": "https://www.seagate.com/au/en/products/nas-drives/ironwolf-hard-drive/",
-      "unknownFields": []
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 372,
+          "url": "https://www.amazon.com.au/s?k=Seagate%20IronWolf%208TB"
+        },
+        {
+          "store": "Mwave",
+          "price": 381,
+          "url": "https://www.mwave.com.au/searchresult?w=Seagate%20IronWolf%208TB"
+        },
+        {
+          "store": "Scorptec",
+          "price": 359,
+          "url": "https://www.scorptec.com.au/search/go?w=Seagate%20IronWolf%208TB"
+        }
+      ]
     },
     {
       "brand": "Seagate",
       "name": "Seagate IronWolf 4TB",
       "slug": "seagate-ironwolf-4tb",
-      "imageUrl": null,
-      "csv": { "type": "HDD", "model": "IronWolf 4TB (2016)" },
+      "imageUrl": "/images/storage/hdd.svg",
+      "csv": {
+        "type": "HDD",
+        "model": "IronWolf 4TB (2016)"
+      },
       "fallbackUbRaw": 89.6,
       "specs": {
         "subtype": "hdd",
@@ -171,14 +316,34 @@
         "cacheMB": 64
       },
       "specSourceUrl": "https://www.seagate.com/au/en/products/nas-drives/ironwolf-hard-drive/",
-      "unknownFields": []
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 211,
+          "url": "https://www.amazon.com.au/s?k=Seagate%20IronWolf%204TB"
+        },
+        {
+          "store": "Mwave",
+          "price": 199,
+          "url": "https://www.mwave.com.au/searchresult?w=Seagate%20IronWolf%204TB"
+        },
+        {
+          "store": "Scorptec",
+          "price": 206,
+          "url": "https://www.scorptec.com.au/search/go?w=Seagate%20IronWolf%204TB"
+        }
+      ]
     },
     {
       "brand": "Seagate",
       "name": "Seagate Barracuda 2TB",
       "slug": "seagate-barracuda-2tb",
-      "imageUrl": null,
-      "csv": { "type": "HDD", "model": "Barracuda 2TB (2018)" },
+      "imageUrl": "/images/storage/hdd.svg",
+      "csv": {
+        "type": "HDD",
+        "model": "Barracuda 2TB (2018)"
+      },
       "fallbackUbRaw": 86.9,
       "specs": {
         "subtype": "hdd",
@@ -191,14 +356,34 @@
         "cacheMB": 256
       },
       "specSourceUrl": "https://www.seagate.com/au/en/products/internal-hard-drives/barracuda-hard-drive/",
-      "unknownFields": []
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 105,
+          "url": "https://www.amazon.com.au/s?k=Seagate%20Barracuda%202TB"
+        },
+        {
+          "store": "Mwave",
+          "price": 109,
+          "url": "https://www.mwave.com.au/searchresult?w=Seagate%20Barracuda%202TB"
+        },
+        {
+          "store": "Scorptec",
+          "price": 111,
+          "url": "https://www.scorptec.com.au/search/go?w=Seagate%20Barracuda%202TB"
+        }
+      ]
     },
     {
       "brand": "Seagate",
       "name": "Seagate Barracuda 4TB",
       "slug": "seagate-barracuda-4tb",
-      "imageUrl": null,
-      "csv": { "type": "HDD", "model": "Barracuda 4TB (2016)" },
+      "imageUrl": "/images/storage/hdd.svg",
+      "csv": {
+        "type": "HDD",
+        "model": "Barracuda 4TB (2016)"
+      },
       "fallbackUbRaw": 82.4,
       "specs": {
         "subtype": "hdd",
@@ -211,7 +396,24 @@
         "cacheMB": 256
       },
       "specSourceUrl": "https://www.seagate.com/au/en/products/internal-hard-drives/barracuda-hard-drive/",
-      "unknownFields": []
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 175,
+          "url": "https://www.amazon.com.au/s?k=Seagate%20Barracuda%204TB"
+        },
+        {
+          "store": "Mwave",
+          "price": 179,
+          "url": "https://www.mwave.com.au/searchresult?w=Seagate%20Barracuda%204TB"
+        },
+        {
+          "store": "Scorptec",
+          "price": 169,
+          "url": "https://www.scorptec.com.au/search/go?w=Seagate%20Barracuda%204TB"
+        }
+      ]
     }
   ]
 }

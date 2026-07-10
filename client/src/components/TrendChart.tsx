@@ -7,6 +7,9 @@ import type { TimeBucket } from '@automatorr/shared';
  */
 export function TrendChart({ data }: { data: TimeBucket[] }) {
   const max = Math.max(1, ...data.map((d) => d.count));
+  // Dense windows (month) crowd the x-axis, so drop the month and show just the
+  // day number; sparser day/week windows keep the full MM-DD label.
+  const dense = data.length > 14;
 
   return (
     <figure style={{ margin: 0 }}>
@@ -18,11 +21,13 @@ export function TrendChart({ data }: { data: TimeBucket[] }) {
           <div className="chart" role="img" aria-label="Search volume bar chart">
             {data.map((d) => (
               <div className="col" key={d.date} title={`${d.date}: ${d.count} searches`}>
-                <div
-                  className="bar-fill"
-                  style={{ height: `${Math.round((d.count / max) * 100)}%` }}
-                />
-                <span className="bar-x">{d.date.slice(5)}</span>
+                <div className="bar-track">
+                  <div
+                    className="bar-fill"
+                    style={{ height: `${Math.round((d.count / max) * 100)}%` }}
+                  />
+                </div>
+                <span className="bar-x">{dense ? d.date.slice(8) : d.date.slice(5)}</span>
               </div>
             ))}
           </div>

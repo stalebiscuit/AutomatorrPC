@@ -1,5 +1,5 @@
 import type { Request, Response, NextFunction } from 'express';
-import type { ZodTypeAny, z } from 'zod';
+import type { ZodTypeAny } from 'zod';
 
 interface Schemas {
   query?: ZodTypeAny;
@@ -39,5 +39,3 @@ export function getValidated<Q = unknown, B = unknown, P = unknown>(
 ): Validated<Q, B, P> {
   return res.locals.validated as Validated<Q, B, P>;
 }
-
-export type Infer<T extends ZodTypeAny> = z.infer<T>;

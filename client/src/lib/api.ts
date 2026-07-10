@@ -75,8 +75,6 @@ export const api = {
 
   adminLogout: () => request('/admin/logout', { method: 'POST' }),
 
-  adminMe: () => request<{ authenticated: boolean }>('/admin/me'),
-
   analytics: (window: AnalyticsWindow) =>
     request<AnalyticsResponse>(`/admin/analytics${qs({ window })}`),
 };

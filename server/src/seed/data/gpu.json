@@ -5,8 +5,11 @@
       "brand": "NVIDIA",
       "name": "NVIDIA GeForce RTX 5090",
       "slug": "nvidia-geforce-rtx-5090",
-      "imageUrl": null,
-      "csv": { "type": "GPU", "model": "RTX 5090" },
+      "imageUrl": "/images/brand/nvidia.svg",
+      "csv": {
+        "type": "GPU",
+        "model": "RTX 5090"
+      },
       "fallbackUbRaw": 183,
       "specs": {
         "vram": 32,
@@ -18,14 +21,34 @@
         "length": 304
       },
       "specSourceUrl": "https://www.nvidia.com/en-au/geforce/graphics-cards/50-series/rtx-5090/",
-      "unknownFields": []
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 4299,
+          "url": "https://www.amazon.com.au/s?k=NVIDIA%20GeForce%20RTX%205090"
+        },
+        {
+          "store": "Mwave",
+          "price": 4449,
+          "url": "https://www.mwave.com.au/searchresult?w=NVIDIA%20GeForce%20RTX%205090"
+        },
+        {
+          "store": "Scorptec",
+          "price": 4557,
+          "url": "https://www.scorptec.com.au/search/go?w=NVIDIA%20GeForce%20RTX%205090"
+        }
+      ]
     },
     {
       "brand": "NVIDIA",
       "name": "NVIDIA GeForce RTX 4090",
       "slug": "nvidia-geforce-rtx-4090",
-      "imageUrl": null,
-      "csv": { "type": "GPU", "model": "RTX 4090" },
+      "imageUrl": "/images/brand/nvidia.svg",
+      "csv": {
+        "type": "GPU",
+        "model": "RTX 4090"
+      },
       "fallbackUbRaw": 155,
       "specs": {
         "vram": 24,
@@ -37,14 +60,34 @@
         "length": 304
       },
       "specSourceUrl": "https://www.nvidia.com/en-au/geforce/graphics-cards/40-series/rtx-4090/",
-      "unknownFields": []
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 3311,
+          "url": "https://www.amazon.com.au/s?k=NVIDIA%20GeForce%20RTX%204090"
+        },
+        {
+          "store": "Mwave",
+          "price": 3391,
+          "url": "https://www.mwave.com.au/searchresult?w=NVIDIA%20GeForce%20RTX%204090"
+        },
+        {
+          "store": "Scorptec",
+          "price": 3199,
+          "url": "https://www.scorptec.com.au/search/go?w=NVIDIA%20GeForce%20RTX%204090"
+        }
+      ]
     },
     {
       "brand": "NVIDIA",
       "name": "NVIDIA GeForce RTX 4080 SUPER",
       "slug": "nvidia-geforce-rtx-4080-super",
-      "imageUrl": null,
-      "csv": { "type": "GPU", "model": "RTX 4080-S (Super)" },
+      "imageUrl": "/images/brand/nvidia.svg",
+      "csv": {
+        "type": "GPU",
+        "model": "RTX 4080-S (Super)"
+      },
       "fallbackUbRaw": 126,
       "specs": {
         "vram": 16,
@@ -56,14 +99,34 @@
         "length": 310
       },
       "specSourceUrl": "https://www.nvidia.com/en-au/geforce/graphics-cards/40-series/rtx-4080-family/",
-      "unknownFields": []
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 1907,
+          "url": "https://www.amazon.com.au/s?k=NVIDIA%20GeForce%20RTX%204080%20SUPER"
+        },
+        {
+          "store": "Mwave",
+          "price": 1799,
+          "url": "https://www.mwave.com.au/searchresult?w=NVIDIA%20GeForce%20RTX%204080%20SUPER"
+        },
+        {
+          "store": "Scorptec",
+          "price": 1862,
+          "url": "https://www.scorptec.com.au/search/go?w=NVIDIA%20GeForce%20RTX%204080%20SUPER"
+        }
+      ]
     },
     {
       "brand": "AMD",
       "name": "AMD Radeon RX 7900 XTX",
       "slug": "amd-radeon-rx-7900-xtx",
-      "imageUrl": null,
-      "csv": { "type": "GPU", "model": "RX 7900-XTX" },
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "GPU",
+        "model": "RX 7900-XTX"
+      },
       "fallbackUbRaw": 108,
       "specs": {
         "vram": 24,
@@ -75,14 +138,34 @@
         "length": 287
       },
       "specSourceUrl": "https://www.amd.com/en/products/graphics/amd-radeon-rx-7900-xtx.html",
-      "unknownFields": []
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 1549,
+          "url": "https://www.amazon.com.au/s?k=AMD%20Radeon%20RX%207900%20XTX"
+        },
+        {
+          "store": "Mwave",
+          "price": 1603,
+          "url": "https://www.mwave.com.au/searchresult?w=AMD%20Radeon%20RX%207900%20XTX"
+        },
+        {
+          "store": "Scorptec",
+          "price": 1642,
+          "url": "https://www.scorptec.com.au/search/go?w=AMD%20Radeon%20RX%207900%20XTX"
+        }
+      ]
     },
     {
       "brand": "NVIDIA",
       "name": "NVIDIA GeForce RTX 4070",
       "slug": "nvidia-geforce-rtx-4070",
-      "imageUrl": null,
-      "csv": { "type": "GPU", "model": "RTX 4070" },
+      "imageUrl": "/images/brand/nvidia.svg",
+      "csv": {
+        "type": "GPU",
+        "model": "RTX 4070"
+      },
       "fallbackUbRaw": 80,
       "specs": {
         "vram": 12,
@@ -94,14 +177,34 @@
         "length": 244
       },
       "specSourceUrl": "https://www.nvidia.com/en-au/geforce/graphics-cards/40-series/rtx-4070-family/",
-      "unknownFields": []
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 930,
+          "url": "https://www.amazon.com.au/s?k=NVIDIA%20GeForce%20RTX%204070"
+        },
+        {
+          "store": "Mwave",
+          "price": 953,
+          "url": "https://www.mwave.com.au/searchresult?w=NVIDIA%20GeForce%20RTX%204070"
+        },
+        {
+          "store": "Scorptec",
+          "price": 899,
+          "url": "https://www.scorptec.com.au/search/go?w=NVIDIA%20GeForce%20RTX%204070"
+        }
+      ]
     },
     {
       "brand": "AMD",
       "name": "AMD Radeon RX 7800 XT",
       "slug": "amd-radeon-rx-7800-xt",
-      "imageUrl": null,
-      "csv": { "type": "GPU", "model": "RX 7800-XT" },
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "GPU",
+        "model": "RX 7800-XT"
+      },
       "fallbackUbRaw": 75.6,
       "specs": {
         "vram": 16,
@@ -113,14 +216,34 @@
         "length": 267
       },
       "specSourceUrl": "https://www.amd.com/en/products/graphics/amd-radeon-rx-7800-xt.html",
-      "unknownFields": []
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 921,
+          "url": "https://www.amazon.com.au/s?k=AMD%20Radeon%20RX%207800%20XT"
+        },
+        {
+          "store": "Mwave",
+          "price": 869,
+          "url": "https://www.mwave.com.au/searchresult?w=AMD%20Radeon%20RX%207800%20XT"
+        },
+        {
+          "store": "Scorptec",
+          "price": 899,
+          "url": "https://www.scorptec.com.au/search/go?w=AMD%20Radeon%20RX%207800%20XT"
+        }
+      ]
     },
     {
       "brand": "NVIDIA",
       "name": "NVIDIA GeForce RTX 4060",
       "slug": "nvidia-geforce-rtx-4060",
-      "imageUrl": null,
-      "csv": { "type": "GPU", "model": "RTX 4060" },
+      "imageUrl": "/images/brand/nvidia.svg",
+      "csv": {
+        "type": "GPU",
+        "model": "RTX 4060"
+      },
       "fallbackUbRaw": 50.9,
       "specs": {
         "vram": 8,
@@ -132,14 +255,34 @@
         "length": 200
       },
       "specSourceUrl": "https://www.nvidia.com/en-au/geforce/graphics-cards/40-series/rtx-4060-4060ti/",
-      "unknownFields": []
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 449,
+          "url": "https://www.amazon.com.au/s?k=NVIDIA%20GeForce%20RTX%204060"
+        },
+        {
+          "store": "Mwave",
+          "price": 465,
+          "url": "https://www.mwave.com.au/searchresult?w=NVIDIA%20GeForce%20RTX%204060"
+        },
+        {
+          "store": "Scorptec",
+          "price": 476,
+          "url": "https://www.scorptec.com.au/search/go?w=NVIDIA%20GeForce%20RTX%204060"
+        }
+      ]
     },
     {
       "brand": "AMD",
       "name": "AMD Radeon RX 7600",
       "slug": "amd-radeon-rx-7600",
-      "imageUrl": null,
-      "csv": { "type": "GPU", "model": "RX 7600" },
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "GPU",
+        "model": "RX 7600"
+      },
       "fallbackUbRaw": 46.2,
       "specs": {
         "vram": 8,
@@ -151,7 +294,24 @@
         "length": 204
       },
       "specSourceUrl": "https://www.amd.com/en/products/graphics/amd-radeon-rx-7600.html",
-      "unknownFields": []
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 413,
+          "url": "https://www.amazon.com.au/s?k=AMD%20Radeon%20RX%207600"
+        },
+        {
+          "store": "Mwave",
+          "price": 423,
+          "url": "https://www.mwave.com.au/searchresult?w=AMD%20Radeon%20RX%207600"
+        },
+        {
+          "store": "Scorptec",
+          "price": 399,
+          "url": "https://www.scorptec.com.au/search/go?w=AMD%20Radeon%20RX%207600"
+        }
+      ]
     }
   ]
 }

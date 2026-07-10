@@ -17,7 +17,7 @@ const EnvSchema = z.object({
   ADMIN_PASSWORD_HASH: z.string().min(1),
 
   PRICE_PROVIDER: z.enum(['scraper']).default('scraper'),
-  VERDICT_PROVIDER: z.enum(['placeholder', 'claude']).default('placeholder'),
+  VERDICT_PROVIDER: z.enum(['placeholder', 'seeded', 'claude']).default('seeded'),
 
   SCRAPE_CRON: z.string().default('15 3 * * *'),
   SCRAPE_USER_AGENT: z
@@ -51,9 +51,3 @@ export function loadConfig(): AppConfig {
 export function setConfigForTests(overrides: Partial<AppConfig>): void {
   cached = { ...loadConfig(), ...overrides };
 }
-
-export const config: AppConfig = new Proxy({} as AppConfig, {
-  get(_t, prop: string) {
-    return loadConfig()[prop as keyof AppConfig];
-  },
-});

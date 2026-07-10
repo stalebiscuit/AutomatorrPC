@@ -9,6 +9,22 @@ import type {
 import { ClickEventModel, ComponentModel, SearchEventModel, TrendRollupModel } from '../models/index.js';
 import { logger } from '../lib/logger.js';
 
+/**
+ * Compact display name for dashboard lists — strips RAM spec clutter (RGB,
+ * DDR4/5 speed, CL latency, and the (2×16GB) kit config) so long memory names
+ * sit on one line. CPU/GPU/storage names contain none of these tokens and pass
+ * through unchanged.
+ */
+function shortComponentName(name: string): string {
+  return name
+    .replace(/\s*\([^)]*\)/g, '')
+    .replace(/\s*DDR[45]-\d+/gi, '')
+    .replace(/\s*\bCL\d+\b/gi, '')
+    .replace(/\s*\bRGB\b/gi, '')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+}
+
 // ─── Capture (append-only, no PII) ───────────────────────────────────
 export interface RecordSearchInput {
   type?: 'search' | 'view';
@@ -29,10 +45,6 @@ export async function recordSearch(input: RecordSearchInput): Promise<void> {
     sessionId: input.sessionId,
     ts: new Date(),
   });
-}
-
-export async function recordView(input: Omit<RecordSearchInput, 'type'>): Promise<void> {
-  await recordSearch({ ...input, type: 'view' });
 }
 
 export interface RecordClickInput {
@@ -129,7 +141,7 @@ export async function getAnalytics(window: AnalyticsWindow): Promise<AnalyticsRe
   const nameById = await resolveComponentNames(compAgg.map((r) => r._id));
   const topComponents: CountKey[] = compAgg.map((r) => ({
     key: r._id,
-    label: nameById.get(r._id) ?? r._id,
+    label: shortComponentName(nameById.get(r._id) ?? r._id),
     count: r.count,
   }));
 
@@ -142,7 +154,7 @@ export async function getAnalytics(window: AnalyticsWindow): Promise<AnalyticsRe
   const topComparisons: CountKey[] = pairAgg.map((r) => {
     const parts = pairKeyParts(r._id);
     const label = parts
-      ? `${slugNames.get(parts[0]) ?? parts[0]} vs ${slugNames.get(parts[1]) ?? parts[1]}`
+      ? `${shortComponentName(slugNames.get(parts[0]) ?? parts[0])} vs ${shortComponentName(slugNames.get(parts[1]) ?? parts[1])}`
       : r._id;
     return { key: r._id, label, count: r.count };
   });

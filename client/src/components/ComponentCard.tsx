@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import type { Component, CompareRow } from '@automatorr/shared';
 import { CategoryRender } from './CategoryRender.js';
 import { PriceList } from './PriceList.js';
@@ -12,6 +13,39 @@ interface Props {
 
 // Shown via the score block / PriceList rather than as plain spec rows.
 const HIDDEN_ROWS = new Set(['performanceIndex', 'price']);
+
+/**
+ * Product image with graceful fallback: real asset -> local SVG placeholder
+ * (same basename, .svg) -> per-category Automatorr render. Guarantees the thumb
+ * never shows a broken image if an asset is missing.
+ */
+function Thumb({
+  imageUrl,
+  category,
+  name,
+  win,
+}: {
+  imageUrl: string | null | undefined;
+  category: Component['category'];
+  name: string;
+  win: boolean;
+}) {
+  const [src, setSrc] = useState<string | null>(imageUrl ?? null);
+  const [broken, setBroken] = useState(false);
+  if (!src || broken) return <CategoryRender category={category} win={win} />;
+  return (
+    <img
+      src={src}
+      alt={name}
+      loading="lazy"
+      onError={() => {
+        const fallback = src.replace(/\.(png|jpe?g|webp)$/i, '.svg');
+        if (fallback !== src) setSrc(fallback);
+        else setBroken(true);
+      }}
+    />
+  );
+}
 
 export function ComponentCard({ component, rows, side, win }: Props) {
   const specRows = rows.filter((r) => !HIDDEN_ROWS.has(r.key));
@@ -37,11 +71,13 @@ export function ComponentCard({ component, rows, side, win }: Props) {
       )}
 
       <div className="thumb">
-        {component.imageUrl ? (
-          <img src={component.imageUrl} alt={component.name} loading="lazy" />
-        ) : (
-          <CategoryRender category={component.category} win={win} />
-        )}
+        <Thumb
+          key={component.imageUrl ?? component.id}
+          imageUrl={component.imageUrl}
+          category={component.category}
+          name={component.name}
+          win={win}
+        />
       </div>
 
       <div className="eyebrow-b">{component.brand}</div>

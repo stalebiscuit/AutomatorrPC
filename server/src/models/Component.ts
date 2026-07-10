@@ -33,7 +33,7 @@ const ProvenanceSchema = new Schema(
 
 const ComponentSchema = new Schema(
   {
-    category: { type: String, enum: [...CATEGORIES], required: true, index: true },
+    category: { type: String, enum: [...CATEGORIES], required: true },
     brand: { type: String, required: true },
     name: { type: String, required: true },
     slug: { type: String, required: true },

@@ -5,28 +5,51 @@
       "brand": "Intel",
       "name": "Intel Core i9-14900K",
       "slug": "intel-core-i9-14900k",
-      "imageUrl": null,
-      "csv": { "type": "CPU", "model": "Core i9-14900K" },
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i9-14900K"
+      },
       "fallbackUbRaw": 131,
       "specs": {
         "cores": 24,
         "threads": 32,
         "baseClock": 3.2,
-        "boostClock": 6.0,
+        "boostClock": 6,
         "l3Cache": 36,
         "tdp": 125,
         "socket": "LGA 1700",
         "igpu": "Intel UHD 770"
       },
       "specSourceUrl": "https://www.intel.com/content/www/us/en/products/sku/236773/intel-core-i9-processor-14900k-36m-cache-up-to-6-00-ghz/specifications.html",
-      "unknownFields": []
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 899,
+          "url": "https://www.amazon.com.au/s?k=Intel%20Core%20i9-14900K"
+        },
+        {
+          "store": "Mwave",
+          "price": 930,
+          "url": "https://www.mwave.com.au/searchresult?w=Intel%20Core%20i9-14900K"
+        },
+        {
+          "store": "Scorptec",
+          "price": 953,
+          "url": "https://www.scorptec.com.au/search/go?w=Intel%20Core%20i9-14900K"
+        }
+      ]
     },
     {
       "brand": "Intel",
       "name": "Intel Core i7-14700K",
       "slug": "intel-core-i7-14700k",
-      "imageUrl": null,
-      "csv": { "type": "CPU", "model": "Core i7-14700K" },
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i7-14700K"
+      },
       "fallbackUbRaw": 130,
       "specs": {
         "cores": 20,
@@ -39,14 +62,34 @@
         "igpu": "Intel UHD 770"
       },
       "specSourceUrl": "https://www.intel.com/content/www/us/en/products/sku/236783/intel-core-i7-processor-14700k-33m-cache-up-to-5-60-ghz/specifications.html",
-      "unknownFields": []
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 672,
+          "url": "https://www.amazon.com.au/s?k=Intel%20Core%20i7-14700K"
+        },
+        {
+          "store": "Mwave",
+          "price": 688,
+          "url": "https://www.mwave.com.au/searchresult?w=Intel%20Core%20i7-14700K"
+        },
+        {
+          "store": "Scorptec",
+          "price": 649,
+          "url": "https://www.scorptec.com.au/search/go?w=Intel%20Core%20i7-14700K"
+        }
+      ]
     },
     {
       "brand": "Intel",
       "name": "Intel Core i5-14600K",
       "slug": "intel-core-i5-14600k",
-      "imageUrl": null,
-      "csv": { "type": "CPU", "model": "Core i5-14600K" },
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i5-14600K"
+      },
       "fallbackUbRaw": 124,
       "specs": {
         "cores": 14,
@@ -59,14 +102,34 @@
         "igpu": "Intel UHD 770"
       },
       "specSourceUrl": "https://www.intel.com/content/www/us/en/products/sku/236787/intel-core-i5-processor-14600k-24m-cache-up-to-5-30-ghz/specifications.html",
-      "unknownFields": []
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 465,
+          "url": "https://www.amazon.com.au/s?k=Intel%20Core%20i5-14600K"
+        },
+        {
+          "store": "Mwave",
+          "price": 439,
+          "url": "https://www.mwave.com.au/searchresult?w=Intel%20Core%20i5-14600K"
+        },
+        {
+          "store": "Scorptec",
+          "price": 454,
+          "url": "https://www.scorptec.com.au/search/go?w=Intel%20Core%20i5-14600K"
+        }
+      ]
     },
     {
       "brand": "Intel",
       "name": "Intel Core i5-13600K",
       "slug": "intel-core-i5-13600k",
-      "imageUrl": null,
-      "csv": { "type": "CPU", "model": "Core i5-13600K" },
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i5-13600K"
+      },
       "fallbackUbRaw": 122,
       "specs": {
         "cores": 14,
@@ -79,34 +142,74 @@
         "igpu": "Intel UHD 770"
       },
       "specSourceUrl": "https://www.intel.com/content/www/us/en/products/sku/230493/intel-core-i513600k-processor-24m-cache-up-to-5-10-ghz/specifications.html",
-      "unknownFields": []
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 379,
+          "url": "https://www.amazon.com.au/s?k=Intel%20Core%20i5-13600K"
+        },
+        {
+          "store": "Mwave",
+          "price": 392,
+          "url": "https://www.mwave.com.au/searchresult?w=Intel%20Core%20i5-13600K"
+        },
+        {
+          "store": "Scorptec",
+          "price": 402,
+          "url": "https://www.scorptec.com.au/search/go?w=Intel%20Core%20i5-13600K"
+        }
+      ]
     },
     {
       "brand": "AMD",
       "name": "AMD Ryzen 7 7800X3D",
       "slug": "amd-ryzen-7-7800x3d",
-      "imageUrl": null,
-      "csv": { "type": "CPU", "model": "Ryzen 7 7800X3D" },
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 7 7800X3D"
+      },
       "fallbackUbRaw": 121,
       "specs": {
         "cores": 8,
         "threads": 16,
         "baseClock": 4.2,
-        "boostClock": 5.0,
+        "boostClock": 5,
         "l3Cache": 96,
         "tdp": 120,
         "socket": "AM5",
         "igpu": "AMD Radeon Graphics"
       },
       "specSourceUrl": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7800x3d.html",
-      "unknownFields": []
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 579,
+          "url": "https://www.amazon.com.au/s?k=AMD%20Ryzen%207%207800X3D"
+        },
+        {
+          "store": "Mwave",
+          "price": 593,
+          "url": "https://www.mwave.com.au/searchresult?w=AMD%20Ryzen%207%207800X3D"
+        },
+        {
+          "store": "Scorptec",
+          "price": 559,
+          "url": "https://www.scorptec.com.au/search/go?w=AMD%20Ryzen%207%207800X3D"
+        }
+      ]
     },
     {
       "brand": "AMD",
       "name": "AMD Ryzen 9 7950X3D",
       "slug": "amd-ryzen-9-7950x3d",
-      "imageUrl": null,
-      "csv": { "type": "CPU", "model": "Ryzen 9 7950X3D" },
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 9 7950X3D"
+      },
       "fallbackUbRaw": 116,
       "specs": {
         "cores": 16,
@@ -119,14 +222,34 @@
         "igpu": "AMD Radeon Graphics"
       },
       "specSourceUrl": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-9-7950x3d.html",
-      "unknownFields": []
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 1017,
+          "url": "https://www.amazon.com.au/s?k=AMD%20Ryzen%209%207950X3D"
+        },
+        {
+          "store": "Mwave",
+          "price": 959,
+          "url": "https://www.mwave.com.au/searchresult?w=AMD%20Ryzen%209%207950X3D"
+        },
+        {
+          "store": "Scorptec",
+          "price": 993,
+          "url": "https://www.scorptec.com.au/search/go?w=AMD%20Ryzen%209%207950X3D"
+        }
+      ]
     },
     {
       "brand": "AMD",
       "name": "AMD Ryzen 9 7950X",
       "slug": "amd-ryzen-9-7950x",
-      "imageUrl": null,
-      "csv": { "type": "CPU", "model": "Ryzen 9 7950X" },
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 9 7950X"
+      },
       "fallbackUbRaw": 114,
       "specs": {
         "cores": 16,
@@ -139,14 +262,34 @@
         "igpu": "AMD Radeon Graphics"
       },
       "specSourceUrl": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-9-7950x.html",
-      "unknownFields": []
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 799,
+          "url": "https://www.amazon.com.au/s?k=AMD%20Ryzen%209%207950X"
+        },
+        {
+          "store": "Mwave",
+          "price": 827,
+          "url": "https://www.mwave.com.au/searchresult?w=AMD%20Ryzen%209%207950X"
+        },
+        {
+          "store": "Scorptec",
+          "price": 847,
+          "url": "https://www.scorptec.com.au/search/go?w=AMD%20Ryzen%209%207950X"
+        }
+      ]
     },
     {
       "brand": "AMD",
       "name": "AMD Ryzen 7 7700X",
       "slug": "amd-ryzen-7-7700x",
-      "imageUrl": null,
-      "csv": { "type": "CPU", "model": "Ryzen 7 7700X" },
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 7 7700X"
+      },
       "fallbackUbRaw": 112,
       "specs": {
         "cores": 8,
@@ -159,14 +302,34 @@
         "igpu": "AMD Radeon Graphics"
       },
       "specSourceUrl": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7700x.html",
-      "unknownFields": []
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 485,
+          "url": "https://www.amazon.com.au/s?k=AMD%20Ryzen%207%207700X"
+        },
+        {
+          "store": "Mwave",
+          "price": 497,
+          "url": "https://www.mwave.com.au/searchresult?w=AMD%20Ryzen%207%207700X"
+        },
+        {
+          "store": "Scorptec",
+          "price": 469,
+          "url": "https://www.scorptec.com.au/search/go?w=AMD%20Ryzen%207%207700X"
+        }
+      ]
     },
     {
       "brand": "AMD",
       "name": "AMD Ryzen 5 7600X",
       "slug": "amd-ryzen-5-7600x",
-      "imageUrl": null,
-      "csv": { "type": "CPU", "model": "Ryzen 5 7600X" },
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 5 7600X"
+      },
       "fallbackUbRaw": 111,
       "specs": {
         "cores": 6,
@@ -179,7 +342,24 @@
         "igpu": "AMD Radeon Graphics"
       },
       "specSourceUrl": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-5-7600x.html",
-      "unknownFields": []
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 359,
+          "url": "https://www.amazon.com.au/s?k=AMD%20Ryzen%205%207600X"
+        },
+        {
+          "store": "Mwave",
+          "price": 339,
+          "url": "https://www.mwave.com.au/searchresult?w=AMD%20Ryzen%205%207600X"
+        },
+        {
+          "store": "Scorptec",
+          "price": 351,
+          "url": "https://www.scorptec.com.au/search/go?w=AMD%20Ryzen%205%207600X"
+        }
+      ]
     }
   ]
 }

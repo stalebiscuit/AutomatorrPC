@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" role="img" aria-label="Hard disk drive">
+  <rect width="400" height="100" rx="10" fill="#f3f4f6"/>
+  <g transform="translate(100,13)">
+    <rect x="0" y="0" width="200" height="74" rx="6" fill="#c7cacc" stroke="#9297a0"/>
+    <rect x="11" y="10" width="178" height="54" rx="4" fill="#ffffff" stroke="#d5d8db"/>
+    <text x="22" y="30" font-family="Arial, sans-serif" font-size="12.5" font-weight="800" fill="#1f2a33">HARD DISK DRIVE</text>
+    <line x1="22" y1="38" x2="150" y2="38" stroke="#c7ced6"/>
+    <text x="22" y="52" font-family="Arial, sans-serif" font-size="8" fill="#5a6570">7200 RPM &#183; SATA III &#183; 3.5"</text>
+    <text x="176" y="58" text-anchor="end" font-family="Arial, sans-serif" font-size="26" font-weight="800" fill="#1b3a6b">HDD</text>
+    <g fill="#8a9096"><circle cx="8" cy="8" r="3"/><circle cx="192" cy="8" r="3"/><circle cx="8" cy="66" r="3"/><circle cx="192" cy="66" r="3"/></g>
+  </g>
+</svg>

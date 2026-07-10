@@ -121,8 +121,8 @@ npm run dev                          # server (:4000) + client (:5173)
 ## Pricing (provider seam + scraper)
 
 - `PriceProvider` is the stable contract; `PRICE_PROVIDER` selects the implementation.
-- `ScraperPriceProvider` (v1) runs a hardcoded AU retailer registry (Scorptec, PLE,
-  PCCaseGear implemented; Amazon AU + Centre Com stubbed) with a concurrency cap,
+- `ScraperPriceProvider` (v1) runs a hardcoded AU retailer registry (Scorptec + Mwave
+  implemented; Amazon stubbed pending PA-API) with a concurrency cap,
   per‑domain delay, descriptive UA, timeouts + bounded retries, and **robots.txt respect**.
   Each adapter is isolated — one failing retailer never breaks the run; empty/failed scrapes
   keep the last‑known price (`lastUpdated` is shown in the UI).
@@ -160,7 +160,7 @@ The factory wiring is covered by `server/tests/seams.test.ts`.
 `GET /api/categories` · `GET /api/components?category=&q=` ·
 `GET /api/components/:category/:slug` · `GET /api/compare?category=&a=&b=` ·
 `GET /api/verdict?category=&a=&b=` · `POST /api/events/search` · `POST /api/events/click` ·
-`POST /api/admin/login` · `GET /api/admin/analytics?window=` · `GET /api/health`.
+`POST /api/admin/login` · `POST /api/admin/logout` · `GET /api/admin/me` · `GET /api/admin/analytics?window=` · `GET /api/health`.
 All inputs are zod‑validated; errors are `{ error, code }`.
 
 ---

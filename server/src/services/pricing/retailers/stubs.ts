@@ -7,7 +7,7 @@ import { type RetailerAdapter, searchQuery } from './types.js';
  * rather than HTML scraping (spec §14).
  */
 export const amazonAu: RetailerAdapter = {
-  store: 'Amazon AU',
+  store: 'Amazon',
   domain: 'www.amazon.com.au',
   buildSearchUrl(c: Component): string {
     return `https://www.amazon.com.au/s?k=${encodeURIComponent(searchQuery(c))}`;

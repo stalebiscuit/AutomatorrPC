@@ -29,12 +29,21 @@ export function VerdictPanel({ result, verdict, loadingVerdict }: Props) {
           </h3>
           {loadingVerdict ? (
             <ProseSkeleton />
+          ) : verdict?.prose ? (
+            <p className="vbody">{verdict.prose}</p>
           ) : (
-            <p className="vbody">{verdict?.prose}</p>
+            <p className="vbody vbody-muted">
+              The written verdict isn&apos;t available right now — the scorecard on the right still
+              shows the full head-to-head result.
+            </p>
           )}
-          {verdict && !verdict.generated && (
+          {verdict && !verdict.generated && verdict.prose && (
             <span className="ai-pill">AI verdict — coming soon</span>
           )}
+          <p className="verdict-note">
+            <span className="vn-key">Potential improvement</span>
+            Talk to an AI agent about which part is better for your specific task.
+          </p>
         </div>
 
         <aside className="scorecard" aria-label="Winner scorecard">

@@ -1,10 +1,13 @@
 import type { RetailerAdapter } from './types.js';
 import { scorptec } from './scorptec.js';
-import { ple } from './ple.js';
-import { pccasegear } from './pccasegear.js';
-import { amazonAu, centreCom } from './stubs.js';
+import { mwave } from './mwave.js';
+import { amazonAu } from './stubs.js';
 
-/** Hardcoded AU retailer registry (spec §12). */
-export const RETAILERS: RetailerAdapter[] = [scorptec, ple, pccasegear, amazonAu, centreCom];
+/**
+ * Hardcoded AU retailer registry (spec §12) — Sydney-standard stores.
+ * Scorptec + Mwave are implemented HTML adapters; Amazon is a stub pending the
+ * PA-API provider seam (spec §14 — Amazon disallows price scraping).
+ */
+export const RETAILERS: RetailerAdapter[] = [amazonAu, mwave, scorptec];
 
 export type { RetailerAdapter } from './types.js';

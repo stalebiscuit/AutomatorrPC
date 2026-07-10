@@ -32,6 +32,7 @@ function buildDoc(category: Category, c: SeedComponent, csvIndex: CsvIndex) {
   const ubRaw = row?.ubRaw ?? c.fallbackUbRaw;
   const ubSource = row?.url ?? `fallback:seed/data/${category}.json`;
   const performanceIndex = normaliseIndex(category, ubRaw);
+  const now = new Date();
 
   const subtype = typeof c.specs.subtype === 'string' ? c.specs.subtype : undefined;
 
@@ -46,8 +47,14 @@ function buildDoc(category: Category, c: SeedComponent, csvIndex: CsvIndex) {
       specs: c.specs,
       benchmark: { ubRaw, ubSource },
       performanceIndex,
-      // prices are filled by the scraper (Phase 4); empty on seed.
-      prices: [],
+      // demo/sample prices from the seed file; a live scraper run overwrites them.
+      prices: c.prices.map((p) => ({
+        store: p.store,
+        price: p.price,
+        currency: 'AUD',
+        url: p.url,
+        lastUpdated: now,
+      })),
       provenance: {
         specSourceUrl: c.specSourceUrl,
         csvRow: row ? `${row.type},${row.brand},${row.model},rank=${row.rank},bench=${row.ubRaw}` : undefined,

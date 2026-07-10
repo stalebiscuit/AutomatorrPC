@@ -19,7 +19,4 @@ export class ApiError extends Error {
   static notFound(message = 'Not found', code = 'NOT_FOUND') {
     return new ApiError(404, code, message);
   }
-  static internal(message = 'Internal server error', code = 'INTERNAL') {
-    return new ApiError(500, code, message);
-  }
 }

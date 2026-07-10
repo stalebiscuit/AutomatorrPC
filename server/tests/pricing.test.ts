@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 import request from 'supertest';
 import type { Component } from '@automatorr/shared';
 import { scorptec } from '../src/services/pricing/retailers/scorptec.js';
+import { mwave } from '../src/services/pricing/retailers/mwave.js';
 import { ple } from '../src/services/pricing/retailers/ple.js';
 import { pccasegear } from '../src/services/pricing/retailers/pccasegear.js';
 import { amazonAu, centreCom } from '../src/services/pricing/retailers/stubs.js';
@@ -39,6 +40,9 @@ describe('Phase 4 — retailer adapters vs fixtures', () => {
   it('Scorptec parses the first card price', () => {
     expect(scorptec.parse(fixture('scorptec-search.html'), sample)?.price).toBe(549);
   });
+  it('Mwave parses the first tile price', () => {
+    expect(mwave.parse(fixture('mwave-search.html'), sample)?.price).toBe(555);
+  });
   it('PLE parses the first card price', () => {
     expect(ple.parse(fixture('ple-search.html'), sample)?.price).toBe(559);
   });
@@ -54,8 +58,7 @@ describe('Phase 4 — retailer adapters vs fixtures', () => {
 function makeFetcher(): Fetcher {
   const byHost: Record<string, string> = {
     'www.scorptec.com.au': fixture('scorptec-search.html'),
-    'www.ple.com.au': fixture('ple-search.html'),
-    'www.pccasegear.com': fixture('pccasegear-search.html'),
+    'www.mwave.com.au': fixture('mwave-search.html'),
   };
   return async (url: string) => {
     const u = new URL(url);
@@ -87,7 +90,7 @@ describe('Phase 4 — ScraperPriceProvider (fixture-driven)', () => {
     });
     const quotes = await provider.getPrices(sample);
     const stores = quotes.map((q) => q.store).sort();
-    expect(stores).toEqual(['PCCaseGear', 'PLE Computers', 'Scorptec']);
+    expect(stores).toEqual(['Mwave', 'Scorptec']);
     expect(quotes.every((q) => q.currency === 'AUD')).toBe(true);
   });
 

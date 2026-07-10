@@ -1,6 +1,7 @@
 import type { Component, Scorecard } from '@automatorr/shared';
 import { loadConfig } from '../../config.js';
 import { PlaceholderVerdictProvider } from './PlaceholderVerdictProvider.js';
+import { SeededVerdictProvider } from './SeededVerdictProvider.js';
 import { ClaudeVerdictProvider } from './ClaudeVerdictProvider.js';
 
 export interface VerdictInput {
@@ -28,6 +29,9 @@ export function getVerdictProvider(): VerdictProvider {
   if (cached) return cached;
   const which = loadConfig().VERDICT_PROVIDER;
   switch (which) {
+    case 'seeded':
+      cached = new SeededVerdictProvider();
+      break;
     case 'claude':
       cached = new ClaudeVerdictProvider();
       break;
