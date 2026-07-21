@@ -19,13 +19,13 @@ export const listComponentsQuery = z.object({
 
 export const componentParams = z.object({
   category: builderCategoryParam,
-  slug: z.string().min(1).max(120),
+  slug: z.string().min(1).max(200),
 });
 
 // ── Builder: build (list) schemas ──
 export const buildItemSchema = z.object({
   category: builderCategoryParam,
-  slug: z.string().min(1).max(160),
+  slug: z.string().min(1).max(200),
   chosenStore: z.string().min(1).max(80).optional(),
 });
 export const createBuildBody = z.object({
@@ -39,8 +39,8 @@ export const buildSummaryQuery = z.object({ budget: z.coerce.number().positive()
 
 export const comparePairQuery = z.object({
   category: compareCategoryParam,
-  a: z.string().min(1).max(120),
-  b: z.string().min(1).max(120),
+  a: z.string().min(1).max(200),
+  b: z.string().min(1).max(200),
 });
 
 const sessionId = z.string().min(1).max(100);
