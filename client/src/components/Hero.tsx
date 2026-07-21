@@ -8,7 +8,6 @@ export function Hero() {
       <h1>
         Pit any two parts against each other<span className="ac">.</span>
       </h1>
-      <p>Pick a category, choose two components.</p>
     </section>
   );
 }

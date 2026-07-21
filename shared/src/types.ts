@@ -414,9 +414,12 @@ export interface MerchantTotal {
   /** parts this merchant carries out of the build */
   availableCount: number;
   totalParts: number;
+  /** cost of the parts THIS store stocks (its own quotes; not back-filled from other stores) */
   total: number;
-  /** $ more than the cheapest single-store total (0 for the cheapest) */
-  difference: number;
+  /** true when this store stocks every part — a real single-store checkout */
+  complete: boolean;
+  /** $ more than the cheapest COMPLETE store; null when this store can't supply the whole build */
+  difference: number | null;
   items: MerchantLineItem[];
 }
 

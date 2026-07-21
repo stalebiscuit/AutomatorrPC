@@ -32,7 +32,11 @@ function Thumb({
 }) {
   const [src, setSrc] = useState<string | null>(imageUrl ?? null);
   const [broken, setBroken] = useState(false);
-  if (!src || broken) return <CategoryRender category={category} win={win} />;
+  // Compare cards use only local logo/render assets ("/images/…"). Crawled parts carry
+  // external retailer photo URLs that hotlink-block or 404 (and don't always fire onError),
+  // so skip straight to the branded placeholder — a broken image never shows in compare.
+  const local = !!src && src.startsWith('/');
+  if (!local || broken) return <CategoryRender category={category} win={win} />;
   return (
     <img
       src={src}

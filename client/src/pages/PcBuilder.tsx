@@ -31,7 +31,6 @@ export function PcBuilder() {
   const navigate = useNavigate();
 
   const [parts, setParts] = useState<ResolvedBuildPart[]>([]);
-  const [budgetInput, setBudgetInput] = useState('');
   const [pickerCategory, setPickerCategory] = useState<BuilderCategory | null>(null);
   const [view, setView] = useState<'overview' | 'by-merchant'>('overview');
   const [shortId, setShortId] = useState<string | undefined>(paramShortId);
@@ -49,11 +48,8 @@ export function PcBuilder() {
     if (loaded) {
       setParts(loaded.parts);
       setShortId(loaded.build.shortId);
-      if (loaded.build.budget) setBudgetInput(String(loaded.build.budget));
     }
   }, [loaded]);
-
-  const budget = budgetInput ? Number(budgetInput) : undefined;
 
   // Socket already committed by a chosen CPU or motherboard — used to pre-filter
   // the picker so a user with an AM5 board only sees AM5 CPUs/coolers.
@@ -68,10 +64,10 @@ export function PcBuilder() {
     const compatibility = checkCompatibility(parts);
     const wattage = wattageEstimate(parts);
     const total = buildTotal(parts);
-    const score = scoreBuild(parts, budget ? { budget } : {});
+    const score = scoreBuild(parts, {});
     const merchants = pricesByMerchant(parts);
     return { compatibility, wattage, total, score, merchants };
-  }, [parts, budget]);
+  }, [parts]);
 
   const addPart = (component: Component) => {
     const category = pickerCategory;
@@ -97,7 +93,6 @@ export function PcBuilder() {
     setSaving(true);
     try {
       const body: BuildBody = {
-        budget,
         items: parts.map((p) => ({ category: p.category, slug: p.component.slug, chosenStore: p.chosenStore })),
       };
       const result = shortId ? await api.updateBuild(shortId, body) : await api.createBuild(body);
@@ -125,7 +120,22 @@ export function PcBuilder() {
       <TopBar />
 
       <section aria-label="PC Builder" className="builder">
-        <h2 className="builder-title">PC Builder</h2>
+        <div className="builder-head">
+          <h2 className="builder-title">PC Builder</h2>
+          <div className="builder-actions">
+            <button type="button" className="btn-primary" onClick={save} disabled={saving || parts.length === 0}>
+              {saving ? 'Saving…' : shortId ? 'Update & share' : 'Save & share'}
+            </button>
+            {permalink && (
+              <div className="permalink">
+                <input readOnly value={permalink} aria-label="Shareable link" onFocus={(e) => e.currentTarget.select()} />
+                <button type="button" onClick={copyPermalink}>
+                  {copied ? 'Copied' : 'Copy'}
+                </button>
+              </div>
+            )}
+          </div>
+        </div>
 
         {loadFailed && paramShortId && (
           <div className="build-notfound" role="alert">
@@ -134,37 +144,8 @@ export function PcBuilder() {
           </div>
         )}
 
-        <div className="builder-controls">
-          <label
-            className="budget-field"
-            title="Sets the target used by the build score (budget-fit, 25/100). It doesn't filter parts — it rewards using your budget well and flags going over."
-          >
-            Budget (AUD)
-            <input
-              type="number"
-              min={0}
-              inputMode="numeric"
-              placeholder="e.g. 2000"
-              value={budgetInput}
-              onChange={(e) => setBudgetInput(e.target.value)}
-            />
-            <span className="field-hint">Used by the build score — not a hard filter.</span>
-          </label>
-          <button type="button" className="btn-primary" onClick={save} disabled={saving || parts.length === 0}>
-            {saving ? 'Saving…' : shortId ? 'Update & share' : 'Save & share'}
-          </button>
-          {permalink && (
-            <div className="permalink">
-              <input readOnly value={permalink} aria-label="Shareable link" onFocus={(e) => e.currentTarget.select()} />
-              <button type="button" onClick={copyPermalink}>
-                {copied ? 'Copied' : 'Copy'}
-              </button>
-            </div>
-          )}
-        </div>
-
         <CompatibilityBanner result={summary.compatibility} />
-        <BuildSummaryBar total={summary.total} wattage={summary.wattage} score={summary.score} budget={budget} />
+        <BuildSummaryBar total={summary.total} wattage={summary.wattage} score={summary.score} />
 
         <div className="builder-tabs">
           <button
