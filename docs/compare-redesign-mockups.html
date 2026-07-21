@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Automatorr — Compare redesign mockups</title>
+<style>
+  :root{
+    --royal:#2200a5; --lime:#c2e830; --lilac:#c783ff;
+    --bg:#07040f; --bg-2:#0c0820; --surface:#100b26;
+    --line:rgba(199,131,255,.14); --line-2:rgba(255,255,255,.10);
+    --text:#fff; --muted:#a59fd0; --muted-2:#7b76ab; --text-2:#e6e2ff;
+    --sunken:rgba(7,4,15,.5); --r-lg:20px; --r-md:14px; --r-sm:8px;
+    --font-display:'Kanit',system-ui,sans-serif; --font-body:'Inter',system-ui,sans-serif;
+    --font-mono:'JetBrains Mono',ui-monospace,monospace;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:radial-gradient(1200px 600px at 70% -10%,#160a3a 0,var(--bg) 60%);color:var(--text);font-family:var(--font-body);padding:32px;line-height:1.5}
+  h1{font-family:var(--font-display);font-weight:700;letter-spacing:-.01em;margin:0 0 4px}
+  .sub{color:var(--muted);margin:0 0 24px;max-width:70ch}
+  .tabs{display:flex;gap:8px;margin:0 0 22px;flex-wrap:wrap}
+  .tabs button{font:inherit;font-weight:600;padding:9px 16px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer}
+  .tabs button.on{background:var(--lime);color:var(--royal);border-color:var(--lime)}
+  .mock{display:none}
+  .mock.on{display:block;animation:fade .25s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  .note{color:var(--muted-2);font-size:13px;margin:0 0 18px;max-width:78ch}
+  .frame{max-width:920px;border:1px solid var(--line);border-radius:var(--r-lg);background:linear-gradient(180deg,var(--surface),var(--bg-2));overflow:hidden}
+  .eyebrow{font-family:var(--font-mono);font-size:11px;letter-spacing:.16em;color:var(--lilac);text-transform:uppercase}
+
+  /* Shared compact table bits */
+  .cmp-head{display:grid;grid-template-columns:1fr 150px 1fr;gap:0;position:sticky;top:0;z-index:2;background:rgba(16,11,38,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .side{padding:16px 18px}
+  .side.b{text-align:right}
+  .side .cat{font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;color:var(--muted-2);text-transform:uppercase}
+  .side .nm{font-family:var(--font-display);font-weight:600;font-size:18px;margin-top:2px}
+  .side .px{color:var(--lime);font-weight:600;font-family:var(--font-mono);margin-top:4px}
+  .spine{display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--sunken);border-left:1px solid var(--line);border-right:1px solid var(--line)}
+  .spine .vs{font-family:var(--font-display);font-weight:700;color:var(--muted)}
+  .spine .tally{font-family:var(--font-mono);font-size:12px;color:var(--text-2);margin-top:2px}
+  .winner-pill{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;background:var(--lime);color:var(--royal);margin-top:6px}
+
+  .row{display:grid;grid-template-columns:1fr 150px 1fr;align-items:center;border-bottom:1px solid var(--line)}
+  .row .cell{padding:9px 18px;font-variant-numeric:tabular-nums}
+  .row .cell.b{text-align:right}
+  .row .k{grid-column:1 / -1;text-align:center;font-family:var(--font-mono);font-size:10px;letter-spacing:.12em;color:var(--muted-2);text-transform:uppercase;padding:4px 0 0}
+  .lead{color:var(--lime);font-weight:600}
+  .dim{color:var(--muted)}
+  .group-h{display:flex;align-items:center;justify-content:space-between;padding:10px 18px;background:var(--sunken);cursor:pointer;border-bottom:1px solid var(--line);font-weight:600;font-size:13px}
+  .group-h .chev{color:var(--muted-2)}
+  .controls{display:flex;gap:14px;align-items:center;padding:12px 18px;border-bottom:1px solid var(--line);font-size:13px;color:var(--muted)}
+  .toggle{display:inline-flex;align-items:center;gap:7px;cursor:pointer}
+  .switch{width:34px;height:18px;border-radius:999px;background:var(--lime);position:relative}
+  .switch::after{content:"";position:absolute;top:2px;right:2px;width:14px;height:14px;border-radius:50%;background:var(--royal)}
+
+  /* Summary card (Option A/B) */
+  .summary{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;padding:16px 18px;background:linear-gradient(90deg,rgba(34,0,165,.35),transparent);border-bottom:1px solid var(--line)}
+  .verdict{font-size:14px;color:var(--text-2)}
+  .verdict b{color:#fff}
+  .deltas{display:flex;gap:10px}
+  .tile{min-width:92px;padding:8px 12px;border:1px solid var(--line);border-radius:var(--r-md);background:var(--surface);text-align:center}
+  .tile .l{font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;color:var(--muted-2)}
+  .tile .v{font-weight:700;color:var(--lime);font-size:15px;margin-top:2px}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+  .tag{font-size:11px;padding:2px 9px;border-radius:999px;border:1px solid var(--line);color:var(--lilac)}
+
+  /* Option C — segmented dense card */
+  .segbar{display:flex;gap:6px;padding:12px 18px;border-bottom:1px solid var(--line)}
+  .segbar button{font:inherit;font-size:12px;padding:5px 12px;border-radius:var(--r-sm);border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer}
+  .segbar button.on{background:var(--surface);color:var(--text);border-color:var(--line-2)}
+  .barrow{display:grid;grid-template-columns:1fr 120px 1fr;align-items:center;gap:10px;padding:10px 18px;border-bottom:1px solid var(--line)}
+  .bar{height:8px;border-radius:6px;background:var(--sunken);overflow:hidden;position:relative}
+  .bar > i{position:absolute;top:0;bottom:0;background:var(--lime);border-radius:6px}
+  .barrow .kk{text-align:center;font-family:var(--font-mono);font-size:11px;color:var(--muted-2);text-transform:uppercase}
+  .barrow .va,.barrow .vb{font-variant-numeric:tabular-nums;font-size:13px}
+  .barrow .vb{text-align:right}
+  .foot{padding:12px 18px;color:var(--muted-2);font-size:12px}
+  .legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:14px;color:var(--muted-2);font-size:12px;max-width:920px}
+  .legend b{color:var(--text-2)}
+</style>
+</head>
+<body>
+  <h1>Compare tool — compact redesign options</h1>
+  <p class="sub">Three directions to cut the scrolling on the head-to-head. All use the locked v5 brand tokens. Pick one (or mix), and it maps onto <code>CompareResults.tsx</code> with the same data the API already returns.</p>
+
+  <div class="tabs">
+    <button class="on" data-m="a">Option A — Sticky + grouped</button>
+    <button data-m="b">Option B — Verdict-first</button>
+    <button data-m="c">Option C — Dense bars</button>
+  </div>
+
+  <!-- OPTION A -->
+  <section class="mock on" id="a">
+    <p class="note"><b>Option A — sticky header, collapsible spec groups, "differences only".</b> The two parts + running tally stay pinned while you scroll. Non-decisive rows collapse into groups so the fold shows the verdict, the decisive deltas, and the first differences — not 25 rows of specs.</p>
+    <div class="frame">
+      <div class="summary">
+        <div>
+          <div class="eyebrow">Verdict</div>
+          <div class="verdict"><b>Ryzen 7 7800X3D</b> takes it — a gaming-first win on cache and efficiency, for $190 less.</div>
+          <div class="tags"><span class="tag">Gaming</span><span class="tag">Efficiency</span><span class="tag">Value</span></div>
+        </div>
+        <div class="deltas">
+          <div class="tile"><div class="l">PERFORMANCE</div><div class="v">+6.3%</div></div>
+          <div class="tile"><div class="l">POWER</div><div class="v">−49%</div></div>
+          <div class="tile"><div class="l">PRICE</div><div class="v">−$190</div></div>
+        </div>
+      </div>
+      <div class="cmp-head">
+        <div class="side a"><div class="cat">CPU</div><div class="nm">Ryzen 7 7800X3D</div><div class="px">$479</div><span class="winner-pill">WINNER</span></div>
+        <div class="spine"><span class="vs">VS</span><span class="tally">5 · 3</span></div>
+        <div class="side b"><div class="cat">CPU</div><div class="nm">Core i9-14900K</div><div class="px">$669</div></div>
+      </div>
+      <div class="controls">
+        <span class="toggle"><span class="switch"></span> Differences only</span>
+        <span class="dim">·  9 rows → showing 5 that differ</span>
+      </div>
+      <div class="row"><div class="cell lead">104.7 FPS avg</div><div class="k">Performance index</div><div class="cell b dim">98.5</div></div>
+      <div class="row"><div class="cell lead">96 MB</div><div class="k">L3 cache</div><div class="cell b dim">36 MB</div></div>
+      <div class="row"><div class="cell lead">120 W</div><div class="k">TDP</div><div class="cell b dim">253 W</div></div>
+      <div class="group-h"><span>Clocks &amp; cores <span class="dim">(3 rows, no decisive gap)</span></span><span class="chev">▸</span></div>
+      <div class="group-h"><span>Platform &amp; I/O <span class="dim">(2 rows)</span></span><span class="chev">▸</span></div>
+      <div class="row"><div class="cell lead">$479</div><div class="k">Best price</div><div class="cell b dim">$669</div></div>
+    </div>
+  </section>
+
+  <!-- OPTION B -->
+  <section class="mock" id="b">
+    <p class="note"><b>Option B — verdict-first card.</b> Everything decisive lives in one card above the fold: winner, prose, delta tiles, tally donut. The full spec table is one click away behind "See all specs", so the default view never scrolls.</p>
+    <div class="frame">
+      <div class="summary" style="grid-template-columns:1fr">
+        <div>
+          <div class="eyebrow">Head-to-head</div>
+          <div style="display:flex;align-items:center;gap:14px;margin-top:8px">
+            <div><div class="nm" style="font-family:var(--font-display);font-weight:700;font-size:22px">Ryzen 7 7800X3D <span class="winner-pill">WINNER</span></div><div class="px" style="color:var(--lime);font-family:var(--font-mono)">$479 · Scorptec</div></div>
+            <div class="spine" style="border:none;background:none;padding:0 8px"><span class="vs">VS</span></div>
+            <div style="opacity:.7"><div class="nm" style="font-family:var(--font-display);font-weight:700;font-size:22px">Core i9-14900K</div><div class="px" style="color:var(--muted);font-family:var(--font-mono)">$669 · Mwave</div></div>
+          </div>
+          <div class="verdict" style="margin-top:12px">Wins <b>5 of 8</b> measured categories. The 3D V-Cache makes it the gaming pick and it draws less than half the power; the i9 only pulls ahead on all-core content throughput.</div>
+          <div class="deltas" style="margin-top:14px">
+            <div class="tile"><div class="l">PERFORMANCE</div><div class="v">+6.3%</div></div>
+            <div class="tile"><div class="l">CACHE</div><div class="v">+60 MB</div></div>
+            <div class="tile"><div class="l">POWER</div><div class="v">−133 W</div></div>
+            <div class="tile"><div class="l">PRICE</div><div class="v">−$190</div></div>
+          </div>
+          <div class="tags"><span class="tag">Gaming</span><span class="tag">Efficiency</span><span class="tag">Value</span></div>
+          <div class="controls" style="border:none;padding:14px 0 0"><span class="toggle"><span class="switch" style="background:var(--line-2)"></span> See all 9 specs</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPTION C -->
+  <section class="mock" id="c">
+    <p class="note"><b>Option C — dense comparison bars.</b> Each counted metric becomes a two-sided bar so relative advantage is visible at a glance, not read off numbers. A segmented control filters to what the user cares about (Performance / Value / Efficiency), keeping the list short.</p>
+    <div class="frame">
+      <div class="cmp-head">
+        <div class="side a"><div class="cat">CPU</div><div class="nm">Ryzen 7 7800X3D</div><div class="px">$479</div></div>
+        <div class="spine"><span class="vs">VS</span><span class="tally">5 · 3</span><span class="winner-pill">A WINS</span></div>
+        <div class="side b"><div class="cat">CPU</div><div class="nm">Core i9-14900K</div><div class="px">$669</div></div>
+      </div>
+      <div class="segbar"><button class="on">All</button><button>Performance</button><button>Value</button><button>Efficiency</button></div>
+      <div class="barrow"><div class="va lead">104.7</div><div><div class="kk">Perf index</div><div class="bar"><i style="left:50%;width:26%"></i></div></div><div class="vb dim">98.5</div></div>
+      <div class="barrow"><div class="va lead">96 MB</div><div><div class="kk">L3 cache</div><div class="bar"><i style="left:50%;width:42%"></i></div></div><div class="vb dim">36 MB</div></div>
+      <div class="barrow"><div class="va dim">5.0 GHz</div><div><div class="kk">Boost clock</div><div class="bar"><i style="left:32%;width:18%;background:var(--muted)"></i></div></div><div class="vb lead">6.0 GHz</div></div>
+      <div class="barrow"><div class="va lead">120 W</div><div><div class="kk">TDP (lower wins)</div><div class="bar"><i style="left:50%;width:40%"></i></div></div><div class="vb dim">253 W</div></div>
+      <div class="barrow"><div class="va lead">$479</div><div><div class="kk">Best price</div><div class="bar"><i style="left:50%;width:22%"></i></div></div><div class="vb dim">$669</div></div>
+      <div class="foot">Lime = the leading side for that metric. Non-decisive spec rows (socket, iGPU) hidden under "All → details".</div>
+    </div>
+  </section>
+
+  <div class="legend">
+    <span><b>Data:</b> identical to today's <code>/api/compare</code> response — rows, leads, tally, deltas, tags. No backend change required.</span>
+    <span><b>Recommendation:</b> Option A is the safest upgrade (keeps the familiar table, adds sticky header + grouping + differences-only). Option B best answers "who wins fast". Option C reads best on phones.</span>
+  </div>
+
+  <script>
+    const tabs=[...document.querySelectorAll('.tabs button')];
+    tabs.forEach(b=>b.onclick=()=>{
+      tabs.forEach(x=>x.classList.toggle('on',x===b));
+      document.querySelectorAll('.mock').forEach(m=>m.classList.toggle('on',m.id===b.dataset.m));
+    });
+  </script>
+</body>
+</html>

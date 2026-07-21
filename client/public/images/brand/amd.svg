@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" role="img" aria-label="AMD">
+  <defs><linearGradient id="ab" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#151515"/><stop offset="1" stop-color="#2a1409"/></linearGradient></defs>
+  <rect width="400" height="100" rx="10" fill="url(#ab)"/>
+  <g stroke="#ff5a1f" fill="none" opacity="0.5" stroke-width="2.2" stroke-linecap="round">
+    <path d="M0 80h70l16-16h60"/><path d="M400 26h-70l-16 16h-46"/>
+  </g>
+  <path d="M150 34 l18 18 h-11.5 v12 h-13 v-12 h-11.5 z" fill="#ffffff"/>
+  <text x="182" y="68" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="800" letter-spacing="2" fill="#ffffff">AMD</text>
+</svg>

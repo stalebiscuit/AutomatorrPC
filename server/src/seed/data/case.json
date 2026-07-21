@@ -1,0 +1,1254 @@
+{
+  "category": "case",
+  "components": [
+    {
+      "brand": "Fractal Design",
+      "name": "Fractal Design North",
+      "slug": "fractal-design-north",
+      "imageUrl": null,
+      "specs": {
+        "type": "Mid Tower",
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 355,
+        "maxCoolerHeight": 170,
+        "radiatorSupport": "120,240,280,360",
+        "color": "Charcoal Black",
+        "sidePanel": "Mesh"
+      },
+      "specSourceUrl": "https://www.fractal-design.com/products/cases/north/north/charcoal-black/",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Mwave",
+          "price": 199,
+          "url": "https://www.mwave.com.au/searchresult?w=Fractal%20Design%20North"
+        },
+        {
+          "store": "Scorptec",
+          "price": 205,
+          "url": "https://www.scorptec.com.au/search/go?w=Fractal%20Design%20North"
+        },
+        {
+          "store": "Centre Com",
+          "price": 209,
+          "url": "https://www.centrecom.com.au/search?searchterm=Fractal%20Design%20North"
+        }
+      ]
+    },
+    {
+      "brand": "Lian Li",
+      "name": "Lian Li Lancool 216",
+      "slug": "lian-li-lancool-216",
+      "imageUrl": null,
+      "specs": {
+        "type": "Mid Tower",
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 392,
+        "maxCoolerHeight": 180,
+        "radiatorSupport": "120,240,280,360",
+        "color": "Black",
+        "sidePanel": "Tempered Glass"
+      },
+      "specSourceUrl": "https://lian-li.com/product/lancool-216/",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Mwave",
+          "price": 149,
+          "url": "https://www.mwave.com.au/searchresult?w=Lian%20Li%20Lancool%20216"
+        },
+        {
+          "store": "PLE",
+          "price": 155,
+          "url": "https://www.ple.com.au/Catalogue/search?q=Lian%20Li%20Lancool%20216"
+        }
+      ]
+    },
+    {
+      "brand": "NZXT",
+      "name": "NZXT H9 Flow",
+      "slug": "nzxt-h9-flow",
+      "imageUrl": null,
+      "specs": {
+        "type": "Mid Tower",
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 435,
+        "maxCoolerHeight": 165,
+        "radiatorSupport": "120,240,280,360",
+        "color": "White",
+        "sidePanel": "Tempered Glass"
+      },
+      "specSourceUrl": "https://nzxt.com/product/h9-flow",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Scorptec",
+          "price": 219,
+          "url": "https://www.scorptec.com.au/search/go?w=NZXT%20H9%20Flow"
+        },
+        {
+          "store": "Centre Com",
+          "price": 225,
+          "url": "https://www.centrecom.com.au/search?searchterm=NZXT%20H9%20Flow"
+        }
+      ],
+      "gtin": null
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair 4000D Airflow",
+      "slug": "corsair-4000d-airflow",
+      "imageUrl": null,
+      "specs": {
+        "type": "Mid Tower",
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 170,
+        "radiatorSupport": "120,240,280,360",
+        "color": "Black",
+        "sidePanel": "Tempered Glass"
+      },
+      "specSourceUrl": "https://www.corsair.com/us/en/p/pc-cases/cc-9011200-ww/",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Mwave",
+          "price": 139,
+          "url": "https://www.mwave.com.au/searchresult?w=Corsair%204000D%20Airflow"
+        },
+        {
+          "store": "Scorptec",
+          "price": 145,
+          "url": "https://www.scorptec.com.au/search/go?w=Corsair%204000D%20Airflow"
+        },
+        {
+          "store": "PLE",
+          "price": 149,
+          "url": "https://www.ple.com.au/Catalogue/search?q=Corsair%204000D%20Airflow"
+        }
+      ]
+    },
+    {
+      "brand": "Cooler Master",
+      "name": "Cooler Master NR200P",
+      "slug": "cooler-master-nr200p",
+      "imageUrl": null,
+      "specs": {
+        "type": "Small Form Factor",
+        "formFactorSupport": "Mini-ITX",
+        "maxGpuLength": 330,
+        "maxCoolerHeight": 155,
+        "radiatorSupport": "120,240,280",
+        "color": "Black",
+        "sidePanel": "Tempered Glass"
+      },
+      "specSourceUrl": "https://www.coolermaster.com/en-global/products/masterbox-nr200p/",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Centre Com",
+          "price": 159,
+          "url": "https://www.centrecom.com.au/search?searchterm=Cooler%20Master%20NR200P"
+        },
+        {
+          "store": "PLE",
+          "price": 165,
+          "url": "https://www.ple.com.au/Catalogue/search?q=Cooler%20Master%20NR200P"
+        }
+      ]
+    },
+    {
+      "brand": "Montech",
+      "name": "Montech AIR 903 MAX",
+      "slug": "montech-air-903-max",
+      "imageUrl": null,
+      "specs": {
+        "type": "Mid Tower",
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 400,
+        "maxCoolerHeight": 175,
+        "radiatorSupport": "120,240,280,360",
+        "color": "Black",
+        "sidePanel": "Tempered Glass"
+      },
+      "specSourceUrl": "https://www.montech.com.tw/en/products/case/air903max",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Mwave",
+          "price": 119,
+          "url": "https://www.mwave.com.au/searchresult?w=Montech%20AIR%20903%20MAX"
+        },
+        {
+          "store": "Scorptec",
+          "price": 125,
+          "url": "https://www.scorptec.com.au/search/go?w=Montech%20AIR%20903%20MAX"
+        }
+      ]
+    },
+    {
+      "brand": "Montech",
+      "name": "Montech XR",
+      "slug": "montech-xr",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Montech%20XR",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Phanteks",
+      "name": "Phanteks XT PRO",
+      "slug": "phanteks-xt-pro",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Phanteks%20XT%20PRO",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Lian Li",
+      "name": "Lian Li Vector V100R",
+      "slug": "lian-li-vector-v100r",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Lian%20Li%20Vector%20V100R",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "NZXT",
+      "name": "NZXT H5 Flow  (19)",
+      "slug": "nzxt-h5-flow-19",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=NZXT%20H5%20Flow%20%20(19)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Cooler Master",
+      "name": "Cooler Master MasterBox Q300L",
+      "slug": "cooler-master-masterbox-q300l",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Cooler%20Master%20MasterBox%20Q300L",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Lian Li",
+      "name": "Lian Li O11 VISION COMPACT",
+      "slug": "lian-li-o11-vision-compact",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Lian%20Li%20O11%20VISION%20COMPACT",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair FRAME 4000D RS ARGB",
+      "slug": "corsair-frame-4000d-rs-argb",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20FRAME%204000D%20RS%20ARGB",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Hyte",
+      "name": "HYTE Y70 Touch Infinite",
+      "slug": "hyte-y70-touch-infinite",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=HYTE%20Y70%20Touch%20Infinite",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Lian Li",
+      "name": "Lian Li O11 Dynamic Mini V2",
+      "slug": "lian-li-o11-dynamic-mini-v2",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Lian%20Li%20O11%20Dynamic%20Mini%20V2",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Lian Li",
+      "name": "Lian Li A3-mATX",
+      "slug": "lian-li-a3-matx",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "Micro-ATX,Mini-ITX",
+        "maxGpuLength": 330,
+        "maxCoolerHeight": 160
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Lian%20Li%20A3-mATX",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Phanteks",
+      "name": "Phanteks Eclipse G370A",
+      "slug": "phanteks-eclipse-g370a",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Phanteks%20Eclipse%20G370A",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Fractal Design",
+      "name": "Fractal Design North XL",
+      "slug": "fractal-design-north-xl",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Fractal%20Design%20North%20XL",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Fractal Design",
+      "name": "Fractal Design Terra",
+      "slug": "fractal-design-terra",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Fractal%20Design%20Terra",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Lian Li",
+      "name": "Lian Li VECTOR V100R MINI",
+      "slug": "lian-li-vector-v100r-mini",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Lian%20Li%20VECTOR%20V100R%20MINI",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Phanteks",
+      "name": "Phanteks XT PRO ULTRA",
+      "slug": "phanteks-xt-pro-ultra",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Phanteks%20XT%20PRO%20ULTRA",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair 3500X ARGB",
+      "slug": "corsair-3500x-argb",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%203500X%20ARGB",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Fractal Design",
+      "name": "Fractal Design Ridge PCIe 4.0",
+      "slug": "fractal-design-ridge-pcie-4-0",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Fractal%20Design%20Ridge%20PCIe%204.0",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "NZXT",
+      "name": "NZXT H3 Flow",
+      "slug": "nzxt-h3-flow",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=NZXT%20H3%20Flow",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Cooler Master",
+      "name": "Cooler Master MasterBox NR200",
+      "slug": "cooler-master-masterbox-nr200",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "Mini-ITX",
+        "maxGpuLength": 330,
+        "maxCoolerHeight": 67
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Cooler%20Master%20MasterBox%20NR200",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair 3500X RS-R ARGB",
+      "slug": "corsair-3500x-rs-r-argb",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%203500X%20RS-R%20ARGB",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Phanteks",
+      "name": "Phanteks XT M3 M25",
+      "slug": "phanteks-xt-m3-m25",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Phanteks%20XT%20M3%20M25",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Hyte",
+      "name": "HYTE Y70",
+      "slug": "hyte-y70",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=HYTE%20Y70",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Jonsbo",
+      "name": "Jonsbo D32 PRO",
+      "slug": "jonsbo-d32-pro",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Jonsbo%20D32%20PRO",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Jonsbo",
+      "name": "Jonsbo C6-ITX",
+      "slug": "jonsbo-c6-itx",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "Mini-ITX",
+        "maxGpuLength": 330,
+        "maxCoolerHeight": 67
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Jonsbo%20C6-ITX",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Thermaltake",
+      "name": "Thermaltake Level 20",
+      "slug": "thermaltake-level-20",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Thermaltake%20Level%2020",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "NZXT",
+      "name": "NZXT H6 Flow",
+      "slug": "nzxt-h6-flow",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=NZXT%20H6%20Flow",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Montech",
+      "name": "Montech AIR 100 ARGB",
+      "slug": "montech-air-100-argb",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Montech%20AIR%20100%20ARGB",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Fractal Design",
+      "name": "Fractal Design Pop XL Air",
+      "slug": "fractal-design-pop-xl-air",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Fractal%20Design%20Pop%20XL%20Air",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair 9000D RGB AIRFLOW",
+      "slug": "corsair-9000d-rgb-airflow",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%209000D%20RGB%20AIRFLOW",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Jonsbo",
+      "name": "Jonsbo NV10",
+      "slug": "jonsbo-nv10",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Jonsbo%20NV10",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "ASUS",
+      "name": "Asus Prime AP201",
+      "slug": "asus-prime-ap201",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Asus%20Prime%20AP201",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "NZXT",
+      "name": "NZXT H2 Flow",
+      "slug": "nzxt-h2-flow",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=NZXT%20H2%20Flow",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Jonsbo",
+      "name": "Jonsbo Jonsplus Z20",
+      "slug": "jonsbo-jonsplus-z20",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Jonsbo%20Jonsplus%20Z20",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Antec",
+      "name": "Antec C5 ARGB",
+      "slug": "antec-c5-argb",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Antec%20C5%20ARGB",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "SilverStone",
+      "name": "Silverstone FLP02",
+      "slug": "silverstone-flp02",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Silverstone%20FLP02",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Phanteks",
+      "name": "Phanteks XT V3",
+      "slug": "phanteks-xt-v3",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Phanteks%20XT%20V3",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Montech",
+      "name": "Montech KING 95 PRO",
+      "slug": "montech-king-95-pro",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Montech%20KING%2095%20PRO",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "SilverStone",
+      "name": "Silverstone ALTA F2",
+      "slug": "silverstone-alta-f2",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Silverstone%20ALTA%20F2",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Montech",
+      "name": "Montech X3 Mesh",
+      "slug": "montech-x3-mesh",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Montech%20X3%20Mesh",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "ASUS",
+      "name": "Asus ROG Strix Helios",
+      "slug": "asus-rog-strix-helios",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Asus%20ROG%20Strix%20Helios",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Thermaltake",
+      "name": "Thermaltake View 270 Plus TG ARGB",
+      "slug": "thermaltake-view-270-plus-tg-argb",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Thermaltake%20View%20270%20Plus%20TG%20ARGB",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Deepcool",
+      "name": "Deepcool CG530 4F",
+      "slug": "deepcool-cg530-4f",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Deepcool%20CG530%204F",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Jonsbo",
+      "name": "Jonsbo N2",
+      "slug": "jonsbo-n2",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Jonsbo%20N2",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "MSI",
+      "name": "MSI MAG PANO M100R PZ",
+      "slug": "msi-mag-pano-m100r-pz",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=MSI%20MAG%20PANO%20M100R%20PZ",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Thermaltake",
+      "name": "Thermaltake TR100",
+      "slug": "thermaltake-tr100",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Thermaltake%20TR100",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Thermaltake",
+      "name": "Thermaltake V100 Perforated",
+      "slug": "thermaltake-v100-perforated",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Thermaltake%20V100%20Perforated",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "SilverStone",
+      "name": "Silverstone SG13 V2",
+      "slug": "silverstone-sg13-v2",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Silverstone%20SG13%20V2",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Thermaltake",
+      "name": "Thermaltake View 380 ARGB",
+      "slug": "thermaltake-view-380-argb",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Thermaltake%20View%20380%20ARGB",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Antec",
+      "name": "Antec C8 Curve Wood",
+      "slug": "antec-c8-curve-wood",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Antec%20C8%20Curve%20Wood",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "ASUS",
+      "name": "Asus Prime AP303",
+      "slug": "asus-prime-ap303",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Asus%20Prime%20AP303",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "ASUS",
+      "name": "Asus ProArt PA602 Wood Edition",
+      "slug": "asus-proart-pa602-wood-edition",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Asus%20ProArt%20PA602%20Wood%20Edition",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Deepcool",
+      "name": "Deepcool CC560 V2",
+      "slug": "deepcool-cc560-v2",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Deepcool%20CC560%20V2",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Deepcool",
+      "name": "Deepcool CH160 PLUS",
+      "slug": "deepcool-ch160-plus",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Deepcool%20CH160%20PLUS",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "SilverStone",
+      "name": "Silverstone Sugo 16",
+      "slug": "silverstone-sugo-16",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Silverstone%20Sugo%2016",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Cooler Master",
+      "name": "Cooler Master QUBE 540",
+      "slug": "cooler-master-qube-540",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Cooler%20Master%20QUBE%20540",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Deepcool",
+      "name": "Deepcool CC360 ARGB",
+      "slug": "deepcool-cc360-argb",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Deepcool%20CC360%20ARGB",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "SilverStone",
+      "name": "Silverstone SUGO 14",
+      "slug": "silverstone-sugo-14",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Silverstone%20SUGO%2014",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "be quiet!",
+      "name": "be quiet! Pure Base 500DX",
+      "slug": "be-quiet-pure-base-500dx",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=be%20quiet!%20Pure%20Base%20500DX",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "ASUS",
+      "name": "Asus TUF Gaming GT502",
+      "slug": "asus-tuf-gaming-gt502",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Asus%20TUF%20Gaming%20GT502",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Cooler Master",
+      "name": "Cooler Master NR200P V3",
+      "slug": "cooler-master-nr200p-v3",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "Mini-ITX",
+        "maxGpuLength": 330,
+        "maxCoolerHeight": 67
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Cooler%20Master%20NR200P%20V3",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "be quiet!",
+      "name": "be quiet! Light Base 900 FX",
+      "slug": "be-quiet-light-base-900-fx",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=be%20quiet!%20Light%20Base%20900%20FX",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Hyte",
+      "name": "HYTE Y40",
+      "slug": "hyte-y40",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=HYTE%20Y40",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Cooler Master",
+      "name": "Cooler Master HAF 700 EVO",
+      "slug": "cooler-master-haf-700-evo",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Cooler%20Master%20HAF%20700%20EVO",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Hyte",
+      "name": "HYTE X50",
+      "slug": "hyte-x50",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=HYTE%20X50",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "be quiet!",
+      "name": "be quiet! Light Base 600 LX",
+      "slug": "be-quiet-light-base-600-lx",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=be%20quiet!%20Light%20Base%20600%20LX",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Hyte",
+      "name": "HYTE Y60",
+      "slug": "hyte-y60",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=HYTE%20Y60",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Antec",
+      "name": "Antec C2M ARGB",
+      "slug": "antec-c2m-argb",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Antec%20C2M%20ARGB",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Deepcool",
+      "name": "Deepcool CH270 DIGITAL",
+      "slug": "deepcool-ch270-digital",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Deepcool%20CH270%20DIGITAL",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Antec",
+      "name": "Antec Performance 1 M",
+      "slug": "antec-performance-1-m",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Antec%20Performance%201%20M",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "be quiet!",
+      "name": "be quiet! Pure Base 600",
+      "slug": "be-quiet-pure-base-600",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=be%20quiet!%20Pure%20Base%20600",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "be quiet!",
+      "name": "be quiet! Light Base 500",
+      "slug": "be-quiet-light-base-500",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=be%20quiet!%20Light%20Base%20500",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "MSI",
+      "name": "MSI MAG PANO 100R PZ",
+      "slug": "msi-mag-pano-100r-pz",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=MSI%20MAG%20PANO%20100R%20PZ",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Antec",
+      "name": "Antec C8",
+      "slug": "antec-c8",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Antec%20C8",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "MSI",
+      "name": "MSI MAG PANO 110R PZ",
+      "slug": "msi-mag-pano-110r-pz",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=MSI%20MAG%20PANO%20110R%20PZ",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "MSI",
+      "name": "MSI MPG GUNGNIR 300R AIRFLOW",
+      "slug": "msi-mpg-gungnir-300r-airflow",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=MSI%20MPG%20GUNGNIR%20300R%20AIRFLOW",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "MSI",
+      "name": "MSI MAG FORGE M100R",
+      "slug": "msi-mag-forge-m100r",
+      "imageUrl": null,
+      "specs": {
+        "formFactorSupport": "ATX,Micro-ATX,Mini-ITX",
+        "maxGpuLength": 360,
+        "maxCoolerHeight": 165
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=MSI%20MAG%20FORGE%20M100R",
+      "unknownFields": [],
+      "prices": []
+    }
+  ]
+}

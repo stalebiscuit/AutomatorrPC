@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Speccify rebrand — placement mockups</title>
+<style>
+  :root{
+    /* Automatorr tokens (for "Powered by" accent + app chrome) */
+    --royal:#2200a5; --lime:#c2e830; --lilac:#c783ff;
+    --bg:#07040f; --surface:#100b26; --bg-2:#0c0820;
+    --line:rgba(199,131,255,.14); --line-2:rgba(255,255,255,.10);
+    --text:#fff; --muted:#a59fd0; --muted-2:#7b76ab; --text-2:#e6e2ff;
+    /* Speccify palette (from the logo) */
+    --spec-navy:#0e1a33; --spec-navy-2:#0b1528; --spec-snake:#9db6e4; --spec-ink:#0e1a33;
+    --font-display:'Kanit',system-ui,sans-serif; --font-body:'Inter',system-ui,sans-serif; --font-mono:'JetBrains Mono',ui-monospace,monospace;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:radial-gradient(1200px 600px at 70% -10%,#160a3a 0,var(--bg) 60%);color:var(--text);font-family:var(--font-body);padding:32px;line-height:1.5}
+  h1{font-family:var(--font-display);font-weight:700;margin:0 0 4px}
+  .sub{color:var(--muted);margin:0 0 26px;max-width:74ch}
+  h2{font-family:var(--font-display);font-weight:600;margin:30px 0 6px;font-size:18px}
+  .cap{color:var(--muted-2);font-size:13px;margin:0 0 12px;max-width:80ch}
+  .tag{display:inline-block;font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--lilac);border:1px solid var(--line);border-radius:999px;padding:2px 8px;margin-left:8px;vertical-align:middle}
+
+  /* Speccify logo lockup (SVG snake-S + wordmark) */
+  .lockup{display:inline-flex;align-items:center;gap:9px;text-decoration:none}
+  .lockup svg{display:block}
+  .wordmark{font-family:var(--font-display);font-weight:700;font-size:30px;letter-spacing:-.01em;color:#eef3fb;line-height:1}
+  .wordmark .s{color:var(--spec-snake)} /* if wordmark used without the glyph */
+  .lockup.sm .wordmark{font-size:22px}
+  .lockup.sm svg{width:30px;height:32px}
+
+  /* App chrome frames on the real (dark royal) surface */
+  .frame{max-width:900px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(180deg,var(--surface),var(--bg-2));overflow:hidden;margin-bottom:8px}
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 20px;border-bottom:1px solid var(--line)}
+  .bar-actions{display:flex;gap:10px}
+  .btn{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;padding:7px 12px;border:1px solid var(--line);border-radius:8px;color:var(--muted);background:transparent}
+  .body{padding:22px 20px;color:var(--muted);min-height:70px;font-size:14px}
+  .foot{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-2);border-top:1px solid var(--line);padding:16px}
+  .powered{display:inline-flex;align-items:center;gap:6px}
+  .powered b{color:var(--lime);font-weight:600;letter-spacing:.06em}
+  .micro{font-size:10px;color:var(--muted-2);font-family:var(--font-mono);letter-spacing:.1em;text-transform:uppercase;margin-top:3px}
+  .pill{font-family:var(--font-mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:4px 10px;display:inline-flex;gap:6px;align-items:center}
+  .pill b{color:var(--lime);font-weight:600}
+  .drawerfoot{border-top:1px solid var(--line);padding:14px 18px;color:var(--muted-2);font-family:var(--font-mono);font-size:11px;letter-spacing:.08em}
+
+  /* Sizing spec block */
+  .specsheet{max-width:900px;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-top:10px}
+  .card{border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:14px 16px}
+  .card .k{font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-2)}
+  .card .v{margin-top:4px;font-size:14px;color:var(--text-2)}
+  .swatch{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:middle;margin-right:6px;border:1px solid var(--line-2)}
+  .navybg{background:var(--spec-navy);border-radius:12px;padding:20px;display:inline-block}
+  code{font-family:var(--font-mono);font-size:12px;color:var(--lilac)}
+</style>
+</head>
+<body>
+  <h1>Speccify rebrand — where the branding goes</h1>
+  <p class="sub">The <b>Speccify</b> lockup takes the current Automatorr slot in the top-left, sized to the existing 26&nbsp;px logo height. "Powered by Automatorr" moves to a quieter, meaningful spot. Three placement options below — pick one (A recommended). The logo here is a faithful SVG rebuild of your screenshot so it scales crisply; swap in the real asset when ready.</p>
+
+  <!-- Reusable SVG logo definition -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <g id="speccify-snake">
+        <!-- coiled snake forming the S -->
+        <path d="M40 13 C40 6 29 5 23 9 C14 15 19 26 30 29 C41 32 45 43 37 51 C31 57 19 56 16 48"
+              fill="none" stroke="var(--spec-snake)" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- head -->
+        <circle cx="40" cy="13" r="5.4" fill="var(--spec-snake)"/>
+        <circle cx="41.6" cy="11.6" r="1" fill="var(--spec-ink)"/>
+        <!-- forked tongue -->
+        <path d="M44.5 10.5 L49 8.4 M44.5 10.5 L49 11.4" stroke="#e0483d" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+        <!-- spots -->
+        <circle cx="26" cy="13.5" r="1.2" fill="var(--spec-ink)" opacity=".55"/>
+        <circle cx="31.5" cy="28.5" r="1.2" fill="var(--spec-ink)" opacity=".55"/>
+        <circle cx="22" cy="44" r="1.2" fill="var(--spec-ink)" opacity=".55"/>
+        <circle cx="34.5" cy="49" r="1.2" fill="var(--spec-ink)" opacity=".55"/>
+      </g>
+    </defs>
+  </svg>
+
+  <!-- ========================= OPTION A ========================= -->
+  <h2>Option A — Footer credit <span class="tag">Recommended</span></h2>
+  <p class="cap">Speccify owns the header; Automatorr gets a permanent, dignified credit in the footer next to the copyright. Cleanest split of brand (product = Speccify) and platform (powered by Automatorr).</p>
+  <div class="frame">
+    <div class="bar">
+      <a class="lockup" href="#" aria-label="Speccify home">
+        <svg width="34" height="36" viewBox="0 0 56 62"><use href="#speccify-snake"/></svg>
+        <span class="wordmark">peccify</span>
+      </a>
+      <div class="bar-actions"><span class="btn">LIGHT</span><span class="btn">MENU +</span></div>
+    </div>
+    <div class="body">Compare components · PC Builder …</div>
+    <div class="foot">
+      <span>© 2026 Speccify</span>
+      <span class="powered">Powered by <b>Automatorr</b></span>
+    </div>
+  </div>
+
+  <!-- ========================= OPTION B ========================= -->
+  <h2>Option B — Micro-tagline under the logo</h2>
+  <p class="cap">"Powered by Automatorr" rides directly under the Speccify wordmark as a tiny kicker — always visible, ties the two names together on every page. Keeps the header height nearly identical.</p>
+  <div class="frame">
+    <div class="bar">
+      <a class="lockup" href="#" aria-label="Speccify home" style="align-items:flex-start">
+        <svg width="34" height="36" viewBox="0 0 56 62" style="margin-top:2px"><use href="#speccify-snake"/></svg>
+        <span>
+          <span class="wordmark">peccify</span>
+          <span class="micro">Powered by Automatorr</span>
+        </span>
+      </a>
+      <div class="bar-actions"><span class="btn">LIGHT</span><span class="btn">MENU +</span></div>
+    </div>
+    <div class="body">Compare components · PC Builder …</div>
+  </div>
+
+  <!-- ========================= OPTION C ========================= -->
+  <h2>Option C — Header pill + menu-drawer credit</h2>
+  <p class="cap">A subtle "Powered by Automatorr" pill sits in the header actions (or, shown here, at the bottom of the slide-out menu). Good if you want the header wordmark totally clean and the credit tucked into chrome.</p>
+  <div class="frame">
+    <div class="bar">
+      <a class="lockup" href="#" aria-label="Speccify home">
+        <svg width="34" height="36" viewBox="0 0 56 62"><use href="#speccify-snake"/></svg>
+        <span class="wordmark">peccify</span>
+      </a>
+      <div class="bar-actions">
+        <span class="pill">Powered by <b>Automatorr</b></span>
+        <span class="btn">LIGHT</span><span class="btn">MENU +</span>
+      </div>
+    </div>
+    <div class="body">Compare components · PC Builder …</div>
+    <div class="drawerfoot">Menu ▸ … ▸ <span style="color:var(--muted)">Powered by <b style="color:var(--lime)">Automatorr</b></span></div>
+  </div>
+
+  <!-- Sizing / asset spec -->
+  <h2>Fit &amp; sizing spec</h2>
+  <p class="cap">So the Speccify lockup drops into the exact Automatorr slot without shifting the header.</p>
+  <div class="specsheet">
+    <div class="card"><div class="k">Header height</div><div class="v">Glyph 26&nbsp;px tall (matches current <code>.logo-img</code>); wordmark ~30&nbsp;px cap height</div></div>
+    <div class="card"><div class="k">Lockup gap</div><div class="v">9&nbsp;px between snake glyph and "peccify"</div></div>
+    <div class="card"><div class="k">Snake blue</div><div class="v"><span class="swatch" style="background:#9db6e4"></span>#9DB6E4</div></div>
+    <div class="card"><div class="k">Wordmark</div><div class="v"><span class="swatch" style="background:#eef3fb"></span>#EEF3FB on dark · navy on light</div></div>
+    <div class="card"><div class="k">Powered-by accent</div><div class="v"><span class="swatch" style="background:#c2e830"></span>Automatorr lime, low-key</div></div>
+    <div class="card"><div class="k">Asset</div><div class="v">Ship <code>speccify-logo.svg</code> (this rebuild) or a 2× PNG at 52&nbsp;px tall</div></div>
+  </div>
+
+  <h2>On both themes</h2>
+  <p class="cap">The snake glyph reads on light and dark. On light mode the wordmark flips to navy.</p>
+  <div class="navybg">
+    <span class="lockup"><svg width="34" height="36" viewBox="0 0 56 62"><use href="#speccify-snake"/></svg><span class="wordmark">peccify</span></span>
+  </div>
+  <div class="navybg" style="background:#f5f5f8;margin-left:10px">
+    <span class="lockup"><svg width="34" height="36" viewBox="0 0 56 62"><use href="#speccify-snake"/></svg><span class="wordmark" style="color:#16131f">peccify</span></span>
+  </div>
+
+  <h2>What changes in code</h2>
+  <p class="cap" style="max-width:80ch">
+    <code>TopBar.tsx</code> — swap <code>automatorr-logo.png</code> → <code>speccify-logo.svg</code>, update <code>aria-label</code>/<code>alt</code> to "Speccify".<br>
+    <b>Option A:</b> <code>ComparePage.tsx</code> footer → <code>© 2026 Speccify · Powered by Automatorr</code> (and add the same footer to PC Builder / Admin).<br>
+    <b>Option B:</b> add a <code>.brand-kicker</code> span under the wordmark in <code>TopBar.tsx</code>.<br>
+    <b>Option C:</b> add a <code>.powered-pill</code> in <code>.topbar-actions</code> and/or the drawer footer.
+  </p>
+</body>
+</html>

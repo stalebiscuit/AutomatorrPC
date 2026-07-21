@@ -1,0 +1,168 @@
+category,slug,brand,name,productCode,gtin,source,status
+cpu,amd-ryzen-3-3100,AMD,AMD Ryzen 3 3100,,,,needs-sourcing
+cpu,amd-ryzen-3-3300x,AMD,AMD Ryzen 3 3300X,,,,needs-sourcing
+cpu,amd-ryzen-5-3600,AMD,AMD Ryzen 5 3600,,,,needs-sourcing
+cpu,amd-ryzen-5-3600x,AMD,AMD Ryzen 5 3600X,,,,needs-sourcing
+cpu,amd-ryzen-5-3600xt,AMD,AMD Ryzen 5 3600XT,,,,needs-sourcing
+cpu,amd-ryzen-7-3700x,AMD,AMD Ryzen 7 3700X,,,,needs-sourcing
+cpu,amd-ryzen-7-3800x,AMD,AMD Ryzen 7 3800X,,,,needs-sourcing
+cpu,amd-ryzen-7-3800xt,AMD,AMD Ryzen 7 3800XT,,,,needs-sourcing
+cpu,amd-ryzen-9-3900x,AMD,AMD Ryzen 9 3900X,,,,needs-sourcing
+cpu,amd-ryzen-9-3900xt,AMD,AMD Ryzen 9 3900XT,,,,needs-sourcing
+cpu,amd-ryzen-9-3950x,AMD,AMD Ryzen 9 3950X,,,,needs-sourcing
+cpu,amd-ryzen-5-5500,AMD,AMD Ryzen 5 5500,,,,needs-sourcing
+cpu,amd-ryzen-5-5600,AMD,AMD Ryzen 5 5600,,,,needs-sourcing
+cpu,amd-ryzen-5-5600x,AMD,AMD Ryzen 5 5600X,,,,needs-sourcing
+cpu,amd-ryzen-7-5700x,AMD,AMD Ryzen 7 5700X,,,,needs-sourcing
+cpu,amd-ryzen-7-5700x3d,AMD,AMD Ryzen 7 5700X3D,,,,needs-sourcing
+cpu,amd-ryzen-7-5800x,AMD,AMD Ryzen 7 5800X,,,,needs-sourcing
+cpu,amd-ryzen-7-5800x3d,AMD,AMD Ryzen 7 5800X3D,,,,needs-sourcing
+cpu,amd-ryzen-9-5900x,AMD,AMD Ryzen 9 5900X,,,,needs-sourcing
+cpu,amd-ryzen-9-5950x,AMD,AMD Ryzen 9 5950X,,,,needs-sourcing
+cpu,amd-ryzen-5-5600g,AMD,AMD Ryzen 5 5600G,,,,needs-sourcing
+cpu,amd-ryzen-7-5700g,AMD,AMD Ryzen 7 5700G,,,,needs-sourcing
+cpu,amd-ryzen-5-7500f,AMD,AMD Ryzen 5 7500F,,,,needs-sourcing
+cpu,amd-ryzen-5-7600,AMD,AMD Ryzen 5 7600,,,,needs-sourcing
+cpu,amd-ryzen-5-7600x,AMD,AMD Ryzen 5 7600X,,,,needs-sourcing
+cpu,amd-ryzen-7-7700,AMD,AMD Ryzen 7 7700,,,,needs-sourcing
+cpu,amd-ryzen-7-7700x,AMD,AMD Ryzen 7 7700X,,,,needs-sourcing
+cpu,amd-ryzen-7-7800x3d,AMD,AMD Ryzen 7 7800X3D,,,,needs-sourcing
+cpu,amd-ryzen-9-7900,AMD,AMD Ryzen 9 7900,,,,needs-sourcing
+cpu,amd-ryzen-9-7900x,AMD,AMD Ryzen 9 7900X,,,,needs-sourcing
+cpu,amd-ryzen-9-7900x3d,AMD,AMD Ryzen 9 7900X3D,,,,needs-sourcing
+cpu,amd-ryzen-9-7950x,AMD,AMD Ryzen 9 7950X,,,,needs-sourcing
+cpu,amd-ryzen-9-7950x3d,AMD,AMD Ryzen 9 7950X3D,,,,needs-sourcing
+cpu,amd-ryzen-5-8500g,AMD,AMD Ryzen 5 8500G,,,,needs-sourcing
+cpu,amd-ryzen-5-8600g,AMD,AMD Ryzen 5 8600G,,,,needs-sourcing
+cpu,amd-ryzen-7-8700g,AMD,AMD Ryzen 7 8700G,,,,needs-sourcing
+cpu,amd-ryzen-5-9600x,AMD,AMD Ryzen 5 9600X,,,,needs-sourcing
+cpu,amd-ryzen-7-9700x,AMD,AMD Ryzen 7 9700X,,,,needs-sourcing
+cpu,amd-ryzen-7-9800x3d,AMD,AMD Ryzen 7 9800X3D,,,,needs-sourcing
+cpu,amd-ryzen-9-9900x,AMD,AMD Ryzen 9 9900X,,,,needs-sourcing
+cpu,amd-ryzen-9-9900x3d,AMD,AMD Ryzen 9 9900X3D,,,,needs-sourcing
+cpu,amd-ryzen-9-9950x,AMD,AMD Ryzen 9 9950X,,,,needs-sourcing
+cpu,amd-ryzen-9-9950x3d,AMD,AMD Ryzen 9 9950X3D,,,,needs-sourcing
+cpu,intel-core-i3-10100,Intel,Intel Core i3-10100,,,,needs-sourcing
+cpu,intel-core-i5-10400,Intel,Intel Core i5-10400,,,,needs-sourcing
+cpu,intel-core-i5-10400f,Intel,Intel Core i5-10400F,,,,needs-sourcing
+cpu,intel-core-i5-10600k,Intel,Intel Core i5-10600K,,,,needs-sourcing
+cpu,intel-core-i7-10700,Intel,Intel Core i7-10700,,,,needs-sourcing
+cpu,intel-core-i7-10700k,Intel,Intel Core i7-10700K,,,,needs-sourcing
+cpu,intel-core-i9-10900k,Intel,Intel Core i9-10900K,,,,needs-sourcing
+cpu,intel-core-i5-11400,Intel,Intel Core i5-11400,,,,needs-sourcing
+cpu,intel-core-i5-11400f,Intel,Intel Core i5-11400F,,,,needs-sourcing
+cpu,intel-core-i5-11600k,Intel,Intel Core i5-11600K,,,,needs-sourcing
+cpu,intel-core-i7-11700,Intel,Intel Core i7-11700,,,,needs-sourcing
+cpu,intel-core-i7-11700k,Intel,Intel Core i7-11700K,,,,needs-sourcing
+cpu,intel-core-i9-11900k,Intel,Intel Core i9-11900K,,,,needs-sourcing
+cpu,intel-core-i3-12100,Intel,Intel Core i3-12100,,,,needs-sourcing
+cpu,intel-core-i3-12100f,Intel,Intel Core i3-12100F,,,,needs-sourcing
+cpu,intel-core-i5-12400,Intel,Intel Core i5-12400,,,,needs-sourcing
+cpu,intel-core-i5-12400f,Intel,Intel Core i5-12400F,,,,needs-sourcing
+cpu,intel-core-i5-12600k,Intel,Intel Core i5-12600K,,,,needs-sourcing
+cpu,intel-core-i7-12700,Intel,Intel Core i7-12700,,,,needs-sourcing
+cpu,intel-core-i7-12700k,Intel,Intel Core i7-12700K,,,,needs-sourcing
+cpu,intel-core-i9-12900k,Intel,Intel Core i9-12900K,,,,needs-sourcing
+cpu,intel-core-i3-13100,Intel,Intel Core i3-13100,,,,needs-sourcing
+cpu,intel-core-i5-13400,Intel,Intel Core i5-13400,,,,needs-sourcing
+cpu,intel-core-i5-13400f,Intel,Intel Core i5-13400F,,,,needs-sourcing
+cpu,intel-core-i5-13600k,Intel,Intel Core i5-13600K,,,,needs-sourcing
+cpu,intel-core-i7-13700,Intel,Intel Core i7-13700,,,,needs-sourcing
+cpu,intel-core-i7-13700k,Intel,Intel Core i7-13700K,,,,needs-sourcing
+cpu,intel-core-i9-13900k,Intel,Intel Core i9-13900K,,,,needs-sourcing
+cpu,intel-core-i5-14400,Intel,Intel Core i5-14400,,,,needs-sourcing
+cpu,intel-core-i5-14400f,Intel,Intel Core i5-14400F,,,,needs-sourcing
+cpu,intel-core-i5-14600k,Intel,Intel Core i5-14600K,,,,needs-sourcing
+cpu,intel-core-i7-14700k,Intel,Intel Core i7-14700K,,,,needs-sourcing
+cpu,intel-core-i9-14900k,Intel,Intel Core i9-14900K,,735858546966,verified-web (Intel UPC),sourced
+cpu,intel-core-ultra-5-245k,Intel,Intel Core Ultra 5 245K,,,,needs-sourcing
+cpu,intel-core-ultra-7-265k,Intel,Intel Core Ultra 7 265K,,,,needs-sourcing
+cpu,intel-core-ultra-9-285k,Intel,Intel Core Ultra 9 285K,,,,needs-sourcing
+gpu,nvidia-geforce-rtx-5090,NVIDIA,NVIDIA GeForce RTX 5090,,,,needs-sourcing
+gpu,nvidia-geforce-rtx-4090,NVIDIA,NVIDIA GeForce RTX 4090,,,,needs-sourcing
+gpu,nvidia-geforce-rtx-4080-super,NVIDIA,NVIDIA GeForce RTX 4080 SUPER,,,,needs-sourcing
+gpu,amd-radeon-rx-7900-xtx,AMD,AMD Radeon RX 7900 XTX,,,,needs-sourcing
+gpu,nvidia-geforce-rtx-4070,NVIDIA,NVIDIA GeForce RTX 4070,,,,needs-sourcing
+gpu,amd-radeon-rx-7800-xt,AMD,AMD Radeon RX 7800 XT,,,,needs-sourcing
+gpu,nvidia-geforce-rtx-4060,NVIDIA,NVIDIA GeForce RTX 4060,,,,needs-sourcing
+gpu,amd-radeon-rx-7600,AMD,AMD Radeon RX 7600,,,,needs-sourcing
+ram,gskill-trident-z5-rgb-ddr5-6000-cl30-64gb,G.SKILL,G.Skill Trident Z5 RGB DDR5-6000 CL30 64GB (2×32GB),,,,needs-sourcing
+ram,corsair-vengeance-rgb-ddr5-6000-cl30-32gb,Corsair,Corsair Vengeance RGB DDR5-6000 CL30 32GB (2×16GB),,,,needs-sourcing
+ram,gskill-trident-z5-rgb-ddr5-6000-cl30-32gb,G.SKILL,G.Skill Trident Z5 RGB DDR5-6000 CL30 32GB (2×16GB),,,,needs-sourcing
+ram,corsair-vengeance-ddr5-6000-cl36-32gb,Corsair,Corsair Vengeance DDR5-6000 CL36 32GB (2×16GB),,,,needs-sourcing
+ram,kingston-fury-beast-ddr5-5600-cl40-32gb,Kingston,Kingston Fury Beast DDR5-5600 CL40 32GB (2×16GB),,,,needs-sourcing
+ram,gskill-trident-z-ddr4-3200-cl14-64gb,G.SKILL,G.Skill Trident Z DDR4-3200 CL14 64GB (4×16GB),,,,needs-sourcing
+ram,corsair-vengeance-lpx-ddr4-3200-cl16-32gb,Corsair,Corsair Vengeance LPX DDR4-3200 CL16 32GB (2×16GB),,,,needs-sourcing
+ram,corsair-vengeance-lpx-ddr4-3200-cl16-16gb,Corsair,Corsair Vengeance LPX DDR4-3200 CL16 16GB (2×8GB),,,,needs-sourcing
+storage,wd-black-sn8100-4tb,WD,WD Black SN8100 4TB,,,,needs-sourcing
+storage,wd-black-sn850x-2tb,WD,WD Black SN850X 2TB,,,,needs-sourcing
+storage,samsung-990-pro-2tb,Samsung,Samsung 990 Pro 2TB,,,,needs-sourcing
+storage,samsung-980-pro-1tb,Samsung,Samsung 980 Pro 1TB,,,,needs-sourcing
+storage,samsung-870-evo-1tb,Samsung,Samsung 870 EVO 1TB,,,,needs-sourcing
+storage,crucial-mx500-1tb,Crucial,Crucial MX500 1TB,,,,needs-sourcing
+storage,seagate-ironwolf-8tb,Seagate,Seagate IronWolf 8TB,,,,needs-sourcing
+storage,seagate-ironwolf-4tb,Seagate,Seagate IronWolf 4TB,,,,needs-sourcing
+storage,seagate-barracuda-2tb,Seagate,Seagate Barracuda 2TB,,,,needs-sourcing
+storage,seagate-barracuda-4tb,Seagate,Seagate Barracuda 4TB,,,,needs-sourcing
+motherboard,asus-rog-strix-b650-a-gaming-wifi,ASUS,ASUS ROG Strix B650-A Gaming WiFi,,,,needs-sourcing
+motherboard,msi-mag-b650-tomahawk-wifi,MSI,MSI MAG B650 Tomahawk WiFi,,,,needs-sourcing
+motherboard,gigabyte-b650i-aorus-ultra,Gigabyte,Gigabyte B650I AORUS Ultra,,,,needs-sourcing
+motherboard,asus-tuf-gaming-z790-plus-wifi,ASUS,ASUS TUF Gaming Z790-Plus WiFi,,,,needs-sourcing
+motherboard,msi-pro-b760m-a-wifi-ddr5,MSI,MSI PRO B760M-A WiFi DDR5,,,,needs-sourcing
+motherboard,gigabyte-b760m-ds3h-ddr4,Gigabyte,Gigabyte B760M DS3H DDR4,,,,needs-sourcing
+cooler,noctua-nh-d15-chromax-black,Noctua,Noctua NH-D15 chromax.black,,,,needs-sourcing
+cooler,thermalright-peerless-assassin-120-se,Thermalright,Thermalright Peerless Assassin 120 SE,,,,needs-sourcing
+cooler,deepcool-ak400,DeepCool,DeepCool AK400,,,,needs-sourcing
+cooler,corsair-icue-h100i-rgb-elite,Corsair,Corsair iCUE H100i RGB Elite,,,,needs-sourcing
+cooler,arctic-liquid-freezer-iii-360,Arctic,Arctic Liquid Freezer III 360,,,,needs-sourcing
+cooler,amd-wraith-stealth,AMD,AMD Wraith Stealth,,,,needs-sourcing
+case,fractal-design-north,Fractal Design,Fractal Design North,,,,needs-sourcing
+case,lian-li-lancool-216,Lian Li,Lian Li Lancool 216,,,,needs-sourcing
+case,nzxt-h9-flow,NZXT,NZXT H9 Flow,,,,needs-sourcing
+case,corsair-4000d-airflow,Corsair,Corsair 4000D Airflow,,,,needs-sourcing
+case,cooler-master-nr200p,Cooler Master,Cooler Master NR200P,,,,needs-sourcing
+case,montech-air-903-max,Montech,Montech AIR 903 MAX,,,,needs-sourcing
+psu,corsair-rm750e-2023,Corsair,Corsair RM750e (2023),,,,needs-sourcing
+psu,corsair-rm850e-2023,Corsair,Corsair RM850e (2023),,,,needs-sourcing
+psu,seasonic-focus-gx-650,Seasonic,Seasonic Focus GX-650,,,,needs-sourcing
+psu,be-quiet-pure-power-12-m-1000w,be quiet!,be quiet! Pure Power 12 M 1000W,,,,needs-sourcing
+psu,corsair-hx1200-platinum,Corsair,Corsair HX1200 Platinum,,,,needs-sourcing
+psu,msi-mag-a550bn,MSI,MSI MAG A550BN,,,,needs-sourcing
+monitor,dell-s2721dgf-27-qhd-165hz,Dell,"Dell S2721DGF 27"" QHD 165Hz",,,,needs-sourcing
+monitor,lg-27gp850-b-27-qhd-180hz,LG,"LG 27GP850-B 27"" QHD 180Hz",,,,needs-sourcing
+monitor,samsung-odyssey-g7-32-qhd-240hz,Samsung,"Samsung Odyssey G7 32"" QHD 240Hz",,,,needs-sourcing
+monitor,lg-27gr93u-27-4k-144hz,LG,"LG 27GR93U 27"" 4K 144Hz",,,,needs-sourcing
+monitor,asus-tuf-gaming-vg259qm-25-fhd-280hz,ASUS,"ASUS TUF Gaming VG259QM 25"" FHD 280Hz",,,,needs-sourcing
+cpu,intel-core-i5-4460,Intel,Intel Core i5-4460,,,,needs-sourcing
+cpu,intel-core-i5-4590,Intel,Intel Core i5-4590,,,,needs-sourcing
+cpu,intel-core-i5-4690k,Intel,Intel Core i5-4690K,,,,needs-sourcing
+cpu,intel-core-i7-4790k,Intel,Intel Core i7-4790K,,,,needs-sourcing
+cpu,intel-core-i5-6600k,Intel,Intel Core i5-6600K,,,,needs-sourcing
+cpu,intel-core-i7-6700k,Intel,Intel Core i7-6700K,,,,needs-sourcing
+cpu,intel-core-i5-7600k,Intel,Intel Core i5-7600K,,,,needs-sourcing
+cpu,intel-core-i7-7700k,Intel,Intel Core i7-7700K,,,,needs-sourcing
+cpu,intel-core-i5-8400,Intel,Intel Core i5-8400,,,,needs-sourcing
+cpu,intel-core-i5-8600k,Intel,Intel Core i5-8600K,,,,needs-sourcing
+cpu,intel-core-i7-8700k,Intel,Intel Core i7-8700K,,,,needs-sourcing
+cpu,intel-core-i5-9600k,Intel,Intel Core i5-9600K,,,,needs-sourcing
+cpu,intel-core-i7-9700k,Intel,Intel Core i7-9700K,,,,needs-sourcing
+cpu,intel-core-i9-9900k,Intel,Intel Core i9-9900K,,,,needs-sourcing
+cpu,intel-core-i7-5820k,Intel,Intel Core i7-5820K,,,,needs-sourcing
+cpu,intel-core-i7-5930k,Intel,Intel Core i7-5930K,,,,needs-sourcing
+cpu,intel-core-i7-6800k,Intel,Intel Core i7-6800K,,,,needs-sourcing
+cpu,intel-core-i7-6900k,Intel,Intel Core i7-6900K,,,,needs-sourcing
+cpu,intel-core-i7-7820x,Intel,Intel Core i7-7820X,,,,needs-sourcing
+cpu,intel-core-i9-7900x,Intel,Intel Core i9-7900X,,,,needs-sourcing
+cpu,amd-fx-6300,AMD,AMD FX-6300,,,,needs-sourcing
+cpu,amd-fx-8320,AMD,AMD FX-8320,,,,needs-sourcing
+cpu,amd-fx-8350,AMD,AMD FX-8350,,,,needs-sourcing
+cpu,amd-fx-8370,AMD,AMD FX-8370,,,,needs-sourcing
+cpu,amd-fx-9590,AMD,AMD FX-9590,,,,needs-sourcing
+cpu,amd-ryzen-5-1600,AMD,AMD Ryzen 5 1600,,,,needs-sourcing
+cpu,amd-ryzen-7-1700,AMD,AMD Ryzen 7 1700,,,,needs-sourcing
+cpu,amd-ryzen-7-1800x,AMD,AMD Ryzen 7 1800X,,,,needs-sourcing
+cpu,amd-ryzen-3-2200g,AMD,AMD Ryzen 3 2200G,,,,needs-sourcing
+cpu,amd-ryzen-5-2400g,AMD,AMD Ryzen 5 2400G,,,,needs-sourcing
+cpu,amd-ryzen-5-2600,AMD,AMD Ryzen 5 2600,,,,needs-sourcing
+cpu,amd-ryzen-5-2600x,AMD,AMD Ryzen 5 2600X,,,,needs-sourcing
+cpu,amd-ryzen-7-2700x,AMD,AMD Ryzen 7 2700X,,,,needs-sourcing

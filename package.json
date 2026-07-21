@@ -1,0 +1,49 @@
+{
+  "name": "automatorr-compare",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Automatorr — head-to-head PC component comparison tool",
+  "workspaces": [
+    "shared",
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace shared && npm run build --workspace server && npm run build --workspace client",
+    "dev": "concurrently -n server,client -c blue,green \"npm run dev --workspace server\" \"npm run dev --workspace client\"",
+    "lint": "eslint . --max-warnings 0",
+    "format": "prettier --write \"**/*.{ts,tsx,css,json,md}\"",
+    "test": "npm run test --workspace shared --if-present && npm run test --workspace server --if-present && npm run test --workspace client --if-present",
+    "seed": "npm run seed --workspace server",
+    "scrape": "npm run scrape --workspace server",
+    "rollups": "npm run rollups --workspace server",
+    "icecat:enrich": "npm run icecat:enrich --workspace server",
+    "icecat:diagnose": "npm run icecat:diagnose --workspace server",
+    "catalog:check": "npm run catalog:check --workspace server && npm run db8:audit --workspace server -- --seed --ci",
+    "db:reset": "npm run db:reset --workspace server",
+    "db8:audit": "npm run db8:audit --workspace server",
+    "db8:fix": "npm run db8:fix --workspace server"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "concurrently": "^9.1.0",
+    "eslint": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stalebiscuit/AutomatorrPC.git"
+  },
+  "homepage": "https://github.com/stalebiscuit/AutomatorrPC#readme",
+  "bugs": {
+    "url": "https://github.com/stalebiscuit/AutomatorrPC/issues"
+  }
+}

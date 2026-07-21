@@ -1,0 +1,3261 @@
+{
+  "category": "ram",
+  "components": [
+    {
+      "brand": "G.SKILL",
+      "name": "G.Skill Trident Z5 RGB DDR5-6000 CL30 64GB (2×32GB)",
+      "slug": "gskill-trident-z5-rgb-ddr5-6000-cl30-64gb",
+      "imageUrl": "/images/ram/ddr5.svg",
+      "csv": {
+        "type": "RAM",
+        "model": "TZ/RJ/FX DDR5 6000 C30 2x32GB"
+      },
+      "fallbackUbRaw": 243,
+      "specs": {
+        "capacity": 64,
+        "speedMTs": 6000,
+        "casLatency": 30,
+        "kitConfig": "2 × 32 GB",
+        "voltage": 1.4,
+        "type": "DDR5",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.gskill.com/product/165/390/1562834472/F5-6000J3040G32GX2-TZ5RS",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 370,
+          "url": "https://www.amazon.com.au/s?k=G.Skill%20Trident%20Z5%20RGB%20DDR5-6000%20CL30%2064GB%20(2%C3%9732GB)"
+        },
+        {
+          "store": "Mwave",
+          "price": 349,
+          "url": "https://www.mwave.com.au/searchresult?w=G.Skill%20Trident%20Z5%20RGB%20DDR5-6000%20CL30%2064GB%20(2%C3%9732GB)"
+        },
+        {
+          "store": "Scorptec",
+          "price": 361,
+          "url": "https://www.scorptec.com.au/search/go?w=G.Skill%20Trident%20Z5%20RGB%20DDR5-6000%20CL30%2064GB%20(2%C3%9732GB)"
+        }
+      ]
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance RGB DDR5-6000 CL30 32GB (2×16GB)",
+      "slug": "corsair-vengeance-rgb-ddr5-6000-cl30-32gb",
+      "imageUrl": "/images/ram/ddr5.svg",
+      "csv": {
+        "type": "RAM",
+        "model": "Vengeance RGB DDR5 6000 C30 2x16GB"
+      },
+      "fallbackUbRaw": 229,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 6000,
+        "casLatency": 30,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.4,
+        "type": "DDR5",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.corsair.com/us/en/p/memory/cmh32gx5m2b6000c30/vengeance-rgb-32gb-2x16gb-ddr5-dram-6000mhz-c30-memory-kit-black-cmh32gx5m2b6000c30",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 189,
+          "url": "https://www.amazon.com.au/s?k=Corsair%20Vengeance%20RGB%20DDR5-6000%20CL30%2032GB%20(2%C3%9716GB)"
+        },
+        {
+          "store": "Mwave",
+          "price": 196,
+          "url": "https://www.mwave.com.au/searchresult?w=Corsair%20Vengeance%20RGB%20DDR5-6000%20CL30%2032GB%20(2%C3%9716GB)"
+        },
+        {
+          "store": "Scorptec",
+          "price": 200,
+          "url": "https://www.scorptec.com.au/search/go?w=Corsair%20Vengeance%20RGB%20DDR5-6000%20CL30%2032GB%20(2%C3%9716GB)"
+        }
+      ]
+    },
+    {
+      "brand": "G.SKILL",
+      "name": "G.Skill Trident Z5 RGB DDR5-6000 CL30 32GB (2×16GB)",
+      "slug": "gskill-trident-z5-rgb-ddr5-6000-cl30-32gb",
+      "imageUrl": "/images/ram/ddr5.svg",
+      "csv": {
+        "type": "RAM",
+        "model": "TZ/RJ/FX DDR5 6000 C30 2x16GB"
+      },
+      "fallbackUbRaw": 225,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 6000,
+        "casLatency": 30,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR5",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.gskill.com/product/165/390/1562834304/F5-6000J3038F16GX2-TZ5RS",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 206,
+          "url": "https://www.amazon.com.au/s?k=G.Skill%20Trident%20Z5%20RGB%20DDR5-6000%20CL30%2032GB%20(2%C3%9716GB)"
+        },
+        {
+          "store": "Mwave",
+          "price": 211,
+          "url": "https://www.mwave.com.au/searchresult?w=G.Skill%20Trident%20Z5%20RGB%20DDR5-6000%20CL30%2032GB%20(2%C3%9716GB)"
+        },
+        {
+          "store": "Scorptec",
+          "price": 199,
+          "url": "https://www.scorptec.com.au/search/go?w=G.Skill%20Trident%20Z5%20RGB%20DDR5-6000%20CL30%2032GB%20(2%C3%9716GB)"
+        }
+      ]
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance DDR5-6000 CL36 32GB (2×16GB)",
+      "slug": "corsair-vengeance-ddr5-6000-cl36-32gb",
+      "imageUrl": "/images/ram/ddr5.svg",
+      "csv": {
+        "type": "RAM",
+        "model": "Vengeance DDR5 6000 C36 2x16GB"
+      },
+      "fallbackUbRaw": 172,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 6000,
+        "casLatency": 36,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR5",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.corsair.com/us/en/p/memory/cmk32gx5m2d6000c36/vengeance-32gb-2x16gb-ddr5-dram-6000mhz-c36-memory-kit-black-cmk32gx5m2d6000c36",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 175,
+          "url": "https://www.amazon.com.au/s?k=Corsair%20Vengeance%20DDR5-6000%20CL36%2032GB%20(2%C3%9716GB)"
+        },
+        {
+          "store": "Mwave",
+          "price": 165,
+          "url": "https://www.mwave.com.au/searchresult?w=Corsair%20Vengeance%20DDR5-6000%20CL36%2032GB%20(2%C3%9716GB)"
+        },
+        {
+          "store": "Scorptec",
+          "price": 171,
+          "url": "https://www.scorptec.com.au/search/go?w=Corsair%20Vengeance%20DDR5-6000%20CL36%2032GB%20(2%C3%9716GB)"
+        }
+      ]
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston Fury Beast DDR5-5600 CL40 32GB (2×16GB)",
+      "slug": "kingston-fury-beast-ddr5-5600-cl40-32gb",
+      "imageUrl": "/images/ram/ddr5.svg",
+      "csv": {
+        "type": "RAM",
+        "model": "Fury DDR5 5600 C40 2x16GB"
+      },
+      "fallbackUbRaw": 161,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 5600,
+        "casLatency": 40,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.25,
+        "type": "DDR5",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.kingston.com/en/memory/gaming/kingston-fury-beast-ddr5-memory",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 149,
+          "url": "https://www.amazon.com.au/s?k=Kingston%20Fury%20Beast%20DDR5-5600%20CL40%2032GB%20(2%C3%9716GB)"
+        },
+        {
+          "store": "Mwave",
+          "price": 154,
+          "url": "https://www.mwave.com.au/searchresult?w=Kingston%20Fury%20Beast%20DDR5-5600%20CL40%2032GB%20(2%C3%9716GB)"
+        },
+        {
+          "store": "Scorptec",
+          "price": 158,
+          "url": "https://www.scorptec.com.au/search/go?w=Kingston%20Fury%20Beast%20DDR5-5600%20CL40%2032GB%20(2%C3%9716GB)"
+        }
+      ]
+    },
+    {
+      "brand": "G.SKILL",
+      "name": "G.Skill Trident Z DDR4-3200 CL14 64GB (4×16GB)",
+      "slug": "gskill-trident-z-ddr4-3200-cl14-64gb",
+      "imageUrl": "/images/ram/ddr5.svg",
+      "csv": {
+        "type": "RAM",
+        "model": "Trident Z DDR4 3200 C14 4x16GB"
+      },
+      "fallbackUbRaw": 116,
+      "specs": {
+        "capacity": 64,
+        "speedMTs": 3200,
+        "casLatency": 14,
+        "kitConfig": "4 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black / Silver"
+      },
+      "specSourceUrl": "https://www.gskill.com/product/165/170/1535961376/F4-3200C14Q-64GTZ",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 237,
+          "url": "https://www.amazon.com.au/s?k=G.Skill%20Trident%20Z%20DDR4-3200%20CL14%2064GB%20(4%C3%9716GB)"
+        },
+        {
+          "store": "Mwave",
+          "price": 243,
+          "url": "https://www.mwave.com.au/searchresult?w=G.Skill%20Trident%20Z%20DDR4-3200%20CL14%2064GB%20(4%C3%9716GB)"
+        },
+        {
+          "store": "Scorptec",
+          "price": 229,
+          "url": "https://www.scorptec.com.au/search/go?w=G.Skill%20Trident%20Z%20DDR4-3200%20CL14%2064GB%20(4%C3%9716GB)"
+        }
+      ]
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance LPX DDR4-3200 CL16 32GB (2×16GB)",
+      "slug": "corsair-vengeance-lpx-ddr4-3200-cl16-32gb",
+      "imageUrl": "/images/ram/ddr5.svg",
+      "csv": {
+        "type": "RAM",
+        "model": "Vengeance LPX DDR4 3200 C16 2x16GB"
+      },
+      "fallbackUbRaw": 87.5,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.corsair.com/us/en/p/memory/cmk32gx4m2e3200c16/vengeance-lpx-32gb-2x16gb-ddr4-dram-3200mhz-c16-memory-kit-black-cmk32gx4m2e3200c16",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 126,
+          "url": "https://www.amazon.com.au/s?k=Corsair%20Vengeance%20LPX%20DDR4-3200%20CL16%2032GB%20(2%C3%9716GB)"
+        },
+        {
+          "store": "Mwave",
+          "price": 119,
+          "url": "https://www.mwave.com.au/searchresult?w=Corsair%20Vengeance%20LPX%20DDR4-3200%20CL16%2032GB%20(2%C3%9716GB)"
+        },
+        {
+          "store": "Scorptec",
+          "price": 123,
+          "url": "https://www.scorptec.com.au/search/go?w=Corsair%20Vengeance%20LPX%20DDR4-3200%20CL16%2032GB%20(2%C3%9716GB)"
+        }
+      ]
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance LPX DDR4-3200 CL16 16GB (2×8GB)",
+      "slug": "corsair-vengeance-lpx-ddr4-3200-cl16-16gb",
+      "imageUrl": "/images/ram/ddr5.svg",
+      "csv": {
+        "type": "RAM",
+        "model": "Vengeance LPX DDR4 3200 C16 2x8GB"
+      },
+      "fallbackUbRaw": 85.1,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.corsair.com/us/en/p/memory/cmk16gx4m2b3200c16/vengeance-lpx-16gb-2x8gb-ddr4-dram-3200mhz-c16-memory-kit-black-cmk16gx4m2b3200c16",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 69,
+          "url": "https://www.amazon.com.au/s?k=Corsair%20Vengeance%20LPX%20DDR4-3200%20CL16%2016GB%20(2%C3%978GB)"
+        },
+        {
+          "store": "Mwave",
+          "price": 71,
+          "url": "https://www.mwave.com.au/searchresult?w=Corsair%20Vengeance%20LPX%20DDR4-3200%20CL16%2016GB%20(2%C3%978GB)"
+        },
+        {
+          "store": "Scorptec",
+          "price": 73,
+          "url": "https://www.scorptec.com.au/search/go?w=Corsair%20Vengeance%20LPX%20DDR4-3200%20CL16%2016GB%20(2%C3%978GB)"
+        }
+      ]
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance DDR3-1600 CL10 16GB (2×8GB)",
+      "slug": "corsair-vengeance-ddr3-1600-cl10-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "Vengeance DDR3 1600 C10 2x8GB"
+      },
+      "fallbackUbRaw": 45,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 1600,
+        "casLatency": 10,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.5,
+        "type": "DDR3",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.google.com/search?q=Corsair%20Vengeance%20DDR3-1600%20CL10%2016GB%20(2%C3%978GB)%20specifications",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.SKILL",
+      "name": "G.Skill Ripjaws X DDR3-1866 CL10 16GB (2×8GB)",
+      "slug": "g-skill-ripjaws-x-ddr3-1866-cl10-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "Ripjaws X DDR3 1866 C10 2x8GB"
+      },
+      "fallbackUbRaw": 52.5,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 1866,
+        "casLatency": 10,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.5,
+        "type": "DDR3",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.google.com/search?q=G.Skill%20Ripjaws%20X%20DDR3-1866%20CL10%2016GB%20(2%C3%978GB)%20specifications",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Crucial",
+      "name": "Crucial Ballistix Sport DDR3-1600 CL9 8GB (2×4GB)",
+      "slug": "crucial-ballistix-sport-ddr3-1600-cl9-8gb-2-4gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "Ballistix Sport DDR3 1600 C9 2x4GB"
+      },
+      "fallbackUbRaw": 45,
+      "specs": {
+        "capacity": 8,
+        "speedMTs": 1600,
+        "casLatency": 9,
+        "kitConfig": "2 × 4 GB",
+        "voltage": 1.5,
+        "type": "DDR3",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.google.com/search?q=Crucial%20Ballistix%20Sport%20DDR3-1600%20CL9%208GB%20(2%C3%974GB)%20specifications",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston HyperX Fury DDR3-1866 CL10 8GB (2×4GB)",
+      "slug": "kingston-hyperx-fury-ddr3-1866-cl10-8gb-2-4gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "HyperX Fury DDR3 1866 C10 2x4GB"
+      },
+      "fallbackUbRaw": 52.5,
+      "specs": {
+        "capacity": 8,
+        "speedMTs": 1866,
+        "casLatency": 10,
+        "kitConfig": "2 × 4 GB",
+        "voltage": 1.5,
+        "type": "DDR3",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.google.com/search?q=Kingston%20HyperX%20Fury%20DDR3-1866%20CL10%208GB%20(2%C3%974GB)%20specifications",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.SKILL",
+      "name": "G.Skill Trident Z5 Neo RGB DDR5-6000 CL30 32GB (2×16GB)",
+      "slug": "g-skill-trident-z5-neo-rgb-ddr5-6000-cl30-32gb-2-16gb",
+      "imageUrl": "/images/ram/ddr5.svg",
+      "csv": {
+        "type": "RAM",
+        "model": "Trident Z5 Neo DDR5 6000 C30 2x16GB"
+      },
+      "fallbackUbRaw": 226,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 6000,
+        "casLatency": 30,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR5",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.google.com/search?q=G.Skill%20Trident%20Z5%20Neo%20RGB%20DDR5-6000%20CL30%2032GB%20(2%C3%9716GB)%20specifications",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.SKILL",
+      "name": "G.Skill Flare X5 DDR5-6000 CL30 32GB (2×16GB)",
+      "slug": "g-skill-flare-x5-ddr5-6000-cl30-32gb-2-16gb",
+      "imageUrl": "/images/ram/ddr5.svg",
+      "csv": {
+        "type": "RAM",
+        "model": "Flare X5 DDR5 6000 C30 2x16GB"
+      },
+      "fallbackUbRaw": 223,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 6000,
+        "casLatency": 30,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR5",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.google.com/search?q=G.Skill%20Flare%20X5%20DDR5-6000%20CL30%2032GB%20(2%C3%9716GB)%20specifications",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance RGB DDR5-6000 CL30 64GB (2×32GB)",
+      "slug": "corsair-vengeance-rgb-ddr5-6000-cl30-64gb-2-32gb",
+      "imageUrl": "/images/ram/ddr5.svg",
+      "csv": {
+        "type": "RAM",
+        "model": "Vengeance RGB DDR5 6000 C30 2x32GB"
+      },
+      "fallbackUbRaw": 244,
+      "specs": {
+        "capacity": 64,
+        "speedMTs": 6000,
+        "casLatency": 30,
+        "kitConfig": "2 × 32 GB",
+        "voltage": 1.35,
+        "type": "DDR5",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.google.com/search?q=Corsair%20Vengeance%20RGB%20DDR5-6000%20CL30%2064GB%20(2%C3%9732GB)%20specifications",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance DDR5-5600 CL36 32GB (2×16GB)",
+      "slug": "corsair-vengeance-ddr5-5600-cl36-32gb-2-16gb",
+      "imageUrl": "/images/ram/ddr5.svg",
+      "csv": {
+        "type": "RAM",
+        "model": "Vengeance DDR5 5600 C36 2x16GB"
+      },
+      "fallbackUbRaw": 156,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 5600,
+        "casLatency": 36,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.25,
+        "type": "DDR5",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.google.com/search?q=Corsair%20Vengeance%20DDR5-5600%20CL36%2032GB%20(2%C3%9716GB)%20specifications",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston Fury Beast DDR5-6000 CL36 32GB (2×16GB)",
+      "slug": "kingston-fury-beast-ddr5-6000-cl36-32gb-2-16gb",
+      "imageUrl": "/images/ram/ddr5.svg",
+      "csv": {
+        "type": "RAM",
+        "model": "Fury Beast DDR5 6000 C36 2x16GB"
+      },
+      "fallbackUbRaw": 173,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 6000,
+        "casLatency": 36,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR5",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.google.com/search?q=Kingston%20Fury%20Beast%20DDR5-6000%20CL36%2032GB%20(2%C3%9716GB)%20specifications",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.SKILL",
+      "name": "G.Skill Ripjaws S5 DDR5-6400 CL32 32GB (2×16GB)",
+      "slug": "g-skill-ripjaws-s5-ddr5-6400-cl32-32gb-2-16gb",
+      "imageUrl": "/images/ram/ddr5.svg",
+      "csv": {
+        "type": "RAM",
+        "model": "Ripjaws S5 DDR5 6400 C32 2x16GB"
+      },
+      "fallbackUbRaw": 236,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 6400,
+        "casLatency": 32,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.4,
+        "type": "DDR5",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.google.com/search?q=G.Skill%20Ripjaws%20S5%20DDR5-6400%20CL32%2032GB%20(2%C3%9716GB)%20specifications",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance LPX DDR4-3600 CL18 32GB (2×16GB)",
+      "slug": "corsair-vengeance-lpx-ddr4-3600-cl18-32gb-2-16gb",
+      "imageUrl": "/images/ram/ddr5.svg",
+      "csv": {
+        "type": "RAM",
+        "model": "Vengeance LPX DDR4 3600 C18 2x16GB"
+      },
+      "fallbackUbRaw": 92,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 3600,
+        "casLatency": 18,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.google.com/search?q=Corsair%20Vengeance%20LPX%20DDR4-3600%20CL18%2032GB%20(2%C3%9716GB)%20specifications",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Ripjaws V DDR4-3200 CL16 16GB (2×8GB)",
+      "slug": "g-skill-ripjaws-v-ddr4-3200-cl16-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-3200C16D-16GVKB"
+      },
+      "fallbackUbRaw": 95,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Ripjaws%20V%20DDR4-3200%20CL16%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Ripjaws V DDR4-3200 CL16 32GB (2×16GB)",
+      "slug": "g-skill-ripjaws-v-ddr4-3200-cl16-32gb-2-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-3200C16D-32GVK"
+      },
+      "fallbackUbRaw": 95,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Ripjaws%20V%20DDR4-3200%20CL16%2032GB%20(2%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance RGB Pro DDR4-3200 CL16 32GB (2×16GB)",
+      "slug": "corsair-vengeance-rgb-pro-ddr4-3200-cl16-32gb-2-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMW32GX4M2E3200C16"
+      },
+      "fallbackUbRaw": 95,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Vengeance%20RGB%20Pro%20DDR4-3200%20CL16%2032GB%20(2%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance RGB Pro DDR4-3200 CL16 16GB (2×8GB)",
+      "slug": "corsair-vengeance-rgb-pro-ddr4-3200-cl16-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMW16GX4M2C3200C16"
+      },
+      "fallbackUbRaw": 95,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Vengeance%20RGB%20Pro%20DDR4-3200%20CL16%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston FURY Beast DDR4-3200 CL16 8GB (1×8GB)",
+      "slug": "kingston-fury-beast-ddr4-3200-cl16-8gb-1-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "KF432C16BB8"
+      },
+      "fallbackUbRaw": 95,
+      "specs": {
+        "capacity": 8,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "1 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20FURY%20Beast%20DDR4-3200%20CL16%208GB%20(1%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Trident Z RGB DDR4-3200 CL16 16GB (2×8GB)",
+      "slug": "g-skill-trident-z-rgb-ddr4-3200-cl16-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-3200C16D-16GTZR"
+      },
+      "fallbackUbRaw": 95,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Trident%20Z%20RGB%20DDR4-3200%20CL16%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston FURY Beast DDR4-3200 CL16 16GB (2×8GB)",
+      "slug": "kingston-fury-beast-ddr4-3200-cl16-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "KF432C16BBK216"
+      },
+      "fallbackUbRaw": 95,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20FURY%20Beast%20DDR4-3200%20CL16%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance RGB Pro DDR4-3600 CL18 32GB (2×16GB)",
+      "slug": "corsair-vengeance-rgb-pro-ddr4-3600-cl18-32gb-2-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMW32GX4M2Z3600C18"
+      },
+      "fallbackUbRaw": 106.9,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 3600,
+        "casLatency": 18,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Vengeance%20RGB%20Pro%20DDR4-3600%20CL18%2032GB%20(2%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Trident Z RGB DDR4-3600 CL18 32GB (2×16GB)",
+      "slug": "g-skill-trident-z-rgb-ddr4-3600-cl18-32gb-2-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-3600C18D-32GTZR"
+      },
+      "fallbackUbRaw": 106.9,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 3600,
+        "casLatency": 18,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Trident%20Z%20RGB%20DDR4-3600%20CL18%2032GB%20(2%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Ripjaws V DDR4-3600 CL18 32GB (2×16GB)",
+      "slug": "g-skill-ripjaws-v-ddr4-3600-cl18-32gb-2-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-3600C18D-32GVK"
+      },
+      "fallbackUbRaw": 106.9,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 3600,
+        "casLatency": 18,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Ripjaws%20V%20DDR4-3600%20CL18%2032GB%20(2%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston FURY Beast DDR4-3200 CL16 32GB (2×16GB)",
+      "slug": "kingston-fury-beast-ddr4-3200-cl16-32gb-2-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "KF432C16BBK232"
+      },
+      "fallbackUbRaw": 95,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20FURY%20Beast%20DDR4-3200%20CL16%2032GB%20(2%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Ripjaws V DDR4-3600 CL16 16GB (2×8GB)",
+      "slug": "g-skill-ripjaws-v-ddr4-3600-cl16-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-3600C16D-16GVKC"
+      },
+      "fallbackUbRaw": 106.9,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 3600,
+        "casLatency": 16,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Ripjaws%20V%20DDR4-3600%20CL16%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Aegis DDR4-3200 CL16 16GB (2×8GB)",
+      "slug": "g-skill-aegis-ddr4-3200-cl16-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-3200C16D-16GIS"
+      },
+      "fallbackUbRaw": 95,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Aegis%20DDR4-3200%20CL16%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Ripjaws V DDR4-3600 CL18 16GB (2×8GB)",
+      "slug": "g-skill-ripjaws-v-ddr4-3600-cl18-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-3600C18D-16GVK"
+      },
+      "fallbackUbRaw": 106.9,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 3600,
+        "casLatency": 18,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Ripjaws%20V%20DDR4-3600%20CL18%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Ripjaws V DDR4-3600 CL16 32GB (2×16GB)",
+      "slug": "g-skill-ripjaws-v-ddr4-3600-cl16-32gb-2-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-3600C16D-32GVKC"
+      },
+      "fallbackUbRaw": 106.9,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 3600,
+        "casLatency": 16,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Ripjaws%20V%20DDR4-3600%20CL16%2032GB%20(2%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Ripjaws V DDR4-3600 CL18 128GB (4×32GB)",
+      "slug": "g-skill-ripjaws-v-ddr4-3600-cl18-128gb-4-32gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-3600C18Q-128GVK"
+      },
+      "fallbackUbRaw": 106.9,
+      "specs": {
+        "capacity": 128,
+        "speedMTs": 3600,
+        "casLatency": 18,
+        "kitConfig": "4 × 32 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Ripjaws%20V%20DDR4-3600%20CL18%20128GB%20(4%C3%9732GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance LPX DDR4-3600 CL18 16GB (2×8GB)",
+      "slug": "corsair-vengeance-lpx-ddr4-3600-cl18-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMK16GX4M2D3600C18"
+      },
+      "fallbackUbRaw": 106.9,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 3600,
+        "casLatency": 18,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Vengeance%20LPX%20DDR4-3600%20CL18%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance LPX DDR4-2400 CL16 8GB (1×8GB)",
+      "slug": "corsair-vengeance-lpx-ddr4-2400-cl16-8gb-1-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMK8GX4M1A2400C16"
+      },
+      "fallbackUbRaw": 71.3,
+      "specs": {
+        "capacity": 8,
+        "speedMTs": 2400,
+        "casLatency": 16,
+        "kitConfig": "1 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Vengeance%20LPX%20DDR4-2400%20CL16%208GB%20(1%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston HyperX Fury DDR4-3200 CL16 16GB (2×8GB)",
+      "slug": "kingston-hyperx-fury-ddr4-3200-cl16-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "HX432C16FB3K216"
+      },
+      "fallbackUbRaw": 95,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20HyperX%20Fury%20DDR4-3200%20CL16%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Aegis DDR4-3200 CL16 32GB (2×16GB)",
+      "slug": "g-skill-aegis-ddr4-3200-cl16-32gb-2-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-3200C16D-32GIS"
+      },
+      "fallbackUbRaw": 95,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Aegis%20DDR4-3200%20CL16%2032GB%20(2%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Trident Z RGB DDR4-3200 CL16 32GB (2×16GB)",
+      "slug": "g-skill-trident-z-rgb-ddr4-3200-cl16-32gb-2-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-3200C16D-32GTZRX"
+      },
+      "fallbackUbRaw": 95,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Trident%20Z%20RGB%20DDR4-3200%20CL16%2032GB%20(2%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance LPX DDR4-3000 CL16 16GB (2×8GB)",
+      "slug": "corsair-vengeance-lpx-ddr4-3000-cl16-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMK16GX4M2D3000C16"
+      },
+      "fallbackUbRaw": 89.1,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 3000,
+        "casLatency": 16,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Vengeance%20LPX%20DDR4-3000%20CL16%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance LPX DDR4-3200 CL16 64GB (2×32GB)",
+      "slug": "corsair-vengeance-lpx-ddr4-3200-cl16-64gb-2-32gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMK64GX4M2E3200C16"
+      },
+      "fallbackUbRaw": 95,
+      "specs": {
+        "capacity": 64,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "2 × 32 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Vengeance%20LPX%20DDR4-3200%20CL16%2064GB%20(2%C3%9732GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance RGB Pro SL DDR4-3600 CL18 32GB (2×16GB)",
+      "slug": "corsair-vengeance-rgb-pro-sl-ddr4-3600-cl18-32gb-2-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMH32GX4M2D3600C18W"
+      },
+      "fallbackUbRaw": 106.9,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 3600,
+        "casLatency": 18,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Vengeance%20RGB%20Pro%20SL%20DDR4-3600%20CL18%2032GB%20(2%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance LPX DDR4-3200 CL16 8GB (1×8GB)",
+      "slug": "corsair-vengeance-lpx-ddr4-3200-cl16-8gb-1-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMK8GX4M1E3200C16"
+      },
+      "fallbackUbRaw": 95,
+      "specs": {
+        "capacity": 8,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "1 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Vengeance%20LPX%20DDR4-3200%20CL16%208GB%20(1%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Aegis DDR4-3200 CL16 8GB (1×8GB)",
+      "slug": "g-skill-aegis-ddr4-3200-cl16-8gb-1-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-3200C16S-8GIS"
+      },
+      "fallbackUbRaw": 95,
+      "specs": {
+        "capacity": 8,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "1 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Aegis%20DDR4-3200%20CL16%208GB%20(1%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston HyperX Fury DDR4-2666 CL16 8GB (1×8GB)",
+      "slug": "kingston-hyperx-fury-ddr4-2666-cl16-8gb-1-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "HX426C16FB38"
+      },
+      "fallbackUbRaw": 79.1,
+      "specs": {
+        "capacity": 8,
+        "speedMTs": 2666,
+        "casLatency": 16,
+        "kitConfig": "1 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20HyperX%20Fury%20DDR4-2666%20CL16%208GB%20(1%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Aegis DDR4-3000 CL16 16GB (2×8GB)",
+      "slug": "g-skill-aegis-ddr4-3000-cl16-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-3000C16D-16GISB"
+      },
+      "fallbackUbRaw": 89.1,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 3000,
+        "casLatency": 16,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Aegis%20DDR4-3000%20CL16%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance RGB Pro DDR4-3600 CL18 16GB (2×8GB)",
+      "slug": "corsair-vengeance-rgb-pro-ddr4-3600-cl18-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMW16GX4M2D3600C18"
+      },
+      "fallbackUbRaw": 106.9,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 3600,
+        "casLatency": 18,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Vengeance%20RGB%20Pro%20DDR4-3600%20CL18%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston FURY Beast DDR4-3200 CL16 128GB (4×32GB)",
+      "slug": "kingston-fury-beast-ddr4-3200-cl16-128gb-4-32gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "KF432C16BBK4128"
+      },
+      "fallbackUbRaw": 95,
+      "specs": {
+        "capacity": 128,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "4 × 32 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20FURY%20Beast%20DDR4-3200%20CL16%20128GB%20(4%C3%9732GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Trident Z RGB DDR4-3600 CL18 16GB (2×8GB)",
+      "slug": "g-skill-trident-z-rgb-ddr4-3600-cl18-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-3600C18D-16GTZRX"
+      },
+      "fallbackUbRaw": 106.9,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 3600,
+        "casLatency": 18,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Trident%20Z%20RGB%20DDR4-3600%20CL18%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance RGB Pro DDR4-3200 CL16 64GB (2×32GB)",
+      "slug": "corsair-vengeance-rgb-pro-ddr4-3200-cl16-64gb-2-32gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMW64GX4M2E3200C16"
+      },
+      "fallbackUbRaw": 95,
+      "specs": {
+        "capacity": 64,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "2 × 32 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Vengeance%20RGB%20Pro%20DDR4-3200%20CL16%2064GB%20(2%C3%9732GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Trident Z Neo DDR4-3200 CL16 64GB (4×16GB)",
+      "slug": "g-skill-trident-z-neo-ddr4-3200-cl16-64gb-4-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-3200C16Q-64GTZN"
+      },
+      "fallbackUbRaw": 95,
+      "specs": {
+        "capacity": 64,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "4 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Trident%20Z%20Neo%20DDR4-3200%20CL16%2064GB%20(4%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance LPX DDR4-2133 CL13 16GB (2×8GB)",
+      "slug": "corsair-vengeance-lpx-ddr4-2133-cl13-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMK16GX4M2A2133C13"
+      },
+      "fallbackUbRaw": 63.3,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 2133,
+        "casLatency": 13,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Vengeance%20LPX%20DDR4-2133%20CL13%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance RGB Pro SL DDR4-3200 CL16 16GB (2×8GB)",
+      "slug": "corsair-vengeance-rgb-pro-sl-ddr4-3200-cl16-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMH16GX4M2E3200C16W"
+      },
+      "fallbackUbRaw": 95,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Vengeance%20RGB%20Pro%20SL%20DDR4-3200%20CL16%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Ripjaws V DDR4-2400 CL15 8GB (1×8GB)",
+      "slug": "g-skill-ripjaws-v-ddr4-2400-cl15-8gb-1-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F42400C15S8GVR"
+      },
+      "fallbackUbRaw": 71.3,
+      "specs": {
+        "capacity": 8,
+        "speedMTs": 2400,
+        "casLatency": 15,
+        "kitConfig": "1 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Ripjaws%20V%20DDR4-2400%20CL15%208GB%20(1%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Ripjaws V DDR4-3200 CL16 64GB (4×16GB)",
+      "slug": "g-skill-ripjaws-v-ddr4-3200-cl16-64gb-4-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F43200C16Q64GVK"
+      },
+      "fallbackUbRaw": 95,
+      "specs": {
+        "capacity": 64,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "4 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Ripjaws%20V%20DDR4-3200%20CL16%2064GB%20(4%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Aegis DDR4-3000 CL16 32GB (2×16GB)",
+      "slug": "g-skill-aegis-ddr4-3000-cl16-32gb-2-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-3000C16D-32GISB"
+      },
+      "fallbackUbRaw": 89.1,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 3000,
+        "casLatency": 16,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Aegis%20DDR4-3000%20CL16%2032GB%20(2%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston HyperX Fury DDR4-3200 CL16 32GB (2×16GB)",
+      "slug": "kingston-hyperx-fury-ddr4-3200-cl16-32gb-2-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "HX432C16FB3K232"
+      },
+      "fallbackUbRaw": 95,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20HyperX%20Fury%20DDR4-3200%20CL16%2032GB%20(2%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Trident Z RGB DDR4-4000 CL18 32GB (2×16GB)",
+      "slug": "g-skill-trident-z-rgb-ddr4-4000-cl18-32gb-2-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-4000C18D-32GTZR"
+      },
+      "fallbackUbRaw": 118.8,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 4000,
+        "casLatency": 18,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Trident%20Z%20RGB%20DDR4-4000%20CL18%2032GB%20(2%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston HyperX Fury DDR4-2400 CL15 8GB (1×8GB)",
+      "slug": "kingston-hyperx-fury-ddr4-2400-cl15-8gb-1-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "HX424C15FB8"
+      },
+      "fallbackUbRaw": 71.3,
+      "specs": {
+        "capacity": 8,
+        "speedMTs": 2400,
+        "casLatency": 15,
+        "kitConfig": "1 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20HyperX%20Fury%20DDR4-2400%20CL15%208GB%20(1%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Dominator Platinum RGB DDR4-3600 CL18 16GB (2×8GB)",
+      "slug": "corsair-dominator-platinum-rgb-ddr4-3600-cl18-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMT16GX4M2C3600C18"
+      },
+      "fallbackUbRaw": 106.9,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 3600,
+        "casLatency": 18,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Dominator%20Platinum%20RGB%20DDR4-3600%20CL18%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance RGB RS DDR4-3200 CL16 8GB (1×8GB)",
+      "slug": "corsair-vengeance-rgb-rs-ddr4-3200-cl16-8gb-1-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMG8GX4M1E3200C16"
+      },
+      "fallbackUbRaw": 95,
+      "specs": {
+        "capacity": 8,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "1 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Vengeance%20RGB%20RS%20DDR4-3200%20CL16%208GB%20(1%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Ripjaws V DDR4-3200 CL16 8GB (2×4GB)",
+      "slug": "g-skill-ripjaws-v-ddr4-3200-cl16-8gb-2-4gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F43200C16D8GVKB"
+      },
+      "fallbackUbRaw": 95,
+      "specs": {
+        "capacity": 8,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "2 × 4 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Ripjaws%20V%20DDR4-3200%20CL16%208GB%20(2%C3%974GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Trident Z RGB DDR4-3000 CL16 32GB (2×16GB)",
+      "slug": "g-skill-trident-z-rgb-ddr4-3000-cl16-32gb-2-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-3000C16D-32GTZR"
+      },
+      "fallbackUbRaw": 89.1,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 3000,
+        "casLatency": 16,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Trident%20Z%20RGB%20DDR4-3000%20CL16%2032GB%20(2%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Trident Z Neo DDR4-3600 CL18 64GB (2×32GB)",
+      "slug": "g-skill-trident-z-neo-ddr4-3600-cl18-64gb-2-32gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-3600C18D-64GTZN"
+      },
+      "fallbackUbRaw": 106.9,
+      "specs": {
+        "capacity": 64,
+        "speedMTs": 3600,
+        "casLatency": 18,
+        "kitConfig": "2 × 32 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Trident%20Z%20Neo%20DDR4-3600%20CL18%2064GB%20(2%C3%9732GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance RGB RT DDR4-4600 CL18 32GB (2×16GB)",
+      "slug": "corsair-vengeance-rgb-rt-ddr4-4600-cl18-32gb-2-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMN32GX4M2Z4600C18"
+      },
+      "fallbackUbRaw": 136.6,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 4600,
+        "casLatency": 18,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Vengeance%20RGB%20RT%20DDR4-4600%20CL18%2032GB%20(2%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Ripjaws V DDR4-2133 CL15 16GB (2×8GB)",
+      "slug": "g-skill-ripjaws-v-ddr4-2133-cl15-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F42133C15D16GVR"
+      },
+      "fallbackUbRaw": 63.3,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 2133,
+        "casLatency": 15,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Ripjaws%20V%20DDR4-2133%20CL15%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Trident Z RGB DDR4-3600 CL16 64GB (4×16GB)",
+      "slug": "g-skill-trident-z-rgb-ddr4-3600-cl16-64gb-4-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-3600C16Q-64GTZRC"
+      },
+      "fallbackUbRaw": 106.9,
+      "specs": {
+        "capacity": 64,
+        "speedMTs": 3600,
+        "casLatency": 16,
+        "kitConfig": "4 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Trident%20Z%20RGB%20DDR4-3600%20CL16%2064GB%20(4%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston FURY Beast DDR4-2666 CL16 16GB (1×16GB)",
+      "slug": "kingston-fury-beast-ddr4-2666-cl16-16gb-1-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "KF426C16BB16"
+      },
+      "fallbackUbRaw": 79.1,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 2666,
+        "casLatency": 16,
+        "kitConfig": "1 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20FURY%20Beast%20DDR4-2666%20CL16%2016GB%20(1%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance RGB Pro DDR4-2666 CL16 16GB (2×8GB)",
+      "slug": "corsair-vengeance-rgb-pro-ddr4-2666-cl16-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMW16GX4M2A2666C16W"
+      },
+      "fallbackUbRaw": 79.1,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 2666,
+        "casLatency": 16,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Vengeance%20RGB%20Pro%20DDR4-2666%20CL16%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston FURY Beast DDR4-3600 CL17 8GB (1×8GB)",
+      "slug": "kingston-fury-beast-ddr4-3600-cl17-8gb-1-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "KF436C17BB8"
+      },
+      "fallbackUbRaw": 106.9,
+      "specs": {
+        "capacity": 8,
+        "speedMTs": 3600,
+        "casLatency": 17,
+        "kitConfig": "1 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20FURY%20Beast%20DDR4-3600%20CL17%208GB%20(1%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston FURY Beast DDR4-3600 CL18 32GB (1×32GB)",
+      "slug": "kingston-fury-beast-ddr4-3600-cl18-32gb-1-32gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "KF436C18BB32"
+      },
+      "fallbackUbRaw": 106.9,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 3600,
+        "casLatency": 18,
+        "kitConfig": "1 × 32 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20FURY%20Beast%20DDR4-3600%20CL18%2032GB%20(1%C3%9732GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Ripjaws V DDR4-2400 CL15 16GB (2×8GB)",
+      "slug": "g-skill-ripjaws-v-ddr4-2400-cl15-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F42400C15D16GVR"
+      },
+      "fallbackUbRaw": 71.3,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 2400,
+        "casLatency": 15,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Ripjaws%20V%20DDR4-2400%20CL15%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance LPX DDR4-3000 CL15 32GB (2×16GB)",
+      "slug": "corsair-vengeance-lpx-ddr4-3000-cl15-32gb-2-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMK32GX4M2B3000C15"
+      },
+      "fallbackUbRaw": 89.1,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 3000,
+        "casLatency": 15,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Vengeance%20LPX%20DDR4-3000%20CL15%2032GB%20(2%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Trident Z RGB DDR4-4000 CL18 128GB (4×32GB)",
+      "slug": "g-skill-trident-z-rgb-ddr4-4000-cl18-128gb-4-32gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-4000C18Q-128GTZR"
+      },
+      "fallbackUbRaw": 118.8,
+      "specs": {
+        "capacity": 128,
+        "speedMTs": 4000,
+        "casLatency": 18,
+        "kitConfig": "4 × 32 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Trident%20Z%20RGB%20DDR4-4000%20CL18%20128GB%20(4%C3%9732GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston FURY Beast DDR4-3600 CL18 64GB (4×16GB)",
+      "slug": "kingston-fury-beast-ddr4-3600-cl18-64gb-4-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "KF436C18BBK464"
+      },
+      "fallbackUbRaw": 106.9,
+      "specs": {
+        "capacity": 64,
+        "speedMTs": 3600,
+        "casLatency": 18,
+        "kitConfig": "4 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20FURY%20Beast%20DDR4-3600%20CL18%2064GB%20(4%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance RGB Pro SL DDR4-3200 CL16 64GB (4×16GB)",
+      "slug": "corsair-vengeance-rgb-pro-sl-ddr4-3200-cl16-64gb-4-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMH64GX4M4E3200C16"
+      },
+      "fallbackUbRaw": 95,
+      "specs": {
+        "capacity": 64,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "4 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Vengeance%20RGB%20Pro%20SL%20DDR4-3200%20CL16%2064GB%20(4%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Trident Z RGB DDR4-4000 CL14 32GB (2×16GB)",
+      "slug": "g-skill-trident-z-rgb-ddr4-4000-cl14-32gb-2-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-4000C14D-32GTZR"
+      },
+      "fallbackUbRaw": 118.8,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 4000,
+        "casLatency": 14,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Trident%20Z%20RGB%20DDR4-4000%20CL14%2032GB%20(2%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Aegis DDR4-2133 CL15 8GB (1×8GB)",
+      "slug": "g-skill-aegis-ddr4-2133-cl15-8gb-1-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-2133C15S-8GIS"
+      },
+      "fallbackUbRaw": 63.3,
+      "specs": {
+        "capacity": 8,
+        "speedMTs": 2133,
+        "casLatency": 15,
+        "kitConfig": "1 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Aegis%20DDR4-2133%20CL15%208GB%20(1%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston FURY Beast DDR4-2666 CL16 32GB (2×16GB)",
+      "slug": "kingston-fury-beast-ddr4-2666-cl16-32gb-2-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "KF426C16BBK232"
+      },
+      "fallbackUbRaw": 79.1,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 2666,
+        "casLatency": 16,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20FURY%20Beast%20DDR4-2666%20CL16%2032GB%20(2%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston FURY Beast DDR4-2666 CL16 8GB (1×8GB)",
+      "slug": "kingston-fury-beast-ddr4-2666-cl16-8gb-1-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "KF426C16BB8"
+      },
+      "fallbackUbRaw": 79.1,
+      "specs": {
+        "capacity": 8,
+        "speedMTs": 2666,
+        "casLatency": 16,
+        "kitConfig": "1 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20FURY%20Beast%20DDR4-2666%20CL16%208GB%20(1%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Trident Z Neo DDR4-3600 CL16 64GB (2×32GB)",
+      "slug": "g-skill-trident-z-neo-ddr4-3600-cl16-64gb-2-32gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-3600C16D-64GTZN"
+      },
+      "fallbackUbRaw": 106.9,
+      "specs": {
+        "capacity": 64,
+        "speedMTs": 3600,
+        "casLatency": 16,
+        "kitConfig": "2 × 32 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Trident%20Z%20Neo%20DDR4-3600%20CL16%2064GB%20(2%C3%9732GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston HyperX Fury DDR4-3600 CL18 32GB (2×16GB)",
+      "slug": "kingston-hyperx-fury-ddr4-3600-cl18-32gb-2-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "HX436C18FB4K232"
+      },
+      "fallbackUbRaw": 106.9,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 3600,
+        "casLatency": 18,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20HyperX%20Fury%20DDR4-3600%20CL18%2032GB%20(2%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance LPX DDR4-2666 CL16 8GB (1×8GB)",
+      "slug": "corsair-vengeance-lpx-ddr4-2666-cl16-8gb-1-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMK8GX4M1A2666C16"
+      },
+      "fallbackUbRaw": 79.1,
+      "specs": {
+        "capacity": 8,
+        "speedMTs": 2666,
+        "casLatency": 16,
+        "kitConfig": "1 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Vengeance%20LPX%20DDR4-2666%20CL16%208GB%20(1%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Aegis DDR4-2400 CL17 16GB (2×8GB)",
+      "slug": "g-skill-aegis-ddr4-2400-cl17-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-2400C17D-16GIS"
+      },
+      "fallbackUbRaw": 71.3,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 2400,
+        "casLatency": 17,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Aegis%20DDR4-2400%20CL17%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance LPX DDR4-3000 CL16 32GB (4×8GB)",
+      "slug": "corsair-vengeance-lpx-ddr4-3000-cl16-32gb-4-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMK32GX4M4D3000C16"
+      },
+      "fallbackUbRaw": 89.1,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 3000,
+        "casLatency": 16,
+        "kitConfig": "4 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Vengeance%20LPX%20DDR4-3000%20CL16%2032GB%20(4%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Aegis DDR4-2666 CL19 8GB (1×8GB)",
+      "slug": "g-skill-aegis-ddr4-2666-cl19-8gb-1-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-2666C19S-8GIS"
+      },
+      "fallbackUbRaw": 79.1,
+      "specs": {
+        "capacity": 8,
+        "speedMTs": 2666,
+        "casLatency": 19,
+        "kitConfig": "1 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Aegis%20DDR4-2666%20CL19%208GB%20(1%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Dominator Platinum DDR4-3000 CL15 16GB (2×8GB)",
+      "slug": "corsair-dominator-platinum-ddr4-3000-cl15-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMD16GX4M2B3000C15"
+      },
+      "fallbackUbRaw": 89.1,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 3000,
+        "casLatency": 15,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Dominator%20Platinum%20DDR4-3000%20CL15%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston HyperX Fury DDR4-2400 CL15 32GB (4×8GB)",
+      "slug": "kingston-hyperx-fury-ddr4-2400-cl15-32gb-4-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "HX424C15FBK432"
+      },
+      "fallbackUbRaw": 71.3,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 2400,
+        "casLatency": 15,
+        "kitConfig": "4 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20HyperX%20Fury%20DDR4-2400%20CL15%2032GB%20(4%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston FURY DDR4-2400 CL15 16GB (2×8GB)",
+      "slug": "kingston-fury-ddr4-2400-cl15-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "HX424C15FB2K216"
+      },
+      "fallbackUbRaw": 71.3,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 2400,
+        "casLatency": 15,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20FURY%20DDR4-2400%20CL15%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance LPX DDR4-2400 CL16 32GB (2×16GB)",
+      "slug": "corsair-vengeance-lpx-ddr4-2400-cl16-32gb-2-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMK32GX4M2A2400C16"
+      },
+      "fallbackUbRaw": 71.3,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 2400,
+        "casLatency": 16,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Vengeance%20LPX%20DDR4-2400%20CL16%2032GB%20(2%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Trident Z Royal DDR4-4000 CL18 32GB (2×16GB)",
+      "slug": "g-skill-trident-z-royal-ddr4-4000-cl18-32gb-2-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-4000C18D-32GTRS"
+      },
+      "fallbackUbRaw": 118.8,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 4000,
+        "casLatency": 18,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Trident%20Z%20Royal%20DDR4-4000%20CL18%2032GB%20(2%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance RGB Pro DDR4-3000 CL16 16GB (2×8GB)",
+      "slug": "corsair-vengeance-rgb-pro-ddr4-3000-cl16-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMW16GX4M2D3000C16"
+      },
+      "fallbackUbRaw": 89.1,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 3000,
+        "casLatency": 16,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Vengeance%20RGB%20Pro%20DDR4-3000%20CL16%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Aegis DDR4-2666 CL19 16GB (2×8GB)",
+      "slug": "g-skill-aegis-ddr4-2666-cl19-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-2666C19D-16GIS"
+      },
+      "fallbackUbRaw": 79.1,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 2666,
+        "casLatency": 19,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Aegis%20DDR4-2666%20CL19%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Ripjaws V DDR4-2400 CL15 32GB (2×16GB)",
+      "slug": "g-skill-ripjaws-v-ddr4-2400-cl15-32gb-2-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F42400C15D32GVR"
+      },
+      "fallbackUbRaw": 71.3,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 2400,
+        "casLatency": 15,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Ripjaws%20V%20DDR4-2400%20CL15%2032GB%20(2%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Ripjaws V DDR4-4600 CL20 64GB (2×32GB)",
+      "slug": "g-skill-ripjaws-v-ddr4-4600-cl20-64gb-2-32gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-4600C20D-64GVK"
+      },
+      "fallbackUbRaw": 136.6,
+      "specs": {
+        "capacity": 64,
+        "speedMTs": 4600,
+        "casLatency": 20,
+        "kitConfig": "2 × 32 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Ripjaws%20V%20DDR4-4600%20CL20%2064GB%20(2%C3%9732GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Trident Z RGB DDR4-3200 CL16 64GB (4×16GB)",
+      "slug": "g-skill-trident-z-rgb-ddr4-3200-cl16-64gb-4-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-3200C16Q-64GTZR"
+      },
+      "fallbackUbRaw": 95,
+      "specs": {
+        "capacity": 64,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "4 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Trident%20Z%20RGB%20DDR4-3200%20CL16%2064GB%20(4%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance LPX DDR4-2400 CL14 8GB (1×8GB)",
+      "slug": "corsair-vengeance-lpx-ddr4-2400-cl14-8gb-1-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMK8GX4M1A2400C14"
+      },
+      "fallbackUbRaw": 71.3,
+      "specs": {
+        "capacity": 8,
+        "speedMTs": 2400,
+        "casLatency": 14,
+        "kitConfig": "1 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Vengeance%20LPX%20DDR4-2400%20CL14%208GB%20(1%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance LPX DDR4-2400 CL14 16GB (1×16GB)",
+      "slug": "corsair-vengeance-lpx-ddr4-2400-cl14-16gb-1-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMK16GX4M1A2400C14"
+      },
+      "fallbackUbRaw": 71.3,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 2400,
+        "casLatency": 14,
+        "kitConfig": "1 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Vengeance%20LPX%20DDR4-2400%20CL14%2016GB%20(1%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Ripjaws V DDR4-4400 CL19 32GB (2×16GB)",
+      "slug": "g-skill-ripjaws-v-ddr4-4400-cl19-32gb-2-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-4400C19D-32GVK"
+      },
+      "fallbackUbRaw": 130.6,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 4400,
+        "casLatency": 19,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Ripjaws%20V%20DDR4-4400%20CL19%2032GB%20(2%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance LPX DDR4-2666 CL16 16GB (4×4GB)",
+      "slug": "corsair-vengeance-lpx-ddr4-2666-cl16-16gb-4-4gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMK16GX4M4A2666C16"
+      },
+      "fallbackUbRaw": 79.1,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 2666,
+        "casLatency": 16,
+        "kitConfig": "4 × 4 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Vengeance%20LPX%20DDR4-2666%20CL16%2016GB%20(4%C3%974GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance RGB Pro SL DDR4-3600 CL18 64GB (4×16GB)",
+      "slug": "corsair-vengeance-rgb-pro-sl-ddr4-3600-cl18-64gb-4-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMH64GX4M4D3600C18W"
+      },
+      "fallbackUbRaw": 106.9,
+      "specs": {
+        "capacity": 64,
+        "speedMTs": 3600,
+        "casLatency": 18,
+        "kitConfig": "4 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Vengeance%20RGB%20Pro%20SL%20DDR4-3600%20CL18%2064GB%20(4%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Dominator Platinum DDR4-2400 CL10 16GB (2×8GB)",
+      "slug": "corsair-dominator-platinum-ddr4-2400-cl10-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMD16GX4M2B2400C10"
+      },
+      "fallbackUbRaw": 71.3,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 2400,
+        "casLatency": 10,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Dominator%20Platinum%20DDR4-2400%20CL10%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Value DDR4-2400 CL17 4GB (1×4GB)",
+      "slug": "g-skill-value-ddr4-2400-cl17-4gb-1-4gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-2400C17S-4GNT"
+      },
+      "fallbackUbRaw": 71.3,
+      "specs": {
+        "capacity": 4,
+        "speedMTs": 2400,
+        "casLatency": 17,
+        "kitConfig": "1 × 4 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Value%20DDR4-2400%20CL17%204GB%20(1%C3%974GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Dominator Platinum DDR4-3000 CL15 32GB (2×16GB)",
+      "slug": "corsair-dominator-platinum-ddr4-3000-cl15-32gb-2-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMD32GX4M2B3000C15"
+      },
+      "fallbackUbRaw": 89.1,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 3000,
+        "casLatency": 15,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Dominator%20Platinum%20DDR4-3000%20CL15%2032GB%20(2%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston FURY Beast DDR4-3600 CL18 16GB (1×16GB)",
+      "slug": "kingston-fury-beast-ddr4-3600-cl18-16gb-1-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "KF436C18BB16"
+      },
+      "fallbackUbRaw": 106.9,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 3600,
+        "casLatency": 18,
+        "kitConfig": "1 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20FURY%20Beast%20DDR4-3600%20CL18%2016GB%20(1%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance RGB Pro DDR4-3200 CL16 8GB (1×8GB)",
+      "slug": "corsair-vengeance-rgb-pro-ddr4-3200-cl16-8gb-1-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMW8GX4M1Z3200C16"
+      },
+      "fallbackUbRaw": 95,
+      "specs": {
+        "capacity": 8,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "1 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Vengeance%20RGB%20Pro%20DDR4-3200%20CL16%208GB%20(1%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston HyperX Fury DDR4-2133 CL14 8GB (1×8GB)",
+      "slug": "kingston-hyperx-fury-ddr4-2133-cl14-8gb-1-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "HX421C14FB8"
+      },
+      "fallbackUbRaw": 63.3,
+      "specs": {
+        "capacity": 8,
+        "speedMTs": 2133,
+        "casLatency": 14,
+        "kitConfig": "1 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20HyperX%20Fury%20DDR4-2133%20CL14%208GB%20(1%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "G.Skill",
+      "name": "G.Skill Ripjaws V DDR4-3000 CL15 16GB (2×8GB)",
+      "slug": "g-skill-ripjaws-v-ddr4-3000-cl15-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "F4-3000C15D-16GVKB"
+      },
+      "fallbackUbRaw": 89.1,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 3000,
+        "casLatency": 15,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=G.Skill%20Ripjaws%20V%20DDR4-3000%20CL15%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance LPX DDR4-3600 CL18 64GB (4×16GB)",
+      "slug": "corsair-vengeance-lpx-ddr4-3600-cl18-64gb-4-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMK64GX4M4B3600C18"
+      },
+      "fallbackUbRaw": 106.9,
+      "specs": {
+        "capacity": 64,
+        "speedMTs": 3600,
+        "casLatency": 18,
+        "kitConfig": "4 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Vengeance%20LPX%20DDR4-3600%20CL18%2064GB%20(4%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston FURY Beast RGB DDR4-3200 CL16 16GB (1×16GB)",
+      "slug": "kingston-fury-beast-rgb-ddr4-3200-cl16-16gb-1-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "KF432C16BBA16"
+      },
+      "fallbackUbRaw": 95,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "1 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20FURY%20Beast%20RGB%20DDR4-3200%20CL16%2016GB%20(1%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston HyperX Fury DDR4-2666 CL15 8GB (2×4GB)",
+      "slug": "kingston-hyperx-fury-ddr4-2666-cl15-8gb-2-4gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "HX426C15FBK28"
+      },
+      "fallbackUbRaw": 79.1,
+      "specs": {
+        "capacity": 8,
+        "speedMTs": 2666,
+        "casLatency": 15,
+        "kitConfig": "2 × 4 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20HyperX%20Fury%20DDR4-2666%20CL15%208GB%20(2%C3%974GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance LPX DDR4-4000 CL18 32GB (2×16GB)",
+      "slug": "corsair-vengeance-lpx-ddr4-4000-cl18-32gb-2-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMK32GX4M2Z4000C18"
+      },
+      "fallbackUbRaw": 118.8,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 4000,
+        "casLatency": 18,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Vengeance%20LPX%20DDR4-4000%20CL18%2032GB%20(2%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston FURY Beast DDR4-3200 CL16 4GB (1×4GB)",
+      "slug": "kingston-fury-beast-ddr4-3200-cl16-4gb-1-4gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "KF432C16BB4"
+      },
+      "fallbackUbRaw": 95,
+      "specs": {
+        "capacity": 4,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "1 × 4 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20FURY%20Beast%20DDR4-3200%20CL16%204GB%20(1%C3%974GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance LPX DDR4-2400 CL14 4GB (1×4GB)",
+      "slug": "corsair-vengeance-lpx-ddr4-2400-cl14-4gb-1-4gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMK4GX4M1A2400C14"
+      },
+      "fallbackUbRaw": 71.3,
+      "specs": {
+        "capacity": 4,
+        "speedMTs": 2400,
+        "casLatency": 14,
+        "kitConfig": "1 × 4 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Vengeance%20LPX%20DDR4-2400%20CL14%204GB%20(1%C3%974GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance RGB Pro DDR4-2666 CL16 32GB (2×16GB)",
+      "slug": "corsair-vengeance-rgb-pro-ddr4-2666-cl16-32gb-2-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMW32GX4M2A2666C16W"
+      },
+      "fallbackUbRaw": 79.1,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 2666,
+        "casLatency": 16,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Vengeance%20RGB%20Pro%20DDR4-2666%20CL16%2032GB%20(2%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston Fury Beast RGB Special Edition DDR4-3200 CL16 32GB (2×16GB)",
+      "slug": "kingston-fury-beast-rgb-special-edition-ddr4-3200-cl16-32gb-2-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "KF432C16BWAK232"
+      },
+      "fallbackUbRaw": 95,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20Fury%20Beast%20RGB%20Special%20Edition%20DDR4-3200%20CL16%2032GB%20(2%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston FURY DDR4-2400 CL15 32GB (2×16GB)",
+      "slug": "kingston-fury-ddr4-2400-cl15-32gb-2-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "HX424C15FBK232"
+      },
+      "fallbackUbRaw": 71.3,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 2400,
+        "casLatency": 15,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20FURY%20DDR4-2400%20CL15%2032GB%20(2%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance RGB Pro DDR4-4000 CL18 16GB (2×8GB)",
+      "slug": "corsair-vengeance-rgb-pro-ddr4-4000-cl18-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMW16GX4M2Z4000C18"
+      },
+      "fallbackUbRaw": 118.8,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 4000,
+        "casLatency": 18,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Vengeance%20RGB%20Pro%20DDR4-4000%20CL18%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair Vengeance LPX DDR4-4000 CL18 64GB (2×32GB)",
+      "slug": "corsair-vengeance-lpx-ddr4-4000-cl18-64gb-2-32gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "CMK64GX4M2Z4000C18"
+      },
+      "fallbackUbRaw": 118.8,
+      "specs": {
+        "capacity": 64,
+        "speedMTs": 4000,
+        "casLatency": 18,
+        "kitConfig": "2 × 32 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20Vengeance%20LPX%20DDR4-4000%20CL18%2064GB%20(2%C3%9732GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston HyperX Fury DDR4-2666 CL15 16GB (2×8GB)",
+      "slug": "kingston-hyperx-fury-ddr4-2666-cl15-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "HX426C15FBK216"
+      },
+      "fallbackUbRaw": 79.1,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 2666,
+        "casLatency": 15,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20HyperX%20Fury%20DDR4-2666%20CL15%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston FURY Beast DDR4-3200 CL16 64GB (4×16GB)",
+      "slug": "kingston-fury-beast-ddr4-3200-cl16-64gb-4-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "KF432C16BBK464"
+      },
+      "fallbackUbRaw": 95,
+      "specs": {
+        "capacity": 64,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "4 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20FURY%20Beast%20DDR4-3200%20CL16%2064GB%20(4%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston HyperX Fury DDR4-3000 CL15 16GB (2×8GB)",
+      "slug": "kingston-hyperx-fury-ddr4-3000-cl15-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "HX430C15FB3K232"
+      },
+      "fallbackUbRaw": 89.1,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 3000,
+        "casLatency": 15,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20HyperX%20Fury%20DDR4-3000%20CL15%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston FURY Renegade DDR4-4600 CL19 32GB (2×16GB)",
+      "slug": "kingston-fury-renegade-ddr4-4600-cl19-32gb-2-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "KF446C19RB1K232"
+      },
+      "fallbackUbRaw": 136.6,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 4600,
+        "casLatency": 19,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20FURY%20Renegade%20DDR4-4600%20CL19%2032GB%20(2%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston FURY Renegade DDR4-3600 CL16 16GB (2×8GB)",
+      "slug": "kingston-fury-renegade-ddr4-3600-cl16-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "KF436C16RBK216"
+      },
+      "fallbackUbRaw": 106.9,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 3600,
+        "casLatency": 16,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20FURY%20Renegade%20DDR4-3600%20CL16%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston FURY Beast RGB DDR4-3200 CL16 8GB (1×8GB)",
+      "slug": "kingston-fury-beast-rgb-ddr4-3200-cl16-8gb-1-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "KF432C16BBA8"
+      },
+      "fallbackUbRaw": 95,
+      "specs": {
+        "capacity": 8,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "1 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20FURY%20Beast%20RGB%20DDR4-3200%20CL16%208GB%20(1%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston HyperX Predator DDR4-3000 CL15 16GB (2×8GB)",
+      "slug": "kingston-hyperx-predator-ddr4-3000-cl15-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "HX430C15PB3K216"
+      },
+      "fallbackUbRaw": 89.1,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 3000,
+        "casLatency": 15,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20HyperX%20Predator%20DDR4-3000%20CL15%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston HyperX Fury DDR4-3466 CL19 16GB (2×8GB)",
+      "slug": "kingston-hyperx-fury-ddr4-3466-cl19-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "HX434C19FW2K216"
+      },
+      "fallbackUbRaw": 102.9,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 3466,
+        "casLatency": 19,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20HyperX%20Fury%20DDR4-3466%20CL19%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston HyperX Fury DDR4-3600 CL18 64GB (2×32GB)",
+      "slug": "kingston-hyperx-fury-ddr4-3600-cl18-64gb-2-32gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "HX436C18FB3K264"
+      },
+      "fallbackUbRaw": 106.9,
+      "specs": {
+        "capacity": 64,
+        "speedMTs": 3600,
+        "casLatency": 18,
+        "kitConfig": "2 × 32 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20HyperX%20Fury%20DDR4-3600%20CL18%2064GB%20(2%C3%9732GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston FURY Beast RGB DDR4-3600 CL18 16GB (1×16GB)",
+      "slug": "kingston-fury-beast-rgb-ddr4-3600-cl18-16gb-1-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "KF436C18BBA16"
+      },
+      "fallbackUbRaw": 106.9,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 3600,
+        "casLatency": 18,
+        "kitConfig": "1 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20FURY%20Beast%20RGB%20DDR4-3600%20CL18%2016GB%20(1%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston HyperX Fury DDR4-2666 CL16 16GB (2×8GB)",
+      "slug": "kingston-hyperx-fury-ddr4-2666-cl16-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "HX426C16FB3K216"
+      },
+      "fallbackUbRaw": 79.1,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 2666,
+        "casLatency": 16,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20HyperX%20Fury%20DDR4-2666%20CL16%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston FURY Renegade DDR4-3200 CL16 64GB (2×32GB)",
+      "slug": "kingston-fury-renegade-ddr4-3200-cl16-64gb-2-32gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "KF432C16RBK264"
+      },
+      "fallbackUbRaw": 95,
+      "specs": {
+        "capacity": 64,
+        "speedMTs": 3200,
+        "casLatency": 16,
+        "kitConfig": "2 × 32 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20FURY%20Renegade%20DDR4-3200%20CL16%2064GB%20(2%C3%9732GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston HyperX Fury DDR4-2400 CL15 16GB (2×8GB)",
+      "slug": "kingston-hyperx-fury-ddr4-2400-cl15-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "HX424C15FBK216"
+      },
+      "fallbackUbRaw": 71.3,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 2400,
+        "casLatency": 15,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20HyperX%20Fury%20DDR4-2400%20CL15%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston HyperX Fury DDR4-2133 CL14 16GB (2×8GB)",
+      "slug": "kingston-hyperx-fury-ddr4-2133-cl14-16gb-2-8gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "HX421C14FBK216"
+      },
+      "fallbackUbRaw": 63.3,
+      "specs": {
+        "capacity": 16,
+        "speedMTs": 2133,
+        "casLatency": 14,
+        "kitConfig": "2 × 8 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20HyperX%20Fury%20DDR4-2133%20CL14%2016GB%20(2%C3%978GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston FURY Beast DDR4-3600 CL18 128GB (4×32GB)",
+      "slug": "kingston-fury-beast-ddr4-3600-cl18-128gb-4-32gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "KF436C18BBK4128"
+      },
+      "fallbackUbRaw": 106.9,
+      "specs": {
+        "capacity": 128,
+        "speedMTs": 3600,
+        "casLatency": 18,
+        "kitConfig": "4 × 32 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20FURY%20Beast%20DDR4-3600%20CL18%20128GB%20(4%C3%9732GB)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Kingston",
+      "name": "Kingston FURY Renegade DDR4-3600 CL16 32GB (2×16GB)",
+      "slug": "kingston-fury-renegade-ddr4-3600-cl16-32gb-2-16gb",
+      "imageUrl": null,
+      "csv": {
+        "type": "RAM",
+        "model": "KF436C16RB1K232"
+      },
+      "fallbackUbRaw": 106.9,
+      "specs": {
+        "capacity": 32,
+        "speedMTs": 3600,
+        "casLatency": 16,
+        "kitConfig": "2 × 16 GB",
+        "voltage": 1.35,
+        "type": "DDR4",
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Kingston%20FURY%20Renegade%20DDR4-3600%20CL16%2032GB%20(2%C3%9716GB)",
+      "unknownFields": [],
+      "prices": []
+    }
+  ]
+}

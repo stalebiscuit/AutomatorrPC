@@ -1,0 +1,53 @@
+category,brand,series_generation,socket_or_chipset,era,status,priority,target_models,notes
+cpu,Intel,4th Gen Haswell / Devil's Canyon,LGA 1150,2013-2015,eol,P2,8,"i5/i7 4xxx, e.g. i7-4790K"
+cpu,Intel,6th-9th Gen Skylake→Coffee Lake,LGA 1151,2015-2019,eol,P2,14,i3/i5/i7/i9 6xxx-9xxx
+cpu,Intel,10th-11th Gen Comet/Rocket Lake,LGA 1200,2020-2021,active,P1,13,already seeded
+cpu,Intel,12th-14th Gen Alder/Raptor Lake,LGA 1700,2021-2023,active,P1,20,already seeded
+cpu,Intel,Core Ultra 200S Arrow Lake,LGA 1851,2024-,active,P1,3,already seeded
+cpu,Intel,HEDT Haswell-E/Broadwell-E/Skylake-X,LGA 2011-v3 / 2066,2014-2019,eol,P3,6,"enthusiast only, e.g. i9-7900X"
+cpu,AMD,FX Vishera,AM3+,2012-2016,eol,P3,4,FX-8350/8370/9590
+cpu,AMD,Ryzen 1000/2000/3000,AM4,2017-2019,active,P2,18,"Zen/Zen+/Zen2, some seeded"
+cpu,AMD,Ryzen 5000 + 5000G,AM4,2020-2022,active,P1,12,already seeded
+cpu,AMD,Ryzen 7000/9000 + 8000G,AM5,2022-,active,P1,21,already seeded
+gpu,NVIDIA,GTX 900 (Maxwell),-,2014-2015,eol,P3,4,GTX 950/960/970/980
+gpu,NVIDIA,GTX 10 (Pascal),-,2016-2017,eol,P2,6,GTX 1050Ti-1080Ti
+gpu,NVIDIA,GTX 16 (Turing),-,2019,active,P2,4,GTX 1650/1660/Super
+gpu,NVIDIA,RTX 20 (Turing),-,2018-2019,active,P2,6,RTX 2060-2080Ti
+gpu,NVIDIA,RTX 30 (Ampere),-,2020-2022,active,P1,9,RTX 3050-3090Ti
+gpu,NVIDIA,RTX 40 (Ada),-,2022-2024,active,P1,9,"RTX 4060-4090, some seeded"
+gpu,NVIDIA,RTX 50 (Blackwell),-,2025-,active,P1,6,RTX 5060-5090
+gpu,AMD,R9 300 / Fury,-,2015,eol,P3,4,R9 380/390/Fury X
+gpu,AMD,RX 400/500 (Polaris),-,2016-2017,eol,P2,5,RX 470-590
+gpu,AMD,RX Vega / 5000 (RDNA),-,2017-2019,active,P2,5,"Vega 56/64, RX 5600-5700XT"
+gpu,AMD,RX 6000 (RDNA2),-,2020-2022,active,P1,8,RX 6600-6950XT
+gpu,AMD,RX 7000 (RDNA3),-,2022-2024,active,P1,7,"RX 7600-7900XTX, some seeded"
+gpu,Intel,Arc A / B series,-,2022-,active,P2,5,"A750/A770, B580"
+motherboard,Intel,Z97 / H97 (Haswell),LGA 1150,2014,eol,P3,4,for legacy CPUs
+motherboard,Intel,100-300 series (Skylake→Coffee),LGA 1151,2015-2019,eol,P2,10,Z170/Z270/Z370/Z390 + B/H
+motherboard,Intel,400-500 series,LGA 1200,2020-2021,active,P1,10,Z490/Z590/B560/H510
+motherboard,Intel,600-700 series,LGA 1700,2021-2023,active,P1,14,"Z690/Z790/B660/B760, some seeded"
+motherboard,Intel,800 series,LGA 1851,2024-,active,P1,6,Z890/B860
+motherboard,AMD,900 series (FX),AM3+,2012-2016,eol,P3,3,990FX for FX CPUs
+motherboard,AMD,300-500 series,AM4,2017-2022,active,P1/P2,20,"A320-X570, B450/B550 popular"
+motherboard,AMD,600-800 series,AM5,2022-,active,P1,14,"B650/X670E/B850/X870, some seeded"
+ram,Various,DDR3 kits,-,2014-2017,eol,P3,4,for legacy LGA115x/AM3+ builds
+ram,Various,DDR4 kits 3200-4000,-,2016-,active,P1,28,"16/32/64GB, CL16-18, some seeded"
+ram,Various,DDR5 kits 5200-7200,-,2022-,active,P1,28,"16/32/64GB, CL30-40, some seeded"
+storage,Various,NVMe Gen3 SSD,M.2,2016-,active,P2,12,250GB-2TB value drives
+storage,Various,NVMe Gen4 SSD,M.2,2020-,active,P1,20,"500GB-4TB, some seeded"
+storage,Various,NVMe Gen5 SSD,M.2,2023-,active,P1,10,1-4TB flagships
+storage,Various,SATA SSD,"2.5""",2014-,active,P2,10,240GB-4TB
+storage,Various,"3.5"" HDD",SATA,2014-,active,P2,16,"1-8TB WD/Seagate, some seeded"
+cooler,Various,Air - single/dual tower,-,2014-,active,P1,30,incl. legacy socketSupport (CRITICAL for DB-7)
+cooler,Various,Air - low profile,-,2014-,active,P2,8,ITX builds
+cooler,Various,AIO 240/280/360,-,2016-,active,P1,24,"liquid, radiator sizes"
+case,Various,ATX mid/full tower,-,2014-,active,P1,30,"airflow + silent, colours"
+case,Various,mATX,-,2014-,active,P2,18,colours
+case,Various,ITX,-,2014-,active,P2,16,colours
+psu,Various,450-650W 80+ Bronze/Gold,ATX,2014-,active,P1,24,budget-mainstream
+psu,Various,750-1000W 80+ Gold/Plat,ATX,2014-,active,P1,24,enthusiast
+psu,Various,1200-1600W / SFX,ATX/SFX,2016-,active,P2,16,HEDT + ITX
+monitor,Various,1080p 60-165Hz,-,2014-,active,P2,20,budget
+monitor,Various,1440p 144-240Hz,-,2016-,active,P1,28,"mainstream gaming, some seeded"
+monitor,Various,4K 60-160Hz,-,2016-,active,P1,20,high-end
+monitor,Various,Ultrawide / OLED,-,2019-,active,P2,12,premium

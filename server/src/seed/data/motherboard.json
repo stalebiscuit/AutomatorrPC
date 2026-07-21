@@ -1,0 +1,542 @@
+{
+  "category": "motherboard",
+  "components": [
+    {
+      "brand": "ASUS",
+      "name": "ASUS ROG Strix B650-A Gaming WiFi",
+      "slug": "asus-rog-strix-b650-a-gaming-wifi",
+      "imageUrl": null,
+      "specs": {
+        "socket": "AM5",
+        "chipset": "B650",
+        "ramType": "DDR5",
+        "ramSlots": 4,
+        "maxRamSpeed": 6400,
+        "m2Slots": 3,
+        "maxRam": 192,
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.asus.com/motherboards-components/motherboards/rog-strix/rog-strix-b650-a-gaming-wifi/",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Mwave",
+          "price": 329,
+          "url": "https://www.mwave.com.au/searchresult?w=ASUS%20ROG%20Strix%20B650-A%20Gaming%20WiFi"
+        },
+        {
+          "store": "Scorptec",
+          "price": 335,
+          "url": "https://www.scorptec.com.au/search/go?w=ASUS%20ROG%20Strix%20B650-A%20Gaming%20WiFi"
+        },
+        {
+          "store": "Centre Com",
+          "price": 339,
+          "url": "https://www.centrecom.com.au/search?searchterm=ASUS%20ROG%20Strix%20B650-A%20Gaming%20WiFi"
+        }
+      ]
+    },
+    {
+      "brand": "MSI",
+      "name": "MSI MAG B650 Tomahawk WiFi",
+      "slug": "msi-mag-b650-tomahawk-wifi",
+      "imageUrl": null,
+      "specs": {
+        "socket": "AM5",
+        "chipset": "B650",
+        "ramType": "DDR5",
+        "ramSlots": 4,
+        "maxRamSpeed": 6600,
+        "m2Slots": 3,
+        "maxRam": 256,
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.msi.com/Motherboard/MAG-B650-TOMAHAWK-WIFI",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Mwave",
+          "price": 319,
+          "url": "https://www.mwave.com.au/searchresult?w=MSI%20MAG%20B650%20Tomahawk%20WiFi"
+        },
+        {
+          "store": "Scorptec",
+          "price": 325,
+          "url": "https://www.scorptec.com.au/search/go?w=MSI%20MAG%20B650%20Tomahawk%20WiFi"
+        },
+        {
+          "store": "PLE",
+          "price": 329,
+          "url": "https://www.ple.com.au/Catalogue/search?q=MSI%20MAG%20B650%20Tomahawk%20WiFi"
+        }
+      ]
+    },
+    {
+      "brand": "Gigabyte",
+      "name": "Gigabyte B650I AORUS Ultra",
+      "slug": "gigabyte-b650i-aorus-ultra",
+      "imageUrl": null,
+      "specs": {
+        "socket": "AM5",
+        "chipset": "B650",
+        "ramType": "DDR5",
+        "ramSlots": 2,
+        "maxRamSpeed": 6600,
+        "m2Slots": 2,
+        "maxRam": 96,
+        "formFactor": "Mini-ITX"
+      },
+      "specSourceUrl": "https://www.gigabyte.com/Motherboard/B650I-AORUS-ULTRA",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Scorptec",
+          "price": 389,
+          "url": "https://www.scorptec.com.au/search/go?w=Gigabyte%20B650I%20AORUS%20Ultra"
+        },
+        {
+          "store": "Centre Com",
+          "price": 395,
+          "url": "https://www.centrecom.com.au/search?searchterm=Gigabyte%20B650I%20AORUS%20Ultra"
+        }
+      ]
+    },
+    {
+      "brand": "ASUS",
+      "name": "ASUS TUF Gaming Z790-Plus WiFi",
+      "slug": "asus-tuf-gaming-z790-plus-wifi",
+      "imageUrl": null,
+      "specs": {
+        "socket": "LGA 1700",
+        "chipset": "Z790",
+        "ramType": "DDR5",
+        "ramSlots": 4,
+        "maxRamSpeed": 7200,
+        "m2Slots": 4,
+        "maxRam": 192,
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-z790-plus-wifi/",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Mwave",
+          "price": 369,
+          "url": "https://www.mwave.com.au/searchresult?w=ASUS%20TUF%20Gaming%20Z790-Plus%20WiFi"
+        },
+        {
+          "store": "Scorptec",
+          "price": 375,
+          "url": "https://www.scorptec.com.au/search/go?w=ASUS%20TUF%20Gaming%20Z790-Plus%20WiFi"
+        },
+        {
+          "store": "PLE",
+          "price": 379,
+          "url": "https://www.ple.com.au/Catalogue/search?q=ASUS%20TUF%20Gaming%20Z790-Plus%20WiFi"
+        }
+      ]
+    },
+    {
+      "brand": "MSI",
+      "name": "MSI PRO B760M-A WiFi DDR5",
+      "slug": "msi-pro-b760m-a-wifi-ddr5",
+      "imageUrl": null,
+      "specs": {
+        "socket": "LGA 1700",
+        "chipset": "B760",
+        "ramType": "DDR5",
+        "ramSlots": 4,
+        "maxRamSpeed": 6800,
+        "m2Slots": 2,
+        "maxRam": 192,
+        "formFactor": "Micro-ATX"
+      },
+      "specSourceUrl": "https://www.msi.com/Motherboard/PRO-B760M-A-WIFI-DDR5",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Mwave",
+          "price": 229,
+          "url": "https://www.mwave.com.au/searchresult?w=MSI%20PRO%20B760M-A%20WiFi%20DDR5"
+        },
+        {
+          "store": "Centre Com",
+          "price": 235,
+          "url": "https://www.centrecom.com.au/search?searchterm=MSI%20PRO%20B760M-A%20WiFi%20DDR5"
+        }
+      ]
+    },
+    {
+      "brand": "Gigabyte",
+      "name": "Gigabyte B760M DS3H DDR4",
+      "slug": "gigabyte-b760m-ds3h-ddr4",
+      "imageUrl": null,
+      "specs": {
+        "socket": "LGA 1700",
+        "chipset": "B760",
+        "ramType": "DDR4",
+        "ramSlots": 4,
+        "maxRamSpeed": 5333,
+        "m2Slots": 2,
+        "maxRam": 128,
+        "formFactor": "Micro-ATX"
+      },
+      "specSourceUrl": "https://www.gigabyte.com/Motherboard/B760M-DS3H-DDR4",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Scorptec",
+          "price": 185,
+          "url": "https://www.scorptec.com.au/search/go?w=Gigabyte%20B760M%20DS3H%20DDR4"
+        },
+        {
+          "store": "PLE",
+          "price": 189,
+          "url": "https://www.ple.com.au/Catalogue/search?q=Gigabyte%20B760M%20DS3H%20DDR4"
+        }
+      ]
+    },
+    {
+      "brand": "MSI",
+      "name": "MSI B450 TOMAHAWK MAX",
+      "slug": "msi-b450-tomahawk-max",
+      "imageUrl": null,
+      "specs": {
+        "socket": "AM4",
+        "chipset": "B450",
+        "ramType": "DDR4",
+        "ramSlots": 4,
+        "maxRamSpeed": 3466,
+        "m2Slots": 1,
+        "maxRam": 128,
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.google.com/search?q=MSI%20B450%20TOMAHAWK%20MAX%20specifications",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "ASUS",
+      "name": "ASUS ROG Strix B550-F Gaming",
+      "slug": "asus-rog-strix-b550-f-gaming",
+      "imageUrl": null,
+      "specs": {
+        "socket": "AM4",
+        "chipset": "B550",
+        "ramType": "DDR4",
+        "ramSlots": 4,
+        "maxRamSpeed": 4400,
+        "m2Slots": 2,
+        "maxRam": 128,
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.google.com/search?q=ASUS%20ROG%20Strix%20B550-F%20Gaming%20specifications",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Gigabyte",
+      "name": "Gigabyte X470 AORUS Ultra Gaming",
+      "slug": "gigabyte-x470-aorus-ultra-gaming",
+      "imageUrl": null,
+      "specs": {
+        "socket": "AM4",
+        "chipset": "X470",
+        "ramType": "DDR4",
+        "ramSlots": 4,
+        "maxRamSpeed": 3600,
+        "m2Slots": 2,
+        "maxRam": 64,
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.google.com/search?q=Gigabyte%20X470%20AORUS%20Ultra%20Gaming%20specifications",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "ASUS",
+      "name": "ASUS TUF Gaming B560M-Plus WiFi",
+      "slug": "asus-tuf-gaming-b560m-plus-wifi",
+      "imageUrl": null,
+      "specs": {
+        "socket": "LGA 1200",
+        "chipset": "B560",
+        "ramType": "DDR4",
+        "ramSlots": 4,
+        "maxRamSpeed": 5000,
+        "m2Slots": 2,
+        "maxRam": 128,
+        "formFactor": "Micro-ATX"
+      },
+      "specSourceUrl": "https://www.google.com/search?q=ASUS%20TUF%20Gaming%20B560M-Plus%20WiFi%20specifications",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "MSI",
+      "name": "MSI MAG B460 Tomahawk",
+      "slug": "msi-mag-b460-tomahawk",
+      "imageUrl": null,
+      "specs": {
+        "socket": "LGA 1200",
+        "chipset": "B460",
+        "ramType": "DDR4",
+        "ramSlots": 4,
+        "maxRamSpeed": 2933,
+        "m2Slots": 2,
+        "maxRam": 128,
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.google.com/search?q=MSI%20MAG%20B460%20Tomahawk%20specifications",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "ASUS",
+      "name": "ASUS ROG Strix Z590-E Gaming WiFi",
+      "slug": "asus-rog-strix-z590-e-gaming-wifi",
+      "imageUrl": null,
+      "specs": {
+        "socket": "LGA 1200",
+        "chipset": "Z590",
+        "ramType": "DDR4",
+        "ramSlots": 4,
+        "maxRamSpeed": 5333,
+        "m2Slots": 3,
+        "maxRam": 128,
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.google.com/search?q=ASUS%20ROG%20Strix%20Z590-E%20Gaming%20WiFi%20specifications",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "ASUS",
+      "name": "ASUS H97-PLUS",
+      "slug": "asus-h97-plus",
+      "imageUrl": null,
+      "specs": {
+        "socket": "LGA 1150",
+        "chipset": "H97",
+        "ramType": "DDR3",
+        "ramSlots": 4,
+        "maxRamSpeed": 1600,
+        "m2Slots": 0,
+        "maxRam": 32,
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.google.com/search?q=ASUS%20H97-PLUS%20specifications",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "MSI",
+      "name": "MSI Z97 GAMING 5",
+      "slug": "msi-z97-gaming-5",
+      "imageUrl": null,
+      "specs": {
+        "socket": "LGA 1150",
+        "chipset": "Z97",
+        "ramType": "DDR3",
+        "ramSlots": 4,
+        "maxRamSpeed": 1866,
+        "m2Slots": 1,
+        "maxRam": 32,
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.google.com/search?q=MSI%20Z97%20GAMING%205%20specifications",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "ASUS",
+      "name": "ASUS PRIME Z370-A",
+      "slug": "asus-prime-z370-a",
+      "imageUrl": null,
+      "specs": {
+        "socket": "LGA 1151",
+        "chipset": "Z370",
+        "ramType": "DDR4",
+        "ramSlots": 4,
+        "maxRamSpeed": 4000,
+        "m2Slots": 2,
+        "maxRam": 64,
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.google.com/search?q=ASUS%20PRIME%20Z370-A%20specifications",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "MSI",
+      "name": "MSI Z170A GAMING PRO",
+      "slug": "msi-z170a-gaming-pro",
+      "imageUrl": null,
+      "specs": {
+        "socket": "LGA 1151",
+        "chipset": "Z170",
+        "ramType": "DDR4",
+        "ramSlots": 4,
+        "maxRamSpeed": 3600,
+        "m2Slots": 1,
+        "maxRam": 64,
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.google.com/search?q=MSI%20Z170A%20GAMING%20PRO%20specifications",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Gigabyte",
+      "name": "Gigabyte B360M DS3H",
+      "slug": "gigabyte-b360m-ds3h",
+      "imageUrl": null,
+      "specs": {
+        "socket": "LGA 1151",
+        "chipset": "B360",
+        "ramType": "DDR4",
+        "ramSlots": 4,
+        "maxRamSpeed": 2666,
+        "m2Slots": 2,
+        "maxRam": 64,
+        "formFactor": "Micro-ATX"
+      },
+      "specSourceUrl": "https://www.google.com/search?q=Gigabyte%20B360M%20DS3H%20specifications",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "ASUS",
+      "name": "ASUS X99-A II",
+      "slug": "asus-x99-a-ii",
+      "imageUrl": null,
+      "specs": {
+        "socket": "LGA 2011-v3",
+        "chipset": "X99",
+        "ramType": "DDR4",
+        "ramSlots": 8,
+        "maxRamSpeed": 3333,
+        "m2Slots": 1,
+        "maxRam": 128,
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.google.com/search?q=ASUS%20X99-A%20II%20specifications",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "MSI",
+      "name": "MSI X99A GAMING PRO CARBON",
+      "slug": "msi-x99a-gaming-pro-carbon",
+      "imageUrl": null,
+      "specs": {
+        "socket": "LGA 2011-v3",
+        "chipset": "X99",
+        "ramType": "DDR4",
+        "ramSlots": 8,
+        "maxRamSpeed": 3466,
+        "m2Slots": 1,
+        "maxRam": 128,
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.google.com/search?q=MSI%20X99A%20GAMING%20PRO%20CARBON%20specifications",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "ASUS",
+      "name": "ASUS PRIME X299-A",
+      "slug": "asus-prime-x299-a",
+      "imageUrl": null,
+      "specs": {
+        "socket": "LGA 2066",
+        "chipset": "X299",
+        "ramType": "DDR4",
+        "ramSlots": 8,
+        "maxRamSpeed": 4133,
+        "m2Slots": 2,
+        "maxRam": 128,
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.google.com/search?q=ASUS%20PRIME%20X299-A%20specifications",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "ASUS",
+      "name": "ASUS M5A97 R2.0",
+      "slug": "asus-m5a97-r2-0",
+      "imageUrl": null,
+      "specs": {
+        "socket": "AM3+",
+        "chipset": "970",
+        "ramType": "DDR3",
+        "ramSlots": 4,
+        "maxRamSpeed": 1866,
+        "m2Slots": 0,
+        "maxRam": 32,
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.google.com/search?q=ASUS%20M5A97%20R2.0%20specifications",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Gigabyte",
+      "name": "Gigabyte GA-990FXA-UD3",
+      "slug": "gigabyte-ga-990fxa-ud3",
+      "imageUrl": null,
+      "specs": {
+        "socket": "AM3+",
+        "chipset": "990FX",
+        "ramType": "DDR3",
+        "ramSlots": 4,
+        "maxRamSpeed": 1866,
+        "m2Slots": 0,
+        "maxRam": 32,
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.google.com/search?q=Gigabyte%20GA-990FXA-UD3%20specifications",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "ASUS",
+      "name": "ASUS ROG Strix Z890-A Gaming WiFi",
+      "slug": "asus-rog-strix-z890-a-gaming-wifi",
+      "imageUrl": null,
+      "specs": {
+        "socket": "LGA 1851",
+        "chipset": "Z890",
+        "ramType": "DDR5",
+        "ramSlots": 4,
+        "maxRamSpeed": 8000,
+        "m2Slots": 4,
+        "maxRam": 256,
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.google.com/search?q=ASUS%20ROG%20Strix%20Z890-A%20Gaming%20WiFi%20specifications",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "MSI",
+      "name": "MSI MAG Z890 Tomahawk WiFi",
+      "slug": "msi-mag-z890-tomahawk-wifi",
+      "imageUrl": null,
+      "specs": {
+        "socket": "LGA 1851",
+        "chipset": "Z890",
+        "ramType": "DDR5",
+        "ramSlots": 4,
+        "maxRamSpeed": 8400,
+        "m2Slots": 4,
+        "maxRam": 256,
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.google.com/search?q=MSI%20MAG%20Z890%20Tomahawk%20WiFi%20specifications",
+      "unknownFields": [],
+      "prices": []
+    }
+  ]
+}

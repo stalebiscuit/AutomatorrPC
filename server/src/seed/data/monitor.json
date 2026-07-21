@@ -1,0 +1,140 @@
+{
+  "category": "monitor",
+  "components": [
+    {
+      "brand": "Dell",
+      "name": "Dell S2721DGF 27\" QHD 165Hz",
+      "slug": "dell-s2721dgf-27-qhd-165hz",
+      "imageUrl": null,
+      "specs": {
+        "resolution": "2560x1440",
+        "refreshHz": 165,
+        "size": 27,
+        "panelType": "IPS",
+        "ports": "DP 1.4, HDMI 2.0"
+      },
+      "specSourceUrl": "https://www.dell.com/en-au/shop/dell-27-gaming-monitor-s2721dgf/apd/210-axrr/",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Mwave",
+          "price": 429,
+          "url": "https://www.mwave.com.au/searchresult?w=Dell%20S2721DGF%2027%22%20QHD%20165Hz"
+        },
+        {
+          "store": "Scorptec",
+          "price": 439,
+          "url": "https://www.scorptec.com.au/search/go?w=Dell%20S2721DGF%2027%22%20QHD%20165Hz"
+        }
+      ]
+    },
+    {
+      "brand": "LG",
+      "name": "LG 27GP850-B 27\" QHD 180Hz",
+      "slug": "lg-27gp850-b-27-qhd-180hz",
+      "imageUrl": null,
+      "specs": {
+        "resolution": "2560x1440",
+        "refreshHz": 180,
+        "size": 27,
+        "panelType": "IPS",
+        "ports": "DP 1.4, HDMI 2.1"
+      },
+      "specSourceUrl": "https://www.lg.com/au/monitors/lg-27gp850-b",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Centre Com",
+          "price": 449,
+          "url": "https://www.centrecom.com.au/search?searchterm=LG%2027GP850-B%2027%22%20QHD%20180Hz"
+        },
+        {
+          "store": "PLE",
+          "price": 455,
+          "url": "https://www.ple.com.au/Catalogue/search?q=LG%2027GP850-B%2027%22%20QHD%20180Hz"
+        }
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "name": "Samsung Odyssey G7 32\" QHD 240Hz",
+      "slug": "samsung-odyssey-g7-32-qhd-240hz",
+      "imageUrl": null,
+      "specs": {
+        "resolution": "2560x1440",
+        "refreshHz": 240,
+        "size": 32,
+        "panelType": "VA",
+        "ports": "DP 1.4, HDMI 2.0"
+      },
+      "specSourceUrl": "https://www.samsung.com/au/monitors/gaming/odyssey-g7-32-inch-240hz-lc32g75tqsexxy/",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Mwave",
+          "price": 699,
+          "url": "https://www.mwave.com.au/searchresult?w=Samsung%20Odyssey%20G7%2032%22%20QHD%20240Hz"
+        },
+        {
+          "store": "Scorptec",
+          "price": 719,
+          "url": "https://www.scorptec.com.au/search/go?w=Samsung%20Odyssey%20G7%2032%22%20QHD%20240Hz"
+        }
+      ]
+    },
+    {
+      "brand": "LG",
+      "name": "LG 27GR93U 27\" 4K 144Hz",
+      "slug": "lg-27gr93u-27-4k-144hz",
+      "imageUrl": null,
+      "specs": {
+        "resolution": "3840x2160",
+        "refreshHz": 144,
+        "size": 27,
+        "panelType": "IPS",
+        "ports": "DP 1.4, HDMI 2.1"
+      },
+      "specSourceUrl": "https://www.lg.com/au/monitors/lg-27gr93u-b",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Scorptec",
+          "price": 899,
+          "url": "https://www.scorptec.com.au/search/go?w=LG%2027GR93U%2027%22%204K%20144Hz"
+        },
+        {
+          "store": "Centre Com",
+          "price": 929,
+          "url": "https://www.centrecom.com.au/search?searchterm=LG%2027GR93U%2027%22%204K%20144Hz"
+        }
+      ]
+    },
+    {
+      "brand": "ASUS",
+      "name": "ASUS TUF Gaming VG259QM 25\" FHD 280Hz",
+      "slug": "asus-tuf-gaming-vg259qm-25-fhd-280hz",
+      "imageUrl": null,
+      "specs": {
+        "resolution": "1920x1080",
+        "refreshHz": 280,
+        "size": 25,
+        "panelType": "IPS",
+        "ports": "DP 1.2, HDMI 2.0"
+      },
+      "specSourceUrl": "https://www.asus.com/displays-desktops/monitors/tuf-gaming/tuf-gaming-vg259qm/",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Mwave",
+          "price": 329,
+          "url": "https://www.mwave.com.au/searchresult?w=ASUS%20TUF%20Gaming%20VG259QM%2025%22%20FHD%20280Hz"
+        },
+        {
+          "store": "PLE",
+          "price": 339,
+          "url": "https://www.ple.com.au/Catalogue/search?q=ASUS%20TUF%20Gaming%20VG259QM%2025%22%20FHD%20280Hz"
+        }
+      ]
+    }
+  ]
+}
