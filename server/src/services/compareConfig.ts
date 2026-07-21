@@ -163,6 +163,26 @@ export const COMPARE_CONFIGS: Record<CompareCategory, CategoryCompareConfig> = {
     ],
   },
 
+  motherboard: {
+    category: 'motherboard',
+    fields: [
+      { key: 'socket', label: 'Socket', numeric: false, counted: false },
+      { key: 'chipset', label: 'Chipset', numeric: false, counted: false },
+      { key: 'formFactor', label: 'Form factor', numeric: false, counted: false },
+      { key: 'ramType', label: 'Memory type', numeric: false, counted: false },
+      { key: 'ramSlots', label: 'Memory slots', direction: 'higher', numeric: true, counted: true, deltaFormat: 'absolute' },
+      { key: 'maxRamSpeed', label: 'Max memory speed', unit: 'MT/s', direction: 'higher', numeric: true, counted: true, deltaFormat: 'absolute' },
+      { key: 'm2Slots', label: 'M.2 slots', direction: 'higher', numeric: true, counted: true, deltaFormat: 'absolute' },
+      PRICE,
+    ],
+    deltaFields: ['ramSlots', 'maxRamSpeed', 'm2Slots', 'price'],
+    tags: [
+      { tag: 'Memory', fields: ['ramSlots', 'maxRamSpeed'], mode: 'anyLead' },
+      { tag: 'Storage', fields: ['m2Slots'], mode: 'anyLead' },
+      { tag: 'Value', fields: ['price'], mode: 'anyLead' },
+    ],
+  },
+
   // ── Non-benchmarked comparable categories (no performance index) ──
   cooler: {
     category: 'cooler',

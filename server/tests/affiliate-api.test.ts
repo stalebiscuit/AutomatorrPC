@@ -5,6 +5,7 @@ import { startMemoryDb, stopMemoryDb, clearCollections } from './helpers/memoryD
 import { seedDatabase } from '../src/seed/seed.js';
 import { ComponentModel } from '../src/models/index.js';
 import { loadAffiliateConfigs, resetAffiliateCacheForTests } from '../src/services/affiliate/affiliateService.js';
+import { installCapturingMailer, loginAs } from './helpers/auth.js';
 
 describe('Affiliate config API + read decoration', () => {
   const app = createApp();
@@ -13,6 +14,7 @@ describe('Affiliate config API + read decoration', () => {
     await startMemoryDb();
     await clearCollections();
     resetAffiliateCacheForTests();
+    installCapturingMailer();
     await seedDatabase();
     // Give a known CPU a Scorptec price so we can assert decoration end-to-end.
     await ComponentModel.updateOne(
@@ -38,9 +40,7 @@ describe('Affiliate config API + read decoration', () => {
   });
 
   const login = async () => {
-    const agent = request.agent(app);
-    const res = await agent.post('/api/admin/login').send({ username: 'admin', password: 'test-password' });
-    expect(res.status).toBe(200);
+    const { agent } = await loginAs(app, 'admin@example.com');
     return agent;
   };
 
@@ -70,13 +70,19 @@ describe('Affiliate config API + read decoration', () => {
 
   it('rejects an unknown store with 404', async () => {
     const agent = await login();
-    const res = await agent.put('/api/admin/affiliates/Nope').send({ mode: 'tag', tag: 'x' });
+    const res = await agent
+      .put('/api/admin/affiliates/Nope')
+      .set('x-csrf', '1')
+      .send({ mode: 'tag', tag: 'x' });
     expect(res.status).toBe(404);
   });
 
   it('rejects an invalid mode with 400', async () => {
     const agent = await login();
-    const res = await agent.put('/api/admin/affiliates/Amazon').send({ mode: 'bogus' });
+    const res = await agent
+      .put('/api/admin/affiliates/Amazon')
+      .set('x-csrf', '1')
+      .send({ mode: 'bogus' });
     expect(res.status).toBe(400);
     expect(res.body.code).toBe('VALIDATION_ERROR');
   });
@@ -85,6 +91,7 @@ describe('Affiliate config API + read decoration', () => {
     const agent = await login();
     const res = await agent
       .put('/api/admin/affiliates/Mwave')
+      .set('x-csrf', '1')
       .send({ mode: 'wrapper', wrapperTemplate: 'https://t.cfjump.com/1/t' });
     expect(res.status).toBe(400);
   });
@@ -93,6 +100,7 @@ describe('Affiliate config API + read decoration', () => {
     const agent = await login();
     const put = await agent
       .put('/api/admin/affiliates/Scorptec')
+      .set('x-csrf', '1')
       .send({ mode: 'tag', paramName: 'aff', tag: 'automatorr-22' });
     expect(put.status).toBe(200);
     expect(put.body.store.mode).toBe('tag');

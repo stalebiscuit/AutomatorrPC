@@ -21,7 +21,8 @@ import { PartPicker } from '../components/builder/PartPicker.js';
 import { CompatibilityBanner } from '../components/builder/CompatibilityBanner.js';
 import { BuildSummaryBar } from '../components/builder/BuildSummaryBar.js';
 import { PricesByMerchant } from '../components/builder/PricesByMerchant.js';
-import { formatAud } from '../lib/format.js';
+import { formatAud, freshness } from '../lib/format.js';
+import { SiteFooter } from '../components/SiteFooter.js';
 import { api, type BuildBody } from '../lib/api.js';
 import { trackClick } from '../lib/session.js';
 import '../styles/builder.css';
@@ -192,14 +193,19 @@ export function PcBuilder() {
                       <td className="cell-cat">{meta.label}</td>
                       <td>
                         <div className="sel-cell">
-                          <Thumb className="sel-thumb" imageUrl={p.component.imageUrl} category={p.component.category} name={p.component.name} />
+                          <Thumb className="sel-thumb" imageUrl={p.component.imageUrl} category={p.component.category} name={p.component.name} brand={p.component.brand} specs={p.component.specs} />
                           <span className="sel-name">{p.component.name}</span>
                         </div>
                       </td>
                       <td className="cell-avail" title="Stock status — pending live feed">
                         {sorted.length ? 'In stock' : '—'}
                       </td>
-                      <td className="tabnum cell-price">{formatAud(price)}</td>
+                      <td className="tabnum cell-price">
+                        {formatAud(price)}
+                        {chosenQuote && freshness(chosenQuote.lastUpdated) && (
+                          <span className="fresh-badge">{freshness(chosenQuote.lastUpdated)}</span>
+                        )}
+                      </td>
                       <td>
                         {sorted.length ? (
                           <div className="where-cell">
@@ -283,6 +289,8 @@ export function PcBuilder() {
           }
         />
       )}
+
+      <SiteFooter />
     </div>
   );
 }

@@ -30,6 +30,24 @@ const GPU_UBRAW: Record<string, number> = { rtx5090:190,rtx5080:124,rtx5070ti:10
 const GPU_TBP: Record<string, number> = { rtx5090:575,rtx5080:360,rtx5070ti:300,rtx5070:250,rtx5060ti:180,rtx5060:145,rtx5050:130,rtx4090:450,rtx4080super:320,rtx4080:320,rtx4070tisuper:285,rtx4070ti:285,rtx4070super:220,rtx4070:200,rtx4060ti:160,rtx4060:115,rtx3090ti:450,rtx3090:350,rtx3080ti:350,rtx3080:320,rtx3070ti:290,rtx3070:220,rtx3060ti:200,rtx3060:170,rtx3050:130,gtx1660super:125,gtx1660ti:120,gtx1660:120,gtx1650:75,rx9070xt:304,rx9070:220,rx9060xt:160,rx7900xtx:355,rx7900xt:315,rx7900gre:260,rx7800xt:263,rx7700xt:245,rx7600xt:190,rx7600:165,rx6950xt:335,rx6900xt:300,rx6800xt:300,rx6800:250,rx6750xt:250,rx6700xt:230,rx6650xt:180,rx6600xt:160,rx6600:132,arcb580:190,arcb570:150,arca770:225,arca750:225,arca580:185 };
 const GPU_VRAM: Record<string, number> = { rtx5090:32,rtx5080:16,rtx5070ti:16,rtx5070:12,rtx5060:8,rtx5050:8,rtx4090:24,rtx4080super:16,rtx4080:16,rtx4070tisuper:16,rtx4070ti:12,rtx4070super:12,rtx4070:12,rtx4060:8,rtx3090ti:24,rtx3090:24,rtx3080ti:12,rtx3080:10,rtx3070ti:8,rtx3070:8,rtx3060ti:8,rtx3060:12,rtx3050:8,gtx1660super:6,gtx1660ti:6,gtx1660:6,gtx1650:4,rx9070xt:16,rx9070:16,rx7900xtx:24,rx7900xt:20,rx7900gre:16,rx7800xt:16,rx7700xt:12,rx7600xt:16,rx7600:8,rx6950xt:16,rx6900xt:16,rx6800xt:16,rx6800:16,rx6750xt:12,rx6700xt:12,rx6650xt:8,rx6600xt:8,rx6600:8,arcb580:12,arcb570:10,arca770:16,arca750:8,arca580:8 };
 const DUAL_VRAM = new Set(['rtx5060ti', 'rtx4060ti', 'rx9060xt']);
+// Die-fixed reference specs (web-verified 2025-07): shaders (CUDA/stream), memory-bus bits,
+// and VRAM type are identical for every card built on a given chip. Boost clock is intentionally
+// omitted — it varies by factory-OC AIB model, so it stays blank rather than approximate.
+const GPU_SHADERS: Record<string, number> = { rtx5090:21760,rtx5080:10752,rtx5070ti:8960,rtx5070:6144,rtx5060ti:4608,rtx5060:3840,rtx5050:2560,rtx4090:16384,rtx4080super:10240,rtx4080:9728,rtx4070tisuper:8448,rtx4070ti:7680,rtx4070super:7168,rtx4070:5888,rtx4060ti:4352,rtx4060:3072,rtx3090ti:10752,rtx3090:10496,rtx3080ti:10240,rtx3080:8704,rtx3070ti:6144,rtx3070:5888,rtx3060ti:4864,rtx3060:3584,rtx3050:2560,gtx1660super:1408,gtx1660ti:1536,gtx1660:1408,gtx1650:896,rx9070xt:4096,rx9070:3584,rx9060xt:2048,rx7900xtx:6144,rx7900xt:5376,rx7900gre:5120,rx7800xt:3840,rx7700xt:3456,rx7600xt:2048,rx7600:2048,rx6950xt:5120,rx6900xt:5120,rx6800xt:4608,rx6800:3840,rx6750xt:2560,rx6700xt:2560,rx6650xt:2048,rx6600xt:2048,rx6600:1792,arcb580:2560,arcb570:2304,arca770:4096,arca750:3584,arca580:3072 };
+const GPU_BUS: Record<string, number> = { rtx5090:512,rtx5080:256,rtx5070ti:256,rtx5070:192,rtx5060ti:128,rtx5060:128,rtx5050:128,rtx4090:384,rtx4080super:256,rtx4080:256,rtx4070tisuper:256,rtx4070ti:192,rtx4070super:192,rtx4070:192,rtx4060ti:128,rtx4060:128,rtx3090ti:384,rtx3090:384,rtx3080ti:384,rtx3080:320,rtx3070ti:256,rtx3070:256,rtx3060ti:256,rtx3060:192,rtx3050:128,gtx1660super:192,gtx1660ti:192,gtx1660:192,gtx1650:128,rx9070xt:256,rx9070:256,rx9060xt:128,rx7900xtx:384,rx7900xt:320,rx7900gre:256,rx7800xt:256,rx7700xt:192,rx7600xt:128,rx7600:128,rx6950xt:256,rx6900xt:256,rx6800xt:256,rx6800:256,rx6750xt:192,rx6700xt:192,rx6650xt:128,rx6600xt:128,rx6600:128,arcb580:192,arcb570:160,arca770:256,arca750:256,arca580:256 };
+const GPU_VRAMTYPE: Record<string, string> = { rtx5090:'GDDR7',rtx5080:'GDDR7',rtx5070ti:'GDDR7',rtx5070:'GDDR7',rtx5060ti:'GDDR7',rtx5060:'GDDR7',rtx5050:'GDDR7',rtx4090:'GDDR6X',rtx4080super:'GDDR6X',rtx4080:'GDDR6X',rtx4070tisuper:'GDDR6X',rtx4070ti:'GDDR6X',rtx4070super:'GDDR6X',rtx4070:'GDDR6X',rtx4060ti:'GDDR6',rtx4060:'GDDR6',rtx3090ti:'GDDR6X',rtx3090:'GDDR6X',rtx3080ti:'GDDR6X',rtx3080:'GDDR6X',rtx3070ti:'GDDR6X',rtx3070:'GDDR6',rtx3060ti:'GDDR6',rtx3060:'GDDR6',rtx3050:'GDDR6',gtx1660super:'GDDR6',gtx1660ti:'GDDR6',gtx1660:'GDDR5',gtx1650:'GDDR5',rx9070xt:'GDDR6',rx9070:'GDDR6',rx9060xt:'GDDR6',rx7900xtx:'GDDR6',rx7900xt:'GDDR6',rx7900gre:'GDDR6',rx7800xt:'GDDR6',rx7700xt:'GDDR6',rx7600xt:'GDDR6',rx7600:'GDDR6',rx6950xt:'GDDR6',rx6900xt:'GDDR6',rx6800xt:'GDDR6',rx6800:'GDDR6',rx6750xt:'GDDR6',rx6700xt:'GDDR6',rx6650xt:'GDDR6',rx6600xt:'GDDR6',rx6600:'GDDR6',arcb580:'GDDR6',arcb570:'GDDR6',arca770:'GDDR6',arca750:'GDDR6',arca580:'GDDR6' };
+
+/** Die-exact GPU specs (VRAM type, memory-bus width, CUDA/stream count) inferred from the chip
+ *  name. Empty object when the chip isn't recognised (leaves those compare rows blank). */
+export function gpuDieSpecs(name: string): { vramType?: string; busWidth?: number; cudaOrStream?: number } {
+  const c = gpuChipset(name);
+  if (!c) return {};
+  const out: { vramType?: string; busWidth?: number; cudaOrStream?: number } = {};
+  if (GPU_VRAMTYPE[c.key]) out.vramType = GPU_VRAMTYPE[c.key];
+  if (GPU_BUS[c.key]) out.busWidth = GPU_BUS[c.key];
+  if (GPU_SHADERS[c.key]) out.cudaOrStream = GPU_SHADERS[c.key];
+  return out;
+}
 function gpuChipset(name: string): { key: string; disp: string } | null {
   const s = name.toUpperCase();
   let m = s.match(/(RTX|GTX)\s?-?\s?(\d{3,4})\s?(TI\s?SUPER|SUPER|TI)?/);
@@ -143,7 +161,7 @@ export function decodeCrawledPart(category: BuilderCategory, name: string, cpuBe
       const vram = DUAL_VRAM.has(c.key) ? (vramName ?? GPU_VRAM[c.key]) : (GPU_VRAM[c.key] ?? vramName);
       if (!vram) return null;
       const length = /\b(SFF|ITX|MINI)\b/i.test(name) ? 180 : /(90|80)/.test(c.key) ? 336 : /70/.test(c.key) ? 300 : 250;
-      specs = { chipset: c.disp, vram, tbp: GPU_TBP[c.key] ?? 200, length, color: 'Black' };
+      specs = { chipset: c.disp, vram, tbp: GPU_TBP[c.key] ?? 200, length, color: 'Black', ...gpuDieSpecs(name) };
       ubRaw = GPU_UBRAW[c.key]!;
     } else {
       const pro = decodeProGpu(name);

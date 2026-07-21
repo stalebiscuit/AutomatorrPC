@@ -11,6 +11,7 @@ import { StoreStats } from '../components/StoreStats.js';
 import { BuilderDashboard } from '../components/BuilderDashboard.js';
 import { RecentEvents } from '../components/RecentEvents.js';
 import { AffiliateLinksModal } from '../components/admin/AffiliateLinksModal.js';
+import { AdminNav } from '../components/admin/AdminNav.js';
 
 const WINDOWS: AnalyticsWindow[] = ['day', 'week', 'month'];
 
@@ -33,16 +34,12 @@ export function AdminDashboard() {
     }
   }, [analyticsQ.error, navigate]);
 
-  const onLogout = async () => {
-    await api.adminLogout().catch(() => undefined);
-    navigate('/admin/login', { replace: true });
-  };
-
   const a = analyticsQ.data;
 
   return (
     <div className="wrap">
       <TopBar />
+      <AdminNav />
       <div className="admin-head">
         <h1 className="admin-title">Analytics</h1>
         <div style={{ display: 'flex', gap: 14, alignItems: 'center' }}>
@@ -84,9 +81,6 @@ export function AdminDashboard() {
               </button>
             ))}
           </div>
-          <button type="button" className="admin-link" onClick={() => void onLogout()}>
-            SIGN OUT
-          </button>
         </div>
       </div>
 

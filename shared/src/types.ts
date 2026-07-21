@@ -18,6 +18,7 @@ export type Category = (typeof CATEGORIES)[number];
 export const COMPARE_CATEGORIES = [
   'cpu',
   'gpu',
+  'motherboard',
   'ram',
   'storage',
   'cooler',

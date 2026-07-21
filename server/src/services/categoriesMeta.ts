@@ -4,6 +4,7 @@ import type { CategoryMeta } from '@automatorr/shared';
 export const CATEGORY_META: CategoryMeta[] = [
   { id: 'cpu', label: 'CPU', blurb: 'Processors — cores, clocks and cache.' },
   { id: 'gpu', label: 'GPU', blurb: 'Graphics cards — VRAM, shaders and throughput.' },
+  { id: 'motherboard', label: 'Motherboard', blurb: 'Boards — socket, chipset and expansion.' },
   { id: 'ram', label: 'RAM', blurb: 'Memory kits — capacity, speed and latency.' },
   { id: 'storage', label: 'Storage', blurb: 'SSDs & HDDs — throughput, capacity and value.' },
   { id: 'cooler', label: 'Cooler', blurb: 'Air & AIO coolers — cooling capacity and noise.' },

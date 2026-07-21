@@ -70,10 +70,39 @@ export const conversionEventBody = z.object({
   sessionId: z.string().min(1).max(100).optional(),
 });
 
-export const adminLoginBody = z.object({
-  username: z.string().min(1).max(80),
-  password: z.string().min(1).max(200),
+// ── Admin auth (email OTP) ──
+export const requestOtpBody = z.object({
+  email: z.string().trim().email().max(200),
 });
+export const verifyOtpBody = z.object({
+  email: z.string().trim().email().max(200),
+  code: z.string().trim().regex(/^\d{6}$/, 'code must be 6 digits'),
+});
+
+// ── Admin management (super-admin only) ──
+export const allowedDomainBody = z.object({
+  domain: z
+    .string()
+    .trim()
+    .max(253)
+    .regex(/^(?=.{1,253}$)([a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,}$/i, 'invalid domain'),
+  note: z.string().trim().max(200).optional(),
+});
+export const objectIdParams = z.object({
+  id: z.string().regex(/^[a-f0-9]{24}$/i, 'invalid id'),
+});
+export const createAdminUserBody = z.object({
+  email: z.string().trim().email().max(200),
+  displayName: z.string().trim().max(120).optional(),
+});
+export const updateAdminUserBody = z
+  .object({
+    status: z.enum(['active', 'disabled']).optional(),
+    displayName: z.string().trim().max(120).optional(),
+  })
+  .refine((v) => v.status !== undefined || v.displayName !== undefined, {
+    message: 'nothing to update',
+  });
 
 export const analyticsQuery = z.object({
   window: z.enum(['day', 'week', 'month']).default('week'),
@@ -106,4 +135,44 @@ export const affiliateUpdateBody = z
         ctx.addIssue({ code: z.ZodIssueCode.custom, path: ['wrapperTemplate'], message: 'wrapperTemplate must start with http:// or https://' });
       }
     }
+  });
+
+// ── Feedback (launch-polish P4) ──
+export const feedbackBody = z.object({
+  type: z.enum(['idea', 'bug', 'data', 'other']),
+  message: z
+    .string()
+    .trim()
+    .min(10)
+    .max(2000)
+    .refine((s) => s.split(/\s+/).filter(Boolean).length <= 200, {
+      message: 'message must be at most 200 words',
+    }),
+  email: z.string().trim().email().max(200).optional().or(z.literal('')),
+  context: z
+    .object({
+      path: z.string().trim().max(300).optional(),
+      category: z.string().trim().max(40).optional(),
+      slugs: z.array(z.string().trim().max(120)).max(4).optional(),
+      buildShortId: z.string().trim().max(40).optional(),
+    })
+    .optional(),
+  sessionId: sessionId.optional(),
+  /** Honeypot — humans never see this field; bots that fill it are dropped. */
+  website: z.string().max(200).optional(),
+});
+
+export const feedbackListQuery = z.object({
+  status: z.enum(['new', 'reviewed', 'done', 'dismissed']).optional(),
+  type: z.enum(['idea', 'bug', 'data', 'other']).optional(),
+  page: z.coerce.number().int().min(1).max(10000).default(1),
+});
+
+export const feedbackUpdateBody = z
+  .object({
+    status: z.enum(['new', 'reviewed', 'done', 'dismissed']).optional(),
+    adminNote: z.string().trim().max(2000).optional(),
+  })
+  .refine((v) => v.status !== undefined || v.adminNote !== undefined, {
+    message: 'nothing to update',
   });

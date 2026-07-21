@@ -9,8 +9,9 @@ import { TopBar } from '../components/TopBar.js';
 import { Hero } from '../components/Hero.js';
 import { CategoryNav } from '../components/CategoryNav.js';
 import { ComponentPicker } from '../components/ComponentPicker.js';
-import { EmptyState } from '../components/EmptyState.js';
 import { CompareResults } from '../components/CompareResults.js';
+import { LandingContent } from '../components/landing/LandingContent.js';
+import { SiteFooter } from '../components/SiteFooter.js';
 
 const FALLBACK_CATEGORIES: CategoryMeta[] = COMPARE_CATEGORIES.map((id) => ({
   id,
@@ -75,6 +76,13 @@ export function ComparePage() {
 
   const both = !!slugA && !!slugB;
 
+  /** Landing CTA — scroll back up and focus picker A. */
+  const pickFirst = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const chip = document.querySelector<HTMLButtonElement>('.selector .picker-chip');
+    chip?.focus({ preventScroll: true });
+  };
+
   return (
     <div className="wrap">
       <TopBar />
@@ -104,12 +112,10 @@ export function ComparePage() {
       {both ? (
         <CompareResults category={category} slugA={slugA} slugB={slugB} />
       ) : (
-        <EmptyState hasOne={!!slugA || !!slugB} />
+        <LandingContent hasOne={!!slugA || !!slugB} onPickFirst={pickFirst} />
       )}
 
-      <div className="foot foot-clean">
-        <span>© 2026 Speccify</span>
-      </div>
+      <SiteFooter />
     </div>
   );
 }
