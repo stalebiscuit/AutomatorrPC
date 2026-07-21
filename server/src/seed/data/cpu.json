@@ -2,124 +2,1746 @@
   "category": "cpu",
   "components": [
     {
-      "brand": "Intel",
-      "name": "Intel Core i9-14900K",
-      "slug": "intel-core-i9-14900k",
-      "imageUrl": "/images/brand/intel.svg",
+      "brand": "AMD",
+      "name": "AMD Ryzen 3 3100",
+      "slug": "amd-ryzen-3-3100",
+      "imageUrl": "/images/brand/amd.svg",
       "csv": {
         "type": "CPU",
-        "model": "Core i9-14900K"
+        "model": "Ryzen 3 3100"
       },
-      "fallbackUbRaw": 131,
+      "fallbackUbRaw": 37.5,
       "specs": {
-        "cores": 24,
-        "threads": 32,
-        "baseClock": 3.2,
-        "boostClock": 6,
-        "l3Cache": 36,
-        "tdp": 125,
-        "socket": "LGA 1700",
-        "igpu": "Intel UHD 770"
+        "cores": 4,
+        "threads": 8,
+        "baseClock": 3.6,
+        "boostClock": 3.9,
+        "l3Cache": 16,
+        "tdp": 65,
+        "socket": "AM4",
+        "igpu": "None",
+        "releaseYear": 2020,
+        "passmarkCpuMark": 11520
       },
-      "specSourceUrl": "https://www.intel.com/content/www/us/en/products/sku/236773/intel-core-i9-processor-14900k-36m-cache-up-to-6-00-ghz/specifications.html",
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
       "unknownFields": [],
-      "prices": [
-        {
-          "store": "Amazon",
-          "price": 899,
-          "url": "https://www.amazon.com.au/s?k=Intel%20Core%20i9-14900K"
-        },
-        {
-          "store": "Mwave",
-          "price": 930,
-          "url": "https://www.mwave.com.au/searchresult?w=Intel%20Core%20i9-14900K"
-        },
-        {
-          "store": "Scorptec",
-          "price": 953,
-          "url": "https://www.scorptec.com.au/search/go?w=Intel%20Core%20i9-14900K"
-        }
-      ]
+      "prices": []
     },
     {
-      "brand": "Intel",
-      "name": "Intel Core i7-14700K",
-      "slug": "intel-core-i7-14700k",
-      "imageUrl": "/images/brand/intel.svg",
+      "brand": "AMD",
+      "name": "AMD Ryzen 3 3300X",
+      "slug": "amd-ryzen-3-3300x",
+      "imageUrl": "/images/brand/amd.svg",
       "csv": {
         "type": "CPU",
-        "model": "Core i7-14700K"
+        "model": "Ryzen 3 3300X"
+      },
+      "fallbackUbRaw": 40.9,
+      "specs": {
+        "cores": 4,
+        "threads": 8,
+        "baseClock": 3.8,
+        "boostClock": 4.3,
+        "l3Cache": 16,
+        "tdp": 65,
+        "socket": "AM4",
+        "igpu": "None",
+        "releaseYear": 2020,
+        "passmarkCpuMark": 12578
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 5 3600",
+      "slug": "amd-ryzen-5-3600",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 5 3600"
+      },
+      "fallbackUbRaw": 57.5,
+      "specs": {
+        "cores": 6,
+        "threads": 12,
+        "baseClock": 3.6,
+        "boostClock": 4.2,
+        "l3Cache": 32,
+        "tdp": 65,
+        "socket": "AM4",
+        "igpu": "None",
+        "releaseYear": 2019,
+        "passmarkCpuMark": 17661
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 5 3600X",
+      "slug": "amd-ryzen-5-3600x",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 5 3600X"
+      },
+      "fallbackUbRaw": 59,
+      "specs": {
+        "cores": 6,
+        "threads": 12,
+        "baseClock": 3.8,
+        "boostClock": 4.4,
+        "l3Cache": 32,
+        "tdp": 95,
+        "socket": "AM4",
+        "igpu": "None",
+        "releaseYear": 2019,
+        "passmarkCpuMark": 18122
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 5 3600XT",
+      "slug": "amd-ryzen-5-3600xt",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 5 3600XT"
+      },
+      "fallbackUbRaw": 60.3,
+      "specs": {
+        "cores": 6,
+        "threads": 12,
+        "baseClock": 3.8,
+        "boostClock": 4.5,
+        "l3Cache": 32,
+        "tdp": 95,
+        "socket": "AM4",
+        "igpu": "None",
+        "releaseYear": 2020,
+        "passmarkCpuMark": 18511
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 7 3700X",
+      "slug": "amd-ryzen-7-3700x",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 7 3700X"
+      },
+      "fallbackUbRaw": 72.9,
+      "specs": {
+        "cores": 8,
+        "threads": 16,
+        "baseClock": 3.6,
+        "boostClock": 4.4,
+        "l3Cache": 32,
+        "tdp": 65,
+        "socket": "AM4",
+        "igpu": "None",
+        "releaseYear": 2019,
+        "passmarkCpuMark": 22394
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 7 3800X",
+      "slug": "amd-ryzen-7-3800x",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 7 3800X"
+      },
+      "fallbackUbRaw": 74.8,
+      "specs": {
+        "cores": 8,
+        "threads": 16,
+        "baseClock": 3.9,
+        "boostClock": 4.5,
+        "l3Cache": 32,
+        "tdp": 105,
+        "socket": "AM4",
+        "igpu": "None",
+        "releaseYear": 2019,
+        "passmarkCpuMark": 22968
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 7 3800XT",
+      "slug": "amd-ryzen-7-3800xt",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 7 3800XT"
+      },
+      "fallbackUbRaw": 76.2,
+      "specs": {
+        "cores": 8,
+        "threads": 16,
+        "baseClock": 3.9,
+        "boostClock": 4.7,
+        "l3Cache": 32,
+        "tdp": 105,
+        "socket": "AM4",
+        "igpu": "None",
+        "releaseYear": 2020,
+        "passmarkCpuMark": 23425
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 9 3900X",
+      "slug": "amd-ryzen-9-3900x",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 9 3900X"
+      },
+      "fallbackUbRaw": 105.7,
+      "specs": {
+        "cores": 12,
+        "threads": 24,
+        "baseClock": 3.8,
+        "boostClock": 4.6,
+        "l3Cache": 64,
+        "tdp": 105,
+        "socket": "AM4",
+        "igpu": "None",
+        "releaseYear": 2019,
+        "passmarkCpuMark": 32483
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 9 3900XT",
+      "slug": "amd-ryzen-9-3900xt",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 9 3900XT"
+      },
+      "fallbackUbRaw": 105.7,
+      "specs": {
+        "cores": 12,
+        "threads": 24,
+        "baseClock": 3.8,
+        "boostClock": 4.7,
+        "l3Cache": 64,
+        "tdp": 105,
+        "socket": "AM4",
+        "igpu": "None",
+        "releaseYear": 2020,
+        "passmarkCpuMark": 32478
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 9 3950X",
+      "slug": "amd-ryzen-9-3950x",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 9 3950X"
+      },
+      "fallbackUbRaw": 125,
+      "specs": {
+        "cores": 16,
+        "threads": 32,
+        "baseClock": 3.5,
+        "boostClock": 4.7,
+        "l3Cache": 64,
+        "tdp": 105,
+        "socket": "AM4",
+        "igpu": "None",
+        "releaseYear": 2019,
+        "passmarkCpuMark": 38418
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 5 5500",
+      "slug": "amd-ryzen-5-5500",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 5 5500"
+      },
+      "fallbackUbRaw": 62.7,
+      "specs": {
+        "cores": 6,
+        "threads": 12,
+        "baseClock": 3.6,
+        "boostClock": 4.2,
+        "l3Cache": 16,
+        "tdp": 65,
+        "socket": "AM4",
+        "igpu": "None",
+        "releaseYear": 2022,
+        "passmarkCpuMark": 19252
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 5 5600",
+      "slug": "amd-ryzen-5-5600",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 5 5600"
+      },
+      "fallbackUbRaw": 70,
+      "specs": {
+        "cores": 6,
+        "threads": 12,
+        "baseClock": 3.5,
+        "boostClock": 4.4,
+        "l3Cache": 32,
+        "tdp": 65,
+        "socket": "AM4",
+        "igpu": "None",
+        "releaseYear": 2022,
+        "passmarkCpuMark": 21510
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 5 5600X",
+      "slug": "amd-ryzen-5-5600x",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 5 5600X"
+      },
+      "fallbackUbRaw": 71.1,
+      "specs": {
+        "cores": 6,
+        "threads": 12,
+        "baseClock": 3.7,
+        "boostClock": 4.6,
+        "l3Cache": 32,
+        "tdp": 65,
+        "socket": "AM4",
+        "igpu": "None",
+        "releaseYear": 2020,
+        "passmarkCpuMark": 21830
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 7 5700X",
+      "slug": "amd-ryzen-7-5700x",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 7 5700X"
+      },
+      "fallbackUbRaw": 86.5,
+      "specs": {
+        "cores": 8,
+        "threads": 16,
+        "baseClock": 3.4,
+        "boostClock": 4.6,
+        "l3Cache": 32,
+        "tdp": 65,
+        "socket": "AM4",
+        "igpu": "None",
+        "releaseYear": 2022,
+        "passmarkCpuMark": 26568
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 7 5700X3D",
+      "slug": "amd-ryzen-7-5700x3d",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 7 5700X3D"
+      },
+      "fallbackUbRaw": 85.6,
+      "specs": {
+        "cores": 8,
+        "threads": 16,
+        "baseClock": 3,
+        "boostClock": 4.1,
+        "l3Cache": 96,
+        "tdp": 105,
+        "socket": "AM4",
+        "igpu": "None",
+        "releaseYear": 2024,
+        "passmarkCpuMark": 26301
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 7 5800X",
+      "slug": "amd-ryzen-7-5800x",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 7 5800X"
+      },
+      "fallbackUbRaw": 90.1,
+      "specs": {
+        "cores": 8,
+        "threads": 16,
+        "baseClock": 3.8,
+        "boostClock": 4.7,
+        "l3Cache": 32,
+        "tdp": 105,
+        "socket": "AM4",
+        "igpu": "None",
+        "releaseYear": 2020,
+        "passmarkCpuMark": 27672
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 7 5800X3D",
+      "slug": "amd-ryzen-7-5800x3d",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 7 5800X3D"
+      },
+      "fallbackUbRaw": 92.1,
+      "specs": {
+        "cores": 8,
+        "threads": 16,
+        "baseClock": 3.4,
+        "boostClock": 4.5,
+        "l3Cache": 96,
+        "tdp": 105,
+        "socket": "AM4",
+        "igpu": "None",
+        "releaseYear": 2022,
+        "passmarkCpuMark": 28295
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 9 5900X",
+      "slug": "amd-ryzen-9-5900x",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 9 5900X"
+      },
+      "fallbackUbRaw": 126.6,
+      "specs": {
+        "cores": 12,
+        "threads": 24,
+        "baseClock": 3.7,
+        "boostClock": 4.8,
+        "l3Cache": 64,
+        "tdp": 105,
+        "socket": "AM4",
+        "igpu": "None",
+        "releaseYear": 2020,
+        "passmarkCpuMark": 38898
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 9 5950X",
+      "slug": "amd-ryzen-9-5950x",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 9 5950X"
+      },
+      "fallbackUbRaw": 147.4,
+      "specs": {
+        "cores": 16,
+        "threads": 32,
+        "baseClock": 3.4,
+        "boostClock": 4.9,
+        "l3Cache": 64,
+        "tdp": 105,
+        "socket": "AM4",
+        "igpu": "None",
+        "releaseYear": 2020,
+        "passmarkCpuMark": 45280
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 5 5600G",
+      "slug": "amd-ryzen-5-5600g",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 5 5600G"
+      },
+      "fallbackUbRaw": 63.9,
+      "specs": {
+        "cores": 6,
+        "threads": 12,
+        "baseClock": 3.9,
+        "boostClock": 4.4,
+        "l3Cache": 16,
+        "tdp": 65,
+        "socket": "AM4",
+        "igpu": "AMD Radeon Graphics (Vega 7)",
+        "releaseYear": 2021,
+        "passmarkCpuMark": 19645
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 7 5700G",
+      "slug": "amd-ryzen-7-5700g",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 7 5700G"
+      },
+      "fallbackUbRaw": 78.9,
+      "specs": {
+        "cores": 8,
+        "threads": 16,
+        "baseClock": 3.8,
+        "boostClock": 4.6,
+        "l3Cache": 16,
+        "tdp": 65,
+        "socket": "AM4",
+        "igpu": "AMD Radeon Graphics (Vega 8)",
+        "releaseYear": 2021,
+        "passmarkCpuMark": 24248
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 5 7500F",
+      "slug": "amd-ryzen-5-7500f",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 5 7500F"
+      },
+      "fallbackUbRaw": 86.4,
+      "specs": {
+        "cores": 6,
+        "threads": 12,
+        "baseClock": 3.7,
+        "boostClock": 5,
+        "l3Cache": 32,
+        "tdp": 65,
+        "socket": "AM5",
+        "igpu": "None",
+        "releaseYear": 2023,
+        "passmarkCpuMark": 26544
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 5 7600",
+      "slug": "amd-ryzen-5-7600",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 5 7600"
+      },
+      "fallbackUbRaw": 87.8,
+      "specs": {
+        "cores": 6,
+        "threads": 12,
+        "baseClock": 3.8,
+        "boostClock": 5.1,
+        "l3Cache": 32,
+        "tdp": 65,
+        "socket": "AM5",
+        "igpu": "AMD Radeon Graphics",
+        "releaseYear": 2023,
+        "passmarkCpuMark": 26977
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 5 7600X",
+      "slug": "amd-ryzen-5-7600x",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 5 7600X"
+      },
+      "fallbackUbRaw": 92.1,
+      "specs": {
+        "cores": 6,
+        "threads": 12,
+        "baseClock": 4.7,
+        "boostClock": 5.3,
+        "l3Cache": 32,
+        "tdp": 105,
+        "socket": "AM5",
+        "igpu": "AMD Radeon Graphics",
+        "releaseYear": 2022,
+        "passmarkCpuMark": 28283
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 7 7700",
+      "slug": "amd-ryzen-7-7700",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 7 7700"
+      },
+      "fallbackUbRaw": 111.8,
+      "specs": {
+        "cores": 8,
+        "threads": 16,
+        "baseClock": 3.8,
+        "boostClock": 5.3,
+        "l3Cache": 32,
+        "tdp": 65,
+        "socket": "AM5",
+        "igpu": "AMD Radeon Graphics",
+        "releaseYear": 2023,
+        "passmarkCpuMark": 34334
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 7 7700X",
+      "slug": "amd-ryzen-7-7700x",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 7 7700X"
+      },
+      "fallbackUbRaw": 115.6,
+      "specs": {
+        "cores": 8,
+        "threads": 16,
+        "baseClock": 4.5,
+        "boostClock": 5.4,
+        "l3Cache": 32,
+        "tdp": 105,
+        "socket": "AM5",
+        "igpu": "AMD Radeon Graphics",
+        "releaseYear": 2022,
+        "passmarkCpuMark": 35513
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 7 7800X3D",
+      "slug": "amd-ryzen-7-7800x3d",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 7 7800X3D"
+      },
+      "fallbackUbRaw": 111.6,
+      "specs": {
+        "cores": 8,
+        "threads": 16,
+        "baseClock": 4.2,
+        "boostClock": 5,
+        "l3Cache": 96,
+        "tdp": 120,
+        "socket": "AM5",
+        "igpu": "AMD Radeon Graphics",
+        "releaseYear": 2023,
+        "passmarkCpuMark": 34278
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 9 7900",
+      "slug": "amd-ryzen-9-7900",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 9 7900"
+      },
+      "fallbackUbRaw": 156.4,
+      "specs": {
+        "cores": 12,
+        "threads": 24,
+        "baseClock": 3.7,
+        "boostClock": 5.4,
+        "l3Cache": 64,
+        "tdp": 65,
+        "socket": "AM5",
+        "igpu": "AMD Radeon Graphics",
+        "releaseYear": 2023,
+        "passmarkCpuMark": 48041
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 9 7900X",
+      "slug": "amd-ryzen-9-7900x",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 9 7900X"
+      },
+      "fallbackUbRaw": 166.8,
+      "specs": {
+        "cores": 12,
+        "threads": 24,
+        "baseClock": 4.7,
+        "boostClock": 5.6,
+        "l3Cache": 64,
+        "tdp": 170,
+        "socket": "AM5",
+        "igpu": "AMD Radeon Graphics",
+        "releaseYear": 2022,
+        "passmarkCpuMark": 51250
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 9 7900X3D",
+      "slug": "amd-ryzen-9-7900x3d",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 9 7900X3D"
+      },
+      "fallbackUbRaw": 163.4,
+      "specs": {
+        "cores": 12,
+        "threads": 24,
+        "baseClock": 4.4,
+        "boostClock": 5.6,
+        "l3Cache": 128,
+        "tdp": 120,
+        "socket": "AM5",
+        "igpu": "AMD Radeon Graphics",
+        "releaseYear": 2023,
+        "passmarkCpuMark": 50202
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 9 7950X",
+      "slug": "amd-ryzen-9-7950x",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 9 7950X"
+      },
+      "fallbackUbRaw": 202.4,
+      "specs": {
+        "cores": 16,
+        "threads": 32,
+        "baseClock": 4.5,
+        "boostClock": 5.7,
+        "l3Cache": 64,
+        "tdp": 170,
+        "socket": "AM5",
+        "igpu": "AMD Radeon Graphics",
+        "releaseYear": 2022,
+        "passmarkCpuMark": 62175
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 9 7950X3D",
+      "slug": "amd-ryzen-9-7950x3d",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 9 7950X3D"
+      },
+      "fallbackUbRaw": 202.9,
+      "specs": {
+        "cores": 16,
+        "threads": 32,
+        "baseClock": 4.2,
+        "boostClock": 5.7,
+        "l3Cache": 128,
+        "tdp": 120,
+        "socket": "AM5",
+        "igpu": "AMD Radeon Graphics",
+        "releaseYear": 2023,
+        "passmarkCpuMark": 62321
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 5 8500G",
+      "slug": "amd-ryzen-5-8500g",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 5 8500G"
+      },
+      "fallbackUbRaw": 69.7,
+      "specs": {
+        "cores": 6,
+        "threads": 12,
+        "baseClock": 3.5,
+        "boostClock": 5,
+        "l3Cache": 16,
+        "tdp": 65,
+        "socket": "AM5",
+        "igpu": "AMD Radeon 740M",
+        "releaseYear": 2024,
+        "passmarkCpuMark": 21402
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 5 8600G",
+      "slug": "amd-ryzen-5-8600g",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 5 8600G"
+      },
+      "fallbackUbRaw": 82,
+      "specs": {
+        "cores": 6,
+        "threads": 12,
+        "baseClock": 4.3,
+        "boostClock": 5,
+        "l3Cache": 16,
+        "tdp": 65,
+        "socket": "AM5",
+        "igpu": "AMD Radeon 760M",
+        "releaseYear": 2024,
+        "passmarkCpuMark": 25189
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 7 8700G",
+      "slug": "amd-ryzen-7-8700g",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 7 8700G"
+      },
+      "fallbackUbRaw": 102.6,
+      "specs": {
+        "cores": 8,
+        "threads": 16,
+        "baseClock": 4.2,
+        "boostClock": 5.1,
+        "l3Cache": 16,
+        "tdp": 65,
+        "socket": "AM5",
+        "igpu": "AMD Radeon 780M",
+        "releaseYear": 2024,
+        "passmarkCpuMark": 31519
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 5 9600X",
+      "slug": "amd-ryzen-5-9600x",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 5 9600X"
+      },
+      "fallbackUbRaw": 98,
+      "specs": {
+        "cores": 6,
+        "threads": 12,
+        "baseClock": 3.9,
+        "boostClock": 5.4,
+        "l3Cache": 32,
+        "tdp": 65,
+        "socket": "AM5",
+        "igpu": "AMD Radeon Graphics",
+        "releaseYear": 2024,
+        "passmarkCpuMark": 30101
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 7 9700X",
+      "slug": "amd-ryzen-7-9700x",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 7 9700X"
+      },
+      "fallbackUbRaw": 120.5,
+      "specs": {
+        "cores": 8,
+        "threads": 16,
+        "baseClock": 3.8,
+        "boostClock": 5.5,
+        "l3Cache": 32,
+        "tdp": 65,
+        "socket": "AM5",
+        "igpu": "AMD Radeon Graphics",
+        "releaseYear": 2024,
+        "passmarkCpuMark": 37011
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 7 9800X3D",
+      "slug": "amd-ryzen-7-9800x3d",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 7 9800X3D"
       },
       "fallbackUbRaw": 130,
       "specs": {
-        "cores": 20,
-        "threads": 28,
-        "baseClock": 3.4,
-        "boostClock": 5.6,
-        "l3Cache": 33,
-        "tdp": 125,
-        "socket": "LGA 1700",
-        "igpu": "Intel UHD 770"
+        "cores": 8,
+        "threads": 16,
+        "baseClock": 4.7,
+        "boostClock": 5.2,
+        "l3Cache": 96,
+        "tdp": 120,
+        "socket": "AM5",
+        "igpu": "AMD Radeon Graphics",
+        "releaseYear": 2024,
+        "passmarkCpuMark": 39951
       },
-      "specSourceUrl": "https://www.intel.com/content/www/us/en/products/sku/236783/intel-core-i7-processor-14700k-33m-cache-up-to-5-60-ghz/specifications.html",
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
       "unknownFields": [],
-      "prices": [
-        {
-          "store": "Amazon",
-          "price": 672,
-          "url": "https://www.amazon.com.au/s?k=Intel%20Core%20i7-14700K"
-        },
-        {
-          "store": "Mwave",
-          "price": 688,
-          "url": "https://www.mwave.com.au/searchresult?w=Intel%20Core%20i7-14700K"
-        },
-        {
-          "store": "Scorptec",
-          "price": 649,
-          "url": "https://www.scorptec.com.au/search/go?w=Intel%20Core%20i7-14700K"
-        }
-      ]
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 9 9900X",
+      "slug": "amd-ryzen-9-9900x",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 9 9900X"
+      },
+      "fallbackUbRaw": 177,
+      "specs": {
+        "cores": 12,
+        "threads": 24,
+        "baseClock": 4.4,
+        "boostClock": 5.6,
+        "l3Cache": 64,
+        "tdp": 120,
+        "socket": "AM5",
+        "igpu": "AMD Radeon Graphics",
+        "releaseYear": 2024,
+        "passmarkCpuMark": 54371
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 9 9900X3D",
+      "slug": "amd-ryzen-9-9900x3d",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 9 9900X3D"
+      },
+      "fallbackUbRaw": 182.8,
+      "specs": {
+        "cores": 12,
+        "threads": 24,
+        "baseClock": 4.4,
+        "boostClock": 5.5,
+        "l3Cache": 128,
+        "tdp": 120,
+        "socket": "AM5",
+        "igpu": "AMD Radeon Graphics",
+        "releaseYear": 2025,
+        "passmarkCpuMark": 56148
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 9 9950X",
+      "slug": "amd-ryzen-9-9950x",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 9 9950X"
+      },
+      "fallbackUbRaw": 214,
+      "specs": {
+        "cores": 16,
+        "threads": 32,
+        "baseClock": 4.3,
+        "boostClock": 5.7,
+        "l3Cache": 64,
+        "tdp": 170,
+        "socket": "AM5",
+        "igpu": "AMD Radeon Graphics",
+        "releaseYear": 2024,
+        "passmarkCpuMark": 65748
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 9 9950X3D",
+      "slug": "amd-ryzen-9-9950x3d",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 9 9950X3D"
+      },
+      "fallbackUbRaw": 228.3,
+      "specs": {
+        "cores": 16,
+        "threads": 32,
+        "baseClock": 4.3,
+        "boostClock": 5.7,
+        "l3Cache": 128,
+        "tdp": 170,
+        "socket": "AM5",
+        "igpu": "AMD Radeon Graphics",
+        "releaseYear": 2025,
+        "passmarkCpuMark": 70129
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
     },
     {
       "brand": "Intel",
-      "name": "Intel Core i5-14600K",
-      "slug": "intel-core-i5-14600k",
+      "name": "Intel Core i3-10100",
+      "slug": "intel-core-i3-10100",
       "imageUrl": "/images/brand/intel.svg",
       "csv": {
         "type": "CPU",
-        "model": "Core i5-14600K"
+        "model": "Core i3-10100"
       },
-      "fallbackUbRaw": 124,
+      "fallbackUbRaw": 27.6,
       "specs": {
-        "cores": 14,
+        "cores": 4,
+        "threads": 8,
+        "baseClock": 3.6,
+        "boostClock": 4.3,
+        "l3Cache": 6,
+        "tdp": 65,
+        "socket": "LGA 1200",
+        "igpu": "Intel UHD 630",
+        "releaseYear": 2020,
+        "passmarkCpuMark": 8489
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i5-10400",
+      "slug": "intel-core-i5-10400",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i5-10400"
+      },
+      "fallbackUbRaw": 39,
+      "specs": {
+        "cores": 6,
+        "threads": 12,
+        "baseClock": 2.9,
+        "boostClock": 4.3,
+        "l3Cache": 12,
+        "tdp": 65,
+        "socket": "LGA 1200",
+        "igpu": "Intel UHD 630",
+        "releaseYear": 2020,
+        "passmarkCpuMark": 11971
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i5-10400F",
+      "slug": "intel-core-i5-10400f",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i5-10400F"
+      },
+      "fallbackUbRaw": 39.4,
+      "specs": {
+        "cores": 6,
+        "threads": 12,
+        "baseClock": 2.9,
+        "boostClock": 4.3,
+        "l3Cache": 12,
+        "tdp": 65,
+        "socket": "LGA 1200",
+        "igpu": "None",
+        "releaseYear": 2020,
+        "passmarkCpuMark": 12101
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i5-10600K",
+      "slug": "intel-core-i5-10600k",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i5-10600K"
+      },
+      "fallbackUbRaw": 46.4,
+      "specs": {
+        "cores": 6,
+        "threads": 12,
+        "baseClock": 4.1,
+        "boostClock": 4.8,
+        "l3Cache": 12,
+        "tdp": 125,
+        "socket": "LGA 1200",
+        "igpu": "Intel UHD 630",
+        "releaseYear": 2020,
+        "passmarkCpuMark": 14243
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i7-10700",
+      "slug": "intel-core-i7-10700",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i7-10700"
+      },
+      "fallbackUbRaw": 52.1,
+      "specs": {
+        "cores": 8,
+        "threads": 16,
+        "baseClock": 2.9,
+        "boostClock": 4.8,
+        "l3Cache": 16,
+        "tdp": 65,
+        "socket": "LGA 1200",
+        "igpu": "Intel UHD 630",
+        "releaseYear": 2020,
+        "passmarkCpuMark": 15998
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i7-10700K",
+      "slug": "intel-core-i7-10700k",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i7-10700K"
+      },
+      "fallbackUbRaw": 60.3,
+      "specs": {
+        "cores": 8,
+        "threads": 16,
+        "baseClock": 3.8,
+        "boostClock": 5.1,
+        "l3Cache": 16,
+        "tdp": 125,
+        "socket": "LGA 1200",
+        "igpu": "Intel UHD 630",
+        "releaseYear": 2020,
+        "passmarkCpuMark": 18514
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i9-10900K",
+      "slug": "intel-core-i9-10900k",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i9-10900K"
+      },
+      "fallbackUbRaw": 72.4,
+      "specs": {
+        "cores": 10,
         "threads": 20,
+        "baseClock": 3.7,
+        "boostClock": 5.3,
+        "l3Cache": 20,
+        "tdp": 125,
+        "socket": "LGA 1200",
+        "igpu": "Intel UHD 630",
+        "releaseYear": 2020,
+        "passmarkCpuMark": 22244
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i5-11400",
+      "slug": "intel-core-i5-11400",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i5-11400"
+      },
+      "fallbackUbRaw": 54.1,
+      "specs": {
+        "cores": 6,
+        "threads": 12,
+        "baseClock": 2.6,
+        "boostClock": 4.4,
+        "l3Cache": 12,
+        "tdp": 65,
+        "socket": "LGA 1200",
+        "igpu": "Intel UHD 730",
+        "releaseYear": 2021,
+        "passmarkCpuMark": 16626
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i5-11400F",
+      "slug": "intel-core-i5-11400f",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i5-11400F"
+      },
+      "fallbackUbRaw": 55,
+      "specs": {
+        "cores": 6,
+        "threads": 12,
+        "baseClock": 2.6,
+        "boostClock": 4.4,
+        "l3Cache": 12,
+        "tdp": 65,
+        "socket": "LGA 1200",
+        "igpu": "None",
+        "releaseYear": 2021,
+        "passmarkCpuMark": 16883
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i5-11600K",
+      "slug": "intel-core-i5-11600k",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i5-11600K"
+      },
+      "fallbackUbRaw": 63.4,
+      "specs": {
+        "cores": 6,
+        "threads": 12,
+        "baseClock": 3.9,
+        "boostClock": 4.9,
+        "l3Cache": 12,
+        "tdp": 125,
+        "socket": "LGA 1200",
+        "igpu": "Intel UHD 750",
+        "releaseYear": 2021,
+        "passmarkCpuMark": 19474
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i7-11700",
+      "slug": "intel-core-i7-11700",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i7-11700"
+      },
+      "fallbackUbRaw": 67,
+      "specs": {
+        "cores": 8,
+        "threads": 16,
+        "baseClock": 2.5,
+        "boostClock": 4.9,
+        "l3Cache": 16,
+        "tdp": 65,
+        "socket": "LGA 1200",
+        "igpu": "Intel UHD 750",
+        "releaseYear": 2021,
+        "passmarkCpuMark": 20594
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i7-11700K",
+      "slug": "intel-core-i7-11700k",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i7-11700K"
+      },
+      "fallbackUbRaw": 79.2,
+      "specs": {
+        "cores": 8,
+        "threads": 16,
+        "baseClock": 3.6,
+        "boostClock": 5,
+        "l3Cache": 16,
+        "tdp": 125,
+        "socket": "LGA 1200",
+        "igpu": "Intel UHD 750",
+        "releaseYear": 2021,
+        "passmarkCpuMark": 24330
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i9-11900K",
+      "slug": "intel-core-i9-11900k",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i9-11900K"
+      },
+      "fallbackUbRaw": 81.2,
+      "specs": {
+        "cores": 8,
+        "threads": 16,
         "baseClock": 3.5,
         "boostClock": 5.3,
-        "l3Cache": 24,
+        "l3Cache": 16,
+        "tdp": 125,
+        "socket": "LGA 1200",
+        "igpu": "Intel UHD 750",
+        "releaseYear": 2021,
+        "passmarkCpuMark": 24934
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i3-12100",
+      "slug": "intel-core-i3-12100",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i3-12100"
+      },
+      "fallbackUbRaw": 40.6,
+      "specs": {
+        "cores": 4,
+        "threads": 8,
+        "baseClock": 3.3,
+        "boostClock": 4.3,
+        "l3Cache": 12,
+        "tdp": 60,
+        "socket": "LGA 1700",
+        "igpu": "Intel UHD 730",
+        "releaseYear": 2022,
+        "passmarkCpuMark": 12474
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i3-12100F",
+      "slug": "intel-core-i3-12100f",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i3-12100F"
+      },
+      "fallbackUbRaw": 45.4,
+      "specs": {
+        "cores": 4,
+        "threads": 8,
+        "baseClock": 3.3,
+        "boostClock": 4.3,
+        "l3Cache": 12,
+        "tdp": 58,
+        "socket": "LGA 1700",
+        "igpu": "None",
+        "releaseYear": 2022,
+        "passmarkCpuMark": 13959
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i5-12400",
+      "slug": "intel-core-i5-12400",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i5-12400"
+      },
+      "fallbackUbRaw": 61.2,
+      "specs": {
+        "cores": 6,
+        "threads": 12,
+        "baseClock": 2.5,
+        "boostClock": 4.4,
+        "l3Cache": 18,
+        "tdp": 65,
+        "socket": "LGA 1700",
+        "igpu": "Intel UHD 730",
+        "releaseYear": 2022,
+        "passmarkCpuMark": 18808
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i5-12400F",
+      "slug": "intel-core-i5-12400f",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i5-12400F"
+      },
+      "fallbackUbRaw": 63.7,
+      "specs": {
+        "cores": 6,
+        "threads": 12,
+        "baseClock": 2.5,
+        "boostClock": 4.4,
+        "l3Cache": 18,
+        "tdp": 65,
+        "socket": "LGA 1700",
+        "igpu": "None",
+        "releaseYear": 2022,
+        "passmarkCpuMark": 19568
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i5-12600K",
+      "slug": "intel-core-i5-12600k",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i5-12600K"
+      },
+      "fallbackUbRaw": 89.6,
+      "specs": {
+        "cores": 10,
+        "threads": 16,
+        "baseClock": 3.7,
+        "boostClock": 4.9,
+        "l3Cache": 20,
         "tdp": 125,
         "socket": "LGA 1700",
-        "igpu": "Intel UHD 770"
+        "igpu": "Intel UHD 770",
+        "releaseYear": 2021,
+        "passmarkCpuMark": 27524
       },
-      "specSourceUrl": "https://www.intel.com/content/www/us/en/products/sku/236787/intel-core-i5-processor-14600k-24m-cache-up-to-5-30-ghz/specifications.html",
+      "specSourceUrl": "https://ark.intel.com/",
       "unknownFields": [],
-      "prices": [
-        {
-          "store": "Amazon",
-          "price": 465,
-          "url": "https://www.amazon.com.au/s?k=Intel%20Core%20i5-14600K"
-        },
-        {
-          "store": "Mwave",
-          "price": 439,
-          "url": "https://www.mwave.com.au/searchresult?w=Intel%20Core%20i5-14600K"
-        },
-        {
-          "store": "Scorptec",
-          "price": 454,
-          "url": "https://www.scorptec.com.au/search/go?w=Intel%20Core%20i5-14600K"
-        }
-      ]
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i7-12700",
+      "slug": "intel-core-i7-12700",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i7-12700"
+      },
+      "fallbackUbRaw": 97.2,
+      "specs": {
+        "cores": 12,
+        "threads": 20,
+        "baseClock": 2.1,
+        "boostClock": 4.9,
+        "l3Cache": 25,
+        "tdp": 65,
+        "socket": "LGA 1700",
+        "igpu": "Intel UHD 770",
+        "releaseYear": 2022,
+        "passmarkCpuMark": 29861
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i7-12700K",
+      "slug": "intel-core-i7-12700k",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i7-12700K"
+      },
+      "fallbackUbRaw": 111.5,
+      "specs": {
+        "cores": 12,
+        "threads": 20,
+        "baseClock": 3.6,
+        "boostClock": 5,
+        "l3Cache": 25,
+        "tdp": 125,
+        "socket": "LGA 1700",
+        "igpu": "Intel UHD 770",
+        "releaseYear": 2021,
+        "passmarkCpuMark": 34267
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i9-12900K",
+      "slug": "intel-core-i9-12900k",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i9-12900K"
+      },
+      "fallbackUbRaw": 133.9,
+      "specs": {
+        "cores": 16,
+        "threads": 24,
+        "baseClock": 3.2,
+        "boostClock": 5.2,
+        "l3Cache": 30,
+        "tdp": 125,
+        "socket": "LGA 1700",
+        "igpu": "Intel UHD 770",
+        "releaseYear": 2021,
+        "passmarkCpuMark": 41122
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i3-13100",
+      "slug": "intel-core-i3-13100",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i3-13100"
+      },
+      "fallbackUbRaw": 45.9,
+      "specs": {
+        "cores": 4,
+        "threads": 8,
+        "baseClock": 3.4,
+        "boostClock": 4.5,
+        "l3Cache": 12,
+        "tdp": 60,
+        "socket": "LGA 1700",
+        "igpu": "Intel UHD 730",
+        "releaseYear": 2023,
+        "passmarkCpuMark": 14112
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i5-13400",
+      "slug": "intel-core-i5-13400",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i5-13400"
+      },
+      "fallbackUbRaw": 77.7,
+      "specs": {
+        "cores": 10,
+        "threads": 16,
+        "baseClock": 2.5,
+        "boostClock": 4.6,
+        "l3Cache": 20,
+        "tdp": 65,
+        "socket": "LGA 1700",
+        "igpu": "Intel UHD 730",
+        "releaseYear": 2023,
+        "passmarkCpuMark": 23865
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i5-13400F",
+      "slug": "intel-core-i5-13400f",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i5-13400F"
+      },
+      "fallbackUbRaw": 81.1,
+      "specs": {
+        "cores": 10,
+        "threads": 16,
+        "baseClock": 2.5,
+        "boostClock": 4.6,
+        "l3Cache": 20,
+        "tdp": 65,
+        "socket": "LGA 1700",
+        "igpu": "None",
+        "releaseYear": 2023,
+        "passmarkCpuMark": 24925
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
     },
     {
       "brand": "Intel",
@@ -139,227 +1761,1158 @@
         "l3Cache": 24,
         "tdp": 125,
         "socket": "LGA 1700",
-        "igpu": "Intel UHD 770"
+        "igpu": "Intel UHD 770",
+        "releaseYear": 2022,
+        "passmarkCpuMark": 37481
       },
-      "specSourceUrl": "https://www.intel.com/content/www/us/en/products/sku/230493/intel-core-i513600k-processor-24m-cache-up-to-5-10-ghz/specifications.html",
+      "specSourceUrl": "https://ark.intel.com/",
       "unknownFields": [],
-      "prices": [
-        {
-          "store": "Amazon",
-          "price": 379,
-          "url": "https://www.amazon.com.au/s?k=Intel%20Core%20i5-13600K"
-        },
-        {
-          "store": "Mwave",
-          "price": 392,
-          "url": "https://www.mwave.com.au/searchresult?w=Intel%20Core%20i5-13600K"
-        },
-        {
-          "store": "Scorptec",
-          "price": 402,
-          "url": "https://www.scorptec.com.au/search/go?w=Intel%20Core%20i5-13600K"
-        }
-      ]
+      "prices": []
     },
     {
-      "brand": "AMD",
-      "name": "AMD Ryzen 7 7800X3D",
-      "slug": "amd-ryzen-7-7800x3d",
-      "imageUrl": "/images/brand/amd.svg",
+      "brand": "Intel",
+      "name": "Intel Core i7-13700",
+      "slug": "intel-core-i7-13700",
+      "imageUrl": "/images/brand/intel.svg",
       "csv": {
         "type": "CPU",
-        "model": "Ryzen 7 7800X3D"
+        "model": "Core i7-13700"
       },
-      "fallbackUbRaw": 121,
-      "specs": {
-        "cores": 8,
-        "threads": 16,
-        "baseClock": 4.2,
-        "boostClock": 5,
-        "l3Cache": 96,
-        "tdp": 120,
-        "socket": "AM5",
-        "igpu": "AMD Radeon Graphics"
-      },
-      "specSourceUrl": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7800x3d.html",
-      "unknownFields": [],
-      "prices": [
-        {
-          "store": "Amazon",
-          "price": 579,
-          "url": "https://www.amazon.com.au/s?k=AMD%20Ryzen%207%207800X3D"
-        },
-        {
-          "store": "Mwave",
-          "price": 593,
-          "url": "https://www.mwave.com.au/searchresult?w=AMD%20Ryzen%207%207800X3D"
-        },
-        {
-          "store": "Scorptec",
-          "price": 559,
-          "url": "https://www.scorptec.com.au/search/go?w=AMD%20Ryzen%207%207800X3D"
-        }
-      ]
-    },
-    {
-      "brand": "AMD",
-      "name": "AMD Ryzen 9 7950X3D",
-      "slug": "amd-ryzen-9-7950x3d",
-      "imageUrl": "/images/brand/amd.svg",
-      "csv": {
-        "type": "CPU",
-        "model": "Ryzen 9 7950X3D"
-      },
-      "fallbackUbRaw": 116,
+      "fallbackUbRaw": 117,
       "specs": {
         "cores": 16,
-        "threads": 32,
-        "baseClock": 4.2,
-        "boostClock": 5.7,
-        "l3Cache": 128,
-        "tdp": 120,
-        "socket": "AM5",
-        "igpu": "AMD Radeon Graphics"
+        "threads": 24,
+        "baseClock": 2.1,
+        "boostClock": 5.2,
+        "l3Cache": 30,
+        "tdp": 65,
+        "socket": "LGA 1700",
+        "igpu": "Intel UHD 770",
+        "releaseYear": 2023,
+        "passmarkCpuMark": 35944
       },
-      "specSourceUrl": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-9-7950x3d.html",
+      "specSourceUrl": "https://ark.intel.com/",
       "unknownFields": [],
-      "prices": [
-        {
-          "store": "Amazon",
-          "price": 1017,
-          "url": "https://www.amazon.com.au/s?k=AMD%20Ryzen%209%207950X3D"
-        },
-        {
-          "store": "Mwave",
-          "price": 959,
-          "url": "https://www.mwave.com.au/searchresult?w=AMD%20Ryzen%209%207950X3D"
-        },
-        {
-          "store": "Scorptec",
-          "price": 993,
-          "url": "https://www.scorptec.com.au/search/go?w=AMD%20Ryzen%209%207950X3D"
-        }
-      ]
+      "prices": []
     },
     {
-      "brand": "AMD",
-      "name": "AMD Ryzen 9 7950X",
-      "slug": "amd-ryzen-9-7950x",
-      "imageUrl": "/images/brand/amd.svg",
+      "brand": "Intel",
+      "name": "Intel Core i7-13700K",
+      "slug": "intel-core-i7-13700k",
+      "imageUrl": "/images/brand/intel.svg",
       "csv": {
         "type": "CPU",
-        "model": "Ryzen 9 7950X"
+        "model": "Core i7-13700K"
       },
-      "fallbackUbRaw": 114,
+      "fallbackUbRaw": 148.6,
       "specs": {
         "cores": 16,
-        "threads": 32,
-        "baseClock": 4.5,
-        "boostClock": 5.7,
-        "l3Cache": 64,
-        "tdp": 170,
-        "socket": "AM5",
-        "igpu": "AMD Radeon Graphics"
-      },
-      "specSourceUrl": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-9-7950x.html",
-      "unknownFields": [],
-      "prices": [
-        {
-          "store": "Amazon",
-          "price": 799,
-          "url": "https://www.amazon.com.au/s?k=AMD%20Ryzen%209%207950X"
-        },
-        {
-          "store": "Mwave",
-          "price": 827,
-          "url": "https://www.mwave.com.au/searchresult?w=AMD%20Ryzen%209%207950X"
-        },
-        {
-          "store": "Scorptec",
-          "price": 847,
-          "url": "https://www.scorptec.com.au/search/go?w=AMD%20Ryzen%209%207950X"
-        }
-      ]
-    },
-    {
-      "brand": "AMD",
-      "name": "AMD Ryzen 7 7700X",
-      "slug": "amd-ryzen-7-7700x",
-      "imageUrl": "/images/brand/amd.svg",
-      "csv": {
-        "type": "CPU",
-        "model": "Ryzen 7 7700X"
-      },
-      "fallbackUbRaw": 112,
-      "specs": {
-        "cores": 8,
-        "threads": 16,
-        "baseClock": 4.5,
+        "threads": 24,
+        "baseClock": 3.4,
         "boostClock": 5.4,
-        "l3Cache": 32,
-        "tdp": 105,
-        "socket": "AM5",
-        "igpu": "AMD Radeon Graphics"
+        "l3Cache": 30,
+        "tdp": 125,
+        "socket": "LGA 1700",
+        "igpu": "Intel UHD 770",
+        "releaseYear": 2022,
+        "passmarkCpuMark": 45657
       },
-      "specSourceUrl": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7700x.html",
+      "specSourceUrl": "https://ark.intel.com/",
       "unknownFields": [],
-      "prices": [
-        {
-          "store": "Amazon",
-          "price": 485,
-          "url": "https://www.amazon.com.au/s?k=AMD%20Ryzen%207%207700X"
-        },
-        {
-          "store": "Mwave",
-          "price": 497,
-          "url": "https://www.mwave.com.au/searchresult?w=AMD%20Ryzen%207%207700X"
-        },
-        {
-          "store": "Scorptec",
-          "price": 469,
-          "url": "https://www.scorptec.com.au/search/go?w=AMD%20Ryzen%207%207700X"
-        }
-      ]
+      "prices": []
     },
     {
-      "brand": "AMD",
-      "name": "AMD Ryzen 5 7600X",
-      "slug": "amd-ryzen-5-7600x",
-      "imageUrl": "/images/brand/amd.svg",
+      "brand": "Intel",
+      "name": "Intel Core i9-13900K",
+      "slug": "intel-core-i9-13900k",
+      "imageUrl": "/images/brand/intel.svg",
       "csv": {
         "type": "CPU",
-        "model": "Ryzen 5 7600X"
+        "model": "Core i9-13900K"
       },
-      "fallbackUbRaw": 111,
+      "fallbackUbRaw": 189.2,
+      "specs": {
+        "cores": 24,
+        "threads": 32,
+        "baseClock": 3,
+        "boostClock": 5.8,
+        "l3Cache": 36,
+        "tdp": 125,
+        "socket": "LGA 1700",
+        "igpu": "Intel UHD 770",
+        "releaseYear": 2022,
+        "passmarkCpuMark": 58133
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i5-14400",
+      "slug": "intel-core-i5-14400",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i5-14400"
+      },
+      "fallbackUbRaw": 81.7,
+      "specs": {
+        "cores": 10,
+        "threads": 16,
+        "baseClock": 2.5,
+        "boostClock": 4.7,
+        "l3Cache": 20,
+        "tdp": 65,
+        "socket": "LGA 1700",
+        "igpu": "Intel UHD 730",
+        "releaseYear": 2024,
+        "passmarkCpuMark": 25096
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i5-14400F",
+      "slug": "intel-core-i5-14400f",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i5-14400F"
+      },
+      "fallbackUbRaw": 82.9,
+      "specs": {
+        "cores": 10,
+        "threads": 16,
+        "baseClock": 2.5,
+        "boostClock": 4.7,
+        "l3Cache": 20,
+        "tdp": 65,
+        "socket": "LGA 1700",
+        "igpu": "None",
+        "releaseYear": 2024,
+        "passmarkCpuMark": 25483
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i5-14600K",
+      "slug": "intel-core-i5-14600k",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i5-14600K"
+      },
+      "fallbackUbRaw": 125.1,
+      "specs": {
+        "cores": 14,
+        "threads": 20,
+        "baseClock": 3.5,
+        "boostClock": 5.3,
+        "l3Cache": 24,
+        "tdp": 125,
+        "socket": "LGA 1700",
+        "igpu": "Intel UHD 770",
+        "releaseYear": 2023,
+        "passmarkCpuMark": 38436
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i7-14700K",
+      "slug": "intel-core-i7-14700k",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i7-14700K"
+      },
+      "fallbackUbRaw": 169.1,
+      "specs": {
+        "cores": 20,
+        "threads": 28,
+        "baseClock": 3.4,
+        "boostClock": 5.6,
+        "l3Cache": 33,
+        "tdp": 125,
+        "socket": "LGA 1700",
+        "igpu": "Intel UHD 770",
+        "releaseYear": 2023,
+        "passmarkCpuMark": 51956
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i9-14900K",
+      "slug": "intel-core-i9-14900k",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i9-14900K"
+      },
+      "fallbackUbRaw": 189.7,
+      "specs": {
+        "cores": 24,
+        "threads": 32,
+        "baseClock": 3.2,
+        "boostClock": 6,
+        "l3Cache": 36,
+        "tdp": 125,
+        "socket": "LGA 1700",
+        "igpu": "Intel UHD 770",
+        "releaseYear": 2023,
+        "passmarkCpuMark": 58292
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": [],
+      "gtin": "735858546966"
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core Ultra 5 245K",
+      "slug": "intel-core-ultra-5-245k",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core Ultra 5 245K"
+      },
+      "fallbackUbRaw": 140.3,
+      "specs": {
+        "cores": 14,
+        "threads": 14,
+        "baseClock": 4.2,
+        "boostClock": 5.2,
+        "l3Cache": 24,
+        "tdp": 125,
+        "socket": "LGA 1851",
+        "igpu": "Intel Graphics",
+        "releaseYear": 2024,
+        "passmarkCpuMark": 43109
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core Ultra 7 265K",
+      "slug": "intel-core-ultra-7-265k",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core Ultra 7 265K"
+      },
+      "fallbackUbRaw": 190.8,
+      "specs": {
+        "cores": 20,
+        "threads": 20,
+        "baseClock": 3.9,
+        "boostClock": 5.5,
+        "l3Cache": 30,
+        "tdp": 125,
+        "socket": "LGA 1851",
+        "igpu": "Intel Graphics",
+        "releaseYear": 2024,
+        "passmarkCpuMark": 58603
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core Ultra 9 285K",
+      "slug": "intel-core-ultra-9-285k",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core Ultra 9 285K"
+      },
+      "fallbackUbRaw": 218.9,
+      "specs": {
+        "cores": 24,
+        "threads": 24,
+        "baseClock": 3.7,
+        "boostClock": 5.7,
+        "l3Cache": 36,
+        "tdp": 125,
+        "socket": "LGA 1851",
+        "igpu": "Intel Graphics",
+        "releaseYear": 2024,
+        "passmarkCpuMark": 67252
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i5-4460",
+      "slug": "intel-core-i5-4460",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i5-4460"
+      },
+      "fallbackUbRaw": 16,
+      "specs": {
+        "cores": 4,
+        "threads": 4,
+        "baseClock": 3.2,
+        "boostClock": 3.4,
+        "l3Cache": 6,
+        "tdp": 84,
+        "socket": "LGA 1150",
+        "igpu": "Intel HD Graphics 4600",
+        "releaseYear": 2014,
+        "passmarkCpuMark": 4900
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i5-4590",
+      "slug": "intel-core-i5-4590",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i5-4590"
+      },
+      "fallbackUbRaw": 17.3,
+      "specs": {
+        "cores": 4,
+        "threads": 4,
+        "baseClock": 3.3,
+        "boostClock": 3.7,
+        "l3Cache": 6,
+        "tdp": 84,
+        "socket": "LGA 1150",
+        "igpu": "Intel HD Graphics 4600",
+        "releaseYear": 2014,
+        "passmarkCpuMark": 5300
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i5-4690K",
+      "slug": "intel-core-i5-4690k",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i5-4690K"
+      },
+      "fallbackUbRaw": 17.7,
+      "specs": {
+        "cores": 4,
+        "threads": 4,
+        "baseClock": 3.5,
+        "boostClock": 3.9,
+        "l3Cache": 6,
+        "tdp": 88,
+        "socket": "LGA 1150",
+        "igpu": "Intel HD Graphics 4600",
+        "releaseYear": 2014,
+        "passmarkCpuMark": 5450
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i7-4790K",
+      "slug": "intel-core-i7-4790k",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i7-4790K"
+      },
+      "fallbackUbRaw": 24.4,
+      "specs": {
+        "cores": 4,
+        "threads": 8,
+        "baseClock": 4,
+        "boostClock": 4.4,
+        "l3Cache": 8,
+        "tdp": 88,
+        "socket": "LGA 1150",
+        "igpu": "Intel HD Graphics 4600",
+        "releaseYear": 2014,
+        "passmarkCpuMark": 7500
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i5-6600K",
+      "slug": "intel-core-i5-6600k",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i5-6600K"
+      },
+      "fallbackUbRaw": 22.5,
+      "specs": {
+        "cores": 4,
+        "threads": 4,
+        "baseClock": 3.5,
+        "boostClock": 3.9,
+        "l3Cache": 6,
+        "tdp": 91,
+        "socket": "LGA 1151",
+        "igpu": "Intel HD Graphics 530",
+        "releaseYear": 2015,
+        "passmarkCpuMark": 6900
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i7-6700K",
+      "slug": "intel-core-i7-6700k",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i7-6700K"
+      },
+      "fallbackUbRaw": 29,
+      "specs": {
+        "cores": 4,
+        "threads": 8,
+        "baseClock": 4,
+        "boostClock": 4.2,
+        "l3Cache": 8,
+        "tdp": 91,
+        "socket": "LGA 1151",
+        "igpu": "Intel HD Graphics 530",
+        "releaseYear": 2015,
+        "passmarkCpuMark": 8900
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i5-7600K",
+      "slug": "intel-core-i5-7600k",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i5-7600K"
+      },
+      "fallbackUbRaw": 24.4,
+      "specs": {
+        "cores": 4,
+        "threads": 4,
+        "baseClock": 3.8,
+        "boostClock": 4.2,
+        "l3Cache": 6,
+        "tdp": 91,
+        "socket": "LGA 1151",
+        "igpu": "Intel HD Graphics 630",
+        "releaseYear": 2017,
+        "passmarkCpuMark": 7500
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i7-7700K",
+      "slug": "intel-core-i7-7700k",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i7-7700K"
+      },
+      "fallbackUbRaw": 30.9,
+      "specs": {
+        "cores": 4,
+        "threads": 8,
+        "baseClock": 4.2,
+        "boostClock": 4.5,
+        "l3Cache": 8,
+        "tdp": 91,
+        "socket": "LGA 1151",
+        "igpu": "Intel HD Graphics 630",
+        "releaseYear": 2017,
+        "passmarkCpuMark": 9500
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i5-8400",
+      "slug": "intel-core-i5-8400",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i5-8400"
+      },
+      "fallbackUbRaw": 38.1,
+      "specs": {
+        "cores": 6,
+        "threads": 6,
+        "baseClock": 2.8,
+        "boostClock": 4,
+        "l3Cache": 9,
+        "tdp": 65,
+        "socket": "LGA 1151",
+        "igpu": "Intel UHD Graphics 630",
+        "releaseYear": 2017,
+        "passmarkCpuMark": 11700
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i5-8600K",
+      "slug": "intel-core-i5-8600k",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i5-8600K"
+      },
+      "fallbackUbRaw": 43,
+      "specs": {
+        "cores": 6,
+        "threads": 6,
+        "baseClock": 3.6,
+        "boostClock": 4.3,
+        "l3Cache": 9,
+        "tdp": 95,
+        "socket": "LGA 1151",
+        "igpu": "Intel UHD Graphics 630",
+        "releaseYear": 2017,
+        "passmarkCpuMark": 13200
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i7-8700K",
+      "slug": "intel-core-i7-8700k",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i7-8700K"
+      },
+      "fallbackUbRaw": 48.8,
       "specs": {
         "cores": 6,
         "threads": 12,
-        "baseClock": 4.7,
-        "boostClock": 5.3,
-        "l3Cache": 32,
-        "tdp": 105,
-        "socket": "AM5",
-        "igpu": "AMD Radeon Graphics"
+        "baseClock": 3.7,
+        "boostClock": 4.7,
+        "l3Cache": 12,
+        "tdp": 95,
+        "socket": "LGA 1151",
+        "igpu": "Intel UHD Graphics 630",
+        "releaseYear": 2017,
+        "passmarkCpuMark": 15000
       },
-      "specSourceUrl": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-5-7600x.html",
+      "specSourceUrl": "https://ark.intel.com/",
       "unknownFields": [],
-      "prices": [
-        {
-          "store": "Amazon",
-          "price": 359,
-          "url": "https://www.amazon.com.au/s?k=AMD%20Ryzen%205%207600X"
-        },
-        {
-          "store": "Mwave",
-          "price": 339,
-          "url": "https://www.mwave.com.au/searchresult?w=AMD%20Ryzen%205%207600X"
-        },
-        {
-          "store": "Scorptec",
-          "price": 351,
-          "url": "https://www.scorptec.com.au/search/go?w=AMD%20Ryzen%205%207600X"
-        }
-      ]
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i5-9600K",
+      "slug": "intel-core-i5-9600k",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i5-9600K"
+      },
+      "fallbackUbRaw": 41,
+      "specs": {
+        "cores": 6,
+        "threads": 6,
+        "baseClock": 3.7,
+        "boostClock": 4.6,
+        "l3Cache": 9,
+        "tdp": 95,
+        "socket": "LGA 1151",
+        "igpu": "Intel UHD Graphics 630",
+        "releaseYear": 2018,
+        "passmarkCpuMark": 12600
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i7-9700K",
+      "slug": "intel-core-i7-9700k",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i7-9700K"
+      },
+      "fallbackUbRaw": 53.7,
+      "specs": {
+        "cores": 8,
+        "threads": 8,
+        "baseClock": 3.6,
+        "boostClock": 4.9,
+        "l3Cache": 12,
+        "tdp": 95,
+        "socket": "LGA 1151",
+        "igpu": "Intel UHD Graphics 630",
+        "releaseYear": 2018,
+        "passmarkCpuMark": 16500
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i9-9900K",
+      "slug": "intel-core-i9-9900k",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i9-9900K"
+      },
+      "fallbackUbRaw": 60.2,
+      "specs": {
+        "cores": 8,
+        "threads": 16,
+        "baseClock": 3.6,
+        "boostClock": 5,
+        "l3Cache": 16,
+        "tdp": 95,
+        "socket": "LGA 1151",
+        "igpu": "Intel UHD Graphics 630",
+        "releaseYear": 2018,
+        "passmarkCpuMark": 18500
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i7-5820K",
+      "slug": "intel-core-i7-5820k",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i7-5820K"
+      },
+      "fallbackUbRaw": 42.3,
+      "specs": {
+        "cores": 6,
+        "threads": 12,
+        "baseClock": 3.3,
+        "boostClock": 3.6,
+        "l3Cache": 15,
+        "tdp": 140,
+        "socket": "LGA 2011-v3",
+        "igpu": "None",
+        "releaseYear": 2014,
+        "passmarkCpuMark": 13000
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i7-5930K",
+      "slug": "intel-core-i7-5930k",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i7-5930K"
+      },
+      "fallbackUbRaw": 43.9,
+      "specs": {
+        "cores": 6,
+        "threads": 12,
+        "baseClock": 3.5,
+        "boostClock": 3.7,
+        "l3Cache": 15,
+        "tdp": 140,
+        "socket": "LGA 2011-v3",
+        "igpu": "None",
+        "releaseYear": 2014,
+        "passmarkCpuMark": 13500
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i7-6800K",
+      "slug": "intel-core-i7-6800k",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i7-6800K"
+      },
+      "fallbackUbRaw": 44.9,
+      "specs": {
+        "cores": 6,
+        "threads": 12,
+        "baseClock": 3.4,
+        "boostClock": 3.6,
+        "l3Cache": 15,
+        "tdp": 140,
+        "socket": "LGA 2011-v3",
+        "igpu": "None",
+        "releaseYear": 2016,
+        "passmarkCpuMark": 13800
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i7-6900K",
+      "slug": "intel-core-i7-6900k",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i7-6900K"
+      },
+      "fallbackUbRaw": 65.1,
+      "specs": {
+        "cores": 8,
+        "threads": 16,
+        "baseClock": 3.2,
+        "boostClock": 3.7,
+        "l3Cache": 20,
+        "tdp": 140,
+        "socket": "LGA 2011-v3",
+        "igpu": "None",
+        "releaseYear": 2016,
+        "passmarkCpuMark": 20000
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i7-7820X",
+      "slug": "intel-core-i7-7820x",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i7-7820X"
+      },
+      "fallbackUbRaw": 61.8,
+      "specs": {
+        "cores": 8,
+        "threads": 16,
+        "baseClock": 3.6,
+        "boostClock": 4.3,
+        "l3Cache": 11,
+        "tdp": 140,
+        "socket": "LGA 2066",
+        "igpu": "None",
+        "releaseYear": 2017,
+        "passmarkCpuMark": 19000
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Intel",
+      "name": "Intel Core i9-7900X",
+      "slug": "intel-core-i9-7900x",
+      "imageUrl": "/images/brand/intel.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Core i9-7900X"
+      },
+      "fallbackUbRaw": 71.6,
+      "specs": {
+        "cores": 10,
+        "threads": 20,
+        "baseClock": 3.3,
+        "boostClock": 4.3,
+        "l3Cache": 13.75,
+        "tdp": 140,
+        "socket": "LGA 2066",
+        "igpu": "None",
+        "releaseYear": 2017,
+        "passmarkCpuMark": 22000
+      },
+      "specSourceUrl": "https://ark.intel.com/",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD FX-6300",
+      "slug": "amd-fx-6300",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "FX-6300"
+      },
+      "fallbackUbRaw": 16,
+      "specs": {
+        "cores": 6,
+        "threads": 6,
+        "baseClock": 3.5,
+        "boostClock": 4.1,
+        "l3Cache": 8,
+        "tdp": 95,
+        "socket": "AM3+",
+        "igpu": "None",
+        "releaseYear": 2012,
+        "passmarkCpuMark": 4900
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD FX-8320",
+      "slug": "amd-fx-8320",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "FX-8320"
+      },
+      "fallbackUbRaw": 18.9,
+      "specs": {
+        "cores": 8,
+        "threads": 8,
+        "baseClock": 3.5,
+        "boostClock": 4,
+        "l3Cache": 8,
+        "tdp": 125,
+        "socket": "AM3+",
+        "igpu": "None",
+        "releaseYear": 2012,
+        "passmarkCpuMark": 5800
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD FX-8350",
+      "slug": "amd-fx-8350",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "FX-8350"
+      },
+      "fallbackUbRaw": 19.5,
+      "specs": {
+        "cores": 8,
+        "threads": 8,
+        "baseClock": 4,
+        "boostClock": 4.2,
+        "l3Cache": 8,
+        "tdp": 125,
+        "socket": "AM3+",
+        "igpu": "None",
+        "releaseYear": 2012,
+        "passmarkCpuMark": 6000
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD FX-8370",
+      "slug": "amd-fx-8370",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "FX-8370"
+      },
+      "fallbackUbRaw": 20.8,
+      "specs": {
+        "cores": 8,
+        "threads": 8,
+        "baseClock": 4,
+        "boostClock": 4.3,
+        "l3Cache": 8,
+        "tdp": 125,
+        "socket": "AM3+",
+        "igpu": "None",
+        "releaseYear": 2014,
+        "passmarkCpuMark": 6400
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD FX-9590",
+      "slug": "amd-fx-9590",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "FX-9590"
+      },
+      "fallbackUbRaw": 22.8,
+      "specs": {
+        "cores": 8,
+        "threads": 8,
+        "baseClock": 4.7,
+        "boostClock": 5,
+        "l3Cache": 8,
+        "tdp": 220,
+        "socket": "AM3+",
+        "igpu": "None",
+        "releaseYear": 2013,
+        "passmarkCpuMark": 7000
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 5 1600",
+      "slug": "amd-ryzen-5-1600",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 5 1600"
+      },
+      "fallbackUbRaw": 40.7,
+      "specs": {
+        "cores": 6,
+        "threads": 12,
+        "baseClock": 3.2,
+        "boostClock": 3.6,
+        "l3Cache": 16,
+        "tdp": 65,
+        "socket": "AM4",
+        "igpu": "None",
+        "releaseYear": 2017,
+        "passmarkCpuMark": 12500
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 7 1700",
+      "slug": "amd-ryzen-7-1700",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 7 1700"
+      },
+      "fallbackUbRaw": 47.2,
+      "specs": {
+        "cores": 8,
+        "threads": 16,
+        "baseClock": 3,
+        "boostClock": 3.7,
+        "l3Cache": 16,
+        "tdp": 65,
+        "socket": "AM4",
+        "igpu": "None",
+        "releaseYear": 2017,
+        "passmarkCpuMark": 14500
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 7 1800X",
+      "slug": "amd-ryzen-7-1800x",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 7 1800X"
+      },
+      "fallbackUbRaw": 50.5,
+      "specs": {
+        "cores": 8,
+        "threads": 16,
+        "baseClock": 3.6,
+        "boostClock": 4,
+        "l3Cache": 16,
+        "tdp": 95,
+        "socket": "AM4",
+        "igpu": "None",
+        "releaseYear": 2017,
+        "passmarkCpuMark": 15500
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 3 2200G",
+      "slug": "amd-ryzen-3-2200g",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 3 2200G"
+      },
+      "fallbackUbRaw": 24.1,
+      "specs": {
+        "cores": 4,
+        "threads": 4,
+        "baseClock": 3.5,
+        "boostClock": 3.7,
+        "l3Cache": 4,
+        "tdp": 65,
+        "socket": "AM4",
+        "igpu": "Radeon Vega 8",
+        "releaseYear": 2018,
+        "passmarkCpuMark": 7400
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 5 2400G",
+      "slug": "amd-ryzen-5-2400g",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 5 2400G"
+      },
+      "fallbackUbRaw": 29.9,
+      "specs": {
+        "cores": 4,
+        "threads": 8,
+        "baseClock": 3.6,
+        "boostClock": 3.9,
+        "l3Cache": 4,
+        "tdp": 65,
+        "socket": "AM4",
+        "igpu": "Radeon Vega 11",
+        "releaseYear": 2018,
+        "passmarkCpuMark": 9200
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 5 2600",
+      "slug": "amd-ryzen-5-2600",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 5 2600"
+      },
+      "fallbackUbRaw": 44.9,
+      "specs": {
+        "cores": 6,
+        "threads": 12,
+        "baseClock": 3.4,
+        "boostClock": 3.9,
+        "l3Cache": 16,
+        "tdp": 65,
+        "socket": "AM4",
+        "igpu": "None",
+        "releaseYear": 2018,
+        "passmarkCpuMark": 13800
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 5 2600X",
+      "slug": "amd-ryzen-5-2600x",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 5 2600X"
+      },
+      "fallbackUbRaw": 48.2,
+      "specs": {
+        "cores": 6,
+        "threads": 12,
+        "baseClock": 3.6,
+        "boostClock": 4.2,
+        "l3Cache": 16,
+        "tdp": 95,
+        "socket": "AM4",
+        "igpu": "None",
+        "releaseYear": 2018,
+        "passmarkCpuMark": 14800
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Ryzen 7 2700X",
+      "slug": "amd-ryzen-7-2700x",
+      "imageUrl": "/images/brand/amd.svg",
+      "csv": {
+        "type": "CPU",
+        "model": "Ryzen 7 2700X"
+      },
+      "fallbackUbRaw": 57,
+      "specs": {
+        "cores": 8,
+        "threads": 16,
+        "baseClock": 3.7,
+        "boostClock": 4.3,
+        "l3Cache": 16,
+        "tdp": 105,
+        "socket": "AM4",
+        "igpu": "None",
+        "releaseYear": 2018,
+        "passmarkCpuMark": 17500
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/specifications/processors",
+      "unknownFields": [],
+      "prices": []
     }
   ]
 }

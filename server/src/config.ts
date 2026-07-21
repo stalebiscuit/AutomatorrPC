@@ -24,6 +24,14 @@ const EnvSchema = z.object({
     .string()
     .default('AutomatorrPriceBot/1.0 (+https://automatorr.com/bot)'),
   ROLLUP_CRON: z.string().default('0 * * * *'),
+  CATALOG_INGEST_CRON: z.string().default('30 4 * * *'),
+
+  // Task 3 — Icecat spec source (optional until wired; see docs/task3-credentials-checklist.md)
+  ICECAT_USERNAME: z.string().optional(),
+  ICECAT_API_TOKEN: z.string().optional(),
+  ICECAT_APP_KEY: z.string().optional(), // Full Icecat (paid) — required for restricted brands (AMD/Intel/etc.)
+  ICECAT_CONTENT_TOKEN: z.string().optional(),
+  ICECAT_LANG: z.string().default('EN'),
 
   // Deferred (spec §14) — optional until the Claude provider is wired.
   ANTHROPIC_API_KEY: z.string().optional(),

@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useQuery } from '@tanstack/react-query';
-import type { Category } from '@automatorr/shared';
+import type { CompareCategory } from '@automatorr/shared';
 import { makePairKey } from '@automatorr/shared';
 import { api, ApiClientError } from '../lib/api.js';
 import { trackView } from '../lib/session.js';
@@ -8,11 +8,11 @@ import { useDebouncedValue } from '../hooks/useDebouncedValue.js';
 import { SectionHead } from './Eyebrow.js';
 import { ComponentCard } from './ComponentCard.js';
 import { VsSpine } from './VsSpine.js';
-import { VerdictPanel } from './VerdictPanel.js';
+import { VerdictCard } from './VerdictCard.js';
 import { CompareSkeleton } from './Skeletons.js';
 
 interface Props {
-  category: Category;
+  category: CompareCategory;
   slugA: string;
   slugB: string;
 }
@@ -26,12 +26,6 @@ export function CompareResults({ category, slugA, slugB }: Props) {
   const compareQ = useQuery({
     queryKey: ['compare', category, a, b],
     queryFn: () => api.compare(category, a as string, b as string),
-    enabled: ready,
-  });
-
-  const verdictQ = useQuery({
-    queryKey: ['verdict', category, a, b],
-    queryFn: () => api.verdict(category, a as string, b as string),
     enabled: ready,
   });
 
@@ -63,6 +57,8 @@ export function CompareResults({ category, slugA, slugB }: Props) {
 
       {compareQ.data && (
         <>
+          <VerdictCard result={compareQ.data} />
+
           <div className="grid">
             <ComponentCard
               component={compareQ.data.a}
@@ -78,12 +74,6 @@ export function CompareResults({ category, slugA, slugB }: Props) {
               win={compareQ.data.scorecard.winnerSlug === compareQ.data.b.slug}
             />
           </div>
-
-          <VerdictPanel
-            result={compareQ.data}
-            verdict={verdictQ.data}
-            loadingVerdict={verdictQ.isLoading}
-          />
         </>
       )}
     </section>

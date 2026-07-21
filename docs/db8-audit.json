@@ -1,0 +1,707 @@
+{
+  "source": "mongo",
+  "generatedAt": "2026-07-17T03:43:57.058Z",
+  "categories": [
+    {
+      "category": "cpu",
+      "total": 112,
+      "clusters": [],
+      "notReady": [],
+      "nearEmpty": [],
+      "missingSocketSupport": [],
+      "nameIssues": []
+    },
+    {
+      "category": "cooler",
+      "total": 91,
+      "clusters": [
+        {
+          "reason": "canonical-key",
+          "confidence": "high",
+          "key": "cooler:arctic:360 a freezer iii liquid pro rgb",
+          "keeper": "arctic-liquid-freezer-iii-pro-360-a-rgb",
+          "members": [
+            {
+              "slug": "arctic-liquid-freezer-iii-pro-360-a-rgb",
+              "name": "ARCTIC Liquid Freezer III Pro 360 A-RGB",
+              "builderReady": true,
+              "hasImage": true,
+              "priceCount": 0
+            },
+            {
+              "slug": "arctic-liquid-freezer-iii-pro-a-rgb-360",
+              "name": "ARCTIC Liquid Freezer III Pro A-RGB 360",
+              "builderReady": true,
+              "hasImage": false,
+              "priceCount": 0
+            }
+          ]
+        },
+        {
+          "reason": "identity",
+          "confidence": "high",
+          "key": "arctic::36 freezer",
+          "keeper": "arctic-freezer-36-black-multi-compatible-tower-cpu-cooler",
+          "members": [
+            {
+              "slug": "arctic-freezer-36-black-multi-compatible-tower-cpu-cooler",
+              "name": "ARCTIC Freezer 36 (Black) Multi Compatible Tower CPU Cooler",
+              "builderReady": true,
+              "hasImage": true,
+              "priceCount": 0
+            },
+            {
+              "slug": "arctic-freezer-36",
+              "name": "ARCTIC Freezer 36",
+              "builderReady": true,
+              "hasImage": false,
+              "priceCount": 0
+            }
+          ]
+        },
+        {
+          "reason": "identity",
+          "confidence": "high",
+          "key": "nzxt::360 elite kraken rgb",
+          "keeper": "nzxt-kraken-elite-360-rgb-11",
+          "members": [
+            {
+              "slug": "nzxt-kraken-elite-360-rgb-11",
+              "name": "NZXT Kraken Elite 360 RGB  (11)",
+              "builderReady": true,
+              "hasImage": false,
+              "priceCount": 0
+            },
+            {
+              "slug": "nzxt-kraken-elite-360-rgb-12",
+              "name": "NZXT Kraken Elite 360 RGB  (12)",
+              "builderReady": true,
+              "hasImage": false,
+              "priceCount": 0
+            }
+          ]
+        },
+        {
+          "reason": "identity-color",
+          "confidence": "review",
+          "key": "asus::360 extreme iii rog ryujin",
+          "keeper": "asus-rog-ryujin-iii-360-argb-extreme-white-edition",
+          "members": [
+            {
+              "slug": "asus-rog-ryujin-iii-360-argb-extreme",
+              "name": "ASUS ROG Ryujin III 360 ARGB Extreme",
+              "builderReady": false,
+              "hasImage": true,
+              "priceCount": 0
+            },
+            {
+              "slug": "asus-rog-ryujin-iii-360-argb-extreme-white-edition",
+              "name": "ASUS ROG RYUJIN III 360 ARGB Extreme White Edition",
+              "builderReady": true,
+              "hasImage": true,
+              "priceCount": 0
+            }
+          ]
+        },
+        {
+          "reason": "identity-color",
+          "confidence": "review",
+          "key": "asus::360 iv rog ryuo slc",
+          "keeper": "asus-rog-ryuo-iv-slc-360-argb",
+          "members": [
+            {
+              "slug": "asus-rog-ryuo-iv-slc-360-argb",
+              "name": "ASUS ROG Ryuo IV SLC 360 ARGB",
+              "builderReady": true,
+              "hasImage": true,
+              "priceCount": 0
+            },
+            {
+              "slug": "asus-rog-ryuo-iv-slc-360-argb-white-edition",
+              "name": "ASUS ROG Ryuo IV SLC 360 ARGB White Edition",
+              "builderReady": true,
+              "hasImage": true,
+              "priceCount": 0
+            }
+          ]
+        },
+        {
+          "reason": "identity-color",
+          "confidence": "review",
+          "key": "bequiet::3 be pure quiet rock",
+          "keeper": "be-quiet-pure-rock-3-black",
+          "members": [
+            {
+              "slug": "be-quiet-pure-rock-3-black",
+              "name": "be quiet! Pure Rock 3 Black",
+              "builderReady": true,
+              "hasImage": true,
+              "priceCount": 0
+            },
+            {
+              "slug": "be-quiet-pure-rock-3",
+              "name": "be quiet! Pure Rock 3",
+              "builderReady": true,
+              "hasImage": false,
+              "priceCount": 0
+            }
+          ]
+        },
+        {
+          "reason": "identity-color",
+          "confidence": "review",
+          "key": "bequiet::3 be pro pure quiet rock",
+          "keeper": "be-quiet-pure-rock-pro-3-black",
+          "members": [
+            {
+              "slug": "be-quiet-pure-rock-pro-3-black",
+              "name": "be quiet! Pure Rock Pro 3 Black",
+              "builderReady": true,
+              "hasImage": true,
+              "priceCount": 0
+            },
+            {
+              "slug": "be-quiet-pure-rock-pro-3",
+              "name": "be quiet! Pure Rock Pro 3",
+              "builderReady": true,
+              "hasImage": false,
+              "priceCount": 0
+            }
+          ]
+        },
+        {
+          "reason": "identity-color",
+          "confidence": "review",
+          "key": "coolermaster::212 hyper master",
+          "keeper": "cooler-master-hyper-212-black-edition",
+          "members": [
+            {
+              "slug": "cooler-master-hyper-212-black-edition",
+              "name": "Cooler Master Hyper 212 Black Edition",
+              "builderReady": true,
+              "hasImage": false,
+              "priceCount": 0
+            },
+            {
+              "slug": "cooler-master-hyper-212-rgb-black-edition",
+              "name": "Cooler Master Hyper 212 RGB Black Edition",
+              "builderReady": true,
+              "hasImage": false,
+              "priceCount": 0
+            }
+          ]
+        },
+        {
+          "reason": "identity-color",
+          "confidence": "review",
+          "key": "corsair::360 nautilus rs",
+          "keeper": "corsair-nautilus-360-rs",
+          "members": [
+            {
+              "slug": "corsair-nautilus-360-rs-argb",
+              "name": "Corsair NAUTILUS 360 RS ARGB",
+              "builderReady": true,
+              "hasImage": false,
+              "priceCount": 0
+            },
+            {
+              "slug": "corsair-nautilus-360-rs",
+              "name": "Corsair NAUTILUS 360 RS",
+              "builderReady": true,
+              "hasImage": false,
+              "priceCount": 0
+            }
+          ]
+        },
+        {
+          "reason": "identity-color",
+          "confidence": "review",
+          "key": "thermalright::120 phantom se spirit",
+          "keeper": "thermalright-phantom-spirit-120-se",
+          "members": [
+            {
+              "slug": "thermalright-phantom-spirit-120-se-argb",
+              "name": "Thermalright Phantom Spirit 120 SE ARGB",
+              "builderReady": true,
+              "hasImage": false,
+              "priceCount": 0
+            },
+            {
+              "slug": "thermalright-phantom-spirit-120-se",
+              "name": "Thermalright Phantom Spirit 120 SE",
+              "builderReady": true,
+              "hasImage": false,
+              "priceCount": 0
+            }
+          ]
+        },
+        {
+          "reason": "identity-color",
+          "confidence": "review",
+          "key": "endorfy::5 spartan",
+          "keeper": "endorfy-spartan-5",
+          "members": [
+            {
+              "slug": "endorfy-spartan-5",
+              "name": "ENDORFY Spartan 5",
+              "builderReady": true,
+              "hasImage": false,
+              "priceCount": 0
+            },
+            {
+              "slug": "endorfy-spartan-5-argb",
+              "name": "ENDORFY Spartan 5 ARGB",
+              "builderReady": true,
+              "hasImage": false,
+              "priceCount": 0
+            }
+          ]
+        }
+      ],
+      "notReady": [
+        {
+          "slug": "asus-rog-ryujin-iii-360-argb-extreme",
+          "missingCritical": [
+            "socketSupport"
+          ]
+        }
+      ],
+      "nearEmpty": [],
+      "missingSocketSupport": [
+        "asus-rog-ryujin-iii-360-argb-extreme"
+      ],
+      "nameIssues": [
+        {
+          "slug": "msi-mag-coreliquid-360r-cpu-aio-cooler-360mm-radiator-3x-120mm-argb-pwm-fan-adjustable-argb-dragon-cpu-mount-compatible-with-intel-and-amd-platforms",
+          "issue": "verbose",
+          "name": "MSI MAG CORELIQUID 360R CPU AIO Cooler ' 360mm Radiator, 3x 120mm ARGB PWM Fan, Adjustable ARGB Dragon CPU Mount, Compatible with Intel and AMD Platforms'"
+        },
+        {
+          "slug": "arctic-freezer-36-a-rgb-black-multi-compatible-tower-cpu-cooler-with",
+          "issue": "truncated",
+          "name": "ARCTIC Freezer 36 A-RGB (Black) Multi Compatible Tower CPU Cooler with"
+        },
+        {
+          "slug": "arctic-liquid-freezer-ii-360-series",
+          "issue": "truncated",
+          "name": "ARCTIC Liquid Freezer II 360 Series"
+        }
+      ]
+    },
+    {
+      "category": "motherboard",
+      "total": 24,
+      "clusters": [],
+      "notReady": [],
+      "nearEmpty": [],
+      "missingSocketSupport": [],
+      "nameIssues": []
+    },
+    {
+      "category": "ram",
+      "total": 33,
+      "clusters": [
+        {
+          "reason": "identity-color",
+          "confidence": "review",
+          "key": "kingston::32gb 5600mt beast cl40 ddr5 dimm fury kingston s technology",
+          "keeper": "kingston-technology-32gb-5600mt-s-ddr5-cl40-dimm-kit-of-2-fury-beast-black",
+          "members": [
+            {
+              "slug": "kingston-technology-32gb-5600mt-s-ddr5-cl40-dimm-kit-of-2-fury-beast-black",
+              "name": "Kingston Technology 32GB 5600MT/s DDR5 CL40 DIMM (Kit of 2) FURY Beast Black",
+              "builderReady": true,
+              "hasImage": true,
+              "priceCount": 3
+            },
+            {
+              "slug": "kingston-technology-32gb-5600mt-s-ddr5-cl40-dimm-kit-of-2-fury-beast",
+              "name": "Kingston Technology 32GB 5600MT/s DDR5 CL40 DIMM (Kit of 2) FURY Beast",
+              "builderReady": true,
+              "hasImage": true,
+              "priceCount": 0
+            }
+          ]
+        }
+      ],
+      "notReady": [],
+      "nearEmpty": [],
+      "missingSocketSupport": [],
+      "nameIssues": [
+        {
+          "slug": "kingston-technology-32gb-5600mt-s-ddr5-cl40-dimm-kit-of-2-fury-beast-black",
+          "issue": "verbose",
+          "name": "Kingston Technology 32GB 5600MT/s DDR5 CL40 DIMM (Kit of 2) FURY Beast Black"
+        }
+      ]
+    },
+    {
+      "category": "storage",
+      "total": 40,
+      "clusters": [
+        {
+          "reason": "shared-gtin",
+          "confidence": "high",
+          "key": "0887276638331",
+          "keeper": "samsung-990-pro",
+          "members": [
+            {
+              "slug": "samsung-990-pro",
+              "name": "Samsung 990 PRO",
+              "builderReady": true,
+              "hasImage": true,
+              "priceCount": 2
+            },
+            {
+              "slug": "samsung-990-pro-1-tb",
+              "name": "Samsung 990 PRO 1 TB",
+              "builderReady": true,
+              "hasImage": true,
+              "priceCount": 0
+            }
+          ]
+        }
+      ],
+      "notReady": [],
+      "nearEmpty": [],
+      "missingSocketSupport": [],
+      "nameIssues": []
+    },
+    {
+      "category": "gpu",
+      "total": 58,
+      "clusters": [
+        {
+          "reason": "identity-color",
+          "confidence": "review",
+          "key": "asus::dual o16g rtx5060ti",
+          "keeper": "asus-dual-rtx5060ti-o16g",
+          "members": [
+            {
+              "slug": "asus-dual-rtx5060ti-o16g",
+              "name": "ASUS DUAL-RTX5060TI-O16G",
+              "builderReady": true,
+              "hasImage": true,
+              "priceCount": 0
+            },
+            {
+              "slug": "asus-dual-rtx5060ti-o16g-white",
+              "name": "ASUS DUAL-RTX5060TI-O16G-WHITE",
+              "builderReady": true,
+              "hasImage": true,
+              "priceCount": 0
+            }
+          ]
+        },
+        {
+          "reason": "identity-color",
+          "confidence": "review",
+          "key": "asus::astral o32g rog rtx5090",
+          "keeper": "asus-rog-astral-rtx5090-o32g-white",
+          "members": [
+            {
+              "slug": "asus-rog-astral-rtx5090-o32g-gaming",
+              "name": "ASUS ROG-ASTRAL-RTX5090-O32G-GAMING",
+              "builderReady": true,
+              "hasImage": true,
+              "priceCount": 0
+            },
+            {
+              "slug": "asus-rog-astral-rtx5090-o32g-white",
+              "name": "ASUS ROG-ASTRAL-RTX5090-O32G-WHITE",
+              "builderReady": true,
+              "hasImage": true,
+              "priceCount": 0
+            }
+          ]
+        },
+        {
+          "reason": "identity-color",
+          "confidence": "review",
+          "key": "asus::o16g prime rx9070xt",
+          "keeper": "asus-prime-rx9070xt-o16g",
+          "members": [
+            {
+              "slug": "asus-prime-rx9070xt-o16g",
+              "name": "ASUS PRIME-RX9070XT-O16G",
+              "builderReady": true,
+              "hasImage": true,
+              "priceCount": 0
+            },
+            {
+              "slug": "asus-prime-rx9070xt-o16g-white",
+              "name": "ASUS PRIME-RX9070XT-O16G-WHITE",
+              "builderReady": true,
+              "hasImage": true,
+              "priceCount": 0
+            }
+          ]
+        },
+        {
+          "reason": "identity-color",
+          "confidence": "review",
+          "key": "asus::astral o16g rog rtx5080",
+          "keeper": "asus-rog-astral-rtx5080-o16g-white",
+          "members": [
+            {
+              "slug": "asus-rog-astral-rtx5080-o16g-gaming",
+              "name": "ASUS ROG-ASTRAL-RTX5080-O16G-GAMING",
+              "builderReady": true,
+              "hasImage": true,
+              "priceCount": 0
+            },
+            {
+              "slug": "asus-rog-astral-rtx5080-o16g-white",
+              "name": "ASUS ROG-ASTRAL-RTX5080-O16G-WHITE",
+              "builderReady": true,
+              "hasImage": true,
+              "priceCount": 0
+            }
+          ]
+        }
+      ],
+      "notReady": [],
+      "nearEmpty": [],
+      "missingSocketSupport": [],
+      "nameIssues": []
+    },
+    {
+      "category": "case",
+      "total": 89,
+      "clusters": [
+        {
+          "reason": "identity",
+          "confidence": "high",
+          "key": "nzxt::flow h9",
+          "keeper": "nzxt-h9-flow",
+          "members": [
+            {
+              "slug": "nzxt-h9-flow",
+              "name": "NZXT H9 Flow",
+              "builderReady": true,
+              "hasImage": false,
+              "priceCount": 2
+            },
+            {
+              "slug": "nzxt-h9-flow-6",
+              "name": "NZXT H9 Flow  (6)",
+              "builderReady": true,
+              "hasImage": false,
+              "priceCount": 0
+            }
+          ]
+        },
+        {
+          "reason": "identity-color",
+          "confidence": "review",
+          "key": "bequiet::500dx base be pure quiet",
+          "keeper": "be-quiet-pure-base-500dx-black",
+          "members": [
+            {
+              "slug": "be-quiet-pure-base-500dx-black",
+              "name": "be quiet! Pure Base 500DX Black",
+              "builderReady": true,
+              "hasImage": true,
+              "priceCount": 0
+            },
+            {
+              "slug": "be-quiet-pure-base-500dx",
+              "name": "be quiet! Pure Base 500DX",
+              "builderReady": true,
+              "hasImage": false,
+              "priceCount": 0
+            }
+          ]
+        },
+        {
+          "reason": "identity-color",
+          "confidence": "review",
+          "key": "bequiet::900 base be fx quiet",
+          "keeper": "be-quiet-light-base-900-fx-black",
+          "members": [
+            {
+              "slug": "be-quiet-light-base-900-fx-black",
+              "name": "be quiet! LIGHT BASE 900 FX Black",
+              "builderReady": true,
+              "hasImage": true,
+              "priceCount": 0
+            },
+            {
+              "slug": "be-quiet-light-base-900-fx",
+              "name": "be quiet! Light Base 900 FX",
+              "builderReady": true,
+              "hasImage": false,
+              "priceCount": 0
+            }
+          ]
+        },
+        {
+          "reason": "identity-color",
+          "confidence": "review",
+          "key": "bequiet::600 base be lx quiet",
+          "keeper": "be-quiet-light-base-600-lx-black",
+          "members": [
+            {
+              "slug": "be-quiet-light-base-600-lx-black",
+              "name": "be quiet! LIGHT BASE 600 LX Black",
+              "builderReady": true,
+              "hasImage": true,
+              "priceCount": 0
+            },
+            {
+              "slug": "be-quiet-light-base-600-lx",
+              "name": "be quiet! Light Base 600 LX",
+              "builderReady": true,
+              "hasImage": false,
+              "priceCount": 0
+            }
+          ]
+        }
+      ],
+      "notReady": [
+        {
+          "slug": "zalman-t8",
+          "missingCritical": [
+            "formFactorSupport",
+            "maxGpuLength",
+            "maxCoolerHeight"
+          ]
+        }
+      ],
+      "nearEmpty": [
+        "zalman-t8"
+      ],
+      "missingSocketSupport": [],
+      "nameIssues": [
+        {
+          "slug": "msi-mag-forge-100r-mid-tower-gaming-computer-case-black-2x-120mm-argb-pwm-fan-1x-120mm-fan-1-6-argb-hub-mystic-light-sync-tempered-glass-panel-atx-matx-mini-itx",
+          "issue": "verbose",
+          "name": "MSI MAG FORGE 100R Mid Tower Gaming Computer Case 'Black, 2x 120mm ARGB PWM Fan, 1x 120mm Fan, 1-6 ARGB Hub, Mystic Light Sync, Tempered Glass Panel, ATX, mATX, mini-ITX'"
+        }
+      ]
+    },
+    {
+      "category": "psu",
+      "total": 96,
+      "clusters": [
+        {
+          "reason": "identity",
+          "confidence": "high",
+          "key": "corsair::rm750e",
+          "keeper": "corsair-rm750e-2023",
+          "members": [
+            {
+              "slug": "corsair-rm750e-2023",
+              "name": "Corsair RM750e (2023)",
+              "builderReady": true,
+              "hasImage": false,
+              "priceCount": 3
+            },
+            {
+              "slug": "corsair-rm750e-19",
+              "name": "Corsair RM750e  (19)",
+              "builderReady": true,
+              "hasImage": false,
+              "priceCount": 0
+            }
+          ]
+        },
+        {
+          "reason": "identity",
+          "confidence": "high",
+          "key": "corsair::rm850e",
+          "keeper": "corsair-rm850e-2023",
+          "members": [
+            {
+              "slug": "corsair-rm850e-2023",
+              "name": "Corsair RM850e (2023)",
+              "builderReady": true,
+              "hasImage": false,
+              "priceCount": 2
+            },
+            {
+              "slug": "corsair-rm850e-39",
+              "name": "Corsair RM850e  (39)",
+              "builderReady": true,
+              "hasImage": false,
+              "priceCount": 0
+            }
+          ]
+        },
+        {
+          "reason": "identity-color",
+          "confidence": "review",
+          "key": "asus::1000p rog strix",
+          "keeper": "asus-rog-strix-1000p-gaming-white",
+          "members": [
+            {
+              "slug": "asus-rog-strix-1000p-gaming-white",
+              "name": "ASUS ROG-STRIX-1000P-GAMING-WHITE",
+              "builderReady": true,
+              "hasImage": true,
+              "priceCount": 0
+            },
+            {
+              "slug": "asus-rog-strix-1000p-gaming",
+              "name": "Asus ROG STRIX 1000P GAMING",
+              "builderReady": true,
+              "hasImage": false,
+              "priceCount": 0
+            }
+          ]
+        },
+        {
+          "reason": "identity-color",
+          "confidence": "review",
+          "key": "super::1200f14mp flower sf super",
+          "keeper": "super-flower-sf-1200f14mp-black",
+          "members": [
+            {
+              "slug": "super-flower-sf-1200f14mp-black",
+              "name": "Super Flower SF-1200F14MP Black",
+              "builderReady": true,
+              "hasImage": false,
+              "priceCount": 0
+            },
+            {
+              "slug": "super-flower-sf-1200f14mp-white",
+              "name": "Super Flower SF-1200F14MP White",
+              "builderReady": true,
+              "hasImage": false,
+              "priceCount": 0
+            }
+          ]
+        }
+      ],
+      "notReady": [],
+      "nearEmpty": [],
+      "missingSocketSupport": [],
+      "nameIssues": [
+        {
+          "slug": "msi-mag-a650bn-uk-psu-650w-80-plus-bronze-certified-12v-single-rail-dc-to-dc-circuit-120mm-fan-non-modular-sleeved-cables-atx-power-supply-unit-uk-powercord-black",
+          "issue": "verbose",
+          "name": "MSI MAG A650BN UK PSU '650W, 80 Plus Bronze certified, 12V Single-Rail, DC-to-DC Circuit, 120mm Fan, Non-Modular, Sleeved Cables, ATX Power Supply Unit, UK Powercord, Black'"
+        }
+      ]
+    },
+    {
+      "category": "monitor",
+      "total": 34,
+      "clusters": [],
+      "notReady": [],
+      "nearEmpty": [],
+      "missingSocketSupport": [],
+      "nameIssues": []
+    }
+  ],
+  "coverage": [],
+  "totals": {
+    "parts": 577,
+    "dupHigh": 7,
+    "dupReview": 18,
+    "duplicateExtras": 7,
+    "notReady": 2,
+    "nameIssues": 6,
+    "coverageGaps": 0
+  }
+}

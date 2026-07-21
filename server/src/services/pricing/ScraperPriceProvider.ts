@@ -58,6 +58,38 @@ export class ScraperPriceProvider implements PriceProvider {
     return results.filter((q): q is PriceQuote => q !== null);
   }
 
+  /**
+   * DB-4 Tier 2: find a product image URL for a component by scanning retailers in
+   * order and returning the first thumbnail found. Sequential (respects per-domain
+   * throttling) and short-circuits on the first hit. Never throws — returns null.
+   */
+  async getImage(component: Component): Promise<string | null> {
+    for (const adapter of this.adapters) {
+      if (!adapter.parseImage) continue;
+      const img = await this.runAdapterImage(adapter, component);
+      if (img) return img;
+    }
+    return null;
+  }
+
+  private async runAdapterImage(adapter: RetailerAdapter, component: Component): Promise<string | null> {
+    try {
+      const url = adapter.buildSearchUrl(component);
+      const { pathname, search } = new URL(url);
+      if (this.respectRobots) {
+        const allowed = await isAllowed(adapter.domain, pathname + search, this.userAgent, this.fetcher);
+        if (!allowed) return null;
+      }
+      await this.throttle(adapter.domain);
+      const html = await this.fetchHtml(url);
+      if (html === null) return null;
+      return adapter.parseImage?.(html, component) ?? null;
+    } catch (err) {
+      logger.warn(`[${adapter.store}] image adapter error for "${component.name}"`, err);
+      return null;
+    }
+  }
+
   private async runAdapter(
     adapter: RetailerAdapter,
     component: Component,

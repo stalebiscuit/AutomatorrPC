@@ -1,4 +1,4 @@
-import type { Category, Direction, StorageSubtype } from '@automatorr/shared';
+import type { CompareCategory, Direction, StorageSubtype } from '@automatorr/shared';
 
 /**
  * Per-category compare configuration (spec §11). The Compare service reads this
@@ -41,7 +41,7 @@ export interface TagRule {
 }
 
 export interface CategoryCompareConfig {
-  category: Category;
+  category: CompareCategory;
   fields: CompareField[];
   /** ordered candidates for the (up to 3) decisive delta tiles */
   deltaFields: string[];
@@ -68,7 +68,7 @@ const PRICE: CompareField = {
   deltaFormat: 'currency',
 };
 
-export const COMPARE_CONFIGS: Record<Category, CategoryCompareConfig> = {
+export const COMPARE_CONFIGS: Record<CompareCategory, CategoryCompareConfig> = {
   cpu: {
     category: 'cpu',
     fields: [
@@ -83,7 +83,7 @@ export const COMPARE_CONFIGS: Record<Category, CategoryCompareConfig> = {
       { key: 'igpu', label: 'Integrated graphics', numeric: false, counted: false },
       PRICE,
     ],
-    deltaFields: ['performanceIndex', 'price', 'tdp'],
+    deltaFields: ['performanceIndex', 'l3Cache', 'tdp', 'price'],
     tags: [
       { tag: 'Gaming', fields: ['l3Cache', 'performanceIndex'], mode: 'anyLead' },
       { tag: 'Value', fields: ['price'], mode: 'anyLead' },
@@ -104,7 +104,7 @@ export const COMPARE_CONFIGS: Record<Category, CategoryCompareConfig> = {
       { key: 'length', label: 'Length', unit: 'mm', numeric: false, counted: false },
       PRICE,
     ],
-    deltaFields: ['performanceIndex', 'price', 'tbp'],
+    deltaFields: ['performanceIndex', 'vram', 'tbp', 'price'],
     tags: [
       { tag: '4K / 1440p', fields: ['vram', 'performanceIndex'], mode: 'anyLead' },
       { tag: 'Value', fields: ['price'], mode: 'anyLead' },
@@ -124,7 +124,7 @@ export const COMPARE_CONFIGS: Record<Category, CategoryCompareConfig> = {
       { key: 'type', label: 'Type', numeric: false, counted: false },
       PRICE,
     ],
-    deltaFields: ['performanceIndex', 'price', 'speedMTs'],
+    deltaFields: ['performanceIndex', 'speedMTs', 'capacity', 'price'],
     tags: [
       { tag: 'Speed', fields: ['speedMTs', 'performanceIndex'], mode: 'anyLead' },
       { tag: 'Value', fields: ['price'], mode: 'anyLead' },
@@ -153,7 +153,7 @@ export const COMPARE_CONFIGS: Record<Category, CategoryCompareConfig> = {
       { key: 'cacheMB', label: 'Cache', unit: 'MB', direction: 'higher', numeric: true, counted: true, group: 'hdd', deltaFormat: 'absolute' },
       PRICE,
     ],
-    deltaFields: ['performanceIndex', 'price', 'pricePerTB'],
+    deltaFields: ['performanceIndex', 'seqRead', 'pricePerTB', 'price'],
     tags: [
       { tag: 'Speed', fields: ['seqRead', 'performanceIndex'], mode: 'anyLead' },
       { tag: 'Value', fields: ['pricePerTB'], mode: 'anyLead' },
@@ -162,9 +162,84 @@ export const COMPARE_CONFIGS: Record<Category, CategoryCompareConfig> = {
       { tag: 'Workload', fields: ['rpm', 'cacheMB'], mode: 'anyLead', requiresSubtype: 'hdd' },
     ],
   },
+
+  // ── Non-benchmarked comparable categories (no performance index) ──
+  cooler: {
+    category: 'cooler',
+    fields: [
+      { key: 'type', label: 'Type', numeric: false, counted: false },
+      { key: 'tdpRating', label: 'Cooling capacity', unit: 'W', direction: 'higher', numeric: true, counted: true, deltaFormat: 'absolute' },
+      { key: 'noiseDb', label: 'Noise', unit: 'dB', direction: 'lower', numeric: true, counted: true, deltaFormat: 'absolute' },
+      { key: 'height', label: 'Height', unit: 'mm', numeric: false, counted: false },
+      { key: 'radiatorSize', label: 'Radiator', unit: 'mm', numeric: false, counted: false },
+      { key: 'socketSupport', label: 'Sockets', numeric: false, counted: false },
+      PRICE,
+    ],
+    deltaFields: ['tdpRating', 'noiseDb', 'price'],
+    tags: [
+      { tag: 'Cooling', fields: ['tdpRating'], mode: 'anyLead' },
+      { tag: 'Quiet', fields: ['noiseDb'], mode: 'anyLead' },
+      { tag: 'Value', fields: ['price'], mode: 'anyLead' },
+    ],
+  },
+
+  case: {
+    category: 'case',
+    fields: [
+      { key: 'type', label: 'Type', numeric: false, counted: false },
+      { key: 'maxGpuLength', label: 'Max GPU length', unit: 'mm', direction: 'higher', numeric: true, counted: true, deltaFormat: 'absolute' },
+      { key: 'maxCoolerHeight', label: 'Max cooler height', unit: 'mm', direction: 'higher', numeric: true, counted: true, deltaFormat: 'absolute' },
+      { key: 'formFactorSupport', label: 'Motherboard support', numeric: false, counted: false },
+      { key: 'radiatorSupport', label: 'Radiator support', numeric: false, counted: false },
+      { key: 'sidePanel', label: 'Side panel', numeric: false, counted: false },
+      { key: 'color', label: 'Colour', numeric: false, counted: false },
+      PRICE,
+    ],
+    deltaFields: ['maxGpuLength', 'maxCoolerHeight', 'price'],
+    tags: [
+      { tag: 'Big GPUs', fields: ['maxGpuLength'], mode: 'anyLead' },
+      { tag: 'Tall coolers', fields: ['maxCoolerHeight'], mode: 'anyLead' },
+      { tag: 'Value', fields: ['price'], mode: 'anyLead' },
+    ],
+  },
+
+  psu: {
+    category: 'psu',
+    fields: [
+      { key: 'wattage', label: 'Wattage', unit: 'W', direction: 'higher', numeric: true, counted: true, deltaFormat: 'absolute' },
+      { key: 'efficiency', label: 'Efficiency', numeric: false, counted: false },
+      { key: 'modular', label: 'Modularity', numeric: false, counted: false },
+      { key: 'formFactor', label: 'Form factor', numeric: false, counted: false },
+      { key: 'connectors', label: 'Connectors', numeric: false, counted: false },
+      PRICE,
+    ],
+    deltaFields: ['wattage', 'price'],
+    tags: [
+      { tag: 'Headroom', fields: ['wattage'], mode: 'anyLead' },
+      { tag: 'Value', fields: ['price'], mode: 'anyLead' },
+    ],
+  },
+
+  monitor: {
+    category: 'monitor',
+    fields: [
+      { key: 'refreshHz', label: 'Refresh rate', unit: 'Hz', direction: 'higher', numeric: true, counted: true, deltaFormat: 'absolute' },
+      { key: 'size', label: 'Size', unit: '"', direction: 'higher', numeric: true, counted: true, deltaFormat: 'absolute' },
+      { key: 'resolution', label: 'Resolution', numeric: false, counted: false },
+      { key: 'panelType', label: 'Panel', numeric: false, counted: false },
+      { key: 'ports', label: 'Ports', numeric: false, counted: false },
+      PRICE,
+    ],
+    deltaFields: ['refreshHz', 'size', 'price'],
+    tags: [
+      { tag: 'High refresh', fields: ['refreshHz'], mode: 'anyLead' },
+      { tag: 'Immersive', fields: ['size'], mode: 'anyLead' },
+      { tag: 'Value', fields: ['price'], mode: 'anyLead' },
+    ],
+  },
 };
 
-export function getCompareConfig(category: Category): CategoryCompareConfig {
+export function getCompareConfig(category: CompareCategory): CategoryCompareConfig {
   const cfg = COMPARE_CONFIGS[category];
   if (!cfg) throw new Error(`No compare config for category "${category}"`);
   return cfg;

@@ -1,14 +1,21 @@
-import type { Category } from '@automatorr/shared';
+import type { BuilderCategory } from '@automatorr/shared';
 
 /**
  * Per-category Automatorr-branded render used when a component has no imageUrl,
  * so the thumb slot is never empty (spec §3). Winner cards tint to lime.
  */
-export function CategoryRender({ category, win }: { category: Category; win: boolean }) {
+export function CategoryRender({ category, win }: { category: BuilderCategory; win: boolean }) {
   const stroke = win ? '#c2e830' : '#c783ff';
   const accent = win ? '#ffffff' : '#c2e830';
   const fill = win ? 'rgba(194,232,48,0.08)' : 'rgba(199,131,255,0.06)';
-  const common = { width: 150, height: 86, viewBox: '0 0 150 86', fill: 'none' as const };
+  // Fill the container (thumb box, picker cell, selection cell) at any size; keep aspect ratio.
+  const common = {
+    width: '100%',
+    height: '100%',
+    viewBox: '0 0 150 86',
+    preserveAspectRatio: 'xMidYMid meet' as const,
+    fill: 'none' as const,
+  };
 
   if (category === 'gpu') {
     return (
@@ -43,7 +50,8 @@ export function CategoryRender({ category, win }: { category: Category; win: boo
       </svg>
     );
   }
-  // CPU (default) — echoes the mockup's chip render.
+  // CPU — echoes the mockup's chip render.
+  if (category === 'cpu') {
   return (
     <svg {...common} role="img" aria-label="Processor">
       <rect x="45" y="13" width="60" height="60" rx="7" stroke={stroke} strokeWidth="1.4" fill="rgba(255,255,255,0.02)" />
@@ -55,6 +63,16 @@ export function CategoryRender({ category, win }: { category: Category; win: boo
         <path d="M45 23h-5M45 33h-5M45 43h-5M45 53h-5M45 63h-5" />
         <path d="M105 23h5M105 33h5M105 43h5M105 53h5M105 63h5" />
       </g>
+    </svg>
+  );
+  }
+
+  // Generic part (cooler / motherboard / case / psu / os / monitor).
+  return (
+    <svg {...common} role="img" aria-label="Component">
+      <rect x="30" y="18" width="90" height="50" rx="8" stroke={stroke} strokeWidth="1.4" fill={fill} />
+      <rect x="44" y="30" width="62" height="26" rx="4" stroke={stroke} strokeWidth="1.2" />
+      <path d="M52 43h46" stroke={accent} strokeWidth="1.6" strokeLinecap="round" />
     </svg>
   );
 }

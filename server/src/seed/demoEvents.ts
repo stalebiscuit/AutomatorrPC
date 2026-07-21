@@ -1,5 +1,5 @@
-import { type Category, makePairKey } from '@automatorr/shared';
-import { ClickEventModel, ComponentModel, SearchEventModel } from '../models/index.js';
+import { type CompareCategory, isComparableCategory, makePairKey } from '@automatorr/shared';
+import { ClickEventModel, ComponentModel, ConversionEventModel, SearchEventModel } from '../models/index.js';
 import { logger } from '../lib/logger.js';
 
 /**
@@ -16,7 +16,7 @@ export interface DemoPriceRef {
 }
 export interface DemoComponent {
   id: string;
-  category: Category;
+  category: CompareCategory;
   name: string;
   brand: string;
   slug: string;
@@ -24,7 +24,7 @@ export interface DemoComponent {
 }
 export interface DemoSearchEvent {
   type: 'search' | 'view';
-  category: Category;
+  category: CompareCategory;
   componentId?: string;
   pairKey?: string;
   query?: string;
@@ -38,9 +38,17 @@ export interface DemoClickEvent {
   sessionId: string;
   ts: Date;
 }
+export interface DemoConversionEvent {
+  componentId: string;
+  store: string;
+  url: string;
+  sessionId: string;
+  ts: Date;
+}
 export interface DemoEventBundle {
   searchEvents: DemoSearchEvent[];
   clickEvents: DemoClickEvent[];
+  conversionEvents: DemoConversionEvent[];
 }
 
 export interface BuildDemoOptions {
@@ -69,7 +77,7 @@ const HOT = new Set<string>([
   'gskill-trident-z5-rgb-ddr5-6000-cl30-32gb',
 ]);
 
-const CATEGORY_WEIGHT: Record<Category, number> = { gpu: 1.4, cpu: 1.3, ram: 0.8, storage: 0.9 };
+const CATEGORY_WEIGHT: Partial<Record<CompareCategory, number>> = { gpu: 1.4, cpu: 1.3, ram: 0.8, storage: 0.9 };
 
 /** Small deterministic PRNG (mulberry32) so the baseline is identical each boot. */
 function mulberry32(a: number): () => number {
@@ -82,7 +90,7 @@ function mulberry32(a: number): () => number {
   };
 }
 
-function pickCategory(rng: () => number, cats: Category[]): Category {
+function pickCategory(rng: () => number, cats: CompareCategory[]): CompareCategory {
   let total = 0;
   for (const c of cats) total += CATEGORY_WEIGHT[c] ?? 1;
   let r = rng() * total;
@@ -163,7 +171,7 @@ export function buildDemoEvents(
   const rng = mulberry32(opts.seed ?? 0x9e3779b9);
   const sampleDayOffset = makeDaySampler(now, days);
 
-  if (components.length === 0) return { searchEvents: [], clickEvents: [] };
+  if (components.length === 0) return { searchEvents: [], clickEvents: [], conversionEvents: [] };
 
   const sessions = Array.from(
     { length: nSessions },
@@ -171,7 +179,7 @@ export function buildDemoEvents(
   );
   const pickSession = (): string => sessions[Math.floor(rng() * sessions.length)]!;
 
-  const byCat = new Map<Category, DemoComponent[]>();
+  const byCat = new Map<CompareCategory, DemoComponent[]>();
   for (const c of components) {
     const list = byCat.get(c.category);
     if (list) list.push(c);
@@ -221,30 +229,53 @@ export function buildDemoEvents(
     clickEvents.push({ componentId: c.id, store: p.store, url: p.url, sessionId: pickSession(), ts: tsFromOffset(rng, now, sampleDayOffset(rng)) });
   }
 
-  return { searchEvents, clickEvents };
+  // ~18% of clicks convert into a sale (demo funnel).
+  const conversionEvents: DemoConversionEvent[] = [];
+  for (const ev of clickEvents) {
+    if (rng() < 0.18) conversionEvents.push({ ...ev });
+  }
+
+  return { searchEvents, clickEvents, conversionEvents };
 }
 
 /** DEMO-ONLY: read the seeded catalogue and insert a fabricated event baseline. */
-export async function seedDemoEvents(): Promise<{ searches: number; views: number; clicks: number }> {
+export async function seedDemoEvents(
+  opts: { force?: boolean } = {},
+): Promise<{ searches: number; views: number; clicks: number }> {
   const existing = await SearchEventModel.estimatedDocumentCount();
-  if (existing > 0) {
-    logger.info('Demo events already present — skipping event seed');
+  if (existing > 0 && !opts.force) {
+    logger.info('Demo events already present — skipping event seed (pass { force: true } to regenerate)');
     return { searches: 0, views: 0, clicks: 0 };
+  }
+  if (opts.force) {
+    // Clear the event streams so regenerated events reference the CURRENT
+    // catalogue's component ids (stale ids otherwise show as raw ObjectIds).
+    await Promise.all([
+      SearchEventModel.deleteMany({}),
+      ClickEventModel.deleteMany({}),
+      ConversionEventModel.deleteMany({}),
+    ]);
+    logger.info('Cleared existing analytics events for a clean re-seed');
   }
 
   const docs = await ComponentModel.find({});
-  const components: DemoComponent[] = docs.map((d) => ({
-    id: String(d._id),
-    category: d.category as Category,
-    name: d.name,
-    brand: d.brand,
-    slug: d.slug,
-    prices: (d.prices ?? []).map((p) => ({ store: p.store, url: p.url })),
-  }));
+  const components: DemoComponent[] = docs
+    // Only the comparable categories are tracked as search/view/click events
+    // (the SearchEvent schema enum excludes builder-only parts like motherboard).
+    .filter((d) => isComparableCategory(d.category))
+    .map((d) => ({
+      id: String(d._id),
+      category: d.category as CompareCategory,
+      name: d.name,
+      brand: d.brand,
+      slug: d.slug,
+      prices: (d.prices ?? []).map((p) => ({ store: p.store, url: p.url })),
+    }));
 
-  const { searchEvents, clickEvents } = buildDemoEvents(components);
+  const { searchEvents, clickEvents, conversionEvents } = buildDemoEvents(components);
   if (searchEvents.length > 0) await SearchEventModel.insertMany(searchEvents);
   if (clickEvents.length > 0) await ClickEventModel.insertMany(clickEvents);
+  if (conversionEvents.length > 0) await ConversionEventModel.insertMany(conversionEvents);
 
   const views = searchEvents.filter((e) => e.type === 'view').length;
   const searches = searchEvents.length - views;

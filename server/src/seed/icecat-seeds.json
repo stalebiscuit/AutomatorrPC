@@ -1,0 +1,3818 @@
+{
+  "_note": "Generated from mwave-catalog.csv by mwave:convert (DB-1 per-category targets). Open-brand + high-confidence only. Run: npm run icecat:enrich",
+  "_gated_brands": [
+    "Corsair",
+    "Western Digital",
+    "SanDisk",
+    "Crucial",
+    "AMD",
+    "Intel",
+    "Sapphire",
+    "PNY",
+    "Xfx",
+    "Nvidia",
+    "Zotac",
+    "G.SKILL",
+    "TeamGroup",
+    "Patriot",
+    "Lexar",
+    "GeIL",
+    "Sabrent",
+    "Kioxia",
+    "Netac",
+    "Cooler Master",
+    "NZXT",
+    "Lian Li",
+    "Tryx",
+    "Fractal Design",
+    "Hyte",
+    "Phanteks",
+    "Thermaltake",
+    "Antec",
+    "SilverStone",
+    "Seasonic",
+    "EVGA"
+  ],
+  "seeds": [
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GV-R9060XTGAMING-OC-16GD"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GV-R9070XTGAMING-OC-16GD"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GV-N5060WF2OC-8GD"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GV-N5070WF3OC-12GD"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "DUAL-RTX5060TI-O16G"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "ROG-ASTRAL-RTX5090-O32G-GAMING"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "MSI",
+        "productCode": "G507T-16S3C"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "PowerColor",
+        "productCode": "RX9070XT-16G-A"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "PRIME-RX9070XT-O16G"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Asrock",
+        "productCode": "RX7600-CL-8GO"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Asrock",
+        "productCode": "B580-CL-12GO"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Asrock",
+        "productCode": "RX9060XT-CL-16GO"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "PRIME-RTX5070TI-16G"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "MSI",
+        "productCode": "RTX-5060-8G-VENTUS-2X-OC"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GV-N5050WF2OC-8GD"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "MSI",
+        "productCode": "RTX3060VENTUS2X12GOC"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GV-N5080WF3OC-16GD"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "MSI",
+        "productCode": "RTX-3050-VENTUS-2X-6G-OC"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "PowerColor",
+        "productCode": "RX9060XT-16G-A"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "MSI",
+        "productCode": "RTX-5060-TI-8G-VENTUS-2X-OC-PLUS"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GV-R907XGAMINGOCICE-16GD"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "ROG-ASTRAL-RTX5080-O16G-GAMING"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GV-N5070EAGLEOC-ICE-12GD"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Asrock",
+        "productCode": "RX9070XT-CL-16G"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "ROG-ASTRAL-RTX5090-O32G-WHITE"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GV-N507TWF3OC-16GD"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "PRIME-RTX5070-O12G"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "DUAL-RX9060XT-16G"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Asrock",
+        "productCode": "RX7700XT-CL-12GO"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "DUAL-RTX5060-O8G"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "PowerColor",
+        "productCode": "RX9070-16G-A"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GV-N5080GAMING-OC-16GD"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Asrock",
+        "productCode": "RX9070-CL-16G"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GV-R9060XTGAMING-OC-8GD"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "MSI",
+        "productCode": "RTX-5070-12G-SHADOW-3X-OC"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "TUF-RTX5080-O16G-GAMING"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "MSI",
+        "productCode": "GEFORCE-RTX-5070-TI-16G-GAMING-TRIO-OC"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GV-N4070WF3OC-12GD"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "MSI",
+        "productCode": "GEFORCE-RTX-5090-32G-LIGHTNING-Z"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "MSI",
+        "productCode": "RTX-4060-VENTUS-2X-BLACK-8G-OC"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "PRIME-RTX5060TI-16G"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "MSI",
+        "productCode": "GEFORCE-RTX-5070-12G-GAMING-TRIO-OC"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "DUAL-RTX4060TI-O8G"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "MSI",
+        "productCode": "GEFORCE-RTX-5080-16G-SHADOW-3X-OC"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "MSI",
+        "productCode": "GEFORCE-RTX-5070-TI-16G-VENTUS-3X-OC"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "ROG-ASTRAL-RTX5080-O16G-WHITE"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "TUF-RTX5070TI-O16G-GAMING"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "PRIME-RTX5070TI-O16G"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Asrock",
+        "productCode": "A580-CL-8GO"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GV-N5060EAGLEOC-ICE-8GD"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "PRIME-RTX5080-O16G"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "DUAL-RTX5070-O12G"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "DUAL-RTX3060-O12G-V2"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "MSI",
+        "productCode": "GEFORCE-RTX-5090-32G-GAMING-TRIO-OC"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "MSI",
+        "productCode": "RTX-3050-VENTUS-2X-XS-8G-OC"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "MSI",
+        "productCode": "RTX-5070-12G-SHADOW-2X-OC"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GV-N507TAERO-OC-16GD"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GV-N5060OC-8GL"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "DUAL-RTX5060TI-O8G"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Asrock",
+        "productCode": "A380-CLI-6GO"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Asrock",
+        "productCode": "B570-CL-10GO"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GV-N407SWF3OC-12GD"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "PRIME-RTX5080-16G"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GV-N3070GAMING-OC8GD"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "MSI",
+        "productCode": "RTX-5070-TI-16G-GAMING-TRIO-OC-WHITE"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "PRIME-RX9070-O16G"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "MSI",
+        "productCode": "GEFORCE-RTX-5080-16G-GAMING-TRIO-OC"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GV-N5090AORUS-M-32GD"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "MSI",
+        "productCode": "RTX-5060-TI-16G-VENTUS-2X-OC-PLUS"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GV-R906XGAMINGOCICE-16GD"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "MSI",
+        "productCode": "GEFORCE-RTX-5060-TI-16G-SHADOW-2X-OC-PLUS"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Asrock",
+        "productCode": "RX9070XT-SL-16G"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GV-N507TGAMING-OC-16GD"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "PRIME-RTX5070-12G"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Asrock",
+        "productCode": "RX6600-CLD-8G"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "MSI",
+        "productCode": "GTX-1660-SUPER-VENTUS-XS-OC"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "PRIME-RX9060XT-O16G"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "DUAL-RX7600-O8G-EVO"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "MSI",
+        "productCode": "G5080-16V3CW"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "DUAL-RX9060XT-8G"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "PRIME-RTX5060-8G"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "DUAL-RTX5060TI-O16G-WHITE"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GV-N506TWF2OC-8GD"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "ROG-STRIX-RTX5070TI-O16G-GAMING"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GV-R9070GAMING-OC-16GD"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "TUF-RX9070XT-O16G-GAMING"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GV-N5080AORUSM-ICE-16GD"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GV-N5080AERO-OC-16GD"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GV-N3060WF2OC-12GD-REV20"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "TUF-RTX4070TIS-O16G-GAMING"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GV-N507TEAGLEOC-ICE-16GD"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GV-N5090AORUSM-ICE-32GD"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "TUF-RTX5070TI-O16G-WHITE-GAMING"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Asrock",
+        "productCode": "RX9070XT-TC-16GO"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Onix",
+        "productCode": "8346-00178"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GV-N5090GAMING-OC-32GD"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "DUAL-RX9060XT-16G-WHITE"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "ROG-ASTRAL-LC-RTX5090-O32G-GAMING"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "RTX5080-O16G-NOCTUA"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "PRIME-RX9070XT-O16G-WHITE"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "TUF-RTX5090-O32G-GAMING"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "TUF-RTX5070-O12G-GAMING"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "DUAL-RTX3050-O6G"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GV-N5070GAMING-OC-12GD"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "MSI",
+        "productCode": "RTX-5060-8G-SHADOW-2X-OC"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "PowerColor",
+        "productCode": "RX9070XT-16G-LOC"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "MSI",
+        "productCode": "RTX-5050-8G-GAMING-OC"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "MSI",
+        "productCode": "RTX-3050-LP-6G-OC"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "MSI",
+        "productCode": "RTX-4070-VENTUS-3X-12G-OC"
+      }
+    },
+    {
+      "category": "gpu",
+      "id": {
+        "brand": "MSI",
+        "productCode": "GEFORCE-RTX-5090-32G-SUPRIM-LIQUID-SOC"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Silicon",
+        "productCode": "SP016GXLZU320BDAJ5"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Silicon",
+        "productCode": "SP032GXLZU320BDAJ7"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "KF432C16BB8"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "KF432C16BBK216"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "KF432C16BBK232"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Silicon",
+        "productCode": "SP032GXLZU360BDD"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "KCP426NS64"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "KF432C16BB16"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "HX432C16FB3K216"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Silicon",
+        "productCode": "SP016GXLZU320BDA"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Timetec",
+        "productCode": "PKMD4U32C16CNHW8GK2"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "ADATA",
+        "productCode": "AX4U32008G16A-DTBKD35G"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "HX426C16FB38"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Timetec",
+        "productCode": "PKMD4U32C16CNHW16GK2"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Silicon",
+        "productCode": "SP032GXLZU320BDA"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "KF432C16BBK4128"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "KF432C16BB2AK216"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "HX432C16FB3K232"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Silicon",
+        "productCode": "SP016GXLZU360BDAJ5"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Klevv",
+        "productCode": "KD48GU880-36A180X"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Oloy",
+        "productCode": "MD4U0832162BRKDE"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Goodram",
+        "productCode": "IRP-K3600D4V64L1816G"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "HX424C15FB8"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Oloy",
+        "productCode": "MD4U083618BEDA"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Silicon",
+        "productCode": "SP032GXLZU320BDC"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "KVR26S19S64"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Oloy",
+        "productCode": "ND4U0832160BHVDA"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Timetec",
+        "productCode": "PKMD4U36C18FNHW16GK2"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Timetec",
+        "productCode": "PKMD4U32C16CNHB16GK2"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Apacer",
+        "productCode": "EK08G2VKEC"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Timetec",
+        "productCode": "PKMD4U36C18FNHW16G"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "KF426C16BB16"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "ADATA",
+        "productCode": "AX4U320038G16A-DSZ1"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "KF436C17BB8"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "KVR26N19S8K216"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "KF436C18BB32"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "ADATA",
+        "productCode": "AX4U32008G16A-DT50"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Neo",
+        "productCode": "NMUD416F82-5000IG20"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "KF436C18BBK464"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "HX432C16FB316"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Oloy",
+        "productCode": "MD4U163016BEDA"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Timetec",
+        "productCode": "PKMD4U36C18FNHW8GK2"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "KF426C16BBK232"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "ADATA",
+        "productCode": "AX4U32008G16A-SWHD35G"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "KF426C16BB8"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "KVR32N22D832"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "ADATA",
+        "productCode": "AX4U3200316G16-DT60"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Klevv",
+        "productCode": "KD4AGU880-32A160U"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "KVR32N22S68"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "KF432C16BB1AK232"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "HX436C18FB4K232"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "ADATA",
+        "productCode": "AX4U300038G16A-DR30"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "ADATA",
+        "productCode": "AD4U240038G17-S"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "HX424C15FBK432"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GP-AR36C18S8K2HU416R"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "ADATA",
+        "productCode": "AX4U300038G16-SB41"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GP-ARS16G37"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "HX424C15FB2K216"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "KVR26N19D816"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "KF426C16BBK216"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Klevv",
+        "productCode": "KD48GU880-32A160X"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "KCP421NS88"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Klevv",
+        "productCode": "KD4AGU880-32A160X"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Neo",
+        "productCode": "NMUD480E82-3200DG20"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "ADATA",
+        "productCode": "AX4U36008G18I-DT50"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "HP",
+        "productCode": "7TE41AAABC"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "ADATA",
+        "productCode": "AX4U266638G16-DBG"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Klevv",
+        "productCode": "KD48GU880-32A160T"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "HX432C16PB3AK216"
+      }
+    },
+    {
+      "category": "ram",
+      "id": {
+        "brand": "Silicon",
+        "productCode": "SP016GXLZU300BDAJ7"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "SNV3S1000G"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "MZ-V9P2T0BW"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Silicon",
+        "productCode": "SP01KGBP44UD9005"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "MZ-V9P1T0BW"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "MZ-VAP8T0BAM"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Silicon",
+        "productCode": "SU001TBP34A60M28CA"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "MZ-VAP2T0BAM"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "MZ-V9P4T0BW"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "MZ-V8V500BAM"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Seagate",
+        "productCode": "ST2000DM008"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Silicon",
+        "productCode": "SP02KGBP44UD9005"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "SNV3S2000G"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "MZ-V9S2T0BW"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "MZ-VAP1T0BAM"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "MZ-V7S1T0BAM"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "MZ-VAP4T0BAM"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Seagate",
+        "productCode": "ST4000DM004"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "SNV3S500G"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Seagate",
+        "productCode": "ST30000NM004K"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "ADATA",
+        "productCode": "ALEG-710-512GCS"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "MZ-77E1T0BAM"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "MZ-V8P1T0BAM"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Lenovo",
+        "productCode": "4XB7A17119"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "MZ-V9S1T0BW"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Seagate",
+        "productCode": "ST1000DM003"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "ADATA",
+        "productCode": "ALEG-710-1TCS"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "SFYR2D8T1"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "MZ-V8P2T0BAM"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "SNV2S1000G"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "MZ-VAP8T0CAM"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Owc",
+        "productCode": "S4DMEP7E16T"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Silicon",
+        "productCode": "SP512GBP34A60M28"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Silicon",
+        "productCode": "SP002TBP34A60M28"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Silicon",
+        "productCode": "SP04KGBP44UD9005"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Seagate",
+        "productCode": "ST36000NM003K"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "ADATA",
+        "productCode": "SLEG-860-2000GCS"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Silicon",
+        "productCode": "SP512GBSS3A55S25"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "MZ-V8P1T0CW"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "SKC3000D2048G"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "MZ-V7S500BAM"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Silicon",
+        "productCode": "SP001TBP34A60M28AY"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "MZ-V7S2T0BAM"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "MZ-77E8T0BAM"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "MZ-V9S4T0BW"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "AG4731TB-N"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "MZ-77E2T0BAM"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "SA400S37240G"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Silicon",
+        "productCode": "SP001TBSS3A55S25"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Seagate",
+        "productCode": "ST1000DM010"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "MZ-V7E1T0BAW"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "MZ-77E500BAM"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "MSI",
+        "productCode": "SPATIUM-M482-PCIE-40-NVME-M2-2TB"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Acer",
+        "productCode": "BL9BWWR106"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Silicon",
+        "productCode": "SP500GBP44UD9005"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Seagate",
+        "productCode": "ST8000VN004"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "SKC3000S1024G"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Klevv",
+        "productCode": "K01TBM2SP0-C91"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Klevv",
+        "productCode": "K02TBM2SP0-C91"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Fanxiang",
+        "productCode": "1TB-SSD-M2-S880"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "SFYR2S4T0"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "ADATA",
+        "productCode": "ALEG-710-2TCS"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "MZ-7L37T600"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Kingspec",
+        "productCode": "XG-7000-1TB"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "MSI",
+        "productCode": "SPATIUM-M461-2TB"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Seagate",
+        "productCode": "ST28000NT000"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "SNV2S500G"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "MZ-VAP4T0CAM"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Seagate",
+        "productCode": "ST16000NT001"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Fanxiang",
+        "productCode": "S500-PRO-512GB-M2-SSD"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Inland",
+        "productCode": "1TB-TN320-NVME"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Seagate",
+        "productCode": "ST2000DM006"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Silicon",
+        "productCode": "SP004TBSS3A55S25"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "SNV3S4000G"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "MZ75E500BAM"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Timetec",
+        "productCode": "35TTFP6PCIE-1TB"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Inland",
+        "productCode": "1TB-QN450"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "MSI",
+        "productCode": "SPATIUM-M461-1TB"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "ADATA",
+        "productCode": "AGAMMIXS70B-1T-CS"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Seagate",
+        "productCode": "ST12000VNZ008"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "SFYRD2000G"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "MZ-V8P2T0CW"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "MZ-V8P500BAM"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Kingston",
+        "productCode": "SKC3000S512G"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Seagate",
+        "productCode": "ST20000NT001"
+      }
+    },
+    {
+      "category": "storage",
+      "id": {
+        "brand": "Silicon",
+        "productCode": "SP256GBP34A60M28"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Thermalright",
+        "productCode": "PA120-SE-D3"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Arctic",
+        "productCode": "ACFRE00180A"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Thermalright",
+        "productCode": "AQUA-ELITE-360-BLACK-V3"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Thermalright",
+        "productCode": "PS120SE-ARGB"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Arctic",
+        "productCode": "ACFRE00184A"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Thermalright",
+        "productCode": "AX120-SE-D3"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Arctic",
+        "productCode": "ACFRE00188A"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Thermalright",
+        "productCode": "PS120SE"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Noctua",
+        "productCode": "NH-D15-CHROMAXBLACK"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Thermalright",
+        "productCode": "AQUA-ELITE-240-BLACK-V3"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "be quiet!",
+        "productCode": "BK036"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "90RC0131-M0EAY0"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Thermalright",
+        "productCode": "PA120-SE-WHITE-ARGB"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Thermalright",
+        "productCode": "AX90SE-V2"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Noctua",
+        "productCode": "NH-L9A-AM5-CHROMAXBLACK"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Arctic",
+        "productCode": "ACFRE00123A"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Thermalright",
+        "productCode": "PHANTOM-SPIRIT-120-EVO"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Thermalright",
+        "productCode": "PA-120-SE-ARGB"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Arctic",
+        "productCode": "ACFRE00178A"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Thermalright",
+        "productCode": "AXP90-X47-BLACK"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "90RC0151-B0EAY0"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Thermalright",
+        "productCode": "FROZEN-INFINITY-360-WHITE"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Thermalright",
+        "productCode": "ASSASSIN-X-120-R-DIGITAL-ARGB-BLACK"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Noctua",
+        "productCode": "NH-D15-G2-CHROMAXBLACK"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Noctua",
+        "productCode": "NH-L9X65-CHROMAXBLACK"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "be quiet!",
+        "productCode": "BK039"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Thermalright",
+        "productCode": "PS120SE-BLACK"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Arctic",
+        "productCode": "ACFRE00181A"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Thermalright",
+        "productCode": "FROZEN-NOTTE-360-BLACK-ARGB-D1"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "be quiet!",
+        "productCode": "BK042"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "be quiet!",
+        "productCode": "BW025"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "DeepCool",
+        "productCode": "R-AK400-BKNNMN-G-1"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Thermalright",
+        "productCode": "AX120R-SE-ARGB-D6-CAD"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "MSI",
+        "productCode": "MAG-CORELIQUID-A13-360"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Noctua",
+        "productCode": "NH-U12A-CHROMAXBLACK"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "90RC0152-B0EAY0"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Thermalright",
+        "productCode": "PA120SE-V3"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Thermalright",
+        "productCode": "AQUA-ELITE-360-ARGB-BLACK-V6"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Thermalright",
+        "productCode": "ASSASSIN-X-120-R-DIGITAL-ARGB-WHITE"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "MSI",
+        "productCode": "MAG-CORELIQUID-A13-240"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Arctic",
+        "productCode": "ACFRE00111A"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "90RC0132-M0AAY0"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Thermalright",
+        "productCode": "AXP90-X47-FULL"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Thermalright",
+        "productCode": "AXP120-X67-BLACK-ARGB"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Thermalright",
+        "productCode": "FROZEN-INFINITY-360-BLACK"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Thermalright",
+        "productCode": "AS120-EVO"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Alphacool",
+        "productCode": "11774"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Thermalright",
+        "productCode": "AQUA-ELITE-360-WHITE-V3"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Arctic",
+        "productCode": "ACFRE00124A"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Thermalright",
+        "productCode": "AXP90-X36-BLACK"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "TUF-GAMING-LC-III-360-ARGB-LCD"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "be quiet!",
+        "productCode": "BK048"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Thermalright",
+        "productCode": "AX120R-SE-V2-D6"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "be quiet!",
+        "productCode": "BW027"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "ROG-STRIX-LC-III-360-ARGB-LCD"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Thermalright",
+        "productCode": "AQUA-ELITE-240-WHITE-V3"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Arctic",
+        "productCode": "ACFRE00137A"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "be quiet!",
+        "productCode": "BW029"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Arctic",
+        "productCode": "ACFRE00150A"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Thermalright",
+        "productCode": "FROZEN-INFINITY-240-BLACK"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Thermalright",
+        "productCode": "PA120-BLACK"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Montech",
+        "productCode": "NX600-BLACK"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Thermalright",
+        "productCode": "AQUA-ELITE-360-WHITE-ARGB-V4"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "MSI",
+        "productCode": "MAG-CORELIQUID-A15-360"
+      }
+    },
+    {
+      "category": "cooler",
+      "id": {
+        "brand": "Arctic",
+        "productCode": "ACFRE00068A"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Montech",
+        "productCode": "XR-B"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Montech",
+        "productCode": "AIR-903-MAX-B"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Jonsbo",
+        "productCode": "D32-PRO-BLACK"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Jonsbo",
+        "productCode": "C6-ITX-BLACK"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Musetex",
+        "productCode": "Y6-N5-W"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Montech",
+        "productCode": "AIR-100-ARGB-BLACK"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Jonsbo",
+        "productCode": "NV10-BLACK"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Zalman",
+        "productCode": "T8"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Montech",
+        "productCode": "XR-W"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "AP201BLKMESH"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Jonsbo",
+        "productCode": "Z20-BLACK"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Montech",
+        "productCode": "KING-95-PRO-BLACK"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Montech",
+        "productCode": "X3-MESH-BLACK"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Montech",
+        "productCode": "X5M-B"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Sama",
+        "productCode": "3509W"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "GX601"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Montech",
+        "productCode": "X5-B"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Okinos",
+        "productCode": "OKICC-AQUA3-MATXB-H3BA"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "DeepCool",
+        "productCode": "R-CG530-BKADA4-G-1"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Jonsbo",
+        "productCode": "N2-BLACK"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Montech",
+        "productCode": "TEN-BLACK"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Montech",
+        "productCode": "AIR-100-LITE-BLACK"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "MSI",
+        "productCode": "MAG-PANO-M100R-PZ-WHITE"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Kolink",
+        "productCode": "OBSERVATORY-HF-MW"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Jonsbo",
+        "productCode": "C6-HANDLE-BLACK"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Darkrock",
+        "productCode": "CP-CASE-DR-EC2-BK"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Jonsbo",
+        "productCode": "C6-ITX-WHITE"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Montech",
+        "productCode": "KING-95-PRO-WHITE"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Havn",
+        "productCode": "HVN-CA-HS420-08"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Jonsbo",
+        "productCode": "N6-BLACK"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Azza",
+        "productCode": "CSAZ-290"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Jonsbo",
+        "productCode": "V12-BLACK"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "PRIME-AP303-MESH-BLACK"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "90DC00J0-B08010"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Diypc",
+        "productCode": "ARGB-M1-BK"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "DeepCool",
+        "productCode": "R-CC560-BKGAA4-G-2"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Montech",
+        "productCode": "XR-WOOD-B"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Okinos",
+        "productCode": "OKICC-AIRCROSS-ATXB"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "DeepCool",
+        "productCode": "R-CH160-WHNGM0-G"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "PRIME-AP201-TG-BK"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Jonsbo",
+        "productCode": "NV10-SILVER"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Havn",
+        "productCode": "HVN-CA-HS420-06"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "DeepCool",
+        "productCode": "R-CC360-BKAPM3-G-1"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Vetroo",
+        "productCode": "VT-CASE-AL900-PK"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "be quiet!",
+        "productCode": "BGW37"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "GT502BLKTG"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Montech",
+        "productCode": "KING-65-PRO-B"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Jonsbo",
+        "productCode": "Z20-WHITE"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Darkflash",
+        "productCode": "DB330M-BK"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Darkrock",
+        "productCode": "CP-CASE-DR-CLASSICO"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "be quiet!",
+        "productCode": "BGW71"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "DeepCool",
+        "productCode": "R-CG530-WHADA4-G-1"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Jonsbo",
+        "productCode": "Z20-ORANGEBLACK"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Aerocool",
+        "productCode": "CS-107-A-BK-V2"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Jonsbo",
+        "productCode": "D32-PRO-WHITE"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Cougar",
+        "productCode": "CGR-2BD2B-RGB"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Apnx",
+        "productCode": "V1-BK-V1"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Sama",
+        "productCode": "SV-01-BLACK"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Aerocool",
+        "productCode": "D302A-G-WT-V1"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Montech",
+        "productCode": "X5M-W"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "be quiet!",
+        "productCode": "BGW67"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Cougar",
+        "productCode": "382DA400001"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Jonsbo",
+        "productCode": "N3"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Okinos",
+        "productCode": "OKICC-MG4-MATXB"
+      }
+    },
+    {
+      "category": "case",
+      "id": {
+        "brand": "Havn",
+        "productCode": "HVN-CA-HS420-07"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "Montech",
+        "productCode": "CENTURY-II-850W"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "90YE00K0-B0NA00"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "MSI",
+        "productCode": "MAG-A850GL-PCIE5-WHITE"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "be quiet!",
+        "productCode": "BP028US"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "Super",
+        "productCode": "SF-2800F14HP"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "be quiet!",
+        "productCode": "BP027US"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "be quiet!",
+        "productCode": "BP026US"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "be quiet!",
+        "productCode": "BN215"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "Montech",
+        "productCode": "CENTURY-II-1050W"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "be quiet!",
+        "productCode": "BP008US"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "ROG-STRIX-1000P-GAMING-WHITE"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "Sama",
+        "productCode": "GT650-BKGFFXX1-US"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "90YE00S2-B0NA00"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "90YE00S1-B0NA00"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "be quiet!",
+        "productCode": "BN661"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "Rosewill",
+        "productCode": "VSB650"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "be quiet!",
+        "productCode": "BP007US"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "be quiet!",
+        "productCode": "BP006US"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "ROG-THOR-1600T3-GAMING"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "Apevia",
+        "productCode": "CAPTAIN550"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "90YE00W1-B0NA00"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "ROG-LOKI-1200T-SFX-L-GAMING"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "Segotep",
+        "productCode": "CP-PSU-ST-GN650"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "be quiet!",
+        "productCode": "BP021US"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "90YE00N4-B0NA00"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "Rosewill",
+        "productCode": "VMG750"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GP-UD750GM-PG5-ICE"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "Apevia",
+        "productCode": "ATX-RP600W"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "be quiet!",
+        "productCode": "BP002US"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "Cougar",
+        "productCode": "VTX500"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "DeepCool",
+        "productCode": "R-PF550D-HA0B-US"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "be quiet!",
+        "productCode": "BN329"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GP-UD1000GM-PG5"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "be quiet!",
+        "productCode": "BN675"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "Chieftec",
+        "productCode": "PPG-750-S"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "Gamdias",
+        "productCode": "KRATOS-P1-650G"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "Thermalright",
+        "productCode": "TG-750"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "Fsp",
+        "productCode": "HP2-700"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "GP-AP1200PM"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "be quiet!",
+        "productCode": "BN303"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "Gamemax",
+        "productCode": "RGB-850"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "1stplayer",
+        "productCode": "NGDP-GLD-850-WH-US"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "Super",
+        "productCode": "SF-650F14HG"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "DeepCool",
+        "productCode": "R-PN750D-FC0B-US"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "Sharkoon",
+        "productCode": "SILENTSTORM-ICEWIND-BLACK-650-WATT"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "Raidmax",
+        "productCode": "RX-750AEM"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "90YE00L3-B0AA00"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "Super",
+        "productCode": "SF-1600F14HT"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "DeepCool",
+        "productCode": "R-PQ850M-FA0B-US"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "90YE00P5-B0NA00"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "Thermalright",
+        "productCode": "TG-1000"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "be quiet!",
+        "productCode": "BN647"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "Fsp",
+        "productCode": "HG2-850GEN5"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "Gamemax",
+        "productCode": "RGB1050-WHITE"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "Aerocool",
+        "productCode": "ACPG-IMK0FKC31"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "DeepCool",
+        "productCode": "DP-BZ-DA600-MFM"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "Aresgame",
+        "productCode": "AGK850"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "Preyon",
+        "productCode": "PEPG750W"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "Raidmax",
+        "productCode": "RX-850AEM"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "Xilence",
+        "productCode": "XN320"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "DeepCool",
+        "productCode": "R-PK750D-FA0B-US"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "Gamemax",
+        "productCode": "GM-300-ECO"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "be quiet!",
+        "productCode": "BN672"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "Pc",
+        "productCode": "P5-YN1000-G1FFBK1-US"
+      }
+    },
+    {
+      "category": "psu",
+      "id": {
+        "brand": "Raijintek",
+        "productCode": "0R30B00023"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Acer",
+        "productCode": "UMHX2AA201"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "LS49DG954SUXEN"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "LS57CG952NNXZA"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "90LM0A20-B01AB0"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "90LM06N0-B01IB0"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "LS32DG802SNXZA"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Planar",
+        "productCode": "997640400"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "PG32UCDM3"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "LS32CG552ENXZA"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "LS27DG602SNXZA"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "90LM0B30-B019B1"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Acer",
+        "productCode": "UMHX1AA301"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "LS27FG500SNXZA"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Acer",
+        "productCode": "UMGXXAA106"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "90LM0A50-B013B0"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "90LM03H0-B083B0"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Rca",
+        "productCode": "M27PG135F"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "90LM0A70-B013B0"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "LS49CG932SNXZA"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Acer",
+        "productCode": "UMHE0AAP09"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "90LM0B20-B01971"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "LS27FG602SNXZA"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "LC34G55TWWPXEN"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "LS55CG970NNXGO"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Acer",
+        "productCode": "UMJXXAAX01"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "LS27BG402ENXGO"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Pixio",
+        "productCode": "PX278WAVEW"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "LS27FG810SNXZA"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "LC34G55TWWNXZA"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "HP",
+        "productCode": "780H5AA"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Sceptre",
+        "productCode": "E275W1920"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Acer",
+        "productCode": "UMHX1EE308"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "LC32G57TQWNXDC"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "LS37FG75DENXZA"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "90LM09Y1-B013B0"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "HP",
+        "productCode": "780D9AAABA"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "LS34C502GANXZA"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Acer",
+        "productCode": "UMHX0AA402"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "LS49DG910SNXZA"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "90LM07W0-B01AB0"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "90LM0550-B031B0"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Lenovo",
+        "productCode": "67C9UAC1US"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Pixio",
+        "productCode": "PX279WAVEW"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "LC27G55TQWNXZA"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "LG",
+        "productCode": "32U990A-S"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "LS28BG702ENXGO"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Philips",
+        "productCode": "34M2C650027"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "90LM05X0-B013B0"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "90LM0510-B02EB0"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "90LM09S0-B011B0"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "90LM09A0-B013B0"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "90LM0560-B031B0"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Acer",
+        "productCode": "UMQQ1AAP01"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Pixio",
+        "productCode": "PXC248WAVEW"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "LS27FG60DENXZA"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Philips",
+        "productCode": "32M2C550100"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Gigabyte",
+        "productCode": "M28U-SA"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Acer",
+        "productCode": "UMGXXAA501"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "90LM03H0-B01KB0"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Lenovo",
+        "productCode": "67CCGAC4US"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Philips",
+        "productCode": "241E1SCA00"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Acer",
+        "productCode": "UMJE2AAP05"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "LG",
+        "productCode": "22MP55HQP"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "90LM0810-B02IB0"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "LS27BG652ENXGO"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "90LM09R0-B011B0"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "MSI",
+        "productCode": "PRO-MP273A"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "LS27FG706ENXZA"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "LS27C330GAEXXS"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "90LM06J0-B023B0"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "LS32BG702ENXGO"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "LS27AG320NNXZA"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "LS32BG752NNXGO"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "MSI",
+        "productCode": "OPTIXG27CQ4"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "ASUS",
+        "productCode": "90LM0820-B01370"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "LS27AG550ENXZA"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Samsung",
+        "productCode": "LS49FG910ENXZA"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Lenovo",
+        "productCode": "67B4GAC1US"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "Acer",
+        "productCode": "UMCX2SG301"
+      }
+    },
+    {
+      "category": "monitor",
+      "id": {
+        "brand": "HP",
+        "productCode": "8K167AAABA"
+      }
+    }
+  ]
+}

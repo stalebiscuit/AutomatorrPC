@@ -17,7 +17,7 @@ describe('Phase 3 — public API', () => {
     await stopMemoryDb();
   });
 
-  it('GET /api/categories returns the 4 categories', async () => {
+  it('GET /api/categories returns the comparable categories', async () => {
     const res = await request(app).get('/api/categories');
     expect(res.status).toBe(200);
     expect(res.body.categories.map((c: { id: string }) => c.id)).toEqual([
@@ -25,6 +25,10 @@ describe('Phase 3 — public API', () => {
       'gpu',
       'ram',
       'storage',
+      'cooler',
+      'case',
+      'psu',
+      'monitor',
     ]);
   });
 
@@ -74,8 +78,15 @@ describe('Phase 3 — public API', () => {
     expect(res.body.scorecard.winnerSlug).toBe('intel-core-i9-14900k');
   });
 
-  it('rejects invalid category with a 400 validation error', async () => {
+  it('accepts a builder category (motherboard) on /components', async () => {
+    // motherboard is a valid *builder* category now (PC Builder), so /components accepts it.
     const res = await request(app).get('/api/components?category=motherboard');
+    expect(res.status).toBe(200);
+    expect(Array.isArray(res.body.components)).toBe(true);
+  });
+
+  it('rejects an unknown category with a 400 validation error', async () => {
+    const res = await request(app).get('/api/components?category=banana');
     expect(res.status).toBe(400);
     expect(res.body.code).toBe('VALIDATION_ERROR');
   });

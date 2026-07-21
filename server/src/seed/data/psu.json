@@ -1,0 +1,1123 @@
+{
+  "category": "psu",
+  "components": [
+    {
+      "brand": "Corsair",
+      "name": "Corsair RM750e",
+      "slug": "corsair-rm750e",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 750,
+        "efficiency": "80+ Gold",
+        "modular": "Full",
+        "formFactor": "ATX",
+        "connectors": "12VHPWR:1,PCIe8:2,EPS:2"
+      },
+      "specSourceUrl": "https://www.corsair.com/us/en/p/psu/cp-9020262-na/",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Mwave",
+          "price": 139,
+          "url": "https://www.mwave.com.au/searchresult?w=Corsair%20RM750e%20%282023%29"
+        },
+        {
+          "store": "Scorptec",
+          "price": 145,
+          "url": "https://www.scorptec.com.au/search/go?w=Corsair%20RM750e%20%282023%29"
+        },
+        {
+          "store": "Centre Com",
+          "price": 149,
+          "url": "https://www.centrecom.com.au/search?searchterm=Corsair%20RM750e%20%282023%29"
+        }
+      ],
+      "gtin": null
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair RM850e",
+      "slug": "corsair-rm850e",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 850,
+        "efficiency": "80+ Gold",
+        "modular": "Full",
+        "formFactor": "ATX",
+        "connectors": "12VHPWR:1,PCIe8:3,EPS:2"
+      },
+      "specSourceUrl": "https://www.corsair.com/us/en/p/psu/cp-9020263-na/",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Mwave",
+          "price": 165,
+          "url": "https://www.mwave.com.au/searchresult?w=Corsair%20RM850e%20%282023%29"
+        },
+        {
+          "store": "PLE",
+          "price": 169,
+          "url": "https://www.ple.com.au/Catalogue/search?q=Corsair%20RM850e%20%282023%29"
+        }
+      ],
+      "gtin": null
+    },
+    {
+      "brand": "Seasonic",
+      "name": "Seasonic Focus GX-650",
+      "slug": "seasonic-focus-gx-650",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 650,
+        "efficiency": "80+ Gold",
+        "modular": "Full",
+        "formFactor": "ATX",
+        "connectors": "PCIe8:2,EPS:1"
+      },
+      "specSourceUrl": "https://seasonic.com/focus-gx/",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Scorptec",
+          "price": 129,
+          "url": "https://www.scorptec.com.au/search/go?w=Seasonic%20Focus%20GX-650"
+        },
+        {
+          "store": "Centre Com",
+          "price": 135,
+          "url": "https://www.centrecom.com.au/search?searchterm=Seasonic%20Focus%20GX-650"
+        }
+      ]
+    },
+    {
+      "brand": "be quiet!",
+      "name": "be quiet! Pure Power 12 M 1000W",
+      "slug": "be-quiet-pure-power-12-m-1000w",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 1000,
+        "efficiency": "80+ Gold",
+        "modular": "Full",
+        "formFactor": "ATX",
+        "connectors": "12VHPWR:1,PCIe8:4,EPS:2"
+      },
+      "specSourceUrl": "https://www.bequiet.com/en/powersupply/4067",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "PLE",
+          "price": 199,
+          "url": "https://www.ple.com.au/Catalogue/search?q=be%20quiet%21%20Pure%20Power%2012%20M%201000W"
+        },
+        {
+          "store": "Mwave",
+          "price": 205,
+          "url": "https://www.mwave.com.au/searchresult?w=be%20quiet%21%20Pure%20Power%2012%20M%201000W"
+        }
+      ]
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair HX1200 Platinum",
+      "slug": "corsair-hx1200-platinum",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 1200,
+        "efficiency": "80+ Platinum",
+        "modular": "Full",
+        "formFactor": "ATX",
+        "connectors": "12VHPWR:1,PCIe8:6,EPS:2"
+      },
+      "specSourceUrl": "https://www.corsair.com/us/en/p/psu/cp-9020254-na/",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Scorptec",
+          "price": 299,
+          "url": "https://www.scorptec.com.au/search/go?w=Corsair%20HX1200%20Platinum"
+        },
+        {
+          "store": "Centre Com",
+          "price": 309,
+          "url": "https://www.centrecom.com.au/search?searchterm=Corsair%20HX1200%20Platinum"
+        }
+      ]
+    },
+    {
+      "brand": "MSI",
+      "name": "MSI MAG A550BN",
+      "slug": "msi-mag-a550bn",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 550,
+        "efficiency": "80+ Bronze",
+        "modular": "Non-modular",
+        "formFactor": "ATX",
+        "connectors": "PCIe8:2,EPS:1"
+      },
+      "specSourceUrl": "https://www.msi.com/Power-Supply/MAG-A550BN",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Mwave",
+          "price": 79,
+          "url": "https://www.mwave.com.au/searchresult?w=MSI%20MAG%20A550BN"
+        },
+        {
+          "store": "PLE",
+          "price": 82,
+          "url": "https://www.ple.com.au/Catalogue/search?q=MSI%20MAG%20A550BN"
+        }
+      ]
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair SF1000  (43)",
+      "slug": "corsair-sf1000-43",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 1000,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20SF1000%20%20(43)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair RM1000x  (50)",
+      "slug": "corsair-rm1000x-50",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 1000,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20RM1000x%20%20(50)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair SF750  (43)",
+      "slug": "corsair-sf750-43",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 750,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20SF750%20%20(43)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "ASUS",
+      "name": "Asus ROG THOR 1600T Gaming",
+      "slug": "asus-rog-thor-1600t-gaming",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 1600,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Asus%20ROG%20THOR%201600T%20Gaming",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "MSI",
+      "name": "MSI MAG A850GL PCIE5",
+      "slug": "msi-mag-a850gl-pcie5",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 850,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=MSI%20MAG%20A850GL%20PCIE5",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Cooler Master",
+      "name": "Cooler Master V850 SFX GOLD",
+      "slug": "cooler-master-v850-sfx-gold",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 850,
+        "efficiency": "80+ Gold",
+        "modular": "Non",
+        "formFactor": "SFX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Cooler%20Master%20V850%20SFX%20GOLD",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "ASUS",
+      "name": "Asus ROG STRIX 1000P GAMING",
+      "slug": "asus-rog-strix-1000p-gaming",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 1000,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Asus%20ROG%20STRIX%201000P%20GAMING",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "ASUS",
+      "name": "Asus TUF Gaming 850G",
+      "slug": "asus-tuf-gaming-850g",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 850,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Asus%20TUF%20Gaming%20850G",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "ASUS",
+      "name": "Asus TUF Gaming 1000G",
+      "slug": "asus-tuf-gaming-1000g",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 1000,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Asus%20TUF%20Gaming%201000G",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "SilverStone",
+      "name": "Silverstone Extreme 500 Bronze",
+      "slug": "silverstone-extreme-500-bronze",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 500,
+        "efficiency": "80+ Bronze",
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Silverstone%20Extreme%20500%20Bronze",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Lian Li",
+      "name": "Lian Li SX1200P",
+      "slug": "lian-li-sx1200p",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 1200,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Lian%20Li%20SX1200P",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "SilverStone",
+      "name": "Silverstone FX500-G",
+      "slug": "silverstone-fx500-g",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 500,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Silverstone%20FX500-G",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "NZXT",
+      "name": "NZXT C850 Core",
+      "slug": "nzxt-c850-core",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 850,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=NZXT%20C850%20Core",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Gigabyte",
+      "name": "Gigabyte UD750GM PG5 V2",
+      "slug": "gigabyte-ud750gm-pg5-v2",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 750,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Gigabyte%20UD750GM%20PG5%20V2",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Cooler Master",
+      "name": "Cooler Master MWE Gold 750 V3",
+      "slug": "cooler-master-mwe-gold-750-v3",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 750,
+        "efficiency": "80+ Gold",
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Cooler%20Master%20MWE%20Gold%20750%20V3",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Lian Li",
+      "name": "Lian Li SP1000P",
+      "slug": "lian-li-sp1000p",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 1000,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Lian%20Li%20SP1000P",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "EVGA",
+      "name": "EVGA SuperNOVA 850 G+",
+      "slug": "evga-supernova-850-g",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 850,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=EVGA%20SuperNOVA%20850%20G%2B",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Deepcool",
+      "name": "Deepcool PF550 230V",
+      "slug": "deepcool-pf550-230v",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 550,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Deepcool%20PF550%20230V",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Gigabyte",
+      "name": "Gigabyte UD1000GM PG5",
+      "slug": "gigabyte-ud1000gm-pg5",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 1000,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Gigabyte%20UD1000GM%20PG5",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "be quiet!",
+      "name": "be quiet! Pure Power 11 FM 850",
+      "slug": "be-quiet-pure-power-11-fm-850",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 850,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=be%20quiet!%20Pure%20Power%2011%20FM%20850",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "EVGA",
+      "name": "EVGA 750 N1",
+      "slug": "evga-750-n1",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 750,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=EVGA%20750%20N1",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "EVGA",
+      "name": "EVGA 750 BP",
+      "slug": "evga-750-bp",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 750,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=EVGA%20750%20BP",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "SilverStone",
+      "name": "Silverstone SX1000R-PL",
+      "slug": "silverstone-sx1000r-pl",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 1000,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Silverstone%20SX1000R-PL",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "SilverStone",
+      "name": "Silverstone Extreme 850R Platinum",
+      "slug": "silverstone-extreme-850r-platinum",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 850,
+        "efficiency": "80+ Platinum",
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Silverstone%20Extreme%20850R%20Platinum",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Gigabyte",
+      "name": "Gigabyte AORUS P1200W",
+      "slug": "gigabyte-aorus-p1200w",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 1200,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Gigabyte%20AORUS%20P1200W",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "be quiet!",
+      "name": "be quiet! System Power 9 700 CM",
+      "slug": "be-quiet-system-power-9-700-cm",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 700,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=be%20quiet!%20System%20Power%209%20700%20CM",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "EVGA",
+      "name": "EVGA SuperNOVA 1000 G2",
+      "slug": "evga-supernova-1000-g2",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 1000,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=EVGA%20SuperNOVA%201000%20G2",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Deepcool",
+      "name": "Deepcool PN750D",
+      "slug": "deepcool-pn750d",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 750,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Deepcool%20PN750D",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "EVGA",
+      "name": "EVGA SuperNOVA 650 P2",
+      "slug": "evga-supernova-650-p2",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 650,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=EVGA%20SuperNOVA%20650%20P2",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Cooler Master",
+      "name": "Cooler Master MWE Gold 750",
+      "slug": "cooler-master-mwe-gold-750",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 750,
+        "efficiency": "80+ Gold",
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Cooler%20Master%20MWE%20Gold%20750",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Deepcool",
+      "name": "Deepcool PQ850M",
+      "slug": "deepcool-pq850m",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 850,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Deepcool%20PQ850M",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Cooler Master",
+      "name": "Cooler Master MasterWatt 550",
+      "slug": "cooler-master-masterwatt-550",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 550,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Cooler%20Master%20MasterWatt%20550",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Cooler Master",
+      "name": "Cooler Master V550 V2",
+      "slug": "cooler-master-v550-v2",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 550,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Cooler%20Master%20V550%20V2",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "SilverStone",
+      "name": "Silverstone ATTIS 650R",
+      "slug": "silverstone-attis-650r",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 650,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Silverstone%20ATTIS%20650R",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Deepcool",
+      "name": "Deepcool DA600-M",
+      "slug": "deepcool-da600-m",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 600,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Deepcool%20DA600-M",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Deepcool",
+      "name": "Deepcool PK750D",
+      "slug": "deepcool-pk750d",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 750,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Deepcool%20PK750D",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "be quiet!",
+      "name": "be quiet! Pure Power 11 FM 750",
+      "slug": "be-quiet-pure-power-11-fm-750",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 750,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=be%20quiet!%20Pure%20Power%2011%20FM%20750",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Gigabyte",
+      "name": "Gigabyte P650G (US)",
+      "slug": "gigabyte-p650g-us",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 650,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Gigabyte%20P650G%20(US)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Gigabyte",
+      "name": "Gigabyte UD1300GM PG5",
+      "slug": "gigabyte-ud1300gm-pg5",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 1300,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Gigabyte%20UD1300GM%20PG5",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "NZXT",
+      "name": "NZXT E500",
+      "slug": "nzxt-e500",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 500,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=NZXT%20E500",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Thermaltake",
+      "name": "Thermaltake Smart BX1 RGB 750",
+      "slug": "thermaltake-smart-bx1-rgb-750",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 750,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Thermaltake%20Smart%20BX1%20RGB%20750",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Cougar",
+      "name": "Cougar BXM750",
+      "slug": "cougar-bxm750",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 750,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Cougar%20BXM750",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "be quiet!",
+      "name": "be quiet! Straight Power 11 1000W",
+      "slug": "be-quiet-straight-power-11-1000w",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 1000,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=be%20quiet!%20Straight%20Power%2011%201000W",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "NZXT",
+      "name": "NZXT C750",
+      "slug": "nzxt-c750",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 750,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=NZXT%20C750",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "be quiet!",
+      "name": "be quiet! Pure Power 11 FM 550",
+      "slug": "be-quiet-pure-power-11-fm-550",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 550,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=be%20quiet!%20Pure%20Power%2011%20FM%20550",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Thermaltake",
+      "name": "Thermaltake Toughpower SFX 600W Gold",
+      "slug": "thermaltake-toughpower-sfx-600w-gold",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 600,
+        "efficiency": "80+ Gold",
+        "modular": "Non",
+        "formFactor": "SFX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Thermaltake%20Toughpower%20SFX%20600W%20Gold",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "FSP",
+      "name": "FSP Group AURUM S 400W",
+      "slug": "fsp-group-aurum-s-400w",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 400,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=FSP%20Group%20AURUM%20S%20400W",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Seasonic",
+      "name": "SeaSonic SS-850HT Silver",
+      "slug": "seasonic-ss-850ht-silver",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 850,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=SeaSonic%20SS-850HT%20Silver",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Cougar",
+      "name": "Cougar BXM700",
+      "slug": "cougar-bxm700",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 700,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Cougar%20BXM700",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Seasonic",
+      "name": "SeaSonic PRIME Ultra Platinum 650",
+      "slug": "seasonic-prime-ultra-platinum-650",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 650,
+        "efficiency": "80+ Platinum",
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=SeaSonic%20PRIME%20Ultra%20Platinum%20650",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Seasonic",
+      "name": "SeaSonic Snow Silent 1050",
+      "slug": "seasonic-snow-silent-1050",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 1050,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=SeaSonic%20Snow%20Silent%201050",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Thermaltake",
+      "name": "Thermaltake Toughpower iRGB PLUS 1200 Platinum",
+      "slug": "thermaltake-toughpower-irgb-plus-1200-platinum",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 1200,
+        "efficiency": "80+ Platinum",
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Thermaltake%20Toughpower%20iRGB%20PLUS%201200%20Platinum",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "FSP",
+      "name": "FSP Group FSP450-60GHS-R (3)",
+      "slug": "fsp-group-fsp450-60ghs-r-3",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 450,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=FSP%20Group%20FSP450-60GHS-R%20(3)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Super Flower",
+      "name": "Super Flower SF-1200F14MP Black",
+      "slug": "super-flower-sf-1200f14mp-black",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 1200,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Super%20Flower%20SF-1200F14MP%20Black",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Seasonic",
+      "name": "SeaSonic PRIME Ultra Gold 1000",
+      "slug": "seasonic-prime-ultra-gold-1000",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 1000,
+        "efficiency": "80+ Gold",
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=SeaSonic%20PRIME%20Ultra%20Gold%201000",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Thermaltake",
+      "name": "Thermaltake Toughpower Grand RGB 650 SE",
+      "slug": "thermaltake-toughpower-grand-rgb-650-se",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 650,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Thermaltake%20Toughpower%20Grand%20RGB%20650%20SE",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "FSP",
+      "name": "FSP Group Raider 750",
+      "slug": "fsp-group-raider-750",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 750,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=FSP%20Group%20Raider%20750",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "FSP",
+      "name": "FSP Group Raider 550",
+      "slug": "fsp-group-raider-550",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 550,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=FSP%20Group%20Raider%20550",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Thermaltake",
+      "name": "Thermaltake Toughpower GX1 500",
+      "slug": "thermaltake-toughpower-gx1-500",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 500,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Thermaltake%20Toughpower%20GX1%20500",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "NZXT",
+      "name": "NZXT E650",
+      "slug": "nzxt-e650",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 650,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=NZXT%20E650",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Cougar",
+      "name": "Cougar COUGAR-1000CMX",
+      "slug": "cougar-cougar-1000cmx",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 1000,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Cougar%20COUGAR-1000CMX",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Seasonic",
+      "name": "SeaSonic 750FX WHITE",
+      "slug": "seasonic-750fx-white",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 750,
+        "efficiency": "80+ White",
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=SeaSonic%20750FX%20WHITE",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "NZXT",
+      "name": "NZXT HALE90 V2 1000W",
+      "slug": "nzxt-hale90-v2-1000w",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 1000,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=NZXT%20HALE90%20V2%201000W",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "FSP",
+      "name": "FSP Group Raider S 450",
+      "slug": "fsp-group-raider-s-450",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 450,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=FSP%20Group%20Raider%20S%20450",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Cougar",
+      "name": "Cougar COUGAR-GX1050",
+      "slug": "cougar-cougar-gx1050",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 1050,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Cougar%20COUGAR-GX1050",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Super Flower",
+      "name": "Super Flower SF-1200F14MP White",
+      "slug": "super-flower-sf-1200f14mp-white",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 1200,
+        "efficiency": "80+ White",
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Super%20Flower%20SF-1200F14MP%20White",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Cougar",
+      "name": "Cougar LX500",
+      "slug": "cougar-lx500",
+      "imageUrl": null,
+      "specs": {
+        "wattage": 500,
+        "modular": "Non",
+        "formFactor": "ATX"
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Cougar%20LX500",
+      "unknownFields": [],
+      "prices": []
+    }
+  ]
+}

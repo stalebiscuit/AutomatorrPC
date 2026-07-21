@@ -1,5 +1,5 @@
 import { Schema, model, type InferSchemaType, type Model } from 'mongoose';
-import { CATEGORIES } from '@automatorr/shared';
+import { BUILDER_CATEGORIES } from '@automatorr/shared';
 
 const PriceQuoteSchema = new Schema(
   {
@@ -33,11 +33,12 @@ const ProvenanceSchema = new Schema(
 
 const ComponentSchema = new Schema(
   {
-    category: { type: String, enum: [...CATEGORIES], required: true },
+    category: { type: String, enum: [...BUILDER_CATEGORIES], required: true },
     brand: { type: String, required: true },
     name: { type: String, required: true },
     slug: { type: String, required: true },
     imageUrl: { type: String, default: null },
+    gtin: { type: String, default: null },
     // Heterogeneous per-category specs (spec §11) — stored as a free-form map.
     specs: { type: Schema.Types.Mixed, required: true, default: {} },
     benchmark: { type: BenchmarkSchema, required: true },

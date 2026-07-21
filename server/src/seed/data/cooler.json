@@ -1,0 +1,1098 @@
+{
+  "category": "cooler",
+  "components": [
+    {
+      "brand": "Noctua",
+      "name": "Noctua NH-D15 chromax.black",
+      "slug": "noctua-nh-d15-chromax-black",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "height": 165,
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "tdpRating": 220,
+        "noiseDb": 24.6,
+        "color": "Black"
+      },
+      "specSourceUrl": "https://noctua.at/en/nh-d15-chromax-black",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Mwave",
+          "price": 159,
+          "url": "https://www.mwave.com.au/searchresult?w=Noctua%20NH-D15%20chromax.black"
+        },
+        {
+          "store": "Scorptec",
+          "price": 165,
+          "url": "https://www.scorptec.com.au/search/go?w=Noctua%20NH-D15%20chromax.black"
+        },
+        {
+          "store": "Centre Com",
+          "price": 169,
+          "url": "https://www.centrecom.com.au/search?searchterm=Noctua%20NH-D15%20chromax.black"
+        }
+      ]
+    },
+    {
+      "brand": "Thermalright",
+      "name": "Thermalright Peerless Assassin 120 SE",
+      "slug": "thermalright-peerless-assassin-120-se",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "height": 157,
+        "socketSupport": "AM5,AM4,LGA1700,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "tdpRating": 245,
+        "noiseDb": 25.6,
+        "color": "Black / Silver"
+      },
+      "specSourceUrl": "https://www.thermalright.com/product/peerless-assassin-120-se/",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Mwave",
+          "price": 65,
+          "url": "https://www.mwave.com.au/searchresult?w=Thermalright%20Peerless%20Assassin%20120%20SE"
+        },
+        {
+          "store": "PLE",
+          "price": 69,
+          "url": "https://www.ple.com.au/Catalogue/search?q=Thermalright%20Peerless%20Assassin%20120%20SE"
+        }
+      ]
+    },
+    {
+      "brand": "DeepCool",
+      "name": "DeepCool AK400",
+      "slug": "deepcool-ak400",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "height": 155,
+        "socketSupport": "AM5,AM4,LGA1700,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "tdpRating": 220,
+        "noiseDb": 29,
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.deepcool.com/products/Cooling/cpuaircoolers/AK400-Performance-CPU-Cooler/",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Scorptec",
+          "price": 59,
+          "url": "https://www.scorptec.com.au/search/go?w=DeepCool%20AK400"
+        },
+        {
+          "store": "Centre Com",
+          "price": 62,
+          "url": "https://www.centrecom.com.au/search?searchterm=DeepCool%20AK400"
+        }
+      ]
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair iCUE H100i RGB Elite",
+      "slug": "corsair-icue-h100i-rgb-elite",
+      "imageUrl": null,
+      "specs": {
+        "type": "aio",
+        "radiatorSize": 240,
+        "socketSupport": "AM5,AM4,LGA1700,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "tdpRating": 250,
+        "noiseDb": 36,
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.corsair.com/us/en/p/cpu-coolers/cw-9060058-ww/",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Mwave",
+          "price": 179,
+          "url": "https://www.mwave.com.au/searchresult?w=Corsair%20iCUE%20H100i%20RGB%20Elite"
+        },
+        {
+          "store": "Scorptec",
+          "price": 185,
+          "url": "https://www.scorptec.com.au/search/go?w=Corsair%20iCUE%20H100i%20RGB%20Elite"
+        }
+      ]
+    },
+    {
+      "brand": "Arctic",
+      "name": "Arctic Liquid Freezer III 360",
+      "slug": "arctic-liquid-freezer-iii-360",
+      "imageUrl": null,
+      "specs": {
+        "type": "aio",
+        "radiatorSize": 360,
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "tdpRating": 300,
+        "noiseDb": 22.5,
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.arctic.de/en/Liquid-Freezer-III-360/ACFRE00136A",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "PLE",
+          "price": 199,
+          "url": "https://www.ple.com.au/Catalogue/search?q=Arctic%20Liquid%20Freezer%20III%20360"
+        },
+        {
+          "store": "Centre Com",
+          "price": 205,
+          "url": "https://www.centrecom.com.au/search?searchterm=Arctic%20Liquid%20Freezer%20III%20360"
+        }
+      ]
+    },
+    {
+      "brand": "AMD",
+      "name": "AMD Wraith Stealth",
+      "slug": "amd-wraith-stealth",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "height": 54,
+        "socketSupport": "AM4",
+        "tdpRating": 65,
+        "noiseDb": 38,
+        "color": "Black"
+      },
+      "specSourceUrl": "https://www.amd.com/en/products/thermal-solutions",
+      "unknownFields": [],
+      "prices": [
+        {
+          "store": "Amazon",
+          "price": 35,
+          "url": "https://www.amazon.com.au/s?k=AMD%20Wraith%20Stealth"
+        }
+      ]
+    },
+    {
+      "brand": "Arctic",
+      "name": "ARCTIC Liquid Freezer III Pro 360",
+      "slug": "arctic-liquid-freezer-iii-pro-360",
+      "imageUrl": null,
+      "specs": {
+        "type": "aio",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "radiatorSize": 360
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=ARCTIC%20Liquid%20Freezer%20III%20Pro%20360",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Cooler Master",
+      "name": "Cooler Master Hyper 212 Black Edition",
+      "slug": "cooler-master-hyper-212-black-edition",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Cooler%20Master%20Hyper%20212%20Black%20Edition",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Thermalright",
+      "name": "Thermalright Aqua Elite V3",
+      "slug": "thermalright-aqua-elite-v3",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Thermalright%20Aqua%20Elite%20V3",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair NAUTILUS 360 RS ARGB",
+      "slug": "corsair-nautilus-360-rs-argb",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20NAUTILUS%20360%20RS%20ARGB",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Thermalright",
+      "name": "Thermalright Phantom Spirit 120 SE ARGB",
+      "slug": "thermalright-phantom-spirit-120-se-argb",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Thermalright%20Phantom%20Spirit%20120%20SE%20ARGB",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Arctic",
+      "name": "ARCTIC Liquid Freezer III Pro A-RGB 360",
+      "slug": "arctic-liquid-freezer-iii-pro-a-rgb-360",
+      "imageUrl": null,
+      "specs": {
+        "type": "aio",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "radiatorSize": 360
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=ARCTIC%20Liquid%20Freezer%20III%20Pro%20A-RGB%20360",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Thermalright",
+      "name": "Thermalright Assassin X 120 Refined SE",
+      "slug": "thermalright-assassin-x-120-refined-se",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Thermalright%20Assassin%20X%20120%20Refined%20SE",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Thermalright",
+      "name": "Thermalright Phantom Spirit 120 SE",
+      "slug": "thermalright-phantom-spirit-120-se",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Thermalright%20Phantom%20Spirit%20120%20SE",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "be quiet!",
+      "name": "be quiet! Dark Rock Pro 5",
+      "slug": "be-quiet-dark-rock-pro-5",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=be%20quiet!%20Dark%20Rock%20Pro%205",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "NZXT",
+      "name": "NZXT Kraken Elite 360 RGB",
+      "slug": "nzxt-kraken-elite-360-rgb",
+      "imageUrl": null,
+      "specs": {
+        "type": "aio",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "radiatorSize": 360
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=NZXT%20Kraken%20Elite%20360%20RGB%20%20(11)",
+      "unknownFields": [],
+      "prices": [],
+      "gtin": null
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair iCUE LINK TITAN 360 RX LCD",
+      "slug": "corsair-icue-link-titan-360-rx-lcd",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20iCUE%20LINK%20TITAN%20360%20RX%20LCD",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Noctua",
+      "name": "Noctua NH-L9A-AM5 CHROMAX.BLACK",
+      "slug": "noctua-nh-l9a-am5-chromax-black",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Noctua%20NH-L9A-AM5%20CHROMAX.BLACK",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Arctic",
+      "name": "ARCTIC Freezer 36",
+      "slug": "arctic-freezer-36",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=ARCTIC%20Freezer%2036",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair NAUTILUS 360 RS LCD",
+      "slug": "corsair-nautilus-360-rs-lcd",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20NAUTILUS%20360%20RS%20LCD",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Arctic",
+      "name": "ARCTIC Liquid Freezer III Pro",
+      "slug": "arctic-liquid-freezer-iii-pro",
+      "imageUrl": null,
+      "specs": {
+        "type": "aio",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "radiatorSize": 360
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=ARCTIC%20Liquid%20Freezer%20III%20Pro",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Cooler Master",
+      "name": "Cooler Master Hyper 212 Spectrum V3",
+      "slug": "cooler-master-hyper-212-spectrum-v3",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Cooler%20Master%20Hyper%20212%20Spectrum%20V3",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Lian Li",
+      "name": "Lian Li Hydroshift II LCD-S 360 TL",
+      "slug": "lian-li-hydroshift-ii-lcd-s-360-tl",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Lian%20Li%20Hydroshift%20II%20LCD-S%20360%20TL",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Cooler Master",
+      "name": "Cooler Master Hyper 212 RGB Black Edition",
+      "slug": "cooler-master-hyper-212-rgb-black-edition",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Cooler%20Master%20Hyper%20212%20RGB%20Black%20Edition",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "NZXT",
+      "name": "NZXT Kraken Elite 360  (14)",
+      "slug": "nzxt-kraken-elite-360-14",
+      "imageUrl": null,
+      "specs": {
+        "type": "aio",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "radiatorSize": 360
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=NZXT%20Kraken%20Elite%20360%20%20(14)",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "NZXT",
+      "name": "NZXT Kraken 240",
+      "slug": "nzxt-kraken-240",
+      "imageUrl": null,
+      "specs": {
+        "type": "aio",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "radiatorSize": 240
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=NZXT%20Kraken%20240",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Noctua",
+      "name": "Noctua NH-D15 G2 chromax.black",
+      "slug": "noctua-nh-d15-g2-chromax-black",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Noctua%20NH-D15%20G2%20chromax.black",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair NAUTILUS 240 RS ARGB",
+      "slug": "corsair-nautilus-240-rs-argb",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20NAUTILUS%20240%20RS%20ARGB",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Noctua",
+      "name": "Noctua NH-L9x65 chromax.black",
+      "slug": "noctua-nh-l9x65-chromax-black",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Noctua%20NH-L9x65%20chromax.black",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Cooler Master",
+      "name": "Cooler Master MasterLiquid 360L Core ARGB",
+      "slug": "cooler-master-masterliquid-360l-core-argb",
+      "imageUrl": null,
+      "specs": {
+        "type": "aio",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "radiatorSize": 360
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Cooler%20Master%20MasterLiquid%20360L%20Core%20ARGB",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "be quiet!",
+      "name": "be quiet! Pure Rock 3",
+      "slug": "be-quiet-pure-rock-3",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=be%20quiet!%20Pure%20Rock%203",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Lian Li",
+      "name": "Lian Li Hydroshift LCD 360S",
+      "slug": "lian-li-hydroshift-lcd-360s",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Lian%20Li%20Hydroshift%20LCD%20360S",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Corsair",
+      "name": "Corsair NAUTILUS 360 RS",
+      "slug": "corsair-nautilus-360-rs",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Corsair%20NAUTILUS%20360%20RS",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "be quiet!",
+      "name": "be quiet! Pure Rock Pro 3",
+      "slug": "be-quiet-pure-rock-pro-3",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=be%20quiet!%20Pure%20Rock%20Pro%203",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "be quiet!",
+      "name": "be quiet! Silent Loop 3",
+      "slug": "be-quiet-silent-loop-3",
+      "imageUrl": null,
+      "specs": {
+        "type": "aio",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "radiatorSize": 360
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=be%20quiet!%20Silent%20Loop%203",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "MSI",
+      "name": "MSI MAG CORELIQUID A13",
+      "slug": "msi-mag-coreliquid-a13",
+      "imageUrl": null,
+      "specs": {
+        "type": "aio",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "radiatorSize": 360
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=MSI%20MAG%20CORELIQUID%20A13",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Noctua",
+      "name": "Noctua NH-U12A chromax.black",
+      "slug": "noctua-nh-u12a-chromax-black",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Noctua%20NH-U12A%20chromax.black",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "NZXT",
+      "name": "NZXT Kraken Plus 240",
+      "slug": "nzxt-kraken-plus-240",
+      "imageUrl": null,
+      "specs": {
+        "type": "aio",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "radiatorSize": 240
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=NZXT%20Kraken%20Plus%20240",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Lian Li",
+      "name": "Lian Li Hydroshift II LCD-S 360 CL",
+      "slug": "lian-li-hydroshift-ii-lcd-s-360-cl",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Lian%20Li%20Hydroshift%20II%20LCD-S%20360%20CL",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Arctic",
+      "name": "ARCTIC Liquid Freezer II 420 RGB",
+      "slug": "arctic-liquid-freezer-ii-420-rgb",
+      "imageUrl": null,
+      "specs": {
+        "type": "aio",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "radiatorSize": 420
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=ARCTIC%20Liquid%20Freezer%20II%20420%20RGB",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Thermaltake",
+      "name": "Thermaltake MeOrb II",
+      "slug": "thermaltake-meorb-ii",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Thermaltake%20MeOrb%20II",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Lian Li",
+      "name": "Lian Li HydroShift II OLED Curved 360TL",
+      "slug": "lian-li-hydroshift-ii-oled-curved-360tl",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Lian%20Li%20HydroShift%20II%20OLED%20Curved%20360TL",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Cooler Master",
+      "name": "Cooler Master Hyper 212 Pro",
+      "slug": "cooler-master-hyper-212-pro",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Cooler%20Master%20Hyper%20212%20Pro",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Lian Li",
+      "name": "Lian Li Galahad II Trinity SL-INF",
+      "slug": "lian-li-galahad-ii-trinity-sl-inf",
+      "imageUrl": null,
+      "specs": {
+        "type": "aio",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "radiatorSize": 360
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Lian%20Li%20Galahad%20II%20Trinity%20SL-INF",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "be quiet!",
+      "name": "be quiet! Dark Rock Pro 6",
+      "slug": "be-quiet-dark-rock-pro-6",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=be%20quiet!%20Dark%20Rock%20Pro%206",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Thermaltake",
+      "name": "Thermaltake Gravity A2",
+      "slug": "thermaltake-gravity-a2",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Thermaltake%20Gravity%20A2",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Thermaltake",
+      "name": "Thermaltake UX400 RGB",
+      "slug": "thermaltake-ux400-rgb",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Thermaltake%20UX400%20RGB",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "MSI",
+      "name": "MSI MAG CORELIQUID A15",
+      "slug": "msi-mag-coreliquid-a15",
+      "imageUrl": null,
+      "specs": {
+        "type": "aio",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "radiatorSize": 360
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=MSI%20MAG%20CORELIQUID%20A15",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Deepcool",
+      "name": "Deepcool AK620 DIGITAL",
+      "slug": "deepcool-ak620-digital",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Deepcool%20AK620%20DIGITAL",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Deepcool",
+      "name": "Deepcool MYSTIQUE 360",
+      "slug": "deepcool-mystique-360",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Deepcool%20MYSTIQUE%20360",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Scythe",
+      "name": "Scythe Fuma 3",
+      "slug": "scythe-fuma-3",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Scythe%20Fuma%203",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "ID-COOLING",
+      "name": "ID-COOLING FROSTFLOW X",
+      "slug": "id-cooling-frostflow-x",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=ID-COOLING%20FROSTFLOW%20X",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Deepcool",
+      "name": "Deepcool LE720",
+      "slug": "deepcool-le720",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Deepcool%20LE720",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Thermaltake",
+      "name": "Thermaltake Contact 9 SE",
+      "slug": "thermaltake-contact-9-se",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Thermaltake%20Contact%209%20SE",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "ENDORFY",
+      "name": "ENDORFY Spartan 5",
+      "slug": "endorfy-spartan-5",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=ENDORFY%20Spartan%205",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Deepcool",
+      "name": "Deepcool AK400 DIGITAL",
+      "slug": "deepcool-ak400-digital",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Deepcool%20AK400%20DIGITAL",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Scythe",
+      "name": "Scythe Mugen 5 Rev. B",
+      "slug": "scythe-mugen-5-rev-b",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Scythe%20Mugen%205%20Rev.%20B",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Thermaltake",
+      "name": "Thermaltake TH360 V2 ARGB Sync",
+      "slug": "thermaltake-th360-v2-argb-sync",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Thermaltake%20TH360%20V2%20ARGB%20Sync",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Scythe",
+      "name": "Scythe Mugen 6 Dual Fan",
+      "slug": "scythe-mugen-6-dual-fan",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Scythe%20Mugen%206%20Dual%20Fan",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "MSI",
+      "name": "MSI MPG CORELIQUID P13",
+      "slug": "msi-mpg-coreliquid-p13",
+      "imageUrl": null,
+      "specs": {
+        "type": "aio",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "radiatorSize": 360
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=MSI%20MPG%20CORELIQUID%20P13",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "ENDORFY",
+      "name": "ENDORFY Fera 5",
+      "slug": "endorfy-fera-5",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=ENDORFY%20Fera%205",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Scythe",
+      "name": "Scythe Kotetsu Mark 3",
+      "slug": "scythe-kotetsu-mark-3",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Scythe%20Kotetsu%20Mark%203",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "ID-COOLING",
+      "name": "ID-COOLING FX360 INF",
+      "slug": "id-cooling-fx360-inf",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=ID-COOLING%20FX360%20INF",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "ID-COOLING",
+      "name": "ID-COOLING IS-67-XT",
+      "slug": "id-cooling-is-67-xt",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=ID-COOLING%20IS-67-XT",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "Scythe",
+      "name": "Scythe Mugen 6",
+      "slug": "scythe-mugen-6",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=Scythe%20Mugen%206",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "MSI",
+      "name": "MSI MAG CORELIQUID I360",
+      "slug": "msi-mag-coreliquid-i360",
+      "imageUrl": null,
+      "specs": {
+        "type": "aio",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "radiatorSize": 360
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=MSI%20MAG%20CORELIQUID%20I360",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "ID-COOLING",
+      "name": "ID-COOLING FX360 PRO",
+      "slug": "id-cooling-fx360-pro",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=ID-COOLING%20FX360%20PRO",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "ENDORFY",
+      "name": "ENDORFY Fera 5 Dual Fan",
+      "slug": "endorfy-fera-5-dual-fan",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=ENDORFY%20Fera%205%20Dual%20Fan",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "ID-COOLING",
+      "name": "ID-COOLING FX240 PRO",
+      "slug": "id-cooling-fx240-pro",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=ID-COOLING%20FX240%20PRO",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "MSI",
+      "name": "MSI MAG COREFROZR AA13",
+      "slug": "msi-mag-corefrozr-aa13",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=MSI%20MAG%20COREFROZR%20AA13",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "ENDORFY",
+      "name": "ENDORFY Spartan 5 ARGB",
+      "slug": "endorfy-spartan-5-argb",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=ENDORFY%20Spartan%205%20ARGB",
+      "unknownFields": [],
+      "prices": []
+    },
+    {
+      "brand": "ENDORFY",
+      "name": "ENDORFY Navis F360 ARGB",
+      "slug": "endorfy-navis-f360-argb",
+      "imageUrl": null,
+      "specs": {
+        "type": "air",
+        "socketSupport": "AM5,AM4,LGA1700,LGA1851,LGA1200,LGA1150,LGA1151,LGA1155,LGA2066,AM3+,LGA2011-v3",
+        "height": 158
+      },
+      "specSourceUrl": "https://www.mwave.com.au/search?q=ENDORFY%20Navis%20F360%20ARGB",
+      "unknownFields": [],
+      "prices": []
+    }
+  ]
+}

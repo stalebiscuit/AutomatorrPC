@@ -17,7 +17,13 @@
     "test": "npm run test --workspace shared --if-present && npm run test --workspace server --if-present && npm run test --workspace client --if-present",
     "seed": "npm run seed --workspace server",
     "scrape": "npm run scrape --workspace server",
-    "rollups": "npm run rollups --workspace server"
+    "rollups": "npm run rollups --workspace server",
+    "icecat:enrich": "npm run icecat:enrich --workspace server",
+    "icecat:diagnose": "npm run icecat:diagnose --workspace server",
+    "catalog:check": "npm run catalog:check --workspace server && npm run db8:audit --workspace server -- --seed --ci",
+    "db:reset": "npm run db:reset --workspace server",
+    "db8:audit": "npm run db8:audit --workspace server",
+    "db8:fix": "npm run db8:fix --workspace server"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",

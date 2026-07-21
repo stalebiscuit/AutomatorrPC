@@ -1,9 +1,9 @@
 import { describe, it, expect } from 'vitest';
-import type { Component, Category, PriceQuote, Specs } from '@automatorr/shared';
+import type { Component, CompareCategory, PriceQuote, Specs } from '@automatorr/shared';
 import { compare } from '../src/services/compare.js';
 
 function comp(
-  category: Category,
+  category: CompareCategory,
   slug: string,
   performanceIndex: number,
   specs: Specs,
@@ -75,12 +75,13 @@ describe('compare() — CPU flagship (UB-faithful: Intel wins)', () => {
     expect(scorecard.tally).toEqual({ a: 4, b: 4, total: 8 });
   });
 
-  it('builds up to 3 signed decisive deltas from the winner POV', () => {
+  it('builds up to 4 signed decisive deltas from the winner POV', () => {
     const { scorecard } = compare(intel, amd);
     const labels = scorecard.deltas.map((d) => d.label);
-    expect(labels).toEqual(['PERFORMANCE', 'PRICE', 'POWER']);
+    expect(labels).toEqual(['PERFORMANCE', 'CACHE', 'POWER', 'PRICE']);
     expect(scorecard.deltas[0]?.value.startsWith('+')).toBe(true); // perf higher
-    expect(scorecard.deltas[1]?.value).toContain('$190'); // 549 - 359
+    const price = scorecard.deltas.find((d) => d.label === 'PRICE');
+    expect(price?.value).toContain('$190'); // 549 - 359
   });
 
   it('derives tags the winner actually earns', () => {
@@ -159,5 +160,27 @@ describe('compare() — edge cases', () => {
     const a = comp('cpu', 'a', 1000, specs, [price('S', 400)]);
     const b = comp('cpu', 'b', 1000, specs, [price('S', 300)]);
     expect(compare(a, b).scorecard.winnerSlug).toBe('b');
+  });
+});
+
+describe('compare — non-benchmarked categories (cooler/case/psu/monitor)', () => {
+  it('decides a cooler winner by counted spec fields, not the (absent) index', () => {
+    // Both have performanceIndex 0; A leads cooling + noise → A should win.
+    const a = comp('cooler', 'cool-a', 0, { type: 'aio', tdpRating: 300, noiseDb: 20, socketSupport: 'AM5,LGA1700' }, [price('Mwave', 160)]);
+    const b = comp('cooler', 'cool-b', 0, { type: 'air', tdpRating: 220, noiseDb: 28, socketSupport: 'AM5,LGA1700' }, [price('Mwave', 90)]);
+    const r = compare(a, b);
+    expect(r.category).toBe('cooler');
+    expect(r.scorecard.winnerSlug).toBe('cool-a');
+    expect(r.scorecard.tally.a).toBeGreaterThan(r.scorecard.tally.b);
+    // No performance-index row for a non-benchmarked category.
+    expect(r.rows.some((row) => row.key === 'performanceIndex')).toBe(false);
+  });
+
+  it('compares monitors on refresh + size', () => {
+    const a = comp('monitor', 'mon-a', 0, { resolution: '2560x1440', refreshHz: 240, size: 27, panelType: 'IPS' }, [price('Mwave', 400)]);
+    const b = comp('monitor', 'mon-b', 0, { resolution: '1920x1080', refreshHz: 165, size: 24, panelType: 'VA' }, [price('Mwave', 250)]);
+    const r = compare(a, b);
+    expect(r.scorecard.winnerSlug).toBe('mon-a');
+    expect(r.scorecard.tags).toContain('High refresh');
   });
 });

@@ -1,11 +1,11 @@
 import { Schema, model, type InferSchemaType, type Model } from 'mongoose';
-import { CATEGORIES } from '@automatorr/shared';
+import { COMPARE_CATEGORIES } from '@automatorr/shared';
 
 /** Append-only search/view stream (spec §6). No PII — sessionId is anonymous. */
 const SearchEventSchema = new Schema(
   {
     type: { type: String, enum: ['search', 'view'], required: true },
-    category: { type: String, enum: [...CATEGORIES], required: true },
+    category: { type: String, enum: [...COMPARE_CATEGORIES], required: true },
     componentId: { type: String },
     pairKey: { type: String },
     query: { type: String },

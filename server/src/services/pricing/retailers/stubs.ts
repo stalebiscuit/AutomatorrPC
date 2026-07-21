@@ -8,6 +8,7 @@ import { type RetailerAdapter, searchQuery } from './types.js';
  */
 export const amazonAu: RetailerAdapter = {
   store: 'Amazon',
+  disabled: true, // stub → PA-API later
   domain: 'www.amazon.com.au',
   buildSearchUrl(c: Component): string {
     return `https://www.amazon.com.au/s?k=${encodeURIComponent(searchQuery(c))}`;
@@ -19,6 +20,7 @@ export const amazonAu: RetailerAdapter = {
 
 export const centreCom: RetailerAdapter = {
   store: 'Centre Com',
+  disabled: true, // stub → not implemented
   domain: 'www.centrecom.com.au',
   buildSearchUrl(c: Component): string {
     return `https://www.centrecom.com.au/catalogsearch/result/?q=${encodeURIComponent(searchQuery(c))}`;

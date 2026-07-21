@@ -8,6 +8,7 @@ import type {
   SpecValue,
   StorageSubtype,
 } from '@automatorr/shared';
+import { isComparableCategory } from '@automatorr/shared';
 import { getCompareConfig, type CompareField, type DeltaFormat } from './compareConfig.js';
 
 const MINUS = '−'; // typographic minus, matches the mockup
@@ -19,12 +20,21 @@ const DELTA_LABELS: Record<string, string> = {
   performanceIndex: 'PERFORMANCE',
   price: 'PRICE',
   pricePerTB: '$/TB',
+  l3Cache: 'CACHE',
+  vram: 'VRAM',
   tdp: 'POWER',
   tbp: 'POWER',
   speedMTs: 'SPEED',
   capacity: 'CAPACITY',
   seqRead: 'READ',
   seqWrite: 'WRITE',
+  tdpRating: 'COOLING',
+  noiseDb: 'NOISE',
+  wattage: 'WATTAGE',
+  maxGpuLength: 'GPU CLEARANCE',
+  maxCoolerHeight: 'COOLER CLEARANCE',
+  refreshHz: 'REFRESH',
+  size: 'SIZE',
 };
 
 function subtypeOf(c: Component): StorageSubtype | undefined {
@@ -97,10 +107,14 @@ export function compare(a: Component, b: Component): CompareResult {
   if (a.category !== b.category) {
     throw new Error(`Cannot compare across categories: ${a.category} vs ${b.category}`);
   }
-  const cfg = getCompareConfig(a.category);
+  const category = a.category;
+  if (!isComparableCategory(category)) {
+    throw new Error(`Category "${category}" is not comparable`);
+  }
+  const cfg = getCompareConfig(category);
   const subA = subtypeOf(a);
   const subB = subtypeOf(b);
-  const crossSubtype = a.category === 'storage' && !!subA && !!subB && subA !== subB;
+  const crossSubtype = category === 'storage' && !!subA && !!subB && subA !== subB;
 
   const rows: CompareRow[] = [];
   for (const field of cfg.fields) {
@@ -133,7 +147,7 @@ export function compare(a: Component, b: Component): CompareResult {
   }
 
   // Winner — higher performanceIndex; tie-break lower best-price then index (spec §3).
-  const winner = pickWinner(a, b);
+  const winner = pickWinner(a, b, tallyA, tallyB);
   const winnerComp = winner === 'a' ? a : b;
   const loserComp = winner === 'a' ? b : a;
 
@@ -149,13 +163,16 @@ export function compare(a: Component, b: Component): CompareResult {
     crossSubtype,
   };
 
-  return { category: a.category, a, b, rows, scorecard };
+  return { category, a, b, rows, scorecard };
 }
 
-function pickWinner(a: Component, b: Component): Side {
+function pickWinner(a: Component, b: Component, tallyA = 0, tallyB = 0): Side {
   if (a.performanceIndex !== b.performanceIndex) {
     return a.performanceIndex > b.performanceIndex ? 'a' : 'b';
   }
+  // No performance index to separate them (e.g. cooler/case/psu/monitor):
+  // decide on who leads more counted spec fields.
+  if (tallyA !== tallyB) return tallyA > tallyB ? 'a' : 'b';
   const pa = bestPrice(a);
   const pb = bestPrice(b);
   if (pa !== null && pb !== null && pa !== pb) return pa < pb ? 'a' : 'b';
@@ -180,7 +197,7 @@ function buildDeltas(
     if (typeof w !== 'number' || typeof l !== 'number') continue;
     const delta = formatDelta(field.deltaFormat ?? 'absolute', field, w, l);
     if (delta) out.push({ label: DELTA_LABELS[key] ?? field.label.toUpperCase(), value: delta });
-    if (out.length === 3) break;
+    if (out.length === 4) break;
   }
   return out;
 }

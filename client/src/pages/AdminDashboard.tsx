@@ -7,13 +7,18 @@ import { TopBar } from '../components/TopBar.js';
 import { SectionHead } from '../components/Eyebrow.js';
 import { TrendChart } from '../components/TrendChart.js';
 import { TopList } from '../components/TopList.js';
+import { StoreStats } from '../components/StoreStats.js';
+import { BuilderDashboard } from '../components/BuilderDashboard.js';
 import { RecentEvents } from '../components/RecentEvents.js';
+import { AffiliateLinksModal } from '../components/admin/AffiliateLinksModal.js';
 
 const WINDOWS: AnalyticsWindow[] = ['day', 'week', 'month'];
 
 export function AdminDashboard() {
   const navigate = useNavigate();
   const [window, setWindow] = useState<AnalyticsWindow>('week');
+  const [view, setView] = useState<'compare' | 'builder'>('compare');
+  const [showAffiliates, setShowAffiliates] = useState(false);
 
   const analyticsQ = useQuery({
     queryKey: ['analytics', window],
@@ -41,6 +46,31 @@ export function AdminDashboard() {
       <div className="admin-head">
         <h1 className="admin-title">Analytics</h1>
         <div style={{ display: 'flex', gap: 14, alignItems: 'center' }}>
+          <div className="win-toggle" role="group" aria-label="Dashboard">
+            <button
+              type="button"
+              className={view === 'compare' ? 'on' : ''}
+              aria-pressed={view === 'compare'}
+              onClick={() => setView('compare')}
+            >
+              compare
+            </button>
+            <button
+              type="button"
+              className={view === 'builder' ? 'on' : ''}
+              aria-pressed={view === 'builder'}
+              onClick={() => setView('builder')}
+            >
+              pc builder
+            </button>
+          </div>
+          <button
+            type="button"
+            className="admin-link"
+            onClick={() => setShowAffiliates(true)}
+          >
+            AFFILIATE LINKS
+          </button>
           <div className="win-toggle" role="group" aria-label="Time window">
             {WINDOWS.map((w) => (
               <button
@@ -60,14 +90,18 @@ export function AdminDashboard() {
         </div>
       </div>
 
-      {analyticsQ.isLoading && <div className="state">Loading analytics…</div>}
-      {analyticsQ.isError && !(analyticsQ.error instanceof ApiClientError && analyticsQ.error.status === 401) && (
-        <div className="state error" role="alert">
-          Could not load analytics.
-        </div>
-      )}
+      {view === 'builder' && <BuilderDashboard window={window} />}
 
-      {a && (
+      {view === 'compare' && analyticsQ.isLoading && <div className="state">Loading analytics…</div>}
+      {view === 'compare' &&
+        analyticsQ.isError &&
+        !(analyticsQ.error instanceof ApiClientError && analyticsQ.error.status === 401) && (
+          <div className="state error" role="alert">
+            Could not load analytics.
+          </div>
+        )}
+
+      {view === 'compare' && a && (
         <>
           <div className="kpis">
             <div className="kpi">
@@ -91,7 +125,7 @@ export function AdminDashboard() {
             </div>
             <div className="panel">
               <h2>Top stores by clicks</h2>
-              <TopList items={a.topStores} empty="No clicks yet." />
+              <StoreStats stats={a.storeStats} />
             </div>
           </div>
 
@@ -112,6 +146,8 @@ export function AdminDashboard() {
           </div>
         </>
       )}
+
+      {showAffiliates && <AffiliateLinksModal onClose={() => setShowAffiliates(false)} />}
     </div>
   );
 }

@@ -2,6 +2,7 @@ import { Router } from 'express';
 import { healthRouter } from './health.js';
 import { categoriesRouter } from './categories.js';
 import { componentsRouter } from './components.js';
+import { buildsRouter } from './builds.js';
 import { compareRouter } from './compare.js';
 import { verdictRouter } from './verdict.js';
 import { eventsRouter } from './events.js';
@@ -18,6 +19,7 @@ export function createApiRouter(): Router {
   api.use(healthRouter);
   api.use(categoriesRouter);
   api.use(componentsRouter);
+  api.use(buildsRouter);
   api.use(compareRouter);
   api.use(verdictRouter);
   api.use(eventsRouter);

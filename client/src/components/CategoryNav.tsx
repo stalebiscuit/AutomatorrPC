@@ -1,12 +1,12 @@
-import type { Category, CategoryMeta } from '@automatorr/shared';
+import type { CompareCategory, CategoryMeta } from '@automatorr/shared';
 
 interface Props {
   categories: CategoryMeta[];
-  active: Category;
-  onSelect: (category: Category) => void;
+  active: CompareCategory;
+  onSelect: (category: CompareCategory) => void;
 }
 
-/** Four category pills; CPU active by default (spec §3). */
+/** Category pills; CPU active by default (spec §3). */
 export function CategoryNav({ categories, active, onSelect }: Props) {
   return (
     <nav className="cats" aria-label="Component category">

@@ -1,4 +1,4 @@
-import type { Category } from '@automatorr/shared';
+import type { CompareCategory } from '@automatorr/shared';
 import { api } from './api.js';
 
 const KEY = 'automatorr_session_id';
@@ -15,7 +15,7 @@ export function getSessionId(): string {
 
 /** Fire-and-forget search/select event. */
 export function trackSearch(input: {
-  category: Category;
+  category: CompareCategory;
   query?: string;
   componentId?: string;
 }): void {
@@ -25,7 +25,7 @@ export function trackSearch(input: {
 }
 
 /** Fire-and-forget comparison-view event. */
-export function trackView(input: { category: Category; pairKey: string }): void {
+export function trackView(input: { category: CompareCategory; pairKey: string }): void {
   void api
     .postSearchEvent({ type: 'view', sessionId: getSessionId(), ...input })
     .catch(() => undefined);

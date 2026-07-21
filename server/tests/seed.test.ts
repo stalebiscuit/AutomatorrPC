@@ -29,11 +29,12 @@ describe('Phase 2 — seeding pipeline', () => {
     }
   });
 
-  it('matches the i9-14900K to its real CSV ubRaw (131) — never invented', async () => {
-    const cpu = await ComponentModel.findOne({ category: 'cpu', slug: 'intel-core-i9-14900k' });
-    expect(cpu?.benchmark.ubRaw).toBe(131);
-    expect(cpu?.benchmark.ubSource).toContain('userbenchmark.com');
-    expect(cpu?.provenance.csvRow).toContain('rank=');
+  it('sources CPU performance from PassMark, pinning i5-13600K to the reference index', async () => {
+    const ref = await ComponentModel.findOne({ category: 'cpu', slug: 'intel-core-i5-13600k' });
+    expect(ref?.benchmark.ubSource).toContain('passmark');
+    expect(ref?.performanceIndex).toBe(1000); // i5-13600K pinned to REFERENCE_INDEX
+    const top = await ComponentModel.findOne({ category: 'cpu', slug: 'intel-core-i9-14900k' });
+    expect(top!.performanceIndex).toBeGreaterThan(ref!.performanceIndex);
   });
 
   it('keeps SSD performanceIndex well above HDD (cross-subtype, single scale)', async () => {

@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { useNavigate, useParams } from 'react-router-dom';
-import type { Category, CategoryMeta, Component } from '@automatorr/shared';
-import { CATEGORIES } from '@automatorr/shared';
+import type { CompareCategory, CategoryMeta, Component } from '@automatorr/shared';
+import { COMPARE_CATEGORIES } from '@automatorr/shared';
 import { api } from '../lib/api.js';
 import { trackSearch } from '../lib/session.js';
 import { TopBar } from '../components/TopBar.js';
@@ -12,7 +12,7 @@ import { ComponentPicker } from '../components/ComponentPicker.js';
 import { EmptyState } from '../components/EmptyState.js';
 import { CompareResults } from '../components/CompareResults.js';
 
-const FALLBACK_CATEGORIES: CategoryMeta[] = CATEGORIES.map((id) => ({
+const FALLBACK_CATEGORIES: CategoryMeta[] = COMPARE_CATEGORIES.map((id) => ({
   id,
   label: id.toUpperCase(),
   blurb: '',
@@ -24,8 +24,8 @@ function parsePair(pair: string | undefined): { a: string; b: string } {
   const idx = pair.indexOf(SEP);
   return { a: pair.slice(0, idx), b: pair.slice(idx + SEP.length) };
 }
-function isCategory(v: string | undefined): v is Category {
-  return !!v && (CATEGORIES as readonly string[]).includes(v);
+function isCategory(v: string | undefined): v is CompareCategory {
+  return !!v && (COMPARE_CATEGORIES as readonly string[]).includes(v);
 }
 
 export function ComparePage() {
@@ -35,7 +35,7 @@ export function ComparePage() {
   const { data: catData } = useQuery({ queryKey: ['categories'], queryFn: api.getCategories });
   const categories = catData?.categories ?? FALLBACK_CATEGORIES;
 
-  const [category, setCategory] = useState<Category>(isCategory(catParam) ? catParam : 'cpu');
+  const [category, setCategory] = useState<CompareCategory>(isCategory(catParam) ? catParam : 'cpu');
   const initial = parsePair(pair);
   const [slugA, setSlugA] = useState(initial.a);
   const [slugB, setSlugB] = useState(initial.b);
@@ -60,7 +60,7 @@ export function ComparePage() {
   const selA = useSelected(category, slugA);
   const selB = useSelected(category, slugB);
 
-  const onCategory = (next: Category) => {
+  const onCategory = (next: CompareCategory) => {
     setCategory(next);
     setSlugA('');
     setSlugB('');
@@ -108,13 +108,13 @@ export function ComparePage() {
       )}
 
       <div className="foot foot-clean">
-        <span>© 2026 Automatorr</span>
+        <span>© 2026 Speccify</span>
       </div>
     </div>
   );
 }
 
-function useSelected(category: Category, slug: string): Component | null {
+function useSelected(category: CompareCategory, slug: string): Component | null {
   const { data } = useQuery({
     queryKey: ['component', category, slug],
     queryFn: () => api.getComponent(category, slug),

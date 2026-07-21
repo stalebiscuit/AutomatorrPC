@@ -26,6 +26,7 @@ export function serializeComponent(doc: HydratedDocument<ComponentDoc>): Compone
     name: o.name,
     slug: o.slug,
     imageUrl: o.imageUrl ?? null,
+    gtin: o.gtin ?? null,
     specs: o.specs as Component['specs'],
     benchmark: { ubRaw: o.benchmark.ubRaw, ubSource: o.benchmark.ubSource },
     performanceIndex: o.performanceIndex,

@@ -15,8 +15,8 @@ export interface RefreshResult {
  * Adapter failures are already isolated inside the provider, so this never
  * throws on a single retailer/component.
  */
-export async function refreshAllPrices(provider: PriceProvider): Promise<RefreshResult> {
-  const docs = await ComponentModel.find({});
+export async function refreshAllPrices(provider: PriceProvider, opts?: { limit?: number }): Promise<RefreshResult> {
+  const docs = await ComponentModel.find({}).limit(opts?.limit && opts.limit > 0 ? opts.limit : 0);
   let updated = 0;
   let keptLastKnown = 0;
 

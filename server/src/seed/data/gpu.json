@@ -18,7 +18,8 @@
         "cudaOrStream": 21760,
         "tbp": 575,
         "busWidth": 512,
-        "length": 304
+        "length": 304,
+        "color": "Black"
       },
       "specSourceUrl": "https://www.nvidia.com/en-au/geforce/graphics-cards/50-series/rtx-5090/",
       "unknownFields": [],
@@ -57,7 +58,8 @@
         "cudaOrStream": 16384,
         "tbp": 450,
         "busWidth": 384,
-        "length": 304
+        "length": 304,
+        "color": "Black"
       },
       "specSourceUrl": "https://www.nvidia.com/en-au/geforce/graphics-cards/40-series/rtx-4090/",
       "unknownFields": [],
@@ -96,7 +98,8 @@
         "cudaOrStream": 10240,
         "tbp": 320,
         "busWidth": 256,
-        "length": 310
+        "length": 310,
+        "color": "Black"
       },
       "specSourceUrl": "https://www.nvidia.com/en-au/geforce/graphics-cards/40-series/rtx-4080-family/",
       "unknownFields": [],
@@ -135,7 +138,8 @@
         "cudaOrStream": 6144,
         "tbp": 355,
         "busWidth": 384,
-        "length": 287
+        "length": 287,
+        "color": "Black"
       },
       "specSourceUrl": "https://www.amd.com/en/products/graphics/amd-radeon-rx-7900-xtx.html",
       "unknownFields": [],
@@ -174,7 +178,8 @@
         "cudaOrStream": 5888,
         "tbp": 200,
         "busWidth": 192,
-        "length": 244
+        "length": 244,
+        "color": "Black"
       },
       "specSourceUrl": "https://www.nvidia.com/en-au/geforce/graphics-cards/40-series/rtx-4070-family/",
       "unknownFields": [],
@@ -213,7 +218,8 @@
         "cudaOrStream": 3840,
         "tbp": 263,
         "busWidth": 256,
-        "length": 267
+        "length": 267,
+        "color": "Black"
       },
       "specSourceUrl": "https://www.amd.com/en/products/graphics/amd-radeon-rx-7800-xt.html",
       "unknownFields": [],
@@ -252,7 +258,8 @@
         "cudaOrStream": 3072,
         "tbp": 115,
         "busWidth": 128,
-        "length": 200
+        "length": 200,
+        "color": "Black"
       },
       "specSourceUrl": "https://www.nvidia.com/en-au/geforce/graphics-cards/40-series/rtx-4060-4060ti/",
       "unknownFields": [],
@@ -291,7 +298,8 @@
         "cudaOrStream": 2048,
         "tbp": 165,
         "busWidth": 128,
-        "length": 204
+        "length": 204,
+        "color": "Black"
       },
       "specSourceUrl": "https://www.amd.com/en/products/graphics/amd-radeon-rx-7600.html",
       "unknownFields": [],

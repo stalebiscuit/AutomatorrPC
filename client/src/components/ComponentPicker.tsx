@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
-import type { Category, Component } from '@automatorr/shared';
+import type { CompareCategory, Component } from '@automatorr/shared';
 import { api } from '../lib/api.js';
 import { useDebouncedValue } from '../hooks/useDebouncedValue.js';
 
 interface Props {
-  category: Category;
+  category: CompareCategory;
   side: 'a' | 'b';
   selected: Component | null;
   excludeSlug?: string;

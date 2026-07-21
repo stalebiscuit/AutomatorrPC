@@ -2,9 +2,11 @@ import { MongoMemoryServer } from 'mongodb-memory-server';
 import { connectDb } from './db.js';
 import { createApp } from './app.js';
 import { loadConfig } from './config.js';
-import { ComponentModel } from './models/index.js';
+import { ComponentModel, AffiliateLinkModel } from './models/index.js';
 import { seedDatabase } from './seed/seed.js';
 import { seedDemoEvents } from './seed/demoEvents.js';
+import { seedDemoPrices } from './seed/demoPrices.js';
+import { loadAffiliateConfigs } from './services/affiliate/affiliateService.js';
 import { logger } from './lib/logger.js';
 
 /**
@@ -26,7 +28,10 @@ async function main(): Promise<void> {
 
   await connectDb({ uri: mongod.getUri() });
   await ComponentModel.init();
+  await AffiliateLinkModel.init();
+  await loadAffiliateConfigs();
   await seedDatabase();
+  await seedDemoPrices();
   await seedDemoEvents();
 
   const app = createApp();

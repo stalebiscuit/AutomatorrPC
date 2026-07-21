@@ -13,8 +13,8 @@ componentsRouter.get(
   validate({ query: listComponentsQuery }),
   asyncHandler(async (_req, res) => {
     const { query } = getValidated<z.infer<typeof listComponentsQuery>>(res);
-    const components = await listComponents(query.category, query.q);
-    res.json({ components });
+    const result = await listComponents(query);
+    res.json(result);
   }),
 );
 
