@@ -14,7 +14,7 @@ export const listComponentsQuery = z.object({
   priceMax: z.coerce.number().nonnegative().optional(),
   sort: z.enum(['performance', 'priceAsc', 'priceDesc', 'name']).default('performance'),
   page: z.coerce.number().int().min(1).default(1),
-  pageSize: z.coerce.number().int().min(1).max(1000).default(25),
+  pageSize: z.coerce.number().int().min(1).max(100).default(25),
 });
 
 export const componentParams = z.object({
