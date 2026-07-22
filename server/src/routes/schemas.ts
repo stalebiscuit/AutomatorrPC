@@ -95,11 +95,24 @@ export const verifyOtpBody = z.object({
 
 // ── Admin management (super-admin only) ──
 export const allowedDomainBody = z.object({
-  domain: z
-    .string()
-    .trim()
-    .max(253)
-    .regex(/^(?=.{1,253}$)([a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,}$/i, 'invalid domain'),
+  // Accept what admins naturally type — "@automatorr.com", "https://automatorr.com/",
+  // "AUTOMATORR.COM" — and normalise to the bare host before validating.
+  domain: z.preprocess(
+    (v) =>
+      typeof v === 'string'
+        ? v
+            .trim()
+            .toLowerCase()
+            .replace(/^@+/, '')
+            .replace(/^https?:\/\//, '')
+            .replace(/\/.*$/, '')
+            .replace(/^.*@/, '') // tolerate a full email like "me@automatorr.com"
+        : v,
+    z
+      .string()
+      .max(253)
+      .regex(/^(?=.{1,253}$)([a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,}$/i, 'invalid domain'),
+  ),
   note: z.string().trim().max(200).optional(),
 });
 export const objectIdParams = z.object({

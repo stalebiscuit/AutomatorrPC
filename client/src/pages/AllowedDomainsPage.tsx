@@ -35,7 +35,9 @@ export function AllowedDomainsPage() {
       setFormErr(
         e instanceof ApiClientError && e.code === 'DOMAIN_EXISTS'
           ? 'That domain is already allow-listed.'
-          : 'Could not add domain.',
+          : e instanceof ApiClientError && e.message
+            ? e.message // surface the server's reason (e.g. "invalid domain")
+            : 'Could not add domain.',
       ),
   });
 

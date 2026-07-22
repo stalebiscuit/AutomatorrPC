@@ -105,7 +105,10 @@ const EnvSchema = z.object({
   PRICE_PROVIDER: z.enum(['scraper']).default('scraper'),
   VERDICT_PROVIDER: z.enum(['placeholder', 'seeded', 'claude']).default('seeded'),
 
-  SCRAPE_CRON: z.string().default('15 3 * * *'),
+  // 2:30 AM in SCRAPE_TZ — night-time in Australia, well after 11pm.
+  SCRAPE_CRON: z.string().default('30 2 * * *'),
+  // Timezone the price cron is interpreted in (node-cron handles AEST/AEDT DST).
+  SCRAPE_TZ: z.string().default('Australia/Sydney'),
   // When true, the daily price job renders JS pages via Playwright/Chromium for
   // fuller retailer coverage (PCCaseGear/Mwave quotes). Requires the browser:
   // `npx playwright install --with-deps chromium` in the server workspace.

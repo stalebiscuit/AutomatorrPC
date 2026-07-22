@@ -13,10 +13,14 @@ export function startPriceScheduler(): void {
     logger.error(`Invalid SCRAPE_CRON "${cfg.SCRAPE_CRON}" — price scheduler not started`);
     return;
   }
-  task = cron.schedule(cfg.SCRAPE_CRON, () => {
-    void runPriceRefresh();
-  });
-  logger.info(`Price scheduler registered (cron: ${cfg.SCRAPE_CRON})`);
+  task = cron.schedule(
+    cfg.SCRAPE_CRON,
+    () => {
+      void runPriceRefresh();
+    },
+    { timezone: cfg.SCRAPE_TZ },
+  );
+  logger.info(`Price scheduler registered (cron: ${cfg.SCRAPE_CRON} ${cfg.SCRAPE_TZ})`);
 }
 
 export function stopPriceScheduler(): void {

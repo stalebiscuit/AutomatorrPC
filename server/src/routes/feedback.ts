@@ -1,9 +1,10 @@
-import { Router } from 'express';
+import { Router, type RequestHandler } from 'express';
 import type { z } from 'zod';
 import { FeedbackModel } from '../models/index.js';
 import { asyncHandler } from '../middleware/errorHandler.js';
 import { validate, getValidated } from '../middleware/validate.js';
 import { rateLimit } from '../middleware/rateLimit.js';
+import { loadConfig } from '../config.js';
 import { feedbackBody } from './schemas.js';
 
 /**
@@ -15,9 +16,16 @@ import { feedbackBody } from './schemas.js';
  */
 export const feedbackRouter = Router();
 
+// 5/hour per IP in prod; disabled under test (mirrors the events routes) so the
+// e2e suite's parallel posts + retries don't trip it.
+const feedbackLimiter: RequestHandler =
+  loadConfig().NODE_ENV === 'test'
+    ? (_req, _res, next) => next()
+    : rateLimit({ windowMs: 60 * 60 * 1000, max: 5 });
+
 feedbackRouter.post(
   '/feedback',
-  rateLimit({ windowMs: 60 * 60 * 1000, max: 5 }),
+  feedbackLimiter,
   validate({ body: feedbackBody }),
   asyncHandler(async (req, res) => {
     const { body } = getValidated<unknown, z.infer<typeof feedbackBody>>(res);
