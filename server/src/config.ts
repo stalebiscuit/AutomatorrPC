@@ -69,8 +69,9 @@ const EnvSchema = z.object({
     .string()
     .default('daniel.hardman@automatorr.com,abishai.bajaj@automatorr.com'),
 
-  // OTP email delivery.
-  MAILER_PROVIDER: z.enum(['console', 'smtp']).default('console'),
+  // OTP email delivery. `graph` = Microsoft Graph sendMail (app-only / client
+  // credentials); `smtp` = nodemailer; `console` = log to server (dev/test).
+  MAILER_PROVIDER: z.enum(['console', 'smtp', 'graph']).default('console'),
   OTP_FROM: z.string().default('AI@Automatorr.com'),
   OTP_FROM_NAME: z.string().default('Speccify'),
   SMTP_HOST: z.string().optional(),
@@ -81,6 +82,13 @@ const EnvSchema = z.object({
     .string()
     .default('false')
     .transform((v) => v === 'true' || v === '1'),
+
+  // Microsoft Graph mailer (MAILER_PROVIDER=graph). App registration with the
+  // application permission Mail.Send granted + admin-consented. OTP_FROM is the
+  // sender mailbox (must be a real mailbox the app is allowed to send as).
+  GRAPH_TENANT_ID: z.string().optional(),
+  GRAPH_CLIENT_ID: z.string().optional(),
+  GRAPH_CLIENT_SECRET: z.string().optional(),
 
   // Session / OTP tunables (defaults per spec §5).
   ACCESS_TTL_MIN: z.coerce.number().int().positive().default(15),
@@ -129,6 +137,16 @@ const EnvSchema = z.object({
     ctx.addIssue({
       code: z.ZodIssueCode.custom,
       message: 'SMTP_HOST, SMTP_USER and SMTP_PASS are required when MAILER_PROVIDER=smtp.',
+    });
+  }
+  if (
+    cfg.MAILER_PROVIDER === 'graph' &&
+    (!cfg.GRAPH_TENANT_ID || !cfg.GRAPH_CLIENT_ID || !cfg.GRAPH_CLIENT_SECRET)
+  ) {
+    ctx.addIssue({
+      code: z.ZodIssueCode.custom,
+      message:
+        'GRAPH_TENANT_ID, GRAPH_CLIENT_ID and GRAPH_CLIENT_SECRET are required when MAILER_PROVIDER=graph.',
     });
   }
 });
