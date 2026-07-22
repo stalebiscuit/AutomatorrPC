@@ -7,6 +7,7 @@ import { seedDatabase } from './seed/seed.js';
 import { seedDemoEvents } from './seed/demoEvents.js';
 import { seedDemoPrices } from './seed/demoPrices.js';
 import { loadAffiliateConfigs } from './services/affiliate/affiliateService.js';
+import { seedSuperadmins } from './services/auth/bootstrap.js';
 import { logger } from './lib/logger.js';
 
 /**
@@ -15,11 +16,10 @@ import { logger } from './lib/logger.js';
  * database. Prices start empty (run `npm run scrape` against live retailers to
  * populate them); the compare flow, scorecard and placeholder verdict all work.
  */
-// Demo-only fallbacks so the stack runs with no .env (admin: admin / demo-password).
-process.env.JWT_SECRET ??= 'demo-only-secret-do-not-use-in-prod-0123456789';
-process.env.ADMIN_USERNAME ??= 'admin';
-process.env.ADMIN_PASSWORD_HASH ??=
-  '$2a$10$TNPmur8bxttdMHscuBYI0O8QddrPDrlVmR7MaiTIxZ/EOJf8YCyDe'; // "demo-password"
+// Demo-only fallbacks so the stack runs with no .env. OTP codes print to the
+// console; RS256 keys auto-generate ephemerally; the two founders are seeded.
+process.env.MAILER_PROVIDER ??= 'console';
+process.env.SUPERADMIN_EMAILS ??= 'daniel.hardman@automatorr.com,abishai.bajaj@automatorr.com';
 
 async function main(): Promise<void> {
   const mongod = await MongoMemoryServer.create();
@@ -33,6 +33,7 @@ async function main(): Promise<void> {
   await seedDatabase();
   await seedDemoPrices();
   await seedDemoEvents();
+  await seedSuperadmins();
 
   const app = createApp();
   app.listen(cfg.PORT, () => {

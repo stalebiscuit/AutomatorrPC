@@ -19,6 +19,10 @@ export function createApp(): Express {
   const cfg = loadConfig();
   const app = express();
 
+  // Behind the production reverse proxy (nginx/Caddy) so req.secure and req.ip
+  // reflect the real client — needed for Secure cookies and rate limiting.
+  if (cfg.NODE_ENV === 'production') app.set('trust proxy', 1);
+
   app.disable('x-powered-by');
   app.use(cors({ origin: cfg.CLIENT_ORIGIN, credentials: true }));
   app.use(express.json({ limit: '256kb' }));

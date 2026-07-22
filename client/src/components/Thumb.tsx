@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import type { BuilderCategory } from '@automatorr/shared';
+import type { BuilderCategory, Specs } from '@automatorr/shared';
 import { CategoryRender } from './CategoryRender.js';
+import { conceptAsset } from '../lib/partImage.js';
 
 /**
- * One thumbnail component for every surface (compare card, part picker, build table).
- * Real image → on error, try the same-name .svg → then fall back to the per-category
- * Automatorr render. Guarantees a clean, on-brand thumb even when a part has no photo,
- * so the catalogue never shows blank/broken/text placeholders.
+ * One thumbnail for every surface (compare card, part picker, build table). Tries the product
+ * photo, then a local concept render (brand logo for CPU/GPU, DDR5 / drive render for RAM/storage),
+ * then the per-category wireframe — so the catalogue never shows a blank/broken/text placeholder.
  *
  * `className` styles the box; the inner <img>/<svg> fills it (see .thumb-fill CSS).
  */
@@ -16,18 +16,24 @@ export function Thumb({
   name,
   win = false,
   className,
+  brand = '',
+  specs,
 }: {
   imageUrl?: string | null;
   category: BuilderCategory;
   name?: string;
   win?: boolean;
   className?: string;
+  brand?: string;
+  specs?: Specs;
 }) {
-  const [src, setSrc] = useState<string | null>(imageUrl ?? null);
-  const [broken, setBroken] = useState(false);
+  const candidates = [imageUrl || null, conceptAsset(category, brand, name ?? '', specs)].filter(
+    (x): x is string => !!x,
+  );
+  const [idx, setIdx] = useState(0);
   const box = `thumb-fill${className ? ` ${className}` : ''}`;
-
-  if (!src || broken) {
+  const src = candidates[idx];
+  if (!src) {
     return (
       <span className={box}>
         <CategoryRender category={category} win={win} />
@@ -36,16 +42,7 @@ export function Thumb({
   }
   return (
     <span className={box}>
-      <img
-        src={src}
-        alt={name ?? ''}
-        loading="lazy"
-        onError={() => {
-          const fallback = src.replace(/\.(png|jpe?g|webp)$/i, '.svg');
-          if (fallback !== src) setSrc(fallback);
-          else setBroken(true);
-        }}
-      />
+      <img src={src} alt={name ?? ''} loading="lazy" onError={() => setIdx((i) => i + 1)} />
     </span>
   );
 }

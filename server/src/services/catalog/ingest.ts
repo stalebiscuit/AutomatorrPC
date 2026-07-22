@@ -78,6 +78,11 @@ export async function ingestCategory(
     seen.add(p.slug);
     const quality = validateSpecs(category, p.specs);
     if (!quality.builderReady) flagged.push({ slug: p.slug, missingCritical: quality.missingCritical });
+    // ADDITIVE policy (review fix 1.1): $set only identity/spec fields. Prices,
+    // images and GTINs go in $setOnInsert so the nightly re-ingest of the
+    // bundled seed dataset can never overwrite live scraped prices, Icecat
+    // enrichment, or db8 cleanups on existing parts — previously stale seed
+    // prices were re-stamped `lastUpdated: now` every night and looked fresh.
     await ComponentModel.updateOne(
       { category, slug: p.slug },
       {
@@ -86,9 +91,17 @@ export async function ingestCategory(
           brand: p.brand,
           name: p.name,
           slug: p.slug,
+          specs: p.specs,
+          provenance: {
+            specSourceUrl: p.specSourceUrl,
+            seededAt: now,
+            unknownFields: p.unknownFields,
+          },
+        },
+        $setOnInsert: {
+          createdAt: now,
           imageUrl: p.imageUrl,
           gtin: p.gtin ?? null,
-          specs: p.specs,
           // non-benchmarked categories carry a nominal index (excluded from scoring)
           benchmark: { ubRaw: 0, ubSource: `${source.name}:non-benchmarked` },
           performanceIndex: 0,
@@ -99,13 +112,7 @@ export async function ingestCategory(
             url: q.url,
             lastUpdated: now,
           })),
-          provenance: {
-            specSourceUrl: p.specSourceUrl,
-            seededAt: now,
-            unknownFields: p.unknownFields,
-          },
         },
-        $setOnInsert: { createdAt: now },
       },
       { upsert: true },
     );

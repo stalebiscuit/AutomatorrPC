@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import type { CompareCategory, Component } from '@automatorr/shared';
 import { api } from '../lib/api.js';
+import { countWords, capWords } from '../lib/format.js';
 import { useDebouncedValue } from '../hooks/useDebouncedValue.js';
 
 interface Props {
@@ -60,15 +61,20 @@ export function ComponentPicker({ category, side, selected, excludeSlug, onSelec
 
       {open && (
         <div className="picker-pop" role="dialog" aria-label={label}>
-          <input
-            className="picker-search"
-            type="text"
-            autoFocus
-            placeholder={`Search ${category.toUpperCase()}…`}
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            aria-label={`Search ${category} components`}
-          />
+          <div className="picker-search-wrap">
+            <input
+              className="picker-search"
+              type="text"
+              autoFocus
+              placeholder={`Search ${category.toUpperCase()}…`}
+              value={query}
+              onChange={(e) => setQuery(capWords(e.target.value, 200))}
+              aria-label={`Search ${category} components`}
+            />
+            <span className="word-count" aria-live="polite">
+              {countWords(query)}/200 WORDS
+            </span>
+          </div>
           <div className="picker-list" role="listbox">
             {isLoading && <div className="picker-empty">Searching…</div>}
             {!isLoading && options.length === 0 && (

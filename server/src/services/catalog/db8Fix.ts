@@ -47,6 +47,14 @@ const MARKETING_TAILS: RegExp[] = [
   // ("… Raptor Lake 20 Core 28 Thread Up To 5.4GHz LGA1700 - Retail Box" → "…"). The digit
   // before "core" means the brand token "Intel Core i7" is never matched.
   /\s+(?:\d+\s*[- ]?core\b|\d+\s*thread\b|\d+(?:\.\d+)?\s*ghz\b|up to\b|with wraith\b|no hsf\b|retail box\b|raptor lake\b|arrow lake\b|s?tr5\b|swrx8\b|processor\b|dual edition\b).*$/i,
+  // Monitor listing tail A: cut from the response-time ("0.3ms", "1ms") onward — drops the
+  // "0.3ms Fast-IPS Gaming Monitor" fluff while keeping brand/model/size/resolution/refresh.
+  // A response-time "…ms" token appears only in monitor names, so other categories are untouched.
+  /\s+\d+(?:\.\d+)?\s*ms\b.*$/i,
+  // Monitor listing tail B: for monitors with no quoted response time, cut a trailing
+  // "<panel> [type] Monitor" descriptor (…IPS/VA/TN [Gaming|Professional|…] Monitor). Anchored on a
+  // trailing "monitor", so only monitors match; the panel token preserves the specs before it.
+  /\s+(?:Dual[- ]?Mode\s+)?(?:Fast[- ]?\s*|Rapid\s+|Super\s+)?(?:IPS|VA|TN)\s+(?:Gaming\s+|Professional\s+|Esports\s+|Portable\s+|Business\s+|Smart\s+)?monitor\s*$/i,
 ];
 
 // A "blurb quote" is a quote/apostrophe used to open a marketing description — always

@@ -18,6 +18,7 @@ export type Category = (typeof CATEGORIES)[number];
 export const COMPARE_CATEGORIES = [
   'cpu',
   'gpu',
+  'motherboard',
   'ram',
   'storage',
   'cooler',
@@ -414,15 +415,21 @@ export interface MerchantTotal {
   /** parts this merchant carries out of the build */
   availableCount: number;
   totalParts: number;
+  /** cost of the parts THIS store stocks (its own quotes; not back-filled from other stores) */
   total: number;
-  /** $ more than the cheapest single-store total (0 for the cheapest) */
-  difference: number;
+  /** true when this store stocks every part — a real single-store checkout */
+  complete: boolean;
+  /** $ more than the cheapest COMPLETE store; null when this store can't supply the whole build */
+  difference: number | null;
   items: MerchantLineItem[];
 }
 
 // ─── Builder: hydrated build summary (server → client) ───────────────
 export interface BuildSummary {
   build: Build;
+  /** Private edit token — present ONLY in the POST /builds (create) response.
+   *  Required via the x-edit-token header to PATCH; never returned on GET. */
+  editToken?: string;
   /** items resolved to catalogue components (render order) */
   parts: ResolvedBuildPart[];
   /** items whose slug wasn't found in the catalogue (hallucination guard) */

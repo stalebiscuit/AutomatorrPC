@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Static baseline (review fix 1.9). v2: generate compare-pair URLs server-side. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://speccify.info/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://speccify.info/pc-builder</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://speccify.info/about</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://speccify.info/legal/terms</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://speccify.info/legal/disclaimer</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://speccify.info/legal/disclosure</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://speccify.info/legal/privacy</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+</urlset>

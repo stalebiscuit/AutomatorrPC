@@ -25,7 +25,7 @@
     "index:benchmarked": "tsx src/seed/applyBenchmarkIndex.ts",
     "db7:legacy": "tsx src/seed/applyDb7Legacy.ts",
     "db3:ram": "tsx src/seed/applyDb3.ts",
-    "hash-password": "tsx src/scripts/hashPassword.ts",
+    "generate-keys": "tsx src/scripts/generateKeys.ts",
     "lint": "eslint src",
     "test": "vitest run",
     "test:watch": "vitest",
@@ -36,6 +36,8 @@
     "db8:audit": "tsx src/services/catalog/db8Audit.ts",
     "db8:fix": "tsx src/services/catalog/db8Fix.ts",
     "db:reset": "tsx src/seed/resetComponents.ts",
+    "db:migrate-speccify": "tsx src/scripts/migrateToSpeccify.ts",
+    "gpu:backfill": "tsx src/scripts/backfillGpuSpecs.ts",
     "crawl:scorptec": "tsx src/services/catalog/crawl/crawlToDb.ts scorptec",
     "crawl:pccasegear": "tsx src/services/catalog/crawl/crawlToDb.ts pccasegear",
     "crawl:debug": "tsx src/services/catalog/crawl/crawlDebug.ts"
@@ -51,6 +53,7 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.9.3",
     "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.16",
     "p-limit": "^6.2.0",
     "zod": "^3.24.1"
   },
@@ -62,6 +65,7 @@
     "@types/jsonwebtoken": "^9.0.7",
     "@types/node": "^22.10.2",
     "@types/node-cron": "^3.0.11",
+    "@types/nodemailer": "^6.4.17",
     "@types/supertest": "^6.0.2",
     "esbuild": "^0.24.2",
     "mongodb-memory-server": "^10.1.2",

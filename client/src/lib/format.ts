@@ -40,3 +40,40 @@ function summariseSpecValue(value: string): string {
   if (items.length <= 2) return items.join(', ') || value;
   return `${items.slice(0, 2).join(', ')} +${items.length - 2}`;
 }
+
+/**
+ * Relative price freshness, e.g. "UPDATED TODAY" / "UPDATED 3D AGO"
+ * (launch-polish P3 — surfaces prices[].lastUpdated as a visible claim).
+ * Returns null for missing/unparseable dates so callers can hide the badge.
+ */
+export function freshness(iso: string | null | undefined): string | null {
+  if (!iso) return null;
+  const then = new Date(iso).getTime();
+  if (Number.isNaN(then)) return null;
+  const days = Math.floor((Date.now() - then) / 86_400_000);
+  if (days <= 0) return 'UPDATED TODAY';
+  if (days === 1) return 'UPDATED 1D AGO';
+  if (days < 31) return `UPDATED ${days}D AGO`;
+  return null; // stale enough that advertising it would hurt, not help
+}
+
+/** Word count for input limits (launch-polish revision: 200-word caps). */
+export function countWords(s: string): number {
+  const t = s.trim();
+  return t ? t.split(/\s+/).length : 0;
+}
+
+/** Hard-cap a string to its first `max` words (whitespace preserved between). */
+export function capWords(s: string, max: number): string {
+  const parts = s.split(/(\s+)/); // keep separators
+  let words = 0;
+  let out = '';
+  for (const p of parts) {
+    if (/\S/.test(p)) {
+      words += 1;
+      if (words > max) break;
+    }
+    out += p;
+  }
+  return words > max ? out.trimEnd() : s;
+}

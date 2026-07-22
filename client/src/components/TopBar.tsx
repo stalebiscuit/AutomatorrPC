@@ -1,11 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-
-// Speccify hero glyph (circuit-trace "S") + the Automatorr "powered by" credit.
-const SPECCIFY_GLYPH = '/speccify-hero-token-snapped.png';
-// Theme-specific Automatorr credit: white wordmark on dark, brand blue on light.
-const AUTOMATORR_CREDIT_DARK = '/automatorr-logo-dark.png';
-const AUTOMATORR_CREDIT_LIGHT = '/automatorr-logo.png';
+import { Logo } from './Logo.js';
+import { CurrencySelect } from './CurrencySelect.js';
+import { openFeedback } from '../lib/feedback.js';
 
 type Theme = 'light' | 'dark';
 
@@ -14,7 +11,7 @@ function currentTheme(): Theme {
   return document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
 }
 
-/** Top bar — logo + light/dark toggle + MENU that opens the nav drawer (spec §3). */
+/** Top bar — logo + currency + light/dark toggle + MENU drawer (spec §3). */
 export function TopBar() {
   const [theme, setTheme] = useState<Theme>(currentTheme);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -51,29 +48,22 @@ export function TopBar() {
   return (
     <header className="topbar">
       <Link to="/" className="brand-lockup" aria-label="Speccify home">
-        <img src={SPECCIFY_GLYPH} alt="" className="brand-glyph" />
-        <span className="brand-text">
-          <span className="brand-word">peccify</span>
-          <span className="brand-kicker">
-            <span className="brand-by">Powered by</span>
-            <img
-              src={theme === 'dark' ? AUTOMATORR_CREDIT_DARK : AUTOMATORR_CREDIT_LIGHT}
-              alt="Automatorr"
-              className="brand-auto"
-            />
-          </span>
-        </span>
+        <Logo variant="full" size={28} />
       </Link>
       <div className="topbar-actions">
+        <CurrencySelect />
         <button
           type="button"
-          className="theme-toggle"
+          className="menu"
           onClick={toggleTheme}
           aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
           title={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
           aria-pressed={theme === 'dark'}
         >
           {theme === 'light' ? 'LIGHT' : 'DARK'}
+        </button>
+        <button type="button" className="theme-toggle" onClick={() => openFeedback()}>
+          FEEDBACK +
         </button>
         <button
           type="button"
@@ -109,14 +99,20 @@ export function TopBar() {
                   PC builder
                   <span aria-hidden="true">→</span>
                 </Link>
-              </div>
-              <div className="drawer-section">
-                <span className="drawer-label">Admin</span>
-                <Link to="/admin/login" className="drawer-link" onClick={closeMenu}>
-                  Admin login
+                <Link to="/about" className="drawer-link" onClick={closeMenu}>
+                  About Speccify
                   <span aria-hidden="true">→</span>
                 </Link>
               </div>
+              <div className="drawer-section">
+                <span className="drawer-label">Legal</span>
+                <Link to="/legal/terms" className="drawer-link" onClick={closeMenu}>
+                  Terms &amp; policies
+                  <span aria-hidden="true">→</span>
+                </Link>
+              </div>
+              {/* Admin login is deliberately unlisted (product decision, 21 Jul 2026):
+                  staff navigate to /admin/login directly. */}
             </nav>
           </aside>
         </div>

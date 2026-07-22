@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import type { Component, CompareRow } from '@automatorr/shared';
 import { CategoryRender } from './CategoryRender.js';
+import { conceptAsset } from '../lib/partImage.js';
 import { PriceList } from './PriceList.js';
 import { trackClick } from '../lib/session.js';
 
@@ -19,32 +20,34 @@ const HIDDEN_ROWS = new Set(['performanceIndex', 'price']);
  * (same basename, .svg) -> per-category Automatorr render. Guarantees the thumb
  * never shows a broken image if an asset is missing.
  */
+/**
+ * Compare-card image: a LOCAL product/logo/concept asset ("/images/…") → the category concept
+ * render (brand logo for CPU/GPU, DDR5 / drive render for RAM/storage) → the wireframe placeholder.
+ * External retailer photo URLs are skipped (they hotlink-block / 404), so nothing broken shows.
+ */
 function Thumb({
   imageUrl,
   category,
   name,
   win,
+  brand,
+  specs,
 }: {
   imageUrl: string | null | undefined;
   category: Component['category'];
   name: string;
   win: boolean;
+  brand: string;
+  specs: Component['specs'];
 }) {
-  const [src, setSrc] = useState<string | null>(imageUrl ?? null);
-  const [broken, setBroken] = useState(false);
-  if (!src || broken) return <CategoryRender category={category} win={win} />;
-  return (
-    <img
-      src={src}
-      alt={name}
-      loading="lazy"
-      onError={() => {
-        const fallback = src.replace(/\.(png|jpe?g|webp)$/i, '.svg');
-        if (fallback !== src) setSrc(fallback);
-        else setBroken(true);
-      }}
-    />
-  );
+  const candidates = [
+    imageUrl && imageUrl.startsWith('/') ? imageUrl : null,
+    conceptAsset(category, brand, name, specs),
+  ].filter((x): x is string => !!x);
+  const [idx, setIdx] = useState(0);
+  const src = candidates[idx];
+  if (!src) return <CategoryRender category={category} win={win} />;
+  return <img src={src} alt={name} loading="lazy" onError={() => setIdx((i) => i + 1)} />;
 }
 
 export function ComponentCard({ component, rows, side, win }: Props) {
@@ -56,10 +59,12 @@ export function ComponentCard({ component, rows, side, win }: Props) {
     ? [...component.prices].sort((a, b) => a.price - b.price)[0]!
     : null;
 
-  const onSeeAll = async () => {
+  // Review fix 1.5: a real anchor with fire-and-forget tracking. Awaiting the
+  // tracking POST before window.open destroyed the user-activation gesture,
+  // so Safari/Firefox popup blockers silently ate the store tab.
+  const onSeeAll = () => {
     if (!lowest) return;
-    await trackClick({ componentId: component.id, store: lowest.store, url: lowest.url });
-    window.open(lowest.url, '_blank', 'noopener,noreferrer');
+    void trackClick({ componentId: component.id, store: lowest.store, url: lowest.url });
   };
 
   return (
@@ -77,19 +82,23 @@ export function ComponentCard({ component, rows, side, win }: Props) {
           category={component.category}
           name={component.name}
           win={win}
+          brand={component.brand}
+          specs={component.specs}
         />
       </div>
 
       <div className="eyebrow-b">{component.brand}</div>
       <h3 className="name">{component.name}</h3>
 
-      <div className="score">
-        <div className="lbl">Performance score</div>
-        <div className="val">
-          {component.performanceIndex.toLocaleString('en-AU')}
-          <span className="unit">uncapped index</span>
+      {component.performanceIndex > 0 && (
+        <div className="score">
+          <div className="lbl">Performance score</div>
+          <div className="val">
+            {component.performanceIndex.toLocaleString('en-AU')}
+            <span className="unit">uncapped index</span>
+          </div>
         </div>
-      </div>
+      )}
 
       <div className="specs">
         {specRows.map((r) => (
@@ -105,14 +114,21 @@ export function ComponentCard({ component, rows, side, win }: Props) {
 
       <PriceList componentId={component.id} prices={component.prices} />
 
-      <button
-        type="button"
-        className={`cta ${win ? 'solid' : 'outline'}`}
-        onClick={() => void onSeeAll()}
-        disabled={!lowest}
-      >
-        SEE ALL PRICES &gt;
-      </button>
+      {lowest ? (
+        <a
+          className={`cta ${win ? 'solid' : 'outline'}`}
+          href={lowest.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={onSeeAll}
+        >
+          SEE ALL PRICES &gt;
+        </a>
+      ) : (
+        <button type="button" className={`cta ${win ? 'solid' : 'outline'}`} disabled>
+          SEE ALL PRICES &gt;
+        </button>
+      )}
     </article>
   );
 }

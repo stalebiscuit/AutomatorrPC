@@ -4,7 +4,8 @@ import { createApp } from '../src/app.js';
 import { startMemoryDb, stopMemoryDb, clearCollections } from './helpers/memoryDb.js';
 import { makePairKey } from '@automatorr/shared';
 import { buildRollups } from '../src/services/analytics.js';
-import { TrendRollupModel } from '../src/models/index.js';
+import { TrendRollupModel, AllowedDomainModel } from '../src/models/index.js';
+import { installCapturingMailer, loginAs, lastOtpCode } from './helpers/auth.js';
 
 describe('Phase 5 — analytics, events & admin', () => {
   const app = createApp();
@@ -12,6 +13,7 @@ describe('Phase 5 — analytics, events & admin', () => {
   beforeAll(async () => {
     await startMemoryDb();
     await clearCollections();
+    installCapturingMailer();
   });
   afterAll(async () => {
     await stopMemoryDb();
@@ -52,20 +54,26 @@ describe('Phase 5 — analytics, events & admin', () => {
     expect(res.status).toBe(401);
   });
 
-  it('rejects bad admin credentials', async () => {
-    const res = await request(app)
-      .post('/api/admin/login')
-      .send({ username: 'admin', password: 'wrong' });
+  it('rejects a wrong OTP code with 401', async () => {
+    const agent = request.agent(app);
+    await AllowedDomainModel.updateOne(
+      { domain: 'example.com' },
+      { $set: { domain: 'example.com' } },
+      { upsert: true },
+    );
+    await agent.post('/api/admin/auth/request-otp').send({ email: 'someone@example.com' });
+    const wrong = lastOtpCode() === '000000' ? '111111' : '000000';
+    const res = await agent
+      .post('/api/admin/auth/verify-otp')
+      .send({ email: 'someone@example.com', code: wrong });
     expect(res.status).toBe(401);
-    expect(res.body.code).toBe('BAD_CREDENTIALS');
+    expect(res.body.code).toBe('BAD_CODE');
   });
 
-  it('logs in with env creds and returns aggregated analytics when authed', async () => {
-    const agent = request.agent(app);
-    const login = await agent
-      .post('/api/admin/login')
-      .send({ username: 'admin', password: 'test-password' });
-    expect(login.status).toBe(200);
+  it('signs in via email OTP and returns aggregated analytics when authed', async () => {
+    const { agent, verify } = await loginAs(app, 'admin@example.com');
+    expect(verify.status).toBe(200);
+    expect(verify.body.user.role).toBe('admin');
 
     const res = await agent.get('/api/admin/analytics?window=week');
     expect(res.status).toBe(200);

@@ -5,12 +5,14 @@ import type { CompareCategory, CategoryMeta, Component } from '@automatorr/share
 import { COMPARE_CATEGORIES } from '@automatorr/shared';
 import { api } from '../lib/api.js';
 import { trackSearch } from '../lib/session.js';
+import { useDocumentMeta } from '../lib/meta.js';
 import { TopBar } from '../components/TopBar.js';
 import { Hero } from '../components/Hero.js';
 import { CategoryNav } from '../components/CategoryNav.js';
 import { ComponentPicker } from '../components/ComponentPicker.js';
-import { EmptyState } from '../components/EmptyState.js';
 import { CompareResults } from '../components/CompareResults.js';
+import { LandingContent } from '../components/landing/LandingContent.js';
+import { SiteFooter } from '../components/SiteFooter.js';
 
 const FALLBACK_CATEGORIES: CategoryMeta[] = COMPARE_CATEGORIES.map((id) => ({
   id,
@@ -48,11 +50,13 @@ export function ComparePage() {
     setSlugB(p.b);
   }, [catParam, pair]);
 
-  // Reflect a full selection into the canonical, shareable URL.
+  // Reflect a full selection into the canonical, shareable URL. Pushed (not
+  // replaced) so Back steps through comparisons instead of exiting the site
+  // (review fix, client batch).
   useEffect(() => {
     if (slugA && slugB) {
       const target = `/compare/${category}/${slugA}${SEP}${slugB}`;
-      if (window.location.pathname !== target) navigate(target, { replace: true });
+      if (window.location.pathname !== target) navigate(target);
     }
   }, [category, slugA, slugB, navigate]);
 
@@ -74,6 +78,24 @@ export function ComparePage() {
   };
 
   const both = !!slugA && !!slugB;
+
+  // Per-pair titles/descriptions for SEO + shareability (review fix 1.9).
+  const pairReady = both && selA && selB;
+  useDocumentMeta({
+    title: pairReady
+      ? `${selA.name} vs ${selB.name} | Speccify`
+      : 'Speccify | Compare PC Parts & Build Your Rig',
+    description: pairReady
+      ? `${selA.name} vs ${selB.name}: full specs side-by-side, benchmark-based performance scores, a clear verdict, and today's best Australian prices.`
+      : 'Compare any two PC parts head-to-head with verified specs, benchmark-based scores and live Australian pricing, or plan a full compatibility-checked build and find the cheapest store. Free, independent, updated daily.',
+  });
+
+  /** Landing CTA — scroll back up and focus picker A. */
+  const pickFirst = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const chip = document.querySelector<HTMLButtonElement>('.selector .picker-chip');
+    chip?.focus({ preventScroll: true });
+  };
 
   return (
     <div className="wrap">
@@ -104,12 +126,10 @@ export function ComparePage() {
       {both ? (
         <CompareResults category={category} slugA={slugA} slugB={slugB} />
       ) : (
-        <EmptyState hasOne={!!slugA || !!slugB} />
+        <LandingContent hasOne={!!slugA || !!slugB} onPickFirst={pickFirst} />
       )}
 
-      <div className="foot foot-clean">
-        <span>© 2026 Speccify</span>
-      </div>
+      <SiteFooter />
     </div>
   );
 }

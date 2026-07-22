@@ -24,6 +24,18 @@ describe('DB-8 fix — name cleaning', () => {
     expect(needsRename('Dell S2721DGF 27" QHD 165Hz')).toBe(false);
   });
 
+  it('trims the monitor spec/marketing tail but keeps size, resolution and refresh', () => {
+    expect(cleanProductName('ASUS ROG Strix XG27ACMES - 27" 1440p 255Hz 0.3ms Fast-IPS Gaming Monitor'))
+      .toBe('ASUS ROG Strix XG27ACMES - 27" 1440p 255Hz');
+    expect(cleanProductName('MSI MAG 275UPD E14 - 27" 4K 2160p 144Hz / 1080p 288Hz Dual-Mode IPS Gaming Monitor'))
+      .toBe('MSI MAG 275UPD E14 - 27" 4K 2160p 144Hz / 1080p 288Hz');
+    expect(cleanProductName('ASUS ProArt PA148CTV -14" FHD 60Hz 5ms IPS W-LED Portable Touchscreen Monitor'))
+      .toBe('ASUS ProArt PA148CTV -14" FHD 60Hz');
+    // Panel keyword sits BEFORE the specs → leave untouched rather than risk cutting real data.
+    expect(cleanProductName('AOC Q27G4ZD QD-OLED QHD 280Hz Adaptive-Sync and G-Sync HDR 26.5in Monitor'))
+      .toBe('AOC Q27G4ZD QD-OLED QHD 280Hz Adaptive-Sync and G-Sync HDR 26.5in Monitor');
+  });
+
   it('flags verbose/truncated names for rename, not clean ones', () => {
     expect(needsRename('ARCTIC Freezer 36 A-RGB (Black) Multi Compatible Tower CPU Cooler with')).toBe(true);
     expect(needsRename("MSI MAG A650BN UK PSU '650W'")).toBe(true);

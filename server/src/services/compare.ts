@@ -102,6 +102,37 @@ function leadOf(field: CompareField, a: SpecValue | null, b: SpecValue | null): 
   return aWins ? 'a' : 'b';
 }
 
+/** Internal helper keys the crawl writes to specs but which are plumbing — never displayed. */
+const HIDDEN_SPEC_KEYS = new Set([
+  'subtype', 'cpuKey', 'cpuModel', 'cpuSocket', 'cpuFallbackUb', 'benchmark', 'ubRaw',
+]);
+/** Friendly labels + units for scraped keys that aren't in the per-category compare config. */
+const EXTRA_LABELS: Record<string, string> = {
+  passmarkCpuMark: 'PassMark (CPU Mark)',
+  releaseYear: 'Release year',
+  maxRam: 'Max memory',
+  color: 'Colour',
+};
+const EXTRA_UNITS: Record<string, string> = { maxRam: 'GB' };
+/** Numeric keys shown verbatim (no thousands separators) — e.g. a year. */
+const RAW_NUMBER_KEYS = new Set(['releaseYear']);
+
+function humanizeKey(key: string): string {
+  const spaced = key.replace(/([a-z0-9])([A-Z])/g, '$1 $2').replace(/[_-]+/g, ' ').trim();
+  return spaced.charAt(0).toUpperCase() + spaced.slice(1);
+}
+function extraLabel(key: string): string {
+  return EXTRA_LABELS[key] ?? humanizeKey(key);
+}
+function displayExtra(raw: SpecValue | null, unit: string | undefined, key: string): string {
+  if (raw === null || raw === '') return '—';
+  if (typeof raw === 'number') {
+    const n = RAW_NUMBER_KEYS.has(key) ? String(raw) : formatNumber(raw);
+    return unit ? `${n} ${unit}` : n;
+  }
+  return String(raw);
+}
+
 /** Pure head-to-head comparison driven entirely by compareConfig (spec §11). */
 export function compare(a: Component, b: Component): CompareResult {
   if (a.category !== b.category) {
@@ -137,10 +168,36 @@ export function compare(a: Component, b: Component): CompareResult {
     });
   }
 
+  // Surface every OTHER scraped spec (keys not in the compare config) as info rows, so the
+  // comparison shows absolutely everything captured for each part — not just the curated fields.
+  const configKeys = new Set(cfg.fields.map((f) => f.key));
+  const extraKeys = [...new Set([...Object.keys(a.specs ?? {}), ...Object.keys(b.specs ?? {})])]
+    .filter((k) => !configKeys.has(k) && !HIDDEN_SPEC_KEYS.has(k))
+    .sort();
+  for (const key of extraKeys) {
+    const va = rawValue(a, key);
+    const vb = rawValue(b, key);
+    const unit = EXTRA_UNITS[key];
+    rows.push({
+      key,
+      label: extraLabel(key),
+      unit,
+      valueA: va,
+      valueB: vb,
+      displayA: displayExtra(va, unit, key),
+      displayB: displayExtra(vb, unit, key),
+      lead: 'none',
+      counted: false,
+    });
+  }
+
+  // Show only what was actually scraped — drop any row that is empty ("—") on BOTH sides.
+  const shown = rows.filter((r) => !(r.displayA === '—' && r.displayB === '—'));
+
   // Tally — decided counted categories only.
   let tallyA = 0;
   let tallyB = 0;
-  for (const r of rows) {
+  for (const r of shown) {
     if (!r.counted) continue;
     if (r.lead === 'a') tallyA++;
     else if (r.lead === 'b') tallyB++;
@@ -152,7 +209,7 @@ export function compare(a: Component, b: Component): CompareResult {
   const loserComp = winner === 'a' ? b : a;
 
   const deltas = buildDeltas(cfg.deltaFields, cfg.fields, winnerComp, loserComp);
-  const tags = buildTags(cfg, rows, winner, subtypeOf(winnerComp));
+  const tags = buildTags(cfg, shown, winner, subtypeOf(winnerComp));
 
   const scorecard: Scorecard = {
     winnerSlug: winnerComp.slug,
@@ -163,7 +220,7 @@ export function compare(a: Component, b: Component): CompareResult {
     crossSubtype,
   };
 
-  return { category, a, b, rows, scorecard };
+  return { category, a, b, rows: shown, scorecard };
 }
 
 function pickWinner(a: Component, b: Component, tallyA = 0, tallyB = 0): Side {

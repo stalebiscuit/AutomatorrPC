@@ -4,7 +4,7 @@ import type { BuilderCategory, Component, PartSort } from '@automatorr/shared';
 import { Thumb } from '../Thumb.js';
 import { bestPrice, BUILDER_CATEGORY_META } from '@automatorr/shared';
 import { api } from '../../lib/api.js';
-import { formatAud, specSummary } from '../../lib/format.js';
+import { formatAud, specSummary, countWords, capWords } from '../../lib/format.js';
 import { useDebouncedValue } from '../../hooks/useDebouncedValue.js';
 
 const SPEC_KEYS: Record<BuilderCategory, string[]> = {
@@ -89,13 +89,18 @@ export function PartPicker({ category, label, onAdd, onClose, defaultSocket }: P
         </div>
 
         <div className="picker-filters">
-          <input
-            type="search"
-            placeholder={`Search ${label}…`}
-            value={q}
-            onChange={(e) => setQ(e.target.value)}
-            aria-label={`Search ${label}`}
-          />
+          <div className="picker-search-wrap">
+            <input
+              type="search"
+              placeholder={`Search ${label}…`}
+              value={q}
+              onChange={(e) => setQ(capWords(e.target.value, 200))}
+              aria-label={`Search ${label}`}
+            />
+            <span className="word-count" aria-live="polite">
+              {countWords(q)}/200 WORDS
+            </span>
+          </div>
           <input
             type="text"
             placeholder="Manufacturer"
@@ -126,7 +131,7 @@ export function PartPicker({ category, label, onAdd, onClose, defaultSocket }: P
           {isError && <p className="muted">Couldn’t load parts.</p>}
           {data?.components.map((c) => (
             <div key={c.id} className="picker-row">
-              <Thumb className="picker-thumb" imageUrl={c.imageUrl} category={category} name={c.name} />
+              <Thumb className="picker-thumb" imageUrl={c.imageUrl} category={category} name={c.name} brand={c.brand} specs={c.specs} />
               <div className="picker-info">
                 <span className="picker-name">{c.name}</span>
                 <span className="picker-specs">{specSummary(c.specs, specKeys, SPEC_UNITS)}</span>

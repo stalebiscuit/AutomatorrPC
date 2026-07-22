@@ -21,8 +21,11 @@ import { PartPicker } from '../components/builder/PartPicker.js';
 import { CompatibilityBanner } from '../components/builder/CompatibilityBanner.js';
 import { BuildSummaryBar } from '../components/builder/BuildSummaryBar.js';
 import { PricesByMerchant } from '../components/builder/PricesByMerchant.js';
-import { formatAud } from '../lib/format.js';
-import { api, type BuildBody } from '../lib/api.js';
+import { formatAud, freshness } from '../lib/format.js';
+import { SiteFooter } from '../components/SiteFooter.js';
+import { api, ApiClientError, type BuildBody } from '../lib/api.js';
+import { getEditToken, storeEditToken } from '../lib/buildTokens.js';
+import { useDocumentMeta } from '../lib/meta.js';
 import { trackClick } from '../lib/session.js';
 import '../styles/builder.css';
 
@@ -30,12 +33,18 @@ export function PcBuilder() {
   const { shortId: paramShortId } = useParams<{ shortId?: string }>();
   const navigate = useNavigate();
 
+  useDocumentMeta({
+    title: 'PC Builder | Speccify',
+    description:
+      'Build a full PC part-by-part with live compatibility checks, a wattage estimate and a build score, then find the store that sells your whole build cheapest.',
+  });
+
   const [parts, setParts] = useState<ResolvedBuildPart[]>([]);
-  const [budgetInput, setBudgetInput] = useState('');
   const [pickerCategory, setPickerCategory] = useState<BuilderCategory | null>(null);
   const [view, setView] = useState<'overview' | 'by-merchant'>('overview');
   const [shortId, setShortId] = useState<string | undefined>(paramShortId);
   const [saving, setSaving] = useState(false);
+  const [saveError, setSaveError] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
 
   // Hydrate an existing shared build from the server (permalink).
@@ -49,11 +58,21 @@ export function PcBuilder() {
     if (loaded) {
       setParts(loaded.parts);
       setShortId(loaded.build.shortId);
-      if (loaded.build.budget) setBudgetInput(String(loaded.build.budget));
     }
   }, [loaded]);
 
-  const budget = budgetInput ? Number(budgetInput) : undefined;
+  // Review fix 1.4: navigating from a loaded shared build back to plain
+  // /pc-builder previously kept the old parts + shortId, so "Save & share"
+  // on what the user thought was a NEW build silently overwrote the shared
+  // one. When the param disappears, reset to a fresh build.
+  useEffect(() => {
+    if (!paramShortId) {
+      setParts([]);
+      setShortId(undefined);
+      setSaveError(null);
+      setCopied(false);
+    }
+  }, [paramShortId]);
 
   // Socket already committed by a chosen CPU or motherboard — used to pre-filter
   // the picker so a user with an AM5 board only sees AM5 CPUs/coolers.
@@ -68,10 +87,10 @@ export function PcBuilder() {
     const compatibility = checkCompatibility(parts);
     const wattage = wattageEstimate(parts);
     const total = buildTotal(parts);
-    const score = scoreBuild(parts, budget ? { budget } : {});
+    const score = scoreBuild(parts, {});
     const merchants = pricesByMerchant(parts);
     return { compatibility, wattage, total, score, merchants };
-  }, [parts, budget]);
+  }, [parts]);
 
   const addPart = (component: Component) => {
     const category = pickerCategory;
@@ -95,14 +114,29 @@ export function PcBuilder() {
 
   const save = async () => {
     setSaving(true);
+    setSaveError(null);
     try {
       const body: BuildBody = {
-        budget,
         items: parts.map((p) => ({ category: p.category, slug: p.component.slug, chosenStore: p.chosenStore })),
       };
-      const result = shortId ? await api.updateBuild(shortId, body) : await api.createBuild(body);
+      // Review fix 1.3: updates require the private edit token issued at
+      // creation (kept in localStorage per shortId). Without one — e.g. a
+      // build someone else shared — save creates a fresh copy instead.
+      const token = shortId ? getEditToken(shortId) : null;
+      const result =
+        shortId && token ? await api.updateBuild(shortId, body, token) : await api.createBuild(body);
+      if (result.editToken) storeEditToken(result.build.shortId, result.editToken);
       setShortId(result.build.shortId);
       navigate(`/pc-builder/${result.build.shortId}`, { replace: true });
+    } catch (err) {
+      // Review fix (client batch): failures were silent — surface them.
+      if (err instanceof ApiClientError && err.status === 403) {
+        setSaveError(
+          'This shared build belongs to someone else, so it can’t be overwritten. Your changes were kept locally; remove the link from the address bar and save to create your own copy.',
+        );
+      } else {
+        setSaveError('Couldn’t save the build. Check your connection and try again — your parts are still here.');
+      }
     } finally {
       setSaving(false);
     }
@@ -125,7 +159,22 @@ export function PcBuilder() {
       <TopBar />
 
       <section aria-label="PC Builder" className="builder">
-        <h2 className="builder-title">PC Builder</h2>
+        <div className="builder-head">
+          <h2 className="builder-title">PC Builder</h2>
+          <div className="builder-actions">
+            <button type="button" className="btn-primary" onClick={save} disabled={saving || parts.length === 0}>
+              {saving ? 'Saving…' : shortId ? 'Update & share' : 'Save & share'}
+            </button>
+            {permalink && (
+              <div className="permalink">
+                <input readOnly value={permalink} aria-label="Shareable link" onFocus={(e) => e.currentTarget.select()} />
+                <button type="button" onClick={copyPermalink}>
+                  {copied ? 'Copied' : 'Copy'}
+                </button>
+              </div>
+            )}
+          </div>
+        </div>
 
         {loadFailed && paramShortId && (
           <div className="build-notfound" role="alert">
@@ -134,37 +183,14 @@ export function PcBuilder() {
           </div>
         )}
 
-        <div className="builder-controls">
-          <label
-            className="budget-field"
-            title="Sets the target used by the build score (budget-fit, 25/100). It doesn't filter parts — it rewards using your budget well and flags going over."
-          >
-            Budget (AUD)
-            <input
-              type="number"
-              min={0}
-              inputMode="numeric"
-              placeholder="e.g. 2000"
-              value={budgetInput}
-              onChange={(e) => setBudgetInput(e.target.value)}
-            />
-            <span className="field-hint">Used by the build score — not a hard filter.</span>
-          </label>
-          <button type="button" className="btn-primary" onClick={save} disabled={saving || parts.length === 0}>
-            {saving ? 'Saving…' : shortId ? 'Update & share' : 'Save & share'}
-          </button>
-          {permalink && (
-            <div className="permalink">
-              <input readOnly value={permalink} aria-label="Shareable link" onFocus={(e) => e.currentTarget.select()} />
-              <button type="button" onClick={copyPermalink}>
-                {copied ? 'Copied' : 'Copy'}
-              </button>
-            </div>
-          )}
-        </div>
+        {saveError && (
+          <div className="build-notfound" role="alert">
+            {saveError}
+          </div>
+        )}
 
         <CompatibilityBanner result={summary.compatibility} />
-        <BuildSummaryBar total={summary.total} wattage={summary.wattage} score={summary.score} budget={budget} />
+        <BuildSummaryBar total={summary.total} wattage={summary.wattage} score={summary.score} />
 
         <div className="builder-tabs">
           <button
@@ -211,14 +237,19 @@ export function PcBuilder() {
                       <td className="cell-cat">{meta.label}</td>
                       <td>
                         <div className="sel-cell">
-                          <Thumb className="sel-thumb" imageUrl={p.component.imageUrl} category={p.component.category} name={p.component.name} />
+                          <Thumb className="sel-thumb" imageUrl={p.component.imageUrl} category={p.component.category} name={p.component.name} brand={p.component.brand} specs={p.component.specs} />
                           <span className="sel-name">{p.component.name}</span>
                         </div>
                       </td>
                       <td className="cell-avail" title="Stock status — pending live feed">
                         {sorted.length ? 'In stock' : '—'}
                       </td>
-                      <td className="tabnum cell-price">{formatAud(price)}</td>
+                      <td className="tabnum cell-price">
+                        {formatAud(price)}
+                        {chosenQuote && freshness(chosenQuote.lastUpdated) && (
+                          <span className="fresh-badge">{freshness(chosenQuote.lastUpdated)}</span>
+                        )}
+                      </td>
                       <td>
                         {sorted.length ? (
                           <div className="where-cell">
@@ -302,6 +333,8 @@ export function PcBuilder() {
           }
         />
       )}
+
+      <SiteFooter />
     </div>
   );
 }

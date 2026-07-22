@@ -11,12 +11,18 @@ import {
   MatchAliasModel,
   MatchReviewModel,
   AffiliateLinkModel,
+  AdminUserModel,
+  AllowedDomainModel,
+  AdminOtpModel,
+  AdminSessionModel,
+  AdminAuditLogModel,
 } from './models/index.js';
 import { logger } from './lib/logger.js';
 import { startPriceScheduler } from './services/pricing/scheduler.js';
 import { startRollupScheduler } from './services/rollupScheduler.js';
 import { startCatalogIngestScheduler } from './services/catalog/ingestScheduler.js';
 import { loadAffiliateConfigs } from './services/affiliate/affiliateService.js';
+import { seedSuperadmins } from './services/auth/bootstrap.js';
 
 async function main(): Promise<void> {
   const cfg = loadConfig();
@@ -33,11 +39,18 @@ async function main(): Promise<void> {
     MatchAliasModel.init(),
     MatchReviewModel.init(),
     AffiliateLinkModel.init(),
+    AdminUserModel.init(),
+    AllowedDomainModel.init(),
+    AdminOtpModel.init(),
+    AdminSessionModel.init(),
+    AdminAuditLogModel.init(),
   ]);
   logger.info('Indexes ensured for all collections');
 
   await loadAffiliateConfigs();
   logger.info('Affiliate link configs loaded');
+
+  await seedSuperadmins();
 
   const app = createApp();
   app.listen(cfg.PORT, () => {

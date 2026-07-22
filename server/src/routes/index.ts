@@ -6,7 +6,8 @@ import { buildsRouter } from './builds.js';
 import { compareRouter } from './compare.js';
 import { verdictRouter } from './verdict.js';
 import { eventsRouter } from './events.js';
-import { adminRouter } from './admin.js';
+import { feedbackRouter } from './feedback.js';
+import { adminRouter } from './admin/index.js';
 
 /**
  * Aggregate API router mounted at /api. Each phase adds its routers here:
@@ -23,6 +24,7 @@ export function createApiRouter(): Router {
   api.use(compareRouter);
   api.use(verdictRouter);
   api.use(eventsRouter);
+  api.use(feedbackRouter);
   api.use(adminRouter);
   return api;
 }

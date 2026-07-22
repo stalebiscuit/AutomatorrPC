@@ -37,10 +37,11 @@ export function buildTotal(build: ResolvedBuild): number {
 }
 
 /**
- * Per-merchant single-store totals with a difference-vs-cheapest column
- * (the PCPP "Prices By Merchant" view). A merchant that doesn't carry a part
- * falls back to that part's cheapest quote for the total, but is marked as
- * carrying fewer parts via availableCount.
+ * Per-merchant totals for the "Prices By Merchant" view. Each row is the cost of the parts
+ * THAT store actually stocks — its own quotes only, never back-filled from other stores, so a
+ * store carrying one part no longer inherits the whole-build price. A store that stocks every
+ * part is a real single-store checkout (`complete`); those are ranked against each other with a
+ * difference-vs-cheapest. A store missing parts is not a one-store option, so difference = null.
  */
 export function pricesByMerchant(build: ResolvedBuild): MerchantTotal[] {
   const stores = new Set<string>();
@@ -56,10 +57,10 @@ export function pricesByMerchant(build: ResolvedBuild): MerchantTotal[] {
     const items: MerchantLineItem[] = [];
     for (const { category, component } of build) {
       const at = priceAtStore(component, store);
-      const fallback = bestPrice(component);
-      const price = at ?? fallback;
-      if (at !== null) availableCount += 1;
-      if (price !== null) total += price;
+      if (at !== null) {
+        availableCount += 1;
+        total += at; // own quote only — do NOT back-fill missing parts from other stores
+      }
       items.push({ category, slug: component.slug, name: component.name, price: at });
     }
     rows.push({
@@ -67,13 +68,24 @@ export function pricesByMerchant(build: ResolvedBuild): MerchantTotal[] {
       availableCount,
       totalParts,
       total: Math.round(total * 100) / 100,
-      difference: 0,
+      complete: totalParts > 0 && availableCount === totalParts,
+      difference: null,
       items,
     });
   }
 
-  rows.sort((a, b) => a.total - b.total);
-  const cheapest = rows.length ? rows[0]!.total : 0;
-  for (const r of rows) r.difference = Math.round((r.total - cheapest) * 100) / 100;
+  // Only stores that stock the WHOLE build are single-store options — rank those against each
+  // other (cheapest complete store = 0, others = $ more). Partial stores keep difference = null.
+  const complete = rows.filter((r) => r.complete).sort((a, b) => a.total - b.total);
+  const cheapest = complete.length ? complete[0]!.total : null;
+  for (const r of complete) r.difference = cheapest === null ? null : Math.round((r.total - cheapest) * 100) / 100;
+
+  // Complete stores first (cheapest -> dearest), then partial stores by coverage, then price.
+  rows.sort((a, b) => {
+    if (a.complete !== b.complete) return a.complete ? -1 : 1;
+    if (a.complete) return a.total - b.total;
+    if (b.availableCount !== a.availableCount) return b.availableCount - a.availableCount;
+    return a.total - b.total;
+  });
   return rows;
 }
