@@ -72,9 +72,12 @@ export default class AzureDevOpsReporter {
         name,
         automated: true,
         comment: `status=${runResult.status}; branch=${ctx.branch}; actor=${ctx.actor}`,
-        ...(this._map.planId ? { plan: { id: this._map.planId } } : {}),
+        // Plain automated run — deliberately NOT linked to the plan. A plan-linked
+        // run only counts results that reference a resolved test POINT (not just a
+        // testCase id); without that, ADO reports total=0. Test Plan structure
+        // comes from sync-test-plan; per-build results come from the JUnit runs.
+        // Keep the build link so attach-evidence can find this run by buildUri.
         ...(config.buildId ? { build: { id: config.buildId } } : {}),
-        // Deliberately NO pointIds here (see class docstring).
       };
       const run = await createRun(runBody);
       const runId = run.id;
