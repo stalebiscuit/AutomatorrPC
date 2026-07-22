@@ -18,6 +18,15 @@ parameters:
       - gate-then-full # deploy after smoke; full suite runs afterward (non-blocking)
       - full # deploy only after the ENTIRE suite passes
       - auto # Test → gate-then-full, Prod → full (used for manual UI runs)
+  # Deploy stages are compiled ONLY when this is true. Kept false by default so
+  # CI-only runs (push:dev, manual UI runs) don't require the 'speccify-vm' SSH
+  # service connection to exist yet — otherwise the whole pipeline fails to
+  # validate before the VM is provisioned. The promote:test/promote:prod scripts
+  # pass enableDeploy=true.
+  - name: enableDeploy
+    displayName: Enable VM deploy stages
+    type: boolean
+    default: false
 
 variables:
   - name: nodeVersion
@@ -210,56 +219,59 @@ stages:
             displayName: Publish E2E results + evidence
 
   # ─────────────────────────────────────────────────────────────────
-  - stage: Deploy_Test
-    displayName: Deploy → Test VM (test.speccify.info)
-    # Depend on the full suite only when gateMode=full; otherwise the smoke gate.
-    dependsOn:
-      - Build
-      - ${{ if eq(parameters.gateMode, 'full') }}:
-          - E2E_Full
-      - ${{ if ne(parameters.gateMode, 'full') }}:
-          - E2E_Smoke
-    condition: and(succeeded(), eq(variables.isTest, 'true'))
-    jobs:
-      - deployment: deploy_test
-        pool:
-          vmImage: ubuntu-latest
-        environment: speccify-test
-        strategy:
-          runOnce:
-            deploy:
-              steps:
-                - task: SSH@0
-                  inputs:
-                    sshEndpoint: $(vmSshConnection)
-                    runOptions: commands
-                    commands: /opt/speccify/deploy.sh test $(Build.SourceVersion)
-                  displayName: Deploy to Test environment
+  # Deploy stages compile ONLY when enableDeploy=true (set by promote:test /
+  # promote:prod). This keeps CI-only runs valid before the 'speccify-vm' SSH
+  # service connection exists.
+  - ${{ if eq(parameters.enableDeploy, true) }}:
+      - stage: Deploy_Test
+        displayName: Deploy → Test VM (test.speccify.info)
+        # Depend on the full suite only when gateMode=full; otherwise the smoke gate.
+        dependsOn:
+          - Build
+          - ${{ if eq(parameters.gateMode, 'full') }}:
+              - E2E_Full
+          - ${{ if ne(parameters.gateMode, 'full') }}:
+              - E2E_Smoke
+        condition: and(succeeded(), eq(variables.isTest, 'true'))
+        jobs:
+          - deployment: deploy_test
+            pool:
+              vmImage: ubuntu-latest
+            environment: speccify-test
+            strategy:
+              runOnce:
+                deploy:
+                  steps:
+                    - task: SSH@0
+                      inputs:
+                        sshEndpoint: $(vmSshConnection)
+                        runOptions: commands
+                        commands: /opt/speccify/deploy.sh test $(Build.SourceVersion)
+                      displayName: Deploy to Test environment
 
-  # ─────────────────────────────────────────────────────────────────
-  - stage: Deploy_Prod
-    displayName: Deploy → Prod VM (speccify.info)
-    # Prod defaults to the full suite; 'auto' also means full for Prod. Only pure
-    # 'gate'/'gate-then-full' deploy off the smoke gate.
-    dependsOn:
-      - Build
-      - ${{ if or(eq(parameters.gateMode, 'full'), eq(parameters.gateMode, 'auto')) }}:
-          - E2E_Full
-      - ${{ if not(or(eq(parameters.gateMode, 'full'), eq(parameters.gateMode, 'auto'))) }}:
-          - E2E_Smoke
-    condition: and(succeeded(), eq(variables.isMain, 'true'))
-    jobs:
-      - deployment: deploy_prod
-        pool:
-          vmImage: ubuntu-latest
-        environment: speccify-prod
-        strategy:
-          runOnce:
-            deploy:
-              steps:
-                - task: SSH@0
-                  inputs:
-                    sshEndpoint: $(vmSshConnection)
-                    runOptions: commands
-                    commands: /opt/speccify/deploy.sh prod $(Build.SourceVersion)
-                  displayName: Deploy to Prod environment
+      - stage: Deploy_Prod
+        displayName: Deploy → Prod VM (speccify.info)
+        # Prod defaults to the full suite; 'auto' also means full for Prod. Only pure
+        # 'gate'/'gate-then-full' deploy off the smoke gate.
+        dependsOn:
+          - Build
+          - ${{ if or(eq(parameters.gateMode, 'full'), eq(parameters.gateMode, 'auto')) }}:
+              - E2E_Full
+          - ${{ if not(or(eq(parameters.gateMode, 'full'), eq(parameters.gateMode, 'auto'))) }}:
+              - E2E_Smoke
+        condition: and(succeeded(), eq(variables.isMain, 'true'))
+        jobs:
+          - deployment: deploy_prod
+            pool:
+              vmImage: ubuntu-latest
+            environment: speccify-prod
+            strategy:
+              runOnce:
+                deploy:
+                  steps:
+                    - task: SSH@0
+                      inputs:
+                        sshEndpoint: $(vmSshConnection)
+                        runOptions: commands
+                        commands: /opt/speccify/deploy.sh prod $(Build.SourceVersion)
+                      displayName: Deploy to Prod environment

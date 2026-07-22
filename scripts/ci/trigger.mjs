@@ -129,7 +129,8 @@ async function main() {
 
   const body = {
     resources: { repositories: { self: { refName: `refs/heads/${mode.target}` } } },
-    templateParameters: { gateMode: gate },
+    // Deploy stages only compile when enableDeploy=true — promotes deploy, push-dev doesn't.
+    templateParameters: { gateMode: gate, enableDeploy: mode.deploy !== 'none' },
   };
   if (note) body.variables = { triggerNote: { value: note, isSecret: false } };
 
