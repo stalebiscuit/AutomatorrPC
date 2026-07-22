@@ -8,6 +8,12 @@
 # files inside each checkout (server/.env.<NODE_ENV>, client/.env.<mode>),
 # created ONCE during provisioning — git operations never touch untracked files.
 set -euo pipefail
+# Merge stderr into stdout: the Azure DevOps SSH task fails the step on ANY
+# stderr output, and git/npm write progress + advice there even on success.
+# `set -e` still fails the deploy on a real non-zero exit, so this only silences
+# false failures, never real ones.
+exec 2>&1
+git config --global advice.detachedHead false || true
 
 ENVN="${1:-}"
 COMMIT="${2:-}"
@@ -44,4 +50,9 @@ fi
 
 pm2 startOrReload "deploy/pm2/ecosystem.$ENVN.config.cjs" --update-env
 pm2 save
+
+# Keep the pipeline's copy of this script current so future changes propagate.
+cp "$REPO/scripts/deploy/deploy.sh" /opt/speccify/deploy.sh 2>/dev/null || true
+chmod +x /opt/speccify/deploy.sh 2>/dev/null || true
+
 echo "✓ $ENVN deploy complete — $PM2 reloaded on 127.0.0.1:$PORT"
