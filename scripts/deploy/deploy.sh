@@ -31,6 +31,8 @@ fi
 
 # VITE_BASE_API_URL=/api is constant across envs (client reads it, defaulting to
 # /api when unset), so a single production-mode build serves every environment.
+# Skip Playwright browser downloads — the e2e workspace installs here but never runs on the VM.
+export PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1
 npm ci
 npm run build
 
