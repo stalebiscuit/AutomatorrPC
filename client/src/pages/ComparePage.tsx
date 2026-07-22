@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import type { CompareCategory, CategoryMeta, Component } from '@automatorr/shared';
 import { COMPARE_CATEGORIES } from '@automatorr/shared';
 import { api } from '../lib/api.js';
@@ -30,9 +30,19 @@ function isCategory(v: string | undefined): v is CompareCategory {
   return !!v && (COMPARE_CATEGORIES as readonly string[]).includes(v);
 }
 
+/**
+ * The comparison section hosts two mutually exclusive views (design decision,
+ * 21 Jul 2026): the LandingContent component (no active pair) and the
+ * CompareResults component (pair selected). Clicking the Speccify logo in the
+ * top-left ALWAYS returns to the landing view — the logo Link navigates to
+ * "/", and the location-keyed effect below clears any selection, including
+ * when you're already on "/" with a half-picked pair (same-path Link clicks
+ * still push a fresh history entry, so the effect re-runs).
+ */
 export function ComparePage() {
   const { category: catParam, pair } = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
 
   const { data: catData } = useQuery({ queryKey: ['categories'], queryFn: api.getCategories });
   const categories = catData?.categories ?? FALLBACK_CATEGORIES;
@@ -50,15 +60,34 @@ export function ComparePage() {
     setSlugB(p.b);
   }, [catParam, pair]);
 
+  // Logo → landing: every navigation to "/" (keyed by location, so clicking
+  // the logo while already there counts too) resets to the landing view.
+  useEffect(() => {
+    if (location.pathname === '/') {
+      setSlugA('');
+      setSlugB('');
+    }
+  }, [location]);
+
   // Reflect a full selection into the canonical, shareable URL. Pushed (not
   // replaced) so Back steps through comparisons instead of exiting the site
   // (review fix, client batch).
+  //
+  // `navigate` lives in a ref, NOT the dep array: react-router hands out a new
+  // navigate identity on every location change, so with it in deps this effect
+  // re-fired mid-navigation with the still-stale slugs and bounced the user
+  // straight back to /compare/... — which is why clicking the logo could never
+  // reach the landing view. Deps are the actual selection only.
+  const navRef = useRef(navigate);
+  useEffect(() => {
+    navRef.current = navigate;
+  }, [navigate]);
   useEffect(() => {
     if (slugA && slugB) {
       const target = `/compare/${category}/${slugA}${SEP}${slugB}`;
-      if (window.location.pathname !== target) navigate(target);
+      if (window.location.pathname !== target) navRef.current(target);
     }
-  }, [category, slugA, slugB, navigate]);
+  }, [category, slugA, slugB]);
 
   // Selected component objects (for picker chips), resolved from slugs.
   const selA = useSelected(category, slugA);

@@ -28,7 +28,9 @@ Namecheap DNS (speccify.info A record) ──▶ Azure VM public IP
 3. Copy the env template: `cp .env.example .env`  (defaults are fine for dev — `MAILER_PROVIDER=console`, DB `speccify`, founders pre-set).
 4. Load catalogue data:
    - If you already have data in the old `automatorr` DB: `npm run db:migrate-speccify --workspace server`
-   - Otherwise seed fresh: `npm run seed --workspace server`
+   - Otherwise seed fresh: `npm run seed --workspace server` — restores the **full parts catalogue** (~3,700 components) from the committed snapshot at `server/src/seed/snapshot/components.json`. Idempotent and price-safe: re-running refreshes specs but never clobbers scraped prices.
+   - Small curated sample instead (~520 parts, no snapshot needed): `npm run seed:sample --workspace server`.
+   - To refresh the snapshot from a populated DB: `npm run seed:export --workspace server`, then commit the regenerated `components.json`.
 5. Run the app: `npm run dev`  (server :4000, client :5173)
 6. Test admin login: open `http://localhost:5173/admin` → you're redirected to the login → enter `daniel.hardman@automatorr.com` → **the 6-digit code prints to the server console** (console mailer) → enter it → you land on the dashboard with **Allowed Domains** and **Users** tabs.
 7. Run the backend test suite: `npm test --workspace server`  (OTP lifecycle, RS256, refresh rotation/reuse, RBAC, founder-lock, CRUD).
@@ -138,7 +140,7 @@ and append `&tls=true&tlsCAFile=/etc/ssl/ca.pem` to the URI.
 5. Bring data over (once) and/or seed:
    ```bash
    npm run db:migrate-speccify --workspace server   # if migrating existing data
-   # and/or: npm run seed --workspace server
+   # and/or: npm run seed --workspace server         # restores full parts snapshot (~3,700), price-safe & idempotent
    ```
 6. Create an unprivileged service account (review fix 1.8 — `User=%i` in a
    non-templated unit expands to the empty string, which made the app run as
