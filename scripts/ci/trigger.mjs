@@ -132,7 +132,8 @@ async function main() {
     // Deploy stages only compile when enableDeploy=true — promotes deploy, push-dev doesn't.
     templateParameters: { gateMode: gate, enableDeploy: mode.deploy !== 'none' },
   };
-  if (note) body.variables = { triggerNote: { value: note, isSecret: false } };
+  // Note is informational only — kept in local output. (Passing it as a pipeline
+  // variable would 400 unless declared "settable at queue time".)
 
   if (dryRun) {
     console.log(`\n[DRY RUN] would POST pipelines/${pipelineId}/runs with`, JSON.stringify(body));
