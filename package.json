@@ -16,6 +16,8 @@
     "format": "prettier --write \"**/*.{ts,tsx,css,json,md}\"",
     "test": "npm run test --workspace shared --if-present && npm run test --workspace server --if-present && npm run test --workspace client --if-present",
     "seed": "npm run seed --workspace server",
+    "seed:sample": "npm run seed:sample --workspace server",
+    "seed:export": "npm run seed:export --workspace server",
     "scrape": "npm run scrape --workspace server",
     "rollups": "npm run rollups --workspace server",
     "icecat:enrich": "npm run icecat:enrich --workspace server",
