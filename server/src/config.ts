@@ -106,6 +106,13 @@ const EnvSchema = z.object({
   VERDICT_PROVIDER: z.enum(['placeholder', 'seeded', 'claude']).default('seeded'),
 
   SCRAPE_CRON: z.string().default('15 3 * * *'),
+  // When true, the daily price job renders JS pages via Playwright/Chromium for
+  // fuller retailer coverage (PCCaseGear/Mwave quotes). Requires the browser:
+  // `npx playwright install --with-deps chromium` in the server workspace.
+  SCRAPE_RENDER: z
+    .string()
+    .default('false')
+    .transform((v) => v === 'true' || v === '1'),
   SCRAPE_USER_AGENT: z
     .string()
     .default('AutomatorrPriceBot/1.0 (+https://automatorr.com/bot)'),
