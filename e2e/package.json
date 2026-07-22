@@ -1,0 +1,30 @@
+{
+  "name": "@automatorr/e2e",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Playwright E2E suite + Azure DevOps Test Plan integration for Speccify.",
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:full": "playwright test",
+    "report": "playwright show-report",
+    "azdo:scan": "node azdo/scan-tests.js",
+    "azdo:sync": "node azdo/sync-test-plan.js",
+    "azdo:gate": "node azdo/coverage-gate.js",
+    "azdo:evidence": "node azdo/build-evidence-pdf.js",
+    "azdo:attach": "node azdo/attach-evidence.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "mongoose": "^8.9.5",
+    "pdfkit": "^0.15.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/pdfkit": "^0.13.9"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

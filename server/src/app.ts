@@ -6,7 +6,9 @@ import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import { loadConfig } from './config.js';
 import { createApiRouter } from './routes/index.js';
+import { createTestHooksRouter, testHooksEnabled } from './routes/testHooks.js';
 import { errorHandler, notFoundHandler } from './middleware/errorHandler.js';
+import { logger } from './lib/logger.js';
 
 const CLIENT_DIST = join(dirname(fileURLToPath(import.meta.url)), '../../client/dist');
 
@@ -29,6 +31,15 @@ export function createApp(): Express {
   app.use(cookieParser());
 
   app.use('/api', createApiRouter());
+
+  // E2E test seam — only when explicitly enabled and never in production.
+  // Logged loudly so it can never be left on unnoticed.
+  if (testHooksEnabled()) {
+    logger.warn(
+      '[test-hooks] E2E test hooks are ENABLED (E2E_TEST_HOOKS=true). This must NEVER be set in production.',
+    );
+    app.use('/api', createTestHooksRouter());
+  }
 
   // Unmatched API routes → typed 404 (kept distinct from SPA routes).
   const apiNotFound = Router();

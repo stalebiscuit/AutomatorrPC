@@ -5,8 +5,18 @@ import { logger } from '../../lib/logger.js';
 import { AdminSessionModel, AdminUserModel, type AdminRole } from '../../models/index.js';
 import { randomToken, sha256Hex } from './hashing.js';
 
-// ── RS256 keypair ────────────────────────────────────────────────────
-let keys: { privateKey: string; publicKey: string } | null = null;
+// ── Access-token signer (RS256 keypair, or HS256 secret fallback) ─────
+//
+// Precedence: an RS256 keypair (ADMIN_JWT_*) wins when present. Otherwise a
+// symmetric JWT_SECRET is used with HS256. Failing both, dev/test get an
+// ephemeral RS256 keypair; production is rejected at config validation so we
+// never reach here without one of the two mechanisms.
+interface Signer {
+  algorithm: 'RS256' | 'HS256';
+  signKey: string; // private key (RS256) or shared secret (HS256)
+  verifyKey: string; // public key (RS256) or shared secret (HS256)
+}
+let signer: Signer | null = null;
 
 /** Accept either raw PEM or base64-encoded PEM (env-friendly). */
 function decodeKey(value: string): string {
@@ -14,32 +24,36 @@ function decodeKey(value: string): string {
   return s.includes('-----BEGIN') ? s : Buffer.from(s, 'base64').toString('utf8');
 }
 
-function getKeys(): { privateKey: string; publicKey: string } {
-  if (keys) return keys;
+function getSigner(): Signer {
+  if (signer) return signer;
   const cfg = loadConfig();
   if (cfg.ADMIN_JWT_PRIVATE_KEY && cfg.ADMIN_JWT_PUBLIC_KEY) {
-    keys = {
-      privateKey: decodeKey(cfg.ADMIN_JWT_PRIVATE_KEY),
-      publicKey: decodeKey(cfg.ADMIN_JWT_PUBLIC_KEY),
-    };
-    return keys;
+    const privateKey = decodeKey(cfg.ADMIN_JWT_PRIVATE_KEY);
+    const publicKey = decodeKey(cfg.ADMIN_JWT_PUBLIC_KEY);
+    signer = { algorithm: 'RS256', signKey: privateKey, verifyKey: publicKey };
+    return signer;
+  }
+  if (cfg.JWT_SECRET) {
+    logger.info('[auth] Using HS256 with JWT_SECRET (no RS256 keypair set).');
+    signer = { algorithm: 'HS256', signKey: cfg.JWT_SECRET, verifyKey: cfg.JWT_SECRET };
+    return signer;
   }
   if (cfg.NODE_ENV === 'production') {
-    throw new Error('ADMIN_JWT_PRIVATE_KEY/ADMIN_JWT_PUBLIC_KEY are required in production');
+    throw new Error('Production auth needs an RS256 keypair (ADMIN_JWT_*) or a JWT_SECRET');
   }
   const gen = generateKeyPairSync('rsa', {
     modulusLength: 2048,
     publicKeyEncoding: { type: 'spki', format: 'pem' },
     privateKeyEncoding: { type: 'pkcs8', format: 'pem' },
   });
-  logger.warn('[auth] Using an ephemeral RS256 keypair (no ADMIN_JWT_* set) — dev/test only.');
-  keys = { privateKey: gen.privateKey, publicKey: gen.publicKey };
-  return keys;
+  logger.warn('[auth] Using an ephemeral RS256 keypair (no ADMIN_JWT_*/JWT_SECRET) — dev/test only.');
+  signer = { algorithm: 'RS256', signKey: gen.privateKey, verifyKey: gen.publicKey };
+  return signer;
 }
 
-/** Test seam — drop the cached keypair. */
+/** Test seam — drop the cached signer. */
 export function resetAuthKeysForTests(): void {
-  keys = null;
+  signer = null;
 }
 
 // ── Access token (stateless RS256 JWT) ───────────────────────────────
@@ -52,16 +66,18 @@ export interface AccessClaims {
 
 export function issueAccessToken(claims: AccessClaims): string {
   const cfg = loadConfig();
+  const s = getSigner();
   return jwt.sign(
     { email: claims.email, role: claims.role, sid: claims.sid },
-    getKeys().privateKey,
-    { algorithm: 'RS256', subject: claims.sub, expiresIn: cfg.ACCESS_TTL_MIN * 60 },
+    s.signKey,
+    { algorithm: s.algorithm, subject: claims.sub, expiresIn: cfg.ACCESS_TTL_MIN * 60 },
   );
 }
 
-/** Verify + decode an access token. Throws on any invalidity (alg pinned to RS256). */
+/** Verify + decode an access token. Throws on any invalidity (alg pinned to the configured signer). */
 export function verifyAccessToken(token: string): AccessClaims {
-  const decoded = jwt.verify(token, getKeys().publicKey, { algorithms: ['RS256'] });
+  const s = getSigner();
+  const decoded = jwt.verify(token, s.verifyKey, { algorithms: [s.algorithm] });
   if (typeof decoded === 'string' || !decoded.sub) throw new Error('Invalid token');
   const role = decoded.role as AdminRole;
   if (role !== 'admin' && role !== 'superadmin') throw new Error('Invalid role claim');

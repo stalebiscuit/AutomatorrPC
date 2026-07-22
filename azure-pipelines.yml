@@ -1,0 +1,265 @@
+# Speccify CI/CD.
+#
+# trigger: none — this pipeline is started ONLY by the interactive npm scripts
+# (push:dev / promote:test / promote:prod) via the REST API, or a manual "Run
+# pipeline" in the ADO UI. A bare `git push` never starts CI. This is deliberate:
+# auto push-triggers + any duplicate pipeline definition pointing at this repo
+# would silently double every run and exhaust agent capacity.
+trigger: none
+pr: none
+
+parameters:
+  - name: gateMode
+    displayName: Gate mode
+    type: string
+    default: auto
+    values:
+      - gate # deploy after the fast @smoke subset only; full suite does NOT run
+      - gate-then-full # deploy after smoke; full suite runs afterward (non-blocking)
+      - full # deploy only after the ENTIRE suite passes
+      - auto # Test → gate-then-full, Prod → full (used for manual UI runs)
+
+variables:
+  - name: nodeVersion
+    value: '20.x'
+  # Name of the SSH service connection to the VM (create in Project Settings →
+  # Service connections). Used by the deploy stages.
+  - name: vmSshConnection
+    value: 'speccify-vm'
+  - name: isTest
+    value: $[eq(variables['Build.SourceBranch'], 'refs/heads/test')]
+  - name: isMain
+    value: $[eq(variables['Build.SourceBranch'], 'refs/heads/main')]
+
+stages:
+  # ─────────────────────────────────────────────────────────────────
+  - stage: Build
+    displayName: Build (install + build client & server)
+    jobs:
+      - job: build
+        pool:
+          vmImage: ubuntu-latest
+        steps:
+          - task: NodeTool@0
+            inputs:
+              versionSpec: $(nodeVersion)
+            displayName: Use Node $(nodeVersion)
+          - script: npm ci
+            displayName: Install (workspaces)
+          - script: |
+              # CI frontend env — pitfall #1: without VITE_BASE_API_URL every
+              # app-level API call becomes unproxied and silently 404s, while
+              # API-only tests keep passing. Written BEFORE the client build so
+              # Vite bakes it in.
+              printf 'VITE_BASE_API_URL=/api\nVITE_APP_ENV=production\n' > client/.env.production
+            displayName: Write CI frontend env
+          - script: npm run build
+            displayName: Build shared + server + client
+          - task: PublishPipelineArtifact@1
+            inputs:
+              targetPath: client/dist
+              artifact: client-dist
+            displayName: Publish client build
+
+  # ─────────────────────────────────────────────────────────────────
+  - stage: E2E_Smoke
+    displayName: E2E — coverage gate, plan sync, @smoke
+    dependsOn: Build
+    jobs:
+      - job: smoke
+        pool:
+          vmImage: ubuntu-latest
+        variables:
+          NODE_ENV: test
+          MONGO_URI: mongodb://127.0.0.1:27017/speccify_e2e
+          E2E_MONGO_URI: mongodb://127.0.0.1:27017/speccify_e2e
+          E2E_BASE_URL: http://127.0.0.1:4000
+          E2E_TEST_HOOKS: 'true'
+          E2E_ENVIRONMENT: ci
+          GATE_MODE: ${{ parameters.gateMode }}
+        steps:
+          - task: NodeTool@0
+            inputs:
+              versionSpec: $(nodeVersion)
+          - script: npm ci
+            displayName: Install
+          - script: docker run -d --name mongo -p 27017:27017 mongo:7
+            displayName: Start ephemeral MongoDB (speccify_e2e)
+          - script: |
+              # CI backend env for the ephemeral e2e run (throwaway DB, test hooks on).
+              cat > server/.env.test <<EOF
+              NODE_ENV=test
+              MONGO_URI=$MONGO_URI
+              PORT=4000
+              CLIENT_URL=http://127.0.0.1:4000
+              APP_URL=http://127.0.0.1:4000
+              JWT_SECRET=$(E2E_JWT_SECRET)
+              MAILER_PROVIDER=console
+              E2E_TEST_HOOKS=true
+              EOF
+            displayName: Write CI backend env
+          - script: printf 'VITE_BASE_API_URL=/api\nVITE_APP_ENV=test\n' > client/.env.production
+            displayName: Write CI frontend env
+          - script: npm run build
+            displayName: Build (client dist served by the single-process app)
+          - script: npm run seed:sample --workspace server
+            displayName: Seed the sample catalogue into speccify_e2e
+          - script: |
+              nohup npm run start --workspace server > $(Build.ArtifactStagingDirectory)/server.log 2>&1 &
+              for i in $(seq 1 30); do
+                curl -sf http://127.0.0.1:4000/api/health && break || sleep 2;
+              done
+              curl -sf http://127.0.0.1:4000/api/health
+            displayName: Start app and wait for health
+          - script: node e2e/azdo/coverage-gate.js
+            displayName: Coverage gate (open tickets must be covered)
+            env:
+              AZURE_DEVOPS_PAT: $(AZURE_DEVOPS_PAT)
+          - script: node e2e/azdo/sync-test-plan.js
+            displayName: Sync Test Plan
+            env:
+              AZURE_DEVOPS_PAT: $(AZURE_DEVOPS_PAT)
+          - script: npm run test:smoke --workspace e2e
+            displayName: Run @smoke subset
+            env:
+              CI: 'true'
+              AZURE_DEVOPS_PAT: $(AZURE_DEVOPS_PAT)
+          - task: PublishTestResults@2
+            condition: always()
+            inputs:
+              testResultsFormat: JUnit
+              testResultsFiles: e2e/results/junit.xml
+              testRunTitle: 'Speccify @smoke (${{ parameters.gateMode }})'
+            displayName: Publish JUnit (smoke)
+
+  # ─────────────────────────────────────────────────────────────────
+  - stage: E2E_Full
+    displayName: E2E — full suite + evidence
+    dependsOn: Build
+    # Skip entirely for pure 'gate' mode (deploy after smoke only, no full suite).
+    condition: ne('${{ parameters.gateMode }}', 'gate')
+    jobs:
+      - job: full
+        pool:
+          vmImage: ubuntu-latest
+        variables:
+          NODE_ENV: test
+          MONGO_URI: mongodb://127.0.0.1:27017/speccify_e2e
+          E2E_MONGO_URI: mongodb://127.0.0.1:27017/speccify_e2e
+          E2E_BASE_URL: http://127.0.0.1:4000
+          E2E_TEST_HOOKS: 'true'
+          E2E_ENVIRONMENT: ci
+          GATE_MODE: ${{ parameters.gateMode }}
+        steps:
+          - task: NodeTool@0
+            inputs:
+              versionSpec: $(nodeVersion)
+          - script: npm ci
+            displayName: Install
+          - script: docker run -d --name mongo -p 27017:27017 mongo:7
+            displayName: Start ephemeral MongoDB (speccify_e2e)
+          - script: |
+              cat > server/.env.test <<EOF
+              NODE_ENV=test
+              MONGO_URI=$MONGO_URI
+              PORT=4000
+              CLIENT_URL=http://127.0.0.1:4000
+              APP_URL=http://127.0.0.1:4000
+              JWT_SECRET=$(E2E_JWT_SECRET)
+              MAILER_PROVIDER=console
+              E2E_TEST_HOOKS=true
+              EOF
+              printf 'VITE_BASE_API_URL=/api\nVITE_APP_ENV=test\n' > client/.env.production
+            displayName: Write CI env files
+          - script: npm run build
+            displayName: Build
+          - script: npm run seed:sample --workspace server
+            displayName: Seed sample catalogue
+          - script: |
+              nohup npm run start --workspace server > server.log 2>&1 &
+              for i in $(seq 1 30); do curl -sf http://127.0.0.1:4000/api/health && break || sleep 2; done
+              curl -sf http://127.0.0.1:4000/api/health
+            displayName: Start app and wait for health
+          - script: npm run test:full --workspace e2e
+            displayName: Run full suite
+            continueOnError: true
+            env:
+              CI: 'true'
+              AZURE_DEVOPS_PAT: $(AZURE_DEVOPS_PAT)
+          - script: node e2e/azdo/build-evidence-pdf.js
+            displayName: Build evidence PDF (never fails the pipeline)
+          # Publish JUnit FIRST so its Test Run exists and carries this build's
+          # buildUri, THEN attach evidence so it can find that run too.
+          - task: PublishTestResults@2
+            condition: always()
+            inputs:
+              testResultsFormat: JUnit
+              testResultsFiles: e2e/results/junit.xml
+              testRunTitle: 'Speccify full (${{ parameters.gateMode }})'
+            displayName: Publish JUnit (full)
+          - script: node e2e/azdo/attach-evidence.js
+            displayName: Attach evidence PDF to this build's Test Runs
+            condition: always()
+            env:
+              AZURE_DEVOPS_PAT: $(AZURE_DEVOPS_PAT)
+          - task: PublishPipelineArtifact@1
+            condition: always()
+            inputs:
+              targetPath: e2e/results
+              artifact: e2e-results
+            displayName: Publish E2E results + evidence
+
+  # ─────────────────────────────────────────────────────────────────
+  - stage: Deploy_Test
+    displayName: Deploy → Test VM (test.speccify.info)
+    # Depend on the full suite only when gateMode=full; otherwise the smoke gate.
+    dependsOn:
+      - Build
+      - ${{ if eq(parameters.gateMode, 'full') }}:
+          - E2E_Full
+      - ${{ if ne(parameters.gateMode, 'full') }}:
+          - E2E_Smoke
+    condition: and(succeeded(), eq(variables.isTest, 'true'))
+    jobs:
+      - deployment: deploy_test
+        pool:
+          vmImage: ubuntu-latest
+        environment: speccify-test
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                - task: SSH@0
+                  inputs:
+                    sshEndpoint: $(vmSshConnection)
+                    runOptions: commands
+                    commands: /opt/speccify/deploy.sh test $(Build.SourceVersion)
+                  displayName: Deploy to Test environment
+
+  # ─────────────────────────────────────────────────────────────────
+  - stage: Deploy_Prod
+    displayName: Deploy → Prod VM (speccify.info)
+    # Prod defaults to the full suite; 'auto' also means full for Prod. Only pure
+    # 'gate'/'gate-then-full' deploy off the smoke gate.
+    dependsOn:
+      - Build
+      - ${{ if or(eq(parameters.gateMode, 'full'), eq(parameters.gateMode, 'auto')) }}:
+          - E2E_Full
+      - ${{ if not(or(eq(parameters.gateMode, 'full'), eq(parameters.gateMode, 'auto'))) }}:
+          - E2E_Smoke
+    condition: and(succeeded(), eq(variables.isMain, 'true'))
+    jobs:
+      - deployment: deploy_prod
+        pool:
+          vmImage: ubuntu-latest
+        environment: speccify-prod
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                - task: SSH@0
+                  inputs:
+                    sshEndpoint: $(vmSshConnection)
+                    runOptions: commands
+                    commands: /opt/speccify/deploy.sh prod $(Build.SourceVersion)
+                  displayName: Deploy to Prod environment

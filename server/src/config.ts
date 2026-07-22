@@ -3,15 +3,45 @@ import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
 import { z } from 'zod';
 
-// Workspace scripts (`npm run dev --workspace server`) run with CWD set to
-// server/, where no .env lives — the real config is the monorepo-root .env.
-// Resolve it relative to this module so it loads regardless of the CWD, then
-// fall back to a CWD-local .env for anyone running from elsewhere. dotenv does
-// not override vars already present in the environment, so real production
-// env vars still win.
+/**
+ * Per-environment env loading (CI/CD refactor, 22 Jul 2026).
+ *
+ * The same codebase runs on a dev laptop, the Test VM and the Prod VM without
+ * code changes: NODE_ENV selects which file loads. Files live in the server
+ * package dir (server/.env.<env>), resolved relative to THIS module so the CWD
+ * never matters — workspace scripts run with CWD=server/, the prod bundle runs
+ * from server/dist/. Load order (dotenv never overrides an already-set var, so
+ * earlier wins): the env-specific file, then a plain server/.env, then whatever
+ * the process CWD provides. Real production env vars (set by PM2/systemd) beat
+ * all of them.
+ */
 const moduleDir = dirname(fileURLToPath(import.meta.url));
-loadEnv({ path: resolve(moduleDir, '../../.env') });
+// server/src/config.ts (dev, tsx) and server/dist/*.js (prod bundle) both sit
+// one dir below the server package root.
+const serverRoot = resolve(moduleDir, '..');
+const nodeEnv = process.env.NODE_ENV || 'development';
+loadEnv({ path: resolve(serverRoot, `.env.${nodeEnv}`) });
+loadEnv({ path: resolve(serverRoot, '.env') });
 loadEnv();
+
+/**
+ * Back-compat normalisation: the .env files use the Clockit-aligned key names
+ * (MONGO_URI, CLIENT_URL/APP_URL) while the validated schema below keeps its
+ * original property names so the ~30 consumers don't have to change. Copy the
+ * new-name value into the old name only when the old one isn't already set, so
+ * either naming works and nothing silently breaks during the migration.
+ */
+function alias(canonical: string, ...aliases: string[]): void {
+  if (process.env[canonical]) return;
+  for (const a of aliases) {
+    if (process.env[a]) {
+      process.env[canonical] = process.env[a];
+      return;
+    }
+  }
+}
+alias('MONGODB_URI', 'MONGO_URI');
+alias('CLIENT_ORIGIN', 'CLIENT_URL', 'APP_URL');
 
 /**
  * Env schema — validated once at boot. Missing/invalid required vars fail fast.
@@ -29,6 +59,10 @@ const EnvSchema = z.object({
   // auto-generated ephemerally in dev/test when absent. `npm run generate-keys`.
   ADMIN_JWT_PRIVATE_KEY: z.string().optional(),
   ADMIN_JWT_PUBLIC_KEY: z.string().optional(),
+  // Fallback symmetric secret (HS256) used only when no RS256 keypair is set.
+  // Lets an environment run auth with a single shared secret instead of a
+  // keypair. RS256 keypair, when present, always takes precedence.
+  JWT_SECRET: z.string().optional(),
 
   // Founders — locked super-admins (comma-separated emails).
   SUPERADMIN_EMAILS: z
@@ -82,11 +116,13 @@ const EnvSchema = z.object({
   VERDICT_MODEL: z.string().default('claude-haiku-4-5-20251001'),
 }).superRefine((cfg, ctx) => {
   if (cfg.NODE_ENV !== 'production') return;
-  if (!cfg.ADMIN_JWT_PRIVATE_KEY || !cfg.ADMIN_JWT_PUBLIC_KEY) {
+  const hasKeypair = Boolean(cfg.ADMIN_JWT_PRIVATE_KEY && cfg.ADMIN_JWT_PUBLIC_KEY);
+  const hasSecret = Boolean(cfg.JWT_SECRET);
+  if (!hasKeypair && !hasSecret) {
     ctx.addIssue({
       code: z.ZodIssueCode.custom,
       message:
-        'ADMIN_JWT_PRIVATE_KEY and ADMIN_JWT_PUBLIC_KEY are required in production (run `npm run generate-keys`).',
+        'Production auth needs either an RS256 keypair (ADMIN_JWT_PRIVATE_KEY + ADMIN_JWT_PUBLIC_KEY, run `npm run generate-keys`) or a JWT_SECRET fallback.',
     });
   }
   if (cfg.MAILER_PROVIDER === 'smtp' && (!cfg.SMTP_HOST || !cfg.SMTP_USER || !cfg.SMTP_PASS)) {

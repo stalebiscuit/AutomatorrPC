@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "types": ["node"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "allowJs": false,
+    "resolveJsonModule": true
+  },
+  "include": ["playwright.config.ts", "global-setup.ts", "global-teardown.ts", "lib/**/*.ts", "tests/**/*.ts"]
+}

@@ -17,6 +17,14 @@ import type {
   VerdictResponse,
 } from '@automatorr/shared';
 
+/**
+ * Same-origin API base. Set per environment via VITE_BASE_API_URL (see
+ * client/.env.*), defaulting to '/api' so a missing frontend env var never
+ * silently turns app calls into unproxied 404s. The frontend always talks to a
+ * reverse-proxied same-origin path — never a hardcoded backend host.
+ */
+const API_BASE = import.meta.env.VITE_BASE_API_URL ?? '/api';
+
 export class ApiClientError extends Error {
   readonly status: number;
   readonly code: string;
@@ -31,7 +39,7 @@ export class ApiClientError extends Error {
 let refreshInFlight: Promise<boolean> | null = null;
 function refreshSession(): Promise<boolean> {
   if (!refreshInFlight) {
-    refreshInFlight = fetch('/api/admin/auth/refresh', {
+    refreshInFlight = fetch(`${API_BASE}/admin/auth/refresh`, {
       method: 'POST',
       credentials: 'include',
       headers: { 'x-csrf': '1' },
@@ -54,7 +62,7 @@ async function request<T>(path: string, init?: RequestInit, retry = true): Promi
   // Custom header is the CSRF defense (paired with SameSite=strict cookies).
   if (isAdmin) headers['x-csrf'] = '1';
 
-  const res = await fetch(`/api${path}`, { credentials: 'include', ...init, headers });
+  const res = await fetch(`${API_BASE}${path}`, { credentials: 'include', ...init, headers });
 
   // On a 401 for a guarded admin call, try one silent refresh then retry once.
   if (res.status === 401 && retry && isAdmin && !path.startsWith('/admin/auth/')) {

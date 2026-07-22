@@ -7,11 +7,20 @@
   "workspaces": [
     "shared",
     "server",
-    "client"
+    "client",
+    "e2e"
   ],
   "scripts": {
     "build": "npm run build --workspace shared && npm run build --workspace server && npm run build --workspace client",
     "dev": "concurrently -n server,client -c blue,green \"npm run dev --workspace server\" \"npm run dev --workspace client\"",
+    "e2e": "npm run test --workspace e2e",
+    "e2e:smoke": "npm run test:smoke --workspace e2e",
+    "azdo:sync": "npm run azdo:sync --workspace e2e",
+    "azdo:gate": "npm run azdo:gate --workspace e2e",
+    "ci:preview": "node scripts/ci/preview.mjs",
+    "push:dev": "node scripts/ci/trigger.mjs push-dev",
+    "promote:test": "node scripts/ci/trigger.mjs promote-test",
+    "promote:prod": "node scripts/ci/trigger.mjs promote-prod",
     "lint": "eslint . --max-warnings 0",
     "format": "prettier --write \"**/*.{ts,tsx,css,json,md}\"",
     "test": "npm run test --workspace shared --if-present && npm run test --workspace server --if-present && npm run test --workspace client --if-present",
