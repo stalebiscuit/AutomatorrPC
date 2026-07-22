@@ -13,8 +13,8 @@ ENVN="${1:-}"
 COMMIT="${2:-}"
 
 case "$ENVN" in
-  test) PORT=8101; NODE_ENV=test;       VITE_MODE=test;       PM2=speccify-test-backend;;
-  prod) PORT=8102; NODE_ENV=production; VITE_MODE=production; PM2=speccify-prod-backend;;
+  test) PORT=8101; NODE_ENV=test;       PM2=speccify-test-backend;;
+  prod) PORT=8102; NODE_ENV=production; PM2=speccify-prod-backend;;
   *) echo "usage: deploy.sh <test|prod> [commit]"; exit 2;;
 esac
 
@@ -29,10 +29,10 @@ else
   git pull --ff-only
 fi
 
+# VITE_BASE_API_URL=/api is constant across envs (client reads it, defaulting to
+# /api when unset), so a single production-mode build serves every environment.
 npm ci
-npm run build --workspace shared
-npm run build --workspace server
-npm run build --workspace client -- --mode "$VITE_MODE"
+npm run build
 
 # Sanity: the env file this environment loads must exist.
 if [ ! -f "server/.env.$NODE_ENV" ]; then
