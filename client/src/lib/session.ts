@@ -3,14 +3,23 @@ import { api } from './api.js';
 
 const KEY = 'automatorr_session_id';
 
+// In-memory fallback when storage is blocked (review fix 1.6) — previously an
+// uncaught localStorage SecurityError here crashed the picker's click handler.
+let memoryId: string | null = null;
+
 /** Anonymous, first-party session id (no PII) — spec §6. */
 export function getSessionId(): string {
-  let id = localStorage.getItem(KEY);
-  if (!id) {
-    id = crypto.randomUUID();
-    localStorage.setItem(KEY, id);
+  try {
+    let id = localStorage.getItem(KEY);
+    if (!id) {
+      id = crypto.randomUUID();
+      localStorage.setItem(KEY, id);
+    }
+    return id;
+  } catch {
+    if (!memoryId) memoryId = crypto.randomUUID();
+    return memoryId;
   }
-  return id;
 }
 
 /** Fire-and-forget search/select event. */

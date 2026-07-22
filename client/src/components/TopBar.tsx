@@ -111,13 +111,8 @@ export function TopBar() {
                   <span aria-hidden="true">→</span>
                 </Link>
               </div>
-              <div className="drawer-section">
-                <span className="drawer-label">Admin</span>
-                <Link to="/admin/login" className="drawer-link" onClick={closeMenu}>
-                  Admin login
-                  <span aria-hidden="true">→</span>
-                </Link>
-              </div>
+              {/* Admin login is deliberately unlisted (product decision, 21 Jul 2026):
+                  staff navigate to /admin/login directly. */}
             </nav>
           </aside>
         </div>

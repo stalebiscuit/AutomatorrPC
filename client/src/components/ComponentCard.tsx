@@ -59,10 +59,12 @@ export function ComponentCard({ component, rows, side, win }: Props) {
     ? [...component.prices].sort((a, b) => a.price - b.price)[0]!
     : null;
 
-  const onSeeAll = async () => {
+  // Review fix 1.5: a real anchor with fire-and-forget tracking. Awaiting the
+  // tracking POST before window.open destroyed the user-activation gesture,
+  // so Safari/Firefox popup blockers silently ate the store tab.
+  const onSeeAll = () => {
     if (!lowest) return;
-    await trackClick({ componentId: component.id, store: lowest.store, url: lowest.url });
-    window.open(lowest.url, '_blank', 'noopener,noreferrer');
+    void trackClick({ componentId: component.id, store: lowest.store, url: lowest.url });
   };
 
   return (
@@ -112,14 +114,21 @@ export function ComponentCard({ component, rows, side, win }: Props) {
 
       <PriceList componentId={component.id} prices={component.prices} />
 
-      <button
-        type="button"
-        className={`cta ${win ? 'solid' : 'outline'}`}
-        onClick={() => void onSeeAll()}
-        disabled={!lowest}
-      >
-        SEE ALL PRICES &gt;
-      </button>
+      {lowest ? (
+        <a
+          className={`cta ${win ? 'solid' : 'outline'}`}
+          href={lowest.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={onSeeAll}
+        >
+          SEE ALL PRICES &gt;
+        </a>
+      ) : (
+        <button type="button" className={`cta ${win ? 'solid' : 'outline'}`} disabled>
+          SEE ALL PRICES &gt;
+        </button>
+      )}
     </article>
   );
 }

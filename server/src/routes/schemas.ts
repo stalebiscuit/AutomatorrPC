@@ -33,7 +33,21 @@ export const createBuildBody = z.object({
   budget: z.coerce.number().positive().max(1000000).optional(),
   items: z.array(buildItemSchema).max(40).default([]),
 });
-export const updateBuildBody = createBuildBody;
+/**
+ * Partial PATCH schema (review fix 1.3): previously `updateBuildBody =
+ * createBuildBody`, whose `items` default of [] meant a PATCH sending only
+ * `{name}` silently deleted every part in the build. Only provided fields
+ * are updated now.
+ */
+export const updateBuildBody = z
+  .object({
+    name: z.string().trim().max(120).optional(),
+    budget: z.coerce.number().positive().max(1000000).optional(),
+    items: z.array(buildItemSchema).max(40).optional(),
+  })
+  .refine((v) => v.name !== undefined || v.budget !== undefined || v.items !== undefined, {
+    message: 'nothing to update',
+  });
 export const buildParams = z.object({ shortId: z.string().min(3).max(40) });
 export const buildSummaryQuery = z.object({ budget: z.coerce.number().positive().max(1000000).optional() });
 

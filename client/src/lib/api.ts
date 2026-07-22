@@ -203,8 +203,12 @@ export const api = {
       `/builds/${shortId}${qs({ budget: budget !== undefined ? String(budget) : undefined })}`,
     ),
 
-  updateBuild: (shortId: string, body: BuildBody) =>
-    request<BuildSummary>(`/builds/${shortId}`, { method: 'PATCH', body: JSON.stringify(body) }),
+  updateBuild: (shortId: string, body: BuildBody, editToken: string) =>
+    request<BuildSummary>(`/builds/${shortId}`, {
+      method: 'PATCH',
+      body: JSON.stringify(body),
+      headers: { 'x-edit-token': editToken },
+    }),
 
   buildByMerchant: (shortId: string) =>
     request<{ merchants: MerchantTotal[] }>(`/builds/${shortId}/by-merchant`),

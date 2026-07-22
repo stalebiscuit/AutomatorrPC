@@ -33,9 +33,11 @@ export function PriceList({ componentId, prices }: Props) {
   );
   const fresh = freshness(newest);
 
-  const open = async (q: PriceQuote) => {
-    await trackClick({ componentId, store: q.store, url: q.url });
-    window.open(q.url, '_blank', 'noopener,noreferrer');
+  // Review fix 1.5: real anchors + fire-and-forget tracking. Awaiting the
+  // tracking POST before window.open destroyed the user-activation gesture,
+  // so Safari/Firefox popup blockers silently ate the store tab.
+  const track = (q: PriceQuote) => {
+    void trackClick({ componentId, store: q.store, url: q.url });
   };
 
   return (
@@ -49,11 +51,13 @@ export function PriceList({ componentId, prices }: Props) {
       </div>
       <div className="sources">
         {sorted.map((q, i) => (
-          <button
+          <a
             key={`${q.store}-${i}`}
-            type="button"
+            href={q.url}
+            target="_blank"
+            rel="noopener noreferrer"
             className={`src${q.price === lowest ? ' low' : ''}`}
-            onClick={() => void open(q)}
+            onClick={() => track(q)}
             aria-label={`${q.store} ${fmt(q.price)}, opens in a new tab`}
           >
             <span className="si">{`1.${i}`}</span>
@@ -62,7 +66,7 @@ export function PriceList({ componentId, prices }: Props) {
             <span className="ar" aria-hidden="true">
               ↗
             </span>
-          </button>
+          </a>
         ))}
       </div>
     </>

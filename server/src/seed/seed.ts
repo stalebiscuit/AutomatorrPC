@@ -92,9 +92,19 @@ export async function seedDatabase(): Promise<SeedSummary[]> {
       else if (csvTypesFor(category).length > 0)
         logger.warn(`[${category}] no CSV match for "${c.csv.model}" — using fallback ubRaw`);
 
+      // ADDITIVE prices policy (review fix 1.1): seed prices apply on insert
+      // only, so re-running `npm run seed` on a live DB (the runbook does)
+      // never clobbers scraped retail prices with the bundled demo prices.
+      const { prices: seedPrices, ...specFields } = doc as { prices?: unknown } & Record<
+        string,
+        unknown
+      >;
       await ComponentModel.updateOne(
         { category, slug: c.slug },
-        { $set: doc, $setOnInsert: { createdAt: new Date() } },
+        {
+          $set: specFields,
+          $setOnInsert: { createdAt: new Date(), ...(seedPrices !== undefined ? { prices: seedPrices } : {}) },
+        },
         { upsert: true },
       );
     }

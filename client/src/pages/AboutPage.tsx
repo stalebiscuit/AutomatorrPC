@@ -4,9 +4,16 @@ import { TopBar } from '../components/TopBar.js';
 import { SiteFooter } from '../components/SiteFooter.js';
 import { Eyebrow } from '../components/Eyebrow.js';
 import { openFeedback } from '../lib/feedback.js';
+import { useDocumentMeta } from '../lib/meta.js';
 
 /** About page (launch-polish P3) — founder story + how the data works. */
 export function AboutPage() {
+  useDocumentMeta({
+    title: 'About | Speccify',
+    description:
+      'Speccify is built by a PC enthusiast with 50+ builds: verified specs, deterministic verdicts and daily-refreshed Australian pricing, all in one place.',
+  });
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

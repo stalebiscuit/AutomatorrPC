@@ -1,16 +1,18 @@
 import { useEffect, useRef, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { acknowledgeLegal, hasAcknowledgedLegal } from '../lib/legal.js';
+import { useLocation } from 'react-router-dom';
+import { acknowledgeLegal } from '../lib/legal.js';
 import { Logo } from './Logo.js';
 
 /**
- * First-visit terms acknowledgement (launch-polish P1, revised).
+ * Terms acknowledgement popup (launch-polish P1, revised 21 Jul 2026).
  *
- * Compact centred card shown once per browser per LEGAL_VERSION, on any public
- * route (including deep links). Admin routes are excluded. Acceptance is an
- * explicit act: the visitor ticks the agreement checkbox, then continues.
- * Esc / scrim-clicks do not dismiss the card. Client-rendered after load, so
- * it never gates content in the DOM or hurts indexing.
+ * Shown on EVERY page load of the site (product decision) — acceptance is not
+ * persisted across visits; accepting only dismisses it for the current load.
+ * Admin routes are excluded. Acceptance is an explicit act: the visitor ticks
+ * the agreement checkbox, then continues. Esc / scrim-clicks do not dismiss
+ * the card. Client-rendered after load, so it never gates content in the DOM.
+ * (`acknowledgeLegal()` still records the acceptance version/timestamp in
+ * localStorage for the record; it just no longer suppresses the popup.)
  */
 export function ConsentModal() {
   const location = useLocation();
@@ -21,7 +23,7 @@ export function ConsentModal() {
   const isAdmin = location.pathname.startsWith('/admin');
 
   useEffect(() => {
-    if (!isAdmin && !hasAcknowledgedLegal()) setOpen(true);
+    if (!isAdmin) setOpen(true);
   }, [isAdmin]);
 
   useEffect(() => {
@@ -45,8 +47,9 @@ export function ConsentModal() {
         aria-modal="true"
         aria-labelledby="consent-title"
       >
+        {/* Full brand lockup — the bare S glyph read as an unbranded icon. */}
         <div className="consent-mark" aria-hidden="true">
-          <Logo variant="mark" size={30} />
+          <Logo variant="full" size={30} />
         </div>
         <span className="eyebrow" id="consent-title">
           BEFORE YOU DIVE IN
@@ -70,9 +73,22 @@ export function ConsentModal() {
             onChange={(e) => setAgreed(e.target.checked)}
           />
           <span>
-            I agree to the <Link to="/legal/terms">Terms of Use</Link> and acknowledge the{' '}
-            <Link to="/legal/disclaimer">Disclaimer</Link> and{' '}
-            <Link to="/legal/privacy">Privacy Policy</Link>.
+            {/* Review fix 1.7: open in a new tab — same-tab navigation landed
+                UNDERNEATH this non-dismissable overlay, so visitors couldn't
+                actually read the documents they were agreeing to. */}
+            I agree to the{' '}
+            <a href="/legal/terms" target="_blank" rel="noreferrer">
+              Terms of Use
+            </a>{' '}
+            and acknowledge the{' '}
+            <a href="/legal/disclaimer" target="_blank" rel="noreferrer">
+              Disclaimer
+            </a>{' '}
+            and{' '}
+            <a href="/legal/privacy" target="_blank" rel="noreferrer">
+              Privacy Policy
+            </a>
+            .
           </span>
         </label>
         <button

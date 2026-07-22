@@ -18,6 +18,11 @@ const BuildSchema = new Schema(
     name: { type: String },
     budget: { type: Number },
     items: { type: [BuildItemSchema], default: [] },
+    /** Private edit token (review fix 1.3): returned once at creation and
+     *  required for PATCH, so a shared permalink is read-only for everyone
+     *  except the creator. Never serialised into read responses. Legacy
+     *  builds without one are locked (share links keep working). */
+    editToken: { type: String, default: '' },
   },
   { timestamps: true, minimize: false },
 );

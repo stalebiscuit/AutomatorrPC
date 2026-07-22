@@ -49,7 +49,16 @@ export interface BuildInput {
   items: BuildItem[];
 }
 
-export async function createBuild(input: BuildInput): Promise<BuildDoc & { shortId: string }> {
+/** Partial update — only provided fields are written (review fix 1.3). */
+export interface BuildPatch {
+  name?: string;
+  budget?: number;
+  items?: BuildItem[];
+}
+
+export async function createBuild(
+  input: BuildInput,
+): Promise<BuildDoc & { shortId: string; editToken: string }> {
   // Retry on the (astronomically unlikely) shortId collision.
   for (let attempt = 0; attempt < 5; attempt++) {
     try {
@@ -58,8 +67,9 @@ export async function createBuild(input: BuildInput): Promise<BuildDoc & { short
         name: input.name,
         budget: input.budget,
         items: input.items,
+        editToken: randomBytes(18).toString('hex'),
       });
-      return doc as unknown as BuildDoc & { shortId: string };
+      return doc as unknown as BuildDoc & { shortId: string; editToken: string };
     } catch (err: unknown) {
       const dup = typeof err === 'object' && err !== null && (err as { code?: number }).code === 11000;
       if (!dup || attempt === 4) throw err;
@@ -68,13 +78,27 @@ export async function createBuild(input: BuildInput): Promise<BuildDoc & { short
   throw new Error('Could not allocate a unique build id');
 }
 
-export async function updateBuild(shortId: string, input: BuildInput): Promise<Build | null> {
-  const doc = await BuildModel.findOneAndUpdate(
-    { shortId },
-    { name: input.name, budget: input.budget, items: input.items },
-    { new: true },
-  );
-  return doc ? serializeBuild(doc) : null;
+/**
+ * Ownership-checked partial update (review fix 1.3).
+ * Returns 'notfound' when no such build, 'forbidden' when the edit token
+ * doesn't match (or the build predates tokens and is locked), else the build.
+ */
+export async function updateBuild(
+  shortId: string,
+  editToken: string,
+  input: BuildPatch,
+): Promise<Build | 'notfound' | 'forbidden'> {
+  const existing = await BuildModel.findOne({ shortId }).select('editToken').lean();
+  if (!existing) return 'notfound';
+  if (!existing.editToken || !editToken || existing.editToken !== editToken) return 'forbidden';
+
+  const patch: Record<string, unknown> = {};
+  if (input.name !== undefined) patch.name = input.name;
+  if (input.budget !== undefined) patch.budget = input.budget;
+  if (input.items !== undefined) patch.items = input.items;
+
+  const doc = await BuildModel.findOneAndUpdate({ shortId }, { $set: patch }, { new: true });
+  return doc ? serializeBuild(doc) : 'notfound';
 }
 
 export async function getBuild(shortId: string): Promise<Build | null> {

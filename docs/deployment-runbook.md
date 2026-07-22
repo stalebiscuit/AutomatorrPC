@@ -140,7 +140,14 @@ and append `&tls=true&tlsCAFile=/etc/ssl/ca.pem` to the URI.
    npm run db:migrate-speccify --workspace server   # if migrating existing data
    # and/or: npm run seed --workspace server
    ```
-6. Run Node as a service — create `/etc/systemd/system/speccify.service`:
+6. Create an unprivileged service account (review fix 1.8 — `User=%i` in a
+   non-templated unit expands to the empty string, which made the app run as
+   **root**):
+   ```bash
+   sudo useradd --system --home /opt/speccify --shell /usr/sbin/nologin speccify
+   sudo chown -R speccify:speccify /opt/speccify
+   ```
+7. Run Node as a service — create `/etc/systemd/system/speccify.service`:
    ```ini
    [Unit]
    Description=Speccify
@@ -152,7 +159,9 @@ and append `&tls=true&tlsCAFile=/etc/ssl/ca.pem` to the URI.
    EnvironmentFile=/opt/speccify/AutomatorrPC/server/.env
    ExecStart=/usr/bin/npm run start
    Restart=always
-   User=%i
+   User=speccify
+   Group=speccify
+   NoNewPrivileges=true
 
    [Install]
    WantedBy=multi-user.target
@@ -228,3 +237,41 @@ The login codes send from `AI@Automatorr.com` (a Microsoft 365 mailbox). To let 
 - Deploy an update: `git pull && npm install && npm run build && sudo systemctl restart speccify`.
 
 **Scope note:** this covers Subsystem A (admin auth, done), B (Mongo auth — Parts 1–2), and C (domain + HTTPS + deploy — Parts 3–4). Optional DB-link TLS is noted in Part 2.
+
+
+---
+
+## Part 6 — MongoDB backups (added 21 Jul 2026, review fix)
+
+A single-VM deployment has no durability story without this: one disk failure
+loses the curated catalogue, admin/audit data, saved builds and feedback.
+
+1. Create the backup script `/opt/speccify/backup-mongo.sh`:
+   ```bash
+   #!/usr/bin/env bash
+   set -euo pipefail
+   STAMP=$(date +%F)
+   DIR=/var/backups/speccify
+   mkdir -p "$DIR"
+   mongodump --uri "$MONGODB_URI" --archive | gzip > "$DIR/speccify-$STAMP.archive.gz"
+   # keep the last 14 days
+   ls -1t "$DIR"/speccify-*.archive.gz | tail -n +15 | xargs -r rm --
+   ```
+   ```bash
+   sudo chmod +x /opt/speccify/backup-mongo.sh
+   ```
+2. Schedule it nightly (as the `speccify` user, after the 03:15 scrape):
+   ```bash
+   sudo crontab -u speccify -e
+   # add:  0 5 * * *  MONGODB_URI='mongodb://.../speccify' /opt/speccify/backup-mongo.sh
+   ```
+3. **Off-VM copy (strongly recommended):** sync the backup directory to Azure
+   Blob Storage so a VM loss isn't a data loss:
+   ```bash
+   azcopy sync /var/backups/speccify "https://<account>.blob.core.windows.net/speccify-backups?<SAS>"
+   ```
+4. **Restore drill (do this once now, not during an outage):**
+   ```bash
+   gunzip -c speccify-<date>.archive.gz | mongorestore --uri "$MONGODB_URI" --archive --drop --nsInclude 'speccify.*' --dryRun
+   # remove --dryRun to actually restore
+   ```

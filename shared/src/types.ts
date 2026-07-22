@@ -427,6 +427,9 @@ export interface MerchantTotal {
 // ─── Builder: hydrated build summary (server → client) ───────────────
 export interface BuildSummary {
   build: Build;
+  /** Private edit token — present ONLY in the POST /builds (create) response.
+   *  Required via the x-edit-token header to PATCH; never returned on GET. */
+  editToken?: string;
   /** items resolved to catalogue components (render order) */
   parts: ResolvedBuildPart[];
   /** items whose slug wasn't found in the catalogue (hallucination guard) */

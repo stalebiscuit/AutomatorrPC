@@ -44,6 +44,10 @@ const EnvSchema = z.object({
   OTP_RESEND_INTERVAL_SEC: z.coerce.number().int().nonnegative().default(30),
   OTP_MAX_PER_HOUR: z.coerce.number().int().positive().default(5),
 
+  /** Shared secret required (when set) on POST /events/conversion — the
+   *  affiliate postback endpoint (review fix 1.2, forged-conversion guard). */
+  CONVERSION_WEBHOOK_SECRET: z.string().optional(),
+
   PRICE_PROVIDER: z.enum(['scraper']).default('scraper'),
   VERDICT_PROVIDER: z.enum(['placeholder', 'seeded', 'claude']).default('seeded'),
 

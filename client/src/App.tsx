@@ -10,6 +10,7 @@ import { AdminFeedbackPage } from './pages/AdminFeedbackPage.js';
 import { PcBuilder } from './pages/PcBuilder.js';
 import { LegalPage } from './pages/LegalPage.js';
 import { AboutPage } from './pages/AboutPage.js';
+import { NotFoundPage } from './pages/NotFoundPage.js';
 import { ConsentModal } from './components/ConsentModal.js';
 import { FeedbackHost } from './components/FeedbackModal.js';
 import { AdminAuthProvider, AuthGate } from './lib/adminAuth.js';
@@ -72,6 +73,9 @@ export default function App() {
               }
             />
           </Route>
+
+          {/* Catch-all 404 (review fix) — unknown URLs used to render blank. */}
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
         {/* Global chrome: first-visit terms acknowledgement + feedback modal. */}
         <ConsentModal />
