@@ -165,9 +165,10 @@
   animation: drawerFade 0.18s ease;
 }
 .drawer {
+  /* Left-side drawer (design decision, 21 Jul 2026 — was right-anchored). */
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   z-index: 41;
   height: 100dvh;
   width: min(320px, 86vw);
@@ -175,8 +176,8 @@
   display: flex;
   flex-direction: column;
   background: var(--surface);
-  border-left: 1px solid var(--line);
-  box-shadow: -30px 0 60px -30px rgba(0, 0, 0, 0.5);
+  border-right: 1px solid var(--line);
+  box-shadow: 30px 0 60px -30px rgba(0, 0, 0, 0.5);
   animation: drawerIn 0.22s ease;
 }
 .drawer-head {
@@ -242,7 +243,7 @@
 }
 @keyframes drawerIn {
   from {
-    transform: translateX(100%);
+    transform: translateX(-100%); /* slides in from the left now */
   }
   to {
     transform: translateX(0);
@@ -587,13 +588,25 @@
   border: 1px solid var(--line);
   overflow: hidden;
 }
+.thumb {
+  position: relative; /* definite box for the absolutely-filled logo image */
+}
 .thumb img {
+  /* Absolutely filled (bugfix, 21 Jul 2026): .thumb is a grid with auto
+     tracks, so percentage width/height resolved against an auto track and
+     collapsed to natural sizing — object-fit never engaged and wide brand
+     banners rendered oversized and clipped. Absolute positioning gives the
+     image a definite 100% box, so contain now truly letterboxes and the
+     lettering sits centred inside the section. */
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  /* Full-bleed cover (design decision, 21 Jul 2026): the brand panel fills the
+     whole grey box edge-to-edge; slight top/bottom crop of the panel is fine
+     because the lettering is vertically centred in every brand asset. */
+  object-fit: cover;
   object-position: center;
-  padding: 12px 16px;
-  box-sizing: border-box;
 }
 .win .thumb {
   background:
@@ -2518,4 +2531,12 @@ a.src {
 .notfound-actions .cta {
   width: auto;
   min-width: 220px;
+}
+
+/* The drawer mounts inside the flex .topbar; without this it became a third
+   flex item and space-between shoved the action buttons to the middle
+   (bugfix, 21 Jul 2026). display:contents removes it from layout entirely —
+   the backdrop and panel inside are position:fixed anyway. */
+.drawer-root {
+  display: contents;
 }
