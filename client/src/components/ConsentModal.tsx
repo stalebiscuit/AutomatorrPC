@@ -1,18 +1,17 @@
 import { useEffect, useRef, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import { acknowledgeLegal } from '../lib/legal.js';
+import { acknowledgeLegal, hasAcknowledgedLegal } from '../lib/legal.js';
 import { Logo } from './Logo.js';
 
 /**
- * Terms acknowledgement popup (launch-polish P1, revised 21 Jul 2026).
+ * Terms acknowledgement popup (launch-polish P1, revised 22 Jul 2026).
  *
- * Shown on EVERY page load of the site (product decision) — acceptance is not
- * persisted across visits; accepting only dismisses it for the current load.
- * Admin routes are excluded. Acceptance is an explicit act: the visitor ticks
- * the agreement checkbox, then continues. Esc / scrim-clicks do not dismiss
- * the card. Client-rendered after load, so it never gates content in the DOM.
- * (`acknowledgeLegal()` still records the acceptance version/timestamp in
- * localStorage for the record; it just no longer suppresses the popup.)
+ * Shown once on first landing, then suppressed across refreshes/visits via the
+ * stored acknowledgement (localStorage). Logging out clears that record, so a
+ * returning visitor must accept again. Admin routes are excluded. Acceptance is
+ * an explicit act: the visitor ticks the agreement checkbox, then continues.
+ * Esc / scrim-clicks do not dismiss the card. Client-rendered after load, so it
+ * never gates content in the DOM.
  */
 export function ConsentModal() {
   const location = useLocation();
@@ -23,7 +22,7 @@ export function ConsentModal() {
   const isAdmin = location.pathname.startsWith('/admin');
 
   useEffect(() => {
-    if (!isAdmin) setOpen(true);
+    if (!isAdmin && !hasAcknowledgedLegal()) setOpen(true);
   }, [isAdmin]);
 
   useEffect(() => {

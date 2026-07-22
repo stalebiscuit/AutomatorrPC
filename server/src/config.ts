@@ -1,5 +1,17 @@
-import 'dotenv/config';
+import { config as loadEnv } from 'dotenv';
+import { fileURLToPath } from 'node:url';
+import { dirname, resolve } from 'node:path';
 import { z } from 'zod';
+
+// Workspace scripts (`npm run dev --workspace server`) run with CWD set to
+// server/, where no .env lives — the real config is the monorepo-root .env.
+// Resolve it relative to this module so it loads regardless of the CWD, then
+// fall back to a CWD-local .env for anyone running from elsewhere. dotenv does
+// not override vars already present in the environment, so real production
+// env vars still win.
+const moduleDir = dirname(fileURLToPath(import.meta.url));
+loadEnv({ path: resolve(moduleDir, '../../.env') });
+loadEnv();
 
 /**
  * Env schema — validated once at boot. Missing/invalid required vars fail fast.

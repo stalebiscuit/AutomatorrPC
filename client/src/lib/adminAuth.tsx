@@ -1,6 +1,7 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { api, type AuthUser } from './api.js';
+import { clearLegalAck } from './legal.js';
 
 type Status = 'loading' | 'authed' | 'anon';
 
@@ -56,6 +57,9 @@ export function AdminAuthProvider({ children }: { children: ReactNode }) {
 
   const logout = async () => {
     await api.authLogout().catch(() => undefined);
+    // Clear the legal acknowledgement so a returning visitor must accept the
+    // Terms again (product decision, 22 Jul 2026).
+    clearLegalAck();
     setUser(null);
   };
 
