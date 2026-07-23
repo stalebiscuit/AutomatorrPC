@@ -16,13 +16,18 @@ export const ple: RetailerAdapter = {
 
   parse(html: string, c: Component) {
     const $ = cheerio.load(html);
-    const card = $('div.itemGrid2TileStandard').first();
-    if (card.length === 0) return null;
-    const price = parseAud(card.find('div.itemGrid2TileStandardPrice').first().text() || card.text());
-    if (price === null) return null;
-    const href = card.find('a').first().attr('href');
-    const url = href ? new URL(href, 'https://www.ple.com.au').toString() : this.buildSearchUrl(c);
-    return { price, url };
+    // Walk every result card and take the FIRST that strictly matches the exact
+    // SKU — not just the first card on the page (which is often a near variant).
+    for (const el of $('div.itemGrid2TileStandard').toArray()) {
+      const card = $(el);
+      if (!titleMatches(c.name, card.text())) continue;
+      const price = parseAud(card.find('div.itemGrid2TileStandardPrice').first().text() || card.text());
+      if (price === null) continue;
+      const href = card.find('a').first().attr('href');
+      if (!href) continue;
+      return { price, url: new URL(href, 'https://www.ple.com.au').toString() };
+    }
+    return null;
   },
 
   parseImage(html: string, c: Component) {

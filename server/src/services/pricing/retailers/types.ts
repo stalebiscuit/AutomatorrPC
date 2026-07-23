@@ -68,19 +68,71 @@ export function firstCardText(html: string, selector: string): string {
   return $(selector).first().text().replace(/\s+/g, ' ').trim();
 }
 
-const MATCH_STOP = new Set(['the', 'for', 'with', 'and', 'oc', 'edition', 'gaming']);
+// Filler words that never distinguish one SKU from another.
+const FILLER = new Set([
+  'the', 'for', 'with', 'and', 'edition', 'gaming', 'graphics', 'card', 'video',
+  'desktop', 'series', 'new', 'genuine', 'ready', 'brand', 'powered', 'aus', 'au',
+]);
+// Memory-type tokens look like model codes but retailers often omit them — soft-match only.
+const MEMTYPE = new Set([
+  'gddr7', 'gddr6', 'gddr6x', 'gddr5', 'gddr5x', 'ddr5', 'ddr4', 'ddr3', 'ddr3l', 'hbm2', 'hbm3',
+]);
+// SKU-distinguishing qualifiers: a mismatch here means a DIFFERENT product.
+const VARIANT = new Set(['oc', 'ti', 'super', 'xt', 'xtx', 'btf', 'lc', 'fe', 'wifi']);
+
+/** Lowercase, glue space-separated capacities ("32 GB" → "32gb"), then split to tokens. */
+function tokenize(s: string): string[] {
+  return s
+    .toLowerCase()
+    .replace(/(\d)\s+(gb|tb|mb)\b/g, '$1$2')
+    .split(/[^a-z0-9]+/)
+    .filter(Boolean);
+}
+
+/** A token that pins the exact SKU: a pure number ≥3 digits (5090, 6000) or an
+ *  alphanumeric model/capacity (9800x3d, b650e, 32gb) — excluding memory types. */
+function isHardModel(t: string): boolean {
+  if (MEMTYPE.has(t)) return false;
+  if (/^\d{3,}$/.test(t)) return true;
+  return /[a-z]/.test(t) && /\d/.test(t) && t.length >= 4;
+}
+
+function setEq(a: Set<string>, b: Set<string>): boolean {
+  return a.size === b.size && [...a].every((x) => b.has(x));
+}
+
 /**
- * Does a search result's card text plausibly match the queried component? Guards against
- * grabbing a sibling product's image when a store lacks the exact part. If the component name
- * has a model code (letter+digit token), that must appear; otherwise ≥60% of key tokens must.
+ * Does a search result's title refer to the SAME product SKU as the component?
+ * Strict by design — a wrong-but-cheap match sends users to the wrong product,
+ * so we prefer returning no price over a mismatch:
+ *   1. every hard model/capacity token in the component must appear (exact token,
+ *      so 14900K ≠ 14900KF and 16GB ≠ 32GB);
+ *   2. variant qualifiers (OC/Ti/Super/XT/XTX/BTF/LC/FE/WiFi) must match
+ *      symmetrically — "Astral OC" never matches "Astral BTF OC";
+ *   3. for multi-word names, ≥60% of the remaining line tokens must appear, so a
+ *      same-chip card from a different brand/product line is rejected.
  */
 export function titleMatches(componentName: string, cardText: string): boolean {
   if (!cardText) return false;
-  const hay = cardText.toLowerCase();
-  const toks = componentName.toLowerCase().split(/[^a-z0-9]+/).filter((t) => t.length >= 3 && !MATCH_STOP.has(t));
-  if (!toks.length) return true;
-  const models = toks.filter((t) => /[a-z]/.test(t) && /[0-9]/.test(t));
-  if (models.length) return models.some((m) => hay.includes(m));
-  const hits = toks.filter((t) => hay.includes(t)).length;
-  return hits / toks.length >= 0.6;
+  const comp = tokenize(componentName);
+  if (!comp.length) return true;
+  const card = tokenize(cardText);
+  const cardSet = new Set(card);
+
+  // 1) hard model/capacity tokens must all be present (exact token match)
+  for (const t of comp) {
+    if (isHardModel(t) && !cardSet.has(t)) return false;
+  }
+  // 2) symmetric variant qualifiers
+  const compVar = new Set(comp.filter((t) => VARIANT.has(t)));
+  const cardVar = new Set(card.filter((t) => VARIANT.has(t)));
+  if (!setEq(compVar, cardVar)) return false;
+
+  // 3) product-line overlap (skip very short names — the model token already pins it)
+  const sig = comp.filter(
+    (t) => t.length >= 3 && !FILLER.has(t) && !VARIANT.has(t) && !isHardModel(t),
+  );
+  if (sig.length < 3) return true;
+  const hits = sig.filter((t) => cardSet.has(t)).length;
+  return hits / sig.length >= 0.6;
 }

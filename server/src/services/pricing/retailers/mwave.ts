@@ -17,13 +17,18 @@ export const mwave: RetailerAdapter = {
 
   parse(html: string, c: Component) {
     const $ = cheerio.load(html);
-    const card = $('ul.productList > li').first();
-    if (card.length === 0) return null;
-    const price = parseAud(card.find('div.price div.current').first().text() || card.text());
-    if (price === null) return null;
-    const href = card.find('a.sliclickLogging').first().attr('href') || card.find('a').first().attr('href');
-    const url = href ? new URL(href, 'https://www.mwave.com.au').toString() : this.buildSearchUrl(c);
-    return { price, url };
+    // First result card that strictly matches the exact SKU (not just the first tile).
+    for (const el of $('ul.productList > li').toArray()) {
+      const card = $(el);
+      if (!titleMatches(c.name, card.text())) continue;
+      const price = parseAud(card.find('div.price div.current').first().text() || card.text());
+      if (price === null) continue;
+      const href =
+        card.find('a.sliclickLogging').first().attr('href') || card.find('a').first().attr('href');
+      if (!href) continue;
+      return { price, url: new URL(href, 'https://www.mwave.com.au').toString() };
+    }
+    return null;
   },
 
   parseImage(html: string, c: Component) {

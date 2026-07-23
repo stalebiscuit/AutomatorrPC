@@ -25,7 +25,7 @@ export const pccasegearAlgolia: RetailerAdapter = {
   buildSearchUrl(c: Component): string {
     const params = new URLSearchParams({
       query: searchQuery(c),
-      hitsPerPage: '5',
+      hitsPerPage: '20',
       'x-algolia-application-id': APP_ID,
       'x-algolia-api-key': API_KEY,
     });
